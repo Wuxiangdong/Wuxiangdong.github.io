@@ -13,4 +13,13 @@ $$x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a},$$
 
 $$x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}.$$
 
-<!--more-->
+## code
+'''cpp
+#include <iostream>
+
+int main ()
+{
+    std::cout << "Hello,World!" << std::endl;
+    return 0;
+}
+'''
