@@ -2,6 +2,7 @@
 title: 可分扩张
 tags: Math
 ---
+<!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -15,6 +16,7 @@ tags: Math
 });
 </script>
 <script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
+-->
 <!-- vim-markdown-toc GFM -->
 
 * [定义](#定义)
