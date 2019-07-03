@@ -2,7 +2,6 @@
 title: 可分扩张
 tags: Math
 ---
-<!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -16,7 +15,6 @@ tags: Math
 });
 </script>
 <script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
--->
 # 定义
 设 $E/F$ 是代数扩张, $a \in E$. 如果 $a$ 在 $F$ 上的极小多项式无重根, 则称 $a$ 是 $F$ 上的**可分元**, 或称 $a$ 在 $F$ 上**可分**. 如果 $E$ 中任一元素在 $F$ 上均可分, 则称 $E$ 是 $F$ 的**可分扩张**, 否则称为**不可分扩张**.
 ## 例子
@@ -66,3 +64,21 @@ $$g(x) = \prod_{i=1}^{s}(x-\beta_i), \beta_1 = \beta, \beta_i\in K.$$
 
 因 $E/F$ 是可分扩张, 故 $\alpha_1,\cdots,\alpha_r$ 两两不同, $\beta_1,\cdots,\beta_s$ 两两不同, 我们的目的是找到 $r \in E$ 使得 $E = F(r)$. 这可以在 $\alpha + x \beta,x \in F$ 中寻找. 由 $F$ 无限, 存在 $c \in F$ 使 $\alpha + c\beta \ne \alpha_i + c\beta_j, \forall i = 1,2,\cdots , r,j = 2,\cdots ,s$. 记 $r = \alpha + c\beta$, 有 $r \in E$, 从而 $F(r) \subseteq E$. $f(r - cx) \in F(r)[x]$ 和 $g(x)$ 有公共根 $\beta$. 由 $c$ 的取法知它们只有唯一的公共根, 于是它们的最大公因子就是 $x - \beta$. 这说明 $\beta \in F(r)$, 继而 $\alpha = r - c\beta \in F(r)$. 故 $E \subseteq F(r)$, 从而 $E = F(r)$.
 <p align="right">$\blacksquare$</p>
+
+特征为零的域均为完全域, 从而其代数扩张均为可分扩张. 而对于特征为素数 $p$ 的域, 我们有
+
+**引理** 设有域扩张 $K/F,\mathrm{char} F = p$. $\alpha \in K$, 则 $\alpha$ 在 $F$ 上可分当且仅当 $F(\alpha) = F(\alpha^p)$.
+
+**证明** 若 $\alpha$ 在 $F$ 上可分, 只需证明 $\alpha \in F(\alpha^p)$, 从而 $F(\alpha) = F(\alpha^p)$. 否则, 若 $\alpha \notin F(\alpha^p)$, 则 $\alpha$ 在 $F(\alpha^p)$ 上的极小多项式是 $x^p - \alpha^p$. 它有重根. $\alpha$ 在 $F$ 上的极小多项式被 $x^p - \alpha^p$ 整除, 从而也有重根, 与 $\alpha$ 在 $F$ 上可分矛盾.
+
+若 $F(\alpha) = F(\alpha^p)$, 记 $\alpha$ 在 $F$ 上的极小多项式为 $f(x)$. 若 $f(x)$ 有重根, 则存在 $g(x) \in F[x]$ 使 $f(x) = g(x^p)$. $f(x)$ 不可约, 从而 $g(x)$ 不可约. $g(x)$
+是 $\alpha^p$ 在 $F$ 上的极小多项式. 从而
+
+$$[F(\alpha^p) : F] = \deg g(x) < \deg f(x) = [F(\alpha) : F]$$
+
+但是 $F(\alpha^p) = F(\alpha)$, 矛盾!
+<p align="right">$\blacksquare$</p>
+
+**引理** 设 $\alpha$ 在 $F$ 上可分, $\beta$ 在 $F(\alpha)$ 上可分, 则 $\beta$ 在 $F$ 上可分.
+
+**证明** 特征为零的域均为完全域, 不妨设 $\mathrm{char} F = p$. 只需证明 $F(\beta) = F(\beta^p)$. 设 $\beta$ 在 $F(\alpha)$ 上的极小多项式为 $f(x)$, 则 $f^p(x) \in F(\alpha^p)[x]$. $f^p(\beta) = 0$. 设 $\beta$ 在 $F(\alpha^p)$ 
