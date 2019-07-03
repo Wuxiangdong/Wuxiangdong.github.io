@@ -1,10 +1,7 @@
 ---
 title: Hello World!
 tags: test
-article_header:
-  type: overlay
-  theme: dark
-  background_color: #24292e
+text_skin: dark
 ---
 # Hello World!
 ## Markdown
