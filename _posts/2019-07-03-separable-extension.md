@@ -61,7 +61,7 @@ $\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项
 **系** 有限域均为完全域.
 {:.info}
 
-设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $F$ 是域的非零满同态, 因此是同构. 有 $\mid F\mid = \mid F^p\mid < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
+设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $\sigma$ 是域的非零满同态, 因此是同构. 有 $\mid F\mid = \mid F^p\mid < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
 
 于是, 不可分的代数扩张 $E/F$ 需要在特征不为零的无限域 $F$ 中寻找.
 
@@ -115,7 +115,7 @@ $$
 
 知 $[F(\beta) : F] = [F(\beta^p) : F]$, 从而 $F(\beta) = F(\beta^p)$. 下证$[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)]$.
 
-记 $\alpha$ 在 $F(\beta)$ 上的极小多项式为 $f(x)$, $\alpha^p$ 在 $F(\beta^p)$ 的极小多项式为 $g(x)$, 则 $f(x) \mid g(x)$. 又 $f^p(x) \in F(\beta^p)[x]$ 且 $f^p(\alpha) = 0$, 有 $g(x) \mid f^p(x)$, 从而 $g(x) = f^k(x)$,$k = 1,2,\cdots,p$. $\alpha$ 在 $F$ 上可分, 从而在 $F(\beta^p)$ 上可分, 故 $k = 1$, $g(x) = f(x)$. 从而
+记 $\alpha$ 在 $F(\beta)$ 上的极小多项式为 $f(x)$, 在 $F(\beta^p)$ 的极小多项式为 $g(x)$, 则 $f(x) \mid g(x)$. 又 $f^p(x) \in F(\beta^p)[x]$ 且 $f^p(\alpha) = 0$, 有 $g(x) \mid f^p(x)$, 从而 $g(x) = f^k(x)$,$k = 1,2,\cdots,p$. $\alpha$ 在 $F$ 上可分, 从而在 $F(\beta^p)$ 上可分, 故 $k = 1$, $g(x) = f(x)$. 从而
 
 $$[F(\alpha,\beta) : F(\beta)] = \deg f(x) = \deg g(x) = [F(\alpha,\beta^p) : F(\beta^p)]$$
 
