@@ -2,7 +2,11 @@
 title: sample
 tags: sample
 ---
-
+> "#660874"
+> "#8b0012"
+> "#b01f24"
+> "#003f88"
+> "#24292e"
 > local preview
 > <meta http-equiv="content-type" content="text/html; charset=utf-8">
 > <script type="text/x-mathjax-config">
