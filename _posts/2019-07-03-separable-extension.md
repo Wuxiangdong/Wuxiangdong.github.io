@@ -9,7 +9,7 @@ tags: Math
 
 例如, 记 $F$ 是特征为 $p$ 的域, $p$ 为素数.  当 $x^p - a$ 的根 $b \notin F$ 时, $x^p-a$ 是 $F$ 上不可约多项式且有重根. 这是因为: 设 $E$ 是 $x^p-a$ 在 $F$ 上的分裂域, $b \in E$. 于是在 $E[x]$ 中 $x^p-a = (x-b)^p$ ($E$ 特征为 $p$). 若
 
-$$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1$$,
+$$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1,$$
 
 则 $f(x) = (x-b)^k, 1 \le k \le p-1$, 有 $(k,p) = 1$. 存在整数 $u,v$ 使 $uk + vp = 1$. 由 $f(x) \in F[x]$, $f(x)$ 的常数项 $(-b)^k \in F$, 从而 $b^k \in F$. 结合 $b^p = a \in F$ 知 $b = b^{uk + vp} \in F$. 矛盾.
 

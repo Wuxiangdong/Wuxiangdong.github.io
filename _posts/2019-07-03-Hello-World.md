@@ -11,6 +11,7 @@ $$x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a},$$
 $$x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}.$$
 
 $$\sum_{k=0}^{n}{C_n^k} = 2^n.$$
+
 ## code
 ```cpp
 #include <iostream>
