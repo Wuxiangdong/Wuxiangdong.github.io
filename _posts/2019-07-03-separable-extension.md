@@ -2,7 +2,6 @@
 title: 可分扩张
 tags: Math
 ---
-<!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -16,7 +15,6 @@ tags: Math
 });
 </script>
 <script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
--->
 <!-- vim-markdown-toc GFM -->
 
 * [定义](#定义)
@@ -92,7 +90,22 @@ $$[F(\alpha^p) : F] = \deg g(x) < \deg f(x) = [F(\alpha) : F]$$
 
 **引理** 设 $\alpha$ 在 $F$ 上可分, $\beta$ 在 $F(\alpha)$ 上可分, 则 $\beta$ 在 $F$ 上可分.
 
-**证明** 特征为零的域均为完全域, 不妨设 $\mathrm{char} F = p$. 只需证明 $F(\beta) = F(\beta^p)$. $\beta$ 在 $F(\alpha)$ 上可分, 有 $F(\alpha,\beta) = F(\alpha,\beta^p)$. 如果证明了 $[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)]$, 则由 $[F(\alpha,\beta) : F] = [F(\alpha,\beta) : F(\beta)][F(\beta) : F]$, $[F(\alpha,\beta^p) : F] = [F(\alpha,\beta^p) : F(\beta^p)][F(\beta^p) : F]$ 知 $[F(\beta) : F] = [F(\beta^p) : F]$, 从而 $F(\beta) = F(\beta^p)$. 下证$[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)]$.  
+**证明** 特征为零的域均为完全域, 不妨设 $\mathrm{char} F = p$. 只需证明 $F(\beta) = F(\beta^p)$. $\beta$ 在 $F(\alpha)$ 上可分, 有 $F(\alpha,\beta) = F(\alpha,\beta^p)$. 如果证明了 
+
+$$[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)],$$
+
+则由 
+
+
+$$
+\begin{split}
+[F(\alpha,\beta) : F] &= [F(\alpha,\beta) : F(\beta)][F(\beta) : F], \\
+[F(\alpha,\beta^p) : F] &= [F(\alpha,\beta^p) : F(\beta^p)][F(\beta^p) : F],
+\end{split}
+$$
+
+知 $[F(\beta) : F] = [F(\beta^p) : F]$, 从而 $F(\beta) = F(\beta^p)$. 下证$[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)]$.
+
 记 $\alpha$ 在 $F(\beta)$ 上的极小多项式为 $f(x)$, $\alpha^p$ 在 $F(\beta^p)$ 的极小多项式为 $g(x)$, 则 $f(x) \mid g(x)$. 又 $f^p(x) \in F(\beta^p)[x]$ 且 $f^p(\alpha) = 0$, 有 $g(x) \mid f^p(x)$, 从而 $g(x) = f^k(x)$,$k = 1,2,\cdots,p$. $\alpha$ 在 $F$ 上可分, 从而在 $F(\beta^p)$ 上可分, 故 $k = 1$, $g(x) = f(x)$. 从而
 
 $$[F(\alpha,\beta) : F(\beta)] = \deg f(x) = \deg g(x) = [F(\alpha,\beta^p) : F(\beta^p)]$$
