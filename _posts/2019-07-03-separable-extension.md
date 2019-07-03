@@ -2,6 +2,7 @@
 title: 可分扩张
 tags: Math
 ---
+<!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -15,6 +16,7 @@ tags: Math
 });
 </script>
 <script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
+-->
 # 定义
 设 $E/F$ 是代数扩张, $a \in E$. 如果 $a$ 在 $F$ 上的极小多项式无重根, 则称 $a$ 是 $F$ 上的**可分元**, 或称 $a$ 在 $F$ 上**可分**. 如果 $E$ 中任一元素在 $F$ 上均可分, 则称 $E$ 是 $F$ 的**可分扩张**, 否则称为**不可分扩张**.
 ## 例子
