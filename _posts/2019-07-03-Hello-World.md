@@ -1,9 +1,6 @@
 ---
 title: Hello World!
 tags: test
-header:
-  theme: dark
-  background: "#24292e"
 ---
 # Hello World!
 ## Markdown
