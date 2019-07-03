@@ -42,11 +42,12 @@ $$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1,$$
 
 **证明** $\Rightarrow$: 如果 $F \ne F^p$, 存在 $a \in F-F^p$. 则 $x^p - a$ 在 $F[x]$ 上不可约且有重根, 这导致 $F$ 不是完全域.
 
-$\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项式 $f(x)$, $f(x)$ 有重根, 从而 $f(x) = g(x^p)$, $g(x) \in F[x]$. 记 $f(x) = a_0 + a_1x^p + \cdots + a_nx^{np}$. 下面证明存在 $a_i \notin F^p$, 从而 $F \ne F^p$. 否则, 任意 $a_i(i = 1,2,\cdots ,n)$, 存在 $b_i \in F$ 使 $a_i = b_i^p$. 于是 $f(x) = b_0^p + b_1^px^p + \cdots + b_n^px^{np} = (b_0 + \cdots + b_nx^n)^p$, 与 $f(x)$ 在 $F[x]$ 上不可约矛盾, 故存在 $a_i \notin F^p$, 于是 $F \ne F^p$.<p align="right">$\blacksquare$</p>
+$\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项式 $f(x)$, $f(x)$ 有重根, 从而 $f(x) = g(x^p)$, $g(x) \in F[x]$. 记 $f(x) = a_0 + a_1x^p + \cdots + a_nx^{np}$. 下面证明存在 $a_i \notin F^p$, 从而 $F \ne F^p$. 否则, 任意 $a_i(i = 1,2,\cdots ,n)$, 存在 $b_i \in F$ 使 $a_i = b_i^p$. 于是 $f(x) = b_0^p + b_1^px^p + \cdots + b_n^px^{np} = (b_0 + \cdots + b_nx^n)^p$, 与 $f(x)$ 在 $F[x]$ 上不可约矛盾, 故存在 $a_i \notin F^p$, 于是 $F \ne F^p$.
+<p align="right">$\blacksquare$</p>
 
 **系** 有限域均为完全域.
 
-设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $F$ 是域的非零满同态, 因此是同构. 有 $|F| = |F^p| < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
+设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $F$ 是域的非零满同态, 因此是同构. 有 $\mid F\mid = \mid F^p\mid < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
 
 于是, 不可分的代数扩张 $E/F$ 需要在特征不为零的无限域 $F$ 中寻找.
 
