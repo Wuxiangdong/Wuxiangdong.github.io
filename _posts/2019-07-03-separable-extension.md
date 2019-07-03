@@ -28,6 +28,8 @@ tags: Math
 
 # 定义
 设 $E/F$ 是代数扩张, $a \in E$. 如果 $a$ 在 $F$ 上的极小多项式无重根, 则称 $a$ 是 $F$ 上的**可分元**, 或称 $a$ 在 $F$ 上**可分**. 如果 $E$ 中任一元素在 $F$ 上均可分, 则称 $E$ 是 $F$ 的**可分扩张**, 否则称为**不可分扩张**.
+{:.success}
+
 ## 例子
 例如, $\mathbb{Q}$ 上不可约多项式均无重根, 从而任一代数扩张 $E/\mathbb{Q}$ 均为可分扩张.
 
@@ -44,10 +46,12 @@ $$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1,$$
 
 # 完全域
 域 $F$ 叫**完全域**, 是指 $F[x]$ 中每个不可约多项式均可分. 这也相当于 $F[x]$ 中每个不可约多项式均无重根.
+{:.success}
 
 特征为零的域均为完全域, 而对于特征为 $p$ 的域来说:
 
 **引理** 设域 $F$ 的特征为素数 $p$, 令 $$F^p = \{a^p \mid a \in F\}$$, 则 $F$ 为完全域当且仅当 $F = F^p$.
+{:.info}
 
 **证明** $\Rightarrow$: 如果 $F \ne F^p$, 存在 $a \in F-F^p$. 则 $x^p - a$ 在 $F[x]$ 上不可约且有重根, 这导致 $F$ 不是完全域.
 
@@ -55,6 +59,7 @@ $\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项
 <p align="right">$\blacksquare$</p>
 
 **系** 有限域均为完全域.
+{:.info}
 
 设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $F$ 是域的非零满同态, 因此是同构. 有 $\mid F\mid = \mid F^p\mid < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
 
@@ -62,6 +67,7 @@ $\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项
 
 # 可分扩张的性质
 **定理** 有限可分扩张一定是单扩张.
+{:.info}
 
 **证明** 记 $E/F$ 为有限可分扩张, 若 $F$ 是有限域, 则 $E$ 是 $F$ 的有限代数扩张, $E$ 也为有限域. 于是 $E/F$ 必为单扩张 (有限域的结构). 下设 $F$ 是无限域.
 
@@ -79,6 +85,7 @@ $$g(x) = \prod_{i=1}^{s}(x-\beta_i), \beta_1 = \beta, \beta_i\in K.$$
 特征为零的域均为完全域, 从而其代数扩张均为可分扩张. 而对于特征为素数 $p$ 的域, 我们有
 
 **引理** 设有域扩张 $K/F,\mathrm{char} F = p$. $\alpha \in K$, 则 $\alpha$ 在 $F$ 上可分当且仅当 $F(\alpha) = F(\alpha^p)$.
+{:.info}
 
 **证明** 若 $\alpha$ 在 $F$ 上可分, 只需证明 $\alpha \in F(\alpha^p)$, 从而 $F(\alpha) = F(\alpha^p)$. 否则, 若 $\alpha \notin F(\alpha^p)$, 则 $\alpha$ 在 $F(\alpha^p)$ 上的极小多项式是 $x^p - \alpha^p$. 它有重根. $\alpha$ 在 $F$ 上的极小多项式被 $x^p - \alpha^p$ 整除, 从而也有重根, 与 $\alpha$ 在 $F$ 上可分矛盾.
 
@@ -91,13 +98,13 @@ $$[F(\alpha^p) : F] = \deg g(x) < \deg f(x) = [F(\alpha) : F]$$
 <p align="right">$\blacksquare$</p>
 
 **引理** 设 $\alpha$ 在 $F$ 上可分, $\beta$ 在 $F(\alpha)$ 上可分, 则 $\beta$ 在 $F$ 上可分.
+{:.info}
 
-**证明** 特征为零的域均为完全域, 不妨设 $\mathrm{char} F = p$. 只需证明 $F(\beta) = F(\beta^p)$. $\beta$ 在 $F(\alpha)$ 上可分, 有 $F(\alpha,\beta) = F(\alpha,\beta^p)$. 如果证明了 
+**证明** 特征为零的域均为完全域, 不妨设 $\mathrm{char} F = p$. 只需证明 $F(\beta) = F(\beta^p)$. $\beta$ 在 $F(\alpha)$ 上可分, 有 $F(\alpha,\beta) = F(\alpha,\beta^p)$. 如果证明了
 
 $$[F(\alpha,\beta) : F(\beta)] = [F(\alpha,\beta^p) : F(\beta^p)],$$
 
-则由 
-
+则由
 
 $$
 \begin{split}
@@ -111,4 +118,5 @@ $$
 记 $\alpha$ 在 $F(\beta)$ 上的极小多项式为 $f(x)$, $\alpha^p$ 在 $F(\beta^p)$ 的极小多项式为 $g(x)$, 则 $f(x) \mid g(x)$. 又 $f^p(x) \in F(\beta^p)[x]$ 且 $f^p(\alpha) = 0$, 有 $g(x) \mid f^p(x)$, 从而 $g(x) = f^k(x)$,$k = 1,2,\cdots,p$. $\alpha$ 在 $F$ 上可分, 从而在 $F(\beta^p)$ 上可分, 故 $k = 1$, $g(x) = f(x)$. 从而
 
 $$[F(\alpha,\beta) : F(\beta)] = \deg f(x) = \deg g(x) = [F(\alpha,\beta^p) : F(\beta^p)]$$
+
 <p align="right">$\blacksquare$</p>
