@@ -2,6 +2,19 @@
 title: 可分扩张
 tags: Math
 ---
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   config: ["MMLorHTML.js"],
+  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
+  extensions: ["MathMenu.js", "MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    equationNumbers: {autoNumber: "AMS"}
+  }
+});
+</script>
+<script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
 # 定义
 设 $E/F$ 是代数扩张, $a \in E$. 如果 $a$ 在 $F$ 上的极小多项式无重根, 则称 $a$ 是 $F$ 上的**可分元**, 或称 $a$ 在 $F$ 上**可分**. 如果 $E$ 中任一元素在 $F$ 上均可分, 则称 $E$ 是 $F$ 的**可分扩张**, 否则称为**不可分扩张**.
 ## 例子
@@ -17,7 +30,36 @@ $$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1,$$
 
 现在, 设 $t$ 是 $F$ 上的超越元, 记 $E = F(t)$, $K = F\left(t^{\frac{1}{p}}\right)$, 则扩张 $K/E$ 是代数扩张, 但不是可分扩张.
 
-~~这说明什么呢?~~
 
-~~这说明我的 Blog 搭建成功啦.~~
+# 完全域
+域 $F$ 叫**完全域**, 是指 $F[x]$ 中每个不可约多项式均可分. 这也相当于 $F[x]$ 中每个不可约多项式均无重根.
 
+特征为零的域均为完全域, 而对于特征为 $p$ 的域来说:
+
+**引理** 设域 $F$ 的特征为素数 $p$, 令 $F^p = \{a^p \mid a \in F\}$, 则 $F$ 为完全域当且仅当 $F = F^p$.
+
+**证明** $\Rightarrow$: 如果 $F \ne F^p$, 存在 $a \in F-F^p$. 则 $x^p - a$ 在 $F[x]$ 上不可约且有重根, 这导致 $F$ 不是完全域.
+
+$\Leftarrow$: 若 $F$ 不是完全域, 取 $F[x]$ 中不可分的不可约多项式 $f(x)$, $f(x)$ 有重根, 从而 $f(x) = g(x^p)$, $g(x) \in F[x]$. 记 $f(x) = a_0 + a_1x^p + \cdots + a_nx^{np}$. 下面证明存在 $a_i \notin F^p$, 从而 $F \ne F^p$. 否则, 任意 $a_i(i = 1,2,\cdots ,n)$, 存在 $b_i \in F$ 使 $a_i = b_i^p$. 于是 $f(x) = b_0^p + b_1^px^p + \cdots + b_n^px^{np} = (b_0 + \cdots + b_nx^n)^p$, 与 $f(x)$ 在 $F[x]$ 上不可约矛盾, 故存在 $a_i \notin F^p$, 于是 $F \ne F^p$.<p align="right">$\blacksquare$</p>
+
+**系** 有限域均为完全域.
+
+设 $F$ 的阶为 $p^n$, 记 $\sigma: F \rightarrow F^p, a \mapsto a^p$, 则 $F$ 是域的非零满同态, 因此是同构. 有 $|F| = |F^p| < \infty$, 而 $F^p \subseteq F$, 因此 $F = F^p$.
+
+于是, 不可分的代数扩张 $E/F$ 需要在特征不为零的无限域 $F$ 中寻找.
+
+# 可分扩张的一些性质
+**定理** 有限可分扩张一定是单扩张.
+
+**证明** 记 $E/F$ 为有限可分扩张, 若 $F$ 是有限域, 则 $E$ 是 $F$ 的有限代数扩张, $E$ 也为有限域. 于是 $E/F$ 必为单扩张 (有限域的结构). 下设 $F$ 是无限域.
+
+记 $E/F$ 为有限可分扩张, $E = F(\alpha_1,\cdots,\alpha_n)$. 先证 $n=2$ 的情况, 然后对 $n$ 归纳即可.
+
+当 $n = 2$ 时, 记 $E = F(\alpha,\beta)$. 记 $\alpha,\beta$ 在 $F$ 上的极小多项式分别为 $f(x),g(x)$,令 $K$ 是 $f(x)g(x)$ 在 $E$ 上的分裂域, 在 $K[x]$ 中
+
+$$f(x) = \prod_{i=1}^{r}(x-\alpha_i), \alpha_1 = \alpha, \alpha_i\in K,$$
+
+$$g(x) = \prod_{i=1}^{s}(x-\beta_i), \beta_1 = \beta, \beta_i\in K.$$
+
+因 $E/F$ 是可分扩张, 故 $\alpha_1,\cdots,\alpha_r$ 两两不同, $\beta_1,\cdots,\beta_s$ 两两不同, 我们的目的是找到 $r \in E$ 使得 $E = F(r)$. 这可以在 $\alpha + x \beta,x \in F$ 中寻找. 由 $F$ 无限, 存在 $c \in F$ 使 $\alpha + c\beta \ne \alpha_i + c\beta_j, \forall i = 1,2,\cdots , r,j = 2,\cdots ,s$. 记 $r = \alpha + c\beta$, 有 $r \in E$, 从而 $F(r) \subseteq E$. $f(r - cx) \in F(r)[x]$ 和 $g(x)$ 有公共根 $\beta$. 由 $c$ 的取法知它们只有唯一的公共根, 于是它们的最大公因子就是 $x - \beta$. 这说明 $\beta \in F(r)$, 继而 $\alpha = r - c\beta \in F(r)$. 故 $E \subseteq F(r)$, 从而 $E = F(r)$.
+<p align="right">$\blacksquare$</p>
