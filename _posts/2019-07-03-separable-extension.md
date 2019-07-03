@@ -1,6 +1,6 @@
 ---
 title: 可分扩张
-tags: math
+tags: Math
 header:
     theme: dark
     background: "#660874"
