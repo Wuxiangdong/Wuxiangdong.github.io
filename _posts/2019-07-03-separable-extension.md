@@ -2,7 +2,6 @@
 title: 可分扩张
 tags: Math
 ---
-<!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -16,7 +15,6 @@ tags: Math
 });
 </script>
 <script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
--->
 <!-- vim-markdown-toc GFM -->
 
 * [定义](#定义)
@@ -120,4 +118,24 @@ $$
 
 $$[F(\alpha,\beta) : F(\beta)] = \deg f(x) = \deg g(x) = [F(\alpha,\beta^p) : F(\beta^p)]$$
 
+<p align="right">$\blacksquare$</p>
+
+现在可以得到:
+
+**定理** 设 $E/F$ 为代数扩张, $S$ 是 $E$ 的子集. 则 $F(S)/F$ 是可分扩张当且仅当 $S$ 中的元在 $F$ 上都是可分的.
+{:.info}
+
+**证明** 若 $F(S)/F$ 是可分扩张, 由 $S \subseteq F(S)$, $S$ 中的每一元必在 $F$ 上可分.  
+若 $S$ 中的元在 $F$ 上均可分, 设 $\alpha \in F(S)$, 存在 $u_1,u_2,\cdots ,u_m \in S$, 使 $\alpha \in F(u_1,\cdots ,u_m)$. $u_m$ 在 $F(u_1,\cdots ,u_{m-1})$ 上可分, $\alpha$ 在 $F(u_1,\cdots ,u_{m-1})(u_m)$ 上可分, 故 $\alpha$ 在 $F(u_1,\cdots ,u_{m-1})$ 上可分. 重复这个步骤, 最后可以得到 $\alpha$ 在 $F$ 上可分.
+<p align="right">$\blacksquare$</p>
+
+**推论** (1) 若 $\alpha,\beta$ 在 $F$ 上可分, 则 $\alpha \pm \beta$,$\alpha\beta$,$\frac{\alpha}{\beta}(\beta \ne 0)$ 在 $F$ 上均可分.  
+(2) $F$ 上可分多项式在 $F$ 中的分裂域在 $F$ 上可分.
+{:.info}
+
+**定理** 若 $E/K$ 和 $K/F$ 均为可分扩张, 则 $E/F$ 也为可分扩张. 反之亦然.
+{:.info}
+
+**证明** 若 $E/K$,$K/F$ 均为可分扩张, 设 $\alpha \in E$, 则 $\alpha$ 在 $K$ 上代数. 设 $\alpha$ 在 $K$ 上的极小多项式为 $f(x) = a_0 + \cdots + a_{n-1}x^{n-1} + x^n$, 则 $\alpha$ 在 $F(a_0,\cdots ,a_{n-1})$ 上可分. 由 $K/F$ 为可分扩张, 知 $a_0,\cdots ,a_{n-1}$ 在 $F$ 上均可分, 特别地, $a_{n-1}$ 在 $F(a_0,\cdots ,a_{n-2})$ 中可分, 于是 $\alpha$ 在 $F(a_0,\cdots ,a_{n-2})$ 上可分. 重复这个步骤, 最后可以得到 $\alpha$ 在 $F$ 上可分.  
+反之, 设 $E/F$ 为可分扩张, 则因 $K \subseteq E$ 得 $K/F$ 为可分扩张. 任意 $\alpha \in E$, 记 $\alpha$ 在 $K$ 上的极小多项式为 $f(x)$, 在 $F$ 上的极小多项式为 $g(x)$, 则 $f(x) \mid g(x)$. $g(x)$ 没有重根, 从而 $f(x)$ 也没有重根, 即 $\alpha$ 在 $K$ 上可分, 于是 $E/K$ 为可分扩张.
 <p align="right">$\blacksquare$</p>
