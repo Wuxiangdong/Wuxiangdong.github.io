@@ -1,4 +1,4 @@
-a---
+---
 title: 可分扩张
 tags: Math
 ---
