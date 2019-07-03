@@ -2,20 +2,34 @@
 title: 可分扩张
 tags: math
 ---
-# 定义
-设 $$E/F$$ 是代数扩张, $$a \in E$$. 如果 $$a$$ 在 $$F$$ 上的极小多项式无重根, 则称 $$a$$ 是 $$F$$ 上的**可分元**, 或称 $$a$$ 在 $$F$$ 上**可分**. 如果 $$E$$ 中任一元素在 $$F$$ 上均可分, 则称 $$E$$ 是 $$F$$ 的**可分扩张**, 否则称为**不可分扩张**.
-## 例子
-例如, $$\mathbb{Q}$$ 上不可约多项式均无重根, 从而任一代数扩张 $$E/\mathbb{Q}$$ 均为可分扩张.
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
+  extensions: ["MathMenu.js", "MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    equationNumbers: {autoNumber: "AMS"}
+  }
+});
+</script>
+<script type="text/javascript" src="/usr/share/mathjax/MathJax.js"></script></head>
 
-例如, 记 $$F$$ 是特征为 $$p$$ 的域, 当 $$x^p - a$$ 的根 $$b \notin F$$ 时, $$x^p-a$$ 是 $$F$$ 上不可约多项式且有重根. 这是因为: 设 $$E$$ 是 $$x^p-a$$ 在 $$F$$ 上的分裂域, $$b \in E$$. 于是在 $$E[x]$$ 中 $$x^p-a = (x-b)^p$$ ($$E$$ 特征为 $$p$$). 若
+# 定义
+设 $E/F$ 是代数扩张, $a \in E$. 如果 $a$ 在 $F$ 上的极小多项式无重根, 则称 $a$ 是 $F$ 上的**可分元**, 或称 $a$ 在 $F$ 上**可分**. 如果 $E$ 中任一元素在 $F$ 上均可分, 则称 $E$ 是 $F$ 的**可分扩张**, 否则称为**不可分扩张**.
+## 例子
+例如, $\mathbb{Q}$ 上不可约多项式均无重根, 从而任一代数扩张 $E/\mathbb{Q}$ 均为可分扩张.
+
+例如, 记 $F$ 是特征为 $p$ 的域, $p$ 为素数.  当 $x^p - a$ 的根 $b \notin F$ 时, $x^p-a$ 是 $F$ 上不可约多项式且有重根. 这是因为: 设 $E$ 是 $x^p-a$ 在 $F$ 上的分裂域, $b \in E$. 于是在 $E[x]$ 中 $x^p-a = (x-b)^p$ ($E$ 特征为 $p$). 若
 
 $$x^p - a = f(x)g(x), f,g \in F[x], \deg f \ge 1,\deg g \ge 1$$,
 
-则 $$f(x) = (x-b)^k, 1 \le k \le p-1$$, 有 $$(k,p) = 1$$. 存在整数 $$u,v$$ 使 $uk + vp = 1$. 由 $$f(x) \in F[x]$$, $$f(x)$$ 的常数项 $$(-b)^k \in F$$, 从而 $$b^k \in F$$. 结合 $$b^p = a \in F$$ 知 $$b = b^{uk + vp} \in F$$. 矛盾.
+则 $f(x) = (x-b)^k, 1 \le k \le p-1$, 有 $(k,p) = 1$. 存在整数 $u,v$ 使 $uk + vp = 1$. 由 $f(x) \in F[x]$, $f(x)$ 的常数项 $(-b)^k \in F$, 从而 $b^k \in F$. 结合 $b^p = a \in F$ 知 $b = b^{uk + vp} \in F$. 矛盾.
 
-于是 $$x^p - a$$ 在 $$F[x]$$ 上不可约. 它的形式微商为 $$px^{p-1} = 0$$, $$(x^p - a,0) \ne 1$$, 从而它有重根.
+于是 $x^p - a$ 在 $F[x]$ 上不可约. 它的形式微商为 $px^{p-1} = 0$, $(x^p - a,0) \ne 1$, 从而它有重根.
 
-现在, 设 $$t$$ 是 $$F$$ 上的超越元, 记 $$E = F(t)$$, $$K = F\left(t^{\frac{1}{p}}\right)$$, 则扩张 $$K/E$$ 是代数扩张, 但不是可分扩张.
+现在, 设 $t$ 是 $F$ 上的超越元, 记 $E = F(t)$, $K = F\left(t^{\frac{1}{p}}\right)$, 则扩张 $K/E$ 是代数扩张, 但不是可分扩张.
 
 ~~这说明什么呢?~~
 

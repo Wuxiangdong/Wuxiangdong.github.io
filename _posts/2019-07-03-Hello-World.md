@@ -1,11 +1,10 @@
 ---
 title: Hello World!
 tags: test
+header:
+  theme: dark
+  background: "#24292e"
 ---
-<div class="hero hero--dark" style="background-color: #24292e;">
-  <div class="hero__content">
-  </div>
-</div>
 # Hello World!
 ## Markdown
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
