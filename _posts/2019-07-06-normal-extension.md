@@ -24,7 +24,7 @@ $\sigma$ 是单射, 说明 $\sigma$ 可以看成 $\Sigma$ 的置换. 于是
 
 $$\sigma(E) = \sigma(F(\Sigma)) = F(\sigma(\Sigma)) = F(\Sigma) = E.$$
 
-($\sigma(F(\Sigma)) = F(\sigma(\Sigma))$ 的理由是: $\sigma(F(σ))$ 包含 $\sigma(\Sigma)$ 和 $F$, 故 $F(\sigma{(\Sigma)}) \subseteq \sigma(F(\Sigma))$. 同理 $\sigma^{-1}(F(\sigma(\Sigma))) \supseteq F(\Sigma)$, 从而 $F(\sigma(\Sigma)) \supseteq \sigma(F(\Sigma))$. 故 $F(\sigma(\Sigma)) = \sigma(F(\Sigma))$.)
+( $\sigma(F(\Sigma)) = F(\sigma(\Sigma))$ 的理由是: $\sigma(F(\Sigma))$ 包含 $\sigma(\Sigma)$ 和 $F$, 故 $F(\sigma{(\Sigma)}) \subseteq \sigma(F(\Sigma))$. 同理 $\sigma^{-1}(F(\sigma(\Sigma))) \supseteq F(\Sigma)$, 从而 $F(\sigma(\Sigma)) \supseteq \sigma(F(\Sigma))$. 故 $F(\sigma(\Sigma)) = \sigma(F(\Sigma))$.)
 <p align="right">$\blacksquare$</p>
 
 **定理** 设域扩张 $E/F$, 则 $E/F$ 是有限正规扩张当且仅当 $E$ 是 $F$ 上某一多项式在 $F$ 上的分裂域.
