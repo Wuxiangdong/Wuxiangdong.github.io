@@ -14,6 +14,7 @@ tags: Math, Algebra
 
 ## 正规扩张的刻画
 **引理** 设域扩张 $K/E$, $E/F$, $E$ 是 $F$ 上某一多项式在 $F$ 上的分裂域, 则任意 $F$-嵌入 $\sigma: E \rightarrow K$ 都有 $\sigma(E) = E$.
+{:.info}
 
 **证明** 设 $E$ 是首一不可约多项式 $f(x) \in F[x]$ 在 $F$ 上的分裂域, $f(x)$ 的根为 $$\Sigma = \{ u_1,u_2,\cdots ,u_n \}$$. 则 $E = F(\Sigma)$. 由于 $f(x) \in F[x]$, 有
 
