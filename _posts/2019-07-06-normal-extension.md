@@ -1,6 +1,6 @@
 ---
 title: 正规扩张
-tags: Math, Algebra
+tags: Math Algebra 伽罗瓦理论
 ---
 
 # 正规扩张
