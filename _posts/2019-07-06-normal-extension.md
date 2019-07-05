@@ -12,7 +12,7 @@ tags: Math, Algebra
 {:.success}
 <!--more-->
 
-## 正规扩张的刻画
+## 有限正规扩张的刻画
 **引理** 设域扩张 $K/E$, $E/F$, $E$ 是 $F$ 上某一多项式在 $F$ 上的分裂域, 则任意 $F$-嵌入 $\sigma: E \rightarrow K$ 都有 $\sigma(E) = E$.
 {:.info}
 
