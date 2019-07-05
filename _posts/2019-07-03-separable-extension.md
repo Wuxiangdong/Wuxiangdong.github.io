@@ -1,6 +1,6 @@
 ---
 title: 可分扩张
-tags: Math
+tags: Math Algebra 伽罗瓦理论
 ---
 <!--
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
