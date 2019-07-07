@@ -1,10 +1,10 @@
 ---
 title: 正规扩张
-tags: Math, Algebra
+tags: Math Algebra 伽罗瓦理论
 ---
 
 # 正规扩张
-设代数扩张 $E/F$. 如果 $E$ 中任一元 $u$ 在 $F$ 上的极小多项式在 $E[x]$ 中分解为一次因子的乘积, 则称 $E/F$ 为 **正规扩张**.即在 $E$ 中有根的 $F$ 上的不可约多项式的根均在 $E$ 中.
+设代数扩张 $E/F$. 如果 $E$ 中任一元 $u$ 在 $F$ 上的极小多项式在 $E[x]$ 中分解为一次因子的乘积, 则称 $E/F$ 为 **正规扩张**.这等价于在 $E$ 中有根的 $F$ 上的不可约多项式的根均在 $E$ 中.
 {:.success}
 
 如果 $E/F$ 既是可分扩张也是正规扩张, 则称 $E/F$ 是 **伽罗瓦扩张**.  
@@ -24,7 +24,7 @@ $\sigma$ 是单射, 说明 $\sigma$ 可以看成 $\Sigma$ 的置换. 于是
 
 $$\sigma(E) = \sigma(F(\Sigma)) = F(\sigma(\Sigma)) = F(\Sigma) = E.$$
 
-($\sigma(F(\Sigma)) = F(\sigma(\Sigma))$ 的理由是: $\sigma(F(σ))$ 包含 $\sigma(\Sigma)$ 和 $F$, 故 $F(\sigma{(\Sigma)}) \subseteq \sigma(F(\Sigma))$. 同理 $\sigma^{-1}(F(\sigma(\Sigma))) \supseteq F(\Sigma)$, 从而 $F(\sigma(\Sigma)) \supseteq \sigma(F(\Sigma))$. 故 $F(\sigma(\Sigma)) = \sigma(F(\Sigma))$.)
+( $\sigma(F(\Sigma)) = F(\sigma(\Sigma))$ 的理由是: $\sigma(F(\Sigma))$ 包含 $\sigma(\Sigma)$ 和 $F$, 故 $F(\sigma{(\Sigma)}) \subseteq \sigma(F(\Sigma))$. 同理 $\sigma^{-1}(F(\sigma(\Sigma))) \supseteq F(\Sigma)$, 从而 $F(\sigma(\Sigma)) \supseteq \sigma(F(\Sigma))$. 故 $F(\sigma(\Sigma)) = \sigma(F(\Sigma))$.)
 <p align="right">$\blacksquare$</p>
 
 **定理** 设域扩张 $E/F$, 则 $E/F$ 是有限正规扩张当且仅当 $E$ 是 $F$ 上某一多项式在 $F$ 上的分裂域.
