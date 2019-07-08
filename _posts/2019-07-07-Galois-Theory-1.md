@@ -62,7 +62,7 @@ $$
 
 群 $H$ 到域 $K$ 非零元组成的乘法群 $$K^*$$ 的同态称为群 $H$ 的 $K$-**线性特征标**.
 
-**引理** (**戴德金无关性原理 **) 设 $\chi_1,\cdots , \chi_n$ 是群 $H$ 的 $K$-线性特征标, 则 $\chi_1,\cdots ,\chi_n$ 在 $K$ 上线性无关.
+**引理** (**戴德金无关性引理**) 设 $\chi_1,\cdots , \chi_n$ 是群 $H$ 两两不同的 $K$-线性特征标, 则 $\chi_1,\cdots ,\chi_n$ 在 $K$ 上线性无关.
 {:.info}
 
 **证明** (反证) 若不然, 存在不全为零的元素 $c_1,c_2,\cdots ,c_n \in K$ 使得 $\sum_{1 \le i \le n}c_i\chi_i(g) = 0,\forall g \in H$. 取其中非零元个数最少的 $c_1,\cdots ,c_n$. 不妨设 $c_1,c_2, \cdots ,c_t \ne 0$ 而 $c_{t+1},\cdots ,c_n = 0$. ($t$ 必然大于 $1$). $\chi_1 \ne \chi_2$, 故存在 $h \in H$ 使 $\chi_1(h) \ne \chi_2(h)$. 将
