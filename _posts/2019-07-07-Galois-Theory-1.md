@@ -26,7 +26,7 @@ $(\mathrm{ii})$ (作用 $2$ 次变大) 对于 $M \in \Omega$, 有 $M \subseteq \
 $(\mathrm {iii})$ (作用 $3$ 次等于作用 $1$ 次) 对于 $M \in \Omega$, $H \in \Gamma$, 有  
 $\mathrm{Gal}(E/\mathrm{Inv}(\mathrm{Gal}(E/M))) = \mathrm{Gal}(E/M)$;$\mathrm{Inv}(\mathrm{Gal}(E/\mathrm{Inv}(H))) = \mathrm{Inv}(H)$.
 {:.info}
-
+## 阿廷引理和戴德金无关性引理
 **引理** (**阿廷引理**) 设 $Q$ 是 $\mathrm{Aut}(K)$ 的有限子群. 则有 $$[K :\mathrm{Inv}(Q)] \le \mid Q \mid$$, 其中 $$\mathrm{Inv}(Q) = \{a \in K \mid \sigma(a) = a, \forall \sigma \in Q\}$$.
 {:.info}
 
@@ -80,6 +80,8 @@ $$
 相减得到 $\sum_{1\le i \le n}c_i(\chi_1(h) - \chi_i(h))\chi_i(g) = 0,\forall g \in H$. 其中 $c_2(\chi_1(h) - \chi_2(h)) \ne 0$, 而 $c_1(\chi_1(h) - \chi_1(h)) = 0$. 这与 $t$ 的最小性矛盾!
 <p align="right">$\blacksquare$</p>
 
+用戴德金无关性引理, 我们可以给出伽罗瓦群的上界.
+
 **推论** 设 $E/F$ 是域的有限扩张, 则 $\mid \mathrm{Gal}(E/F)\mid \le [E:F]$.
 {:.info }
 
@@ -99,8 +101,36 @@ $$
 的行向量必然 $E$-线性相关, 即存在不全为零的元素 $c_1,c_2,\cdots,c_m \in E$ 使 $\sum_{1 \le i\le m}c_i\sigma_i(a_j) = 0,\forall 1 \le j \le n$. 任意 $x \in E$, 设 $x = k_1a_1 + \cdots + k_na_n$, $k_1,\cdots,k_n \in F$. 则
 
 $$
-    \sum_{i=1}^{m}c_i\sigma_i(x) = \sum_{i=1}^{m}\sum_{j=1}^{n}c_i\sigma_i(k_ja_j) = \sum_{j=1}^{n}\sigma(k_j)\sum_{i=1}^{m}c_i\sigma_i(a_j) = 0
+    \sum_{i=1}^{m}c_i\sigma_i(x) = \sum_{i=1}^{m}\sum_{j=1}^{n}c_i\sigma_i(k_ja_j) = \sum_{j=1}^{n}k_j\sum_{i=1}^{m}c_i\sigma_i(a_j) = 0
 $$
 
 这说明 $\sigma_1,\sigma_2,\cdots ,\sigma_m$ $E$-线性相关. 但是 $\sigma_1,\cdots ,\sigma_m$ 是 $$E^*$$ 两两不同的 $E$-线性特征标, 这与戴德金无关性引理矛盾!
 <p align="right">$\blacksquare$</p>
+
+**引理** $E/F$ 是有限伽罗瓦扩张, $[E:F] = n$, $$\mathrm{Gal}(E/F) = \{\sigma_1,\sigma_2,\cdots ,\sigma_n\}$$, 则 $p_1,p_2,\cdots p_n$ 是 $E$ 的一组 $F$-基当且仅当行列式 $\det{(\sigma_j(p_i))_{1 \le j,i \le n}} \ne 0$.
+{:.info}
+
+**证明** $\Rightarrow$ 假若 $\det(\sigma_j(p_i)) = 0$, 则矩阵
+
+$$
+\begin{pmatrix}
+\sigma_1(p_1) & \cdots & \sigma_1(p_n) \\
+\vdots & \ddots & \vdots \\
+\sigma_n(p_1) & \cdots & \sigma_n(p_n)
+\end{pmatrix}
+$$
+
+的行向量 $E$-线性相关, 存在 $c_1, c_2,\cdots ,c_n \in E$ 使 $\sum_{1 \le i \le n} {c_i\sigma_i(p_j)} = 0$, $j = 1,2,\cdots, n$. 任意 $x \in E$, 记 $x = \sum_{1 \le j \le n}{k_jp_j}$, 其中 $k_1,\cdots,k_n \in F$, 则
+
+$$
+\sum_{i=1}^{n}{c_i\sigma_i(x)} = \sum_{i=1}^{n}\sum_{j=1}^{n}{c_i\sigma_i(k_jp_j)} = \sum_{j=1}^{n}k_j\sum_{i=1}^{n}c_i\sigma_i(p_j) = 0
+$$
+
+这说明 $\sigma_1,\cdots ,\sigma_n$ $E$-线性相关. 然而 $\sigma_1,\cdots ,\sigma_n$ 是 $$E^*$$ 的 $E$-线性特征标, 这与戴德金无关性引理矛盾.
+
+$\Leftarrow$ 假若 $p_1,\cdots ,p_n$ 不是 $E$ 的一组 $F$-基, 则它们 $F$-线性相关. 存在 $c_1,\cdots ,c_n \in F$ 使得 $\sum_{1 \le i \le n}{c_ip_i} = 0$. 两边用 $\sigma_j$ 作用得 $\sum_{1 \le i \le n}{c_i\sigma_j(p_i)} = 0$ ($j = 1,2,\cdots, n$). 这说明矩阵 $(\sigma_j(p_i))_{j,i}$ 的列向量线性相关, 这导致其行列式为零.
+
+## 正规基
+**定理** (**正规基**) 若 $E/F$ 是有限伽罗瓦扩张, 则存在 $a \in E$ 使 $$\{\sigma{(a)} \mid \sigma \in \mathrm{Gal}(E/F)\}$$ 是 $E$ 的一组 $F$-基.
+
+<!-- **证明** $E/F$ 是有限伽罗瓦扩张, 从而是单扩张. 取 $u \in E$ 使得 $E = F(u)$, 记 $u$ 在 $F$ 上的极小多项式为 $f(x)$ 并设 $f(x)$ 首一. 则 $f(x)$ 是 $F$ 上可分的不可约多项式. 记 $f(x)$ 的全部根为 $u_1 = u,u_2,\cdots ,u_n \in E$. 则 $[E:F] = \mid \mathrm{Gal}(E/F)\mid = n$. 对每个 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma$ 由 $\sigma(u_1)$ 唯一决定. 而 $\sigma(u_1)$ 必然是 $f(x)$ 的根. 不妨设 $$G= \mathrm{Gal}(E/F) = \{\sigma_1,\cdots,\sigma_n\}$$ 且 $\sigma_i(u_1) = u_i$, $1 \le i \le n$. -->
