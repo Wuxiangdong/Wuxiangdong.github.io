@@ -102,5 +102,5 @@ $$
     \sum_{i=1}^{m}c_i\sigma_i(x) = \sum_{i=1}^{m}\sum_{j=1}^{n}c_i\sigma_i(k_ja_j) = \sum_{j=1}^{n}\sigma(k_j)\sum_{i=1}^{m}c_i\sigma_i(a_j) = 0
 $$
 
-这说明 $\sigma_1,\sigma_2,\cdots ,\sigma_m$ $E$-线性相关. 但是 $\sigma_1,\cdots ,\sigma_m$ 是 $E*$ 两两不同的 $E$-线性特征标, 这与戴德金无关性引理矛盾!
+这说明 $\sigma_1,\sigma_2,\cdots ,\sigma_m$ $E$-线性相关. 但是 $\sigma_1,\cdots ,\sigma_m$ 是 $$E^*$$ 两两不同的 $E$-线性特征标, 这与戴德金无关性引理矛盾!
 <p align="right">$\blacksquare$</p>
