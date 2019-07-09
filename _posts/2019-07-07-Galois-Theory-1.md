@@ -43,7 +43,7 @@ $$
 \right.
 $$
 
-其必然有非零解, 取其中的一个非零解 $(u_1,u_2,\cdots ,u_n)$ 使其中非零元素最少, 不妨设 $u_1,u_2,\cdots ,u_t \ne 0$, $u_{t+1},\cdots , u_{n} = 0$. 不妨设 $u_1 = 1$. 下面证明 $u_1,u_2,\cdots ,u_n \in \mathrm{Inv}(Q)$, 从而由第一个方程知 $a_1,a_2,\cdots ,a_n$ 是 $\mathrm{Inv}(Q)$-线性相关的.
+其必然有非零解, 取其中的一个非零解 $(u_1,u_2,\cdots ,u_{n+1})$ 使其中非零元素最少, 不妨设 $u_1,u_2,\cdots ,u_t \ne 0$, $u_{t+1},\cdots , u_{n+1} = 0$. 不妨设 $u_1 = 1$. 下面证明 $u_1,u_2,\cdots ,u_{n+1} \in \mathrm{Inv}(Q)$, 从而由第一个方程知 $a_1,a_2,\cdots ,a_{n+1}$ 是 $\mathrm{Inv}(Q)$-线性相关的.
 
 否则, 若不然, 存在 $u_i$ 使得 $u_i \notin \mathrm{Inv}(Q)$. 不妨设 $u_2 \notin \mathrm{Inv}(Q)$, 存在 $ 2 \ge t \ge n$ 使 $f_t(u_2) \ne u_2$. 将上面的方程组两边用 $f_t$ 作用, 得
 
@@ -107,6 +107,43 @@ $$
 这说明 $\sigma_1,\sigma_2,\cdots ,\sigma_m$ $E$-线性相关. 但是 $\sigma_1,\cdots ,\sigma_m$ 是 $$E^*$$ 两两不同的 $E$-线性特征标, 这与戴德金无关性引理矛盾!
 <p align="right">$\blacksquare$</p>
 
+**定理** 设 $E/F$ 是域扩张, 则下述命题等价:  
+($\rm i$) $E/F$ 是有限伽罗瓦扩张;  
+($\rm ii$) $E$ 是 $F$ 上可分多项式在 $F$ 上的分裂域;  
+($\rm iii$) $E/F$ 是有限扩张且 $\mid \mathrm{Gal}(E/F)\mid = [E:F]$;  
+($\rm iv$) $G = \mathrm{Gal}(E/F)$ 是有限群且 $\mathrm{Inv}(\mathrm{Gal}(E/F)) = F$.
+{:.info}
+
+上述定理的四个等价条件可以认为分别是从“内部”, “外部”, “数量关系” 和 “内外部联系” 四个方面对有限伽罗瓦扩张的等价描述.
+
+**证明** 只证 $(\rm iii) \Rightarrow (\rm iv)$, $(\rm iv) \Rightarrow (\rm i)$.
+
+$(\rm iii) \Rightarrow (\rm iv)$: 由 $(\rm iii)$ 知 $ G =\mathrm{Gal}(E/F)$ 是有限群. 由定义有 $F \subseteq \mathrm{Inv}(\mathrm{Gal}(E/F))$. 我们有
+
+$$
+\begin{aligned}
+    [E : \mathrm{Inv}(\mathrm{Gal}(E/F))] &\le [E : F] = |\mathrm{Gal}(E/F)| \\
+    & = |\mathrm{Gal}(E/\mathrm{Inv}(\mathrm{Gal}(E/F)))| \\
+    &\le [E: \mathrm{Inv}(\mathrm{Gal}(E/F))].
+\end{aligned}    
+$$
+
+于是 $[E: \mathrm{Inv}(\mathrm{Gal}(E/F))] = [E : F]$. 因此 $F = \mathrm{Inv}(\mathrm{Gal}(E/F))$.
+
+$(\rm iv) \Rightarrow (\rm i)$: 有
+
+$$
+    [E:F] = [E: \mathrm{Inv}(\mathrm{Gal}(E/F))] \le | \mathrm{Gal}(E/F) | < \infty,
+$$
+
+于是 $E/F$ 是有限扩张. 任意 $u \in E$, 记 $u$ 在 $F$ 上的极小多项式为 $f(x)$, 令
+
+$$Gu = \{\sigma(u) \mid \sigma \in \mathrm{Gal}(E/F)\} = \{u_1 = u,u_2,\cdots ,u_t\}.$$
+
+令 $g(x) = \prod_{1 \le i\le t}(x-u_i)$, 任意 $\sigma \in G$, $\sigma(g(x)) = \prod_{1 \le i \le t}(x - \sigma(u_i))$. 其中 $\sigma(u_1),\cdots ,\sigma(u_t)$ 是 $u_1,\cdots ,u_t$ 的一个置换, 故 $\sigma(g(x)) = g(x)$, $\forall \sigma \in G$. 这导致 $g(x) \in \mathrm{Inv}(\mathrm{Gal}(E/F))[x] = F[x]$. $u_1,\cdots ,u_t$ 也是 $f(x)$ 的根, 从而 $g(x) \mid f(x)$. 于是 $g(x) = f(x)$. 这说明 $u$ 在 $F$ 上的极小多项式可分且在 $E$ 上分裂, 从而 $E/F$ 是有限伽罗瓦扩张.
+<p align="right">$\blacksquare$</p>
+
+## 正规基
 **引理** $E/F$ 是有限伽罗瓦扩张, $[E:F] = n$, $$\mathrm{Gal}(E/F) = \{\sigma_1,\sigma_2,\cdots ,\sigma_n\}$$, 则 $p_1,p_2,\cdots p_n$ 是 $E$ 的一组 $F$-基当且仅当行列式 $\det{(\sigma_j(p_i))_{1 \le j,i \le n}} \ne 0$.
 {:.info}
 
@@ -130,7 +167,7 @@ $$
 
 $\Leftarrow$ 假若 $p_1,\cdots ,p_n$ 不是 $E$ 的一组 $F$-基, 则它们 $F$-线性相关. 存在 $c_1,\cdots ,c_n \in F$ 使得 $\sum_{1 \le i \le n}{c_ip_i} = 0$. 两边用 $\sigma_j$ 作用得 $\sum_{1 \le i \le n}{c_i\sigma_j(p_i)} = 0$ ($j = 1,2,\cdots, n$). 这说明矩阵 $(\sigma_j(p_i))_{j,i}$ 的列向量线性相关, 这导致其行列式为零.
 
-## 正规基
 **定理** (**正规基**) 若 $E/F$ 是有限伽罗瓦扩张, 则存在 $a \in E$ 使 $$\{\sigma{(a)} \mid \sigma \in \mathrm{Gal}(E/F)\}$$ 是 $E$ 的一组 $F$-基.
+{:.info}
 
 <!-- **证明** $E/F$ 是有限伽罗瓦扩张, 从而是单扩张. 取 $u \in E$ 使得 $E = F(u)$, 记 $u$ 在 $F$ 上的极小多项式为 $f(x)$ 并设 $f(x)$ 首一. 则 $f(x)$ 是 $F$ 上可分的不可约多项式. 记 $f(x)$ 的全部根为 $u_1 = u,u_2,\cdots ,u_n \in E$. 则 $[E:F] = \mid \mathrm{Gal}(E/F)\mid = n$. 对每个 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma$ 由 $\sigma(u_1)$ 唯一决定. 而 $\sigma(u_1)$ 必然是 $f(x)$ 的根. 不妨设 $$G= \mathrm{Gal}(E/F) = \{\sigma_1,\cdots,\sigma_n\}$$ 且 $\sigma_i(u_1) = u_i$, $1 \le i \le n$. -->
