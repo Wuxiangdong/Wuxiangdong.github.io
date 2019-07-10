@@ -121,11 +121,11 @@ $$
 $(\rm iii) \Rightarrow (\rm iv)$: 由 $(\rm iii)$ 知 $ G =\mathrm{Gal}(E/F)$ 是有限群. 由定义有 $F \subseteq \mathrm{Inv}(\mathrm{Gal}(E/F))$. 我们有
 
 $$
-\begin{aligned}
+\begin{split}
     [E : \mathrm{Inv}(\mathrm{Gal}(E/F))] &\le [E : F] = |\mathrm{Gal}(E/F)| \\
     & = |\mathrm{Gal}(E/\mathrm{Inv}(\mathrm{Gal}(E/F)))| \\
     &\le [E: \mathrm{Inv}(\mathrm{Gal}(E/F))].
-\end{aligned}    
+\end{split}    
 $$
 
 于是 $[E: \mathrm{Inv}(\mathrm{Gal}(E/F))] = [E : F]$. 因此 $F = \mathrm{Inv}(\mathrm{Gal}(E/F))$.
