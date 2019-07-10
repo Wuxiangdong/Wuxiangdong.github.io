@@ -170,4 +170,53 @@ $\Leftarrow$ 假若 $p_1,\cdots ,p_n$ 不是 $E$ 的一组 $F$-基, 则它们 $F
 **定理** (**正规基**) 若 $E/F$ 是有限伽罗瓦扩张, 则存在 $a \in E$ 使 $$\{\sigma{(a)} \mid \sigma \in \mathrm{Gal}(E/F)\}$$ 是 $E$ 的一组 $F$-基.
 {:.info}
 
-<!-- **证明** $E/F$ 是有限伽罗瓦扩张, 从而是单扩张. 取 $u \in E$ 使得 $E = F(u)$, 记 $u$ 在 $F$ 上的极小多项式为 $f(x)$ 并设 $f(x)$ 首一. 则 $f(x)$ 是 $F$ 上可分的不可约多项式. 记 $f(x)$ 的全部根为 $u_1 = u,u_2,\cdots ,u_n \in E$. 则 $[E:F] = \mid \mathrm{Gal}(E/F)\mid = n$. 对每个 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma$ 由 $\sigma(u_1)$ 唯一决定. 而 $\sigma(u_1)$ 必然是 $f(x)$ 的根. 不妨设 $$G= \mathrm{Gal}(E/F) = \{\sigma_1,\cdots,\sigma_n\}$$ 且 $\sigma_i(u_1) = u_i$, $1 \le i \le n$. -->
+**证明** 先证明 $F$ 是无限域的情况. $E/F$ 是有限伽罗瓦扩张, 从而是单扩张. 记 $E = F(u)$, $u$ 在 $F$ 上的极小多项式为 $f(x)$, 有 $f(x)$ 无重根. 记 $[E:F] = n$, $$G = \mathrm{Gal}(E/F) = \{\sigma_1,\cdots ,\sigma_n\}$$. 可知 $f(x)$  的根恰是 $$Gu = \{\sigma(u) \mid \sigma \in G\}$$, 且
+
+$$
+    f(x) = \prod_{t \in Gu}(x-t).
+$$
+
+记 $\sigma_{i_j} = \sigma_i\sigma_j$,$1 \le i,j \le n$. 并令 $u_{i_j} = \sigma_{i_j}(u)$. 则 $u_{1_j}, u_{2_j} \cdots ,u_{n_j}$ 和 $u_{i_1}, u_{i_2},\cdots ,u_{i_n}$ 均是 $Gu$ 的一个置换.
+
+令 $g(x) = \frac{f(x)}{(x-u)f'(u)} \in E[x]$, $g_{i_j}(x) = \frac{f(x)}{(x-u_{i_j})f'(u_{i_j})} \in E[x]$. 则当 $\alpha \in F$ 时, $g_{i_j}(\alpha) = \sigma_{i_j}(g(\alpha))$. 且 $g_{i_j}(u_{i_j}) = 1$, $g_{i_j}(u_{k_t}) = 0$, $\forall u_{i_j} \ne u_{k_t}$.
+
+考虑行列式
+
+$$
+d(x) =
+\left|
+\begin{matrix}
+g_{1_1}(x) & g_{1_2}(x) & \cdots & g_{1_n}(x) \\
+g_{2_1}(x) & g_{2_2}(x) & \cdots & g_{2_n}(x) \\
+\vdots & \vdots & \ddots & \vdots \\
+g_{n_1}(x) & g_{n_2}(x) & \cdots & g_{n_n}(x)
+\end{matrix}
+\right|
+$$
+
+有 $d(x) \in E[x]$. 且 $1 \le i,j \le n$ 时, $d(u_{i_j})$ 的每行, 每列有且仅有一个元素为 $1$, 其余元素为 $0$. 这说明 $d(u_{i_j}) = \pm 1 \ne 0$, 从而 $d(x)$ 不是零多项式. $F$ 无限, 故存在 $a \in F$ 使 $d(a) \ne 0$. 带入行列式得到
+
+$$
+d(a) =
+\left|
+\begin{matrix}
+    \sigma_{1_1}(g(a)) & \cdots & \sigma_{1_n}(g(a)) \\
+    \vdots & \ddots & \vdots \\
+    \sigma_{n_1}(g(a)) & \cdots & \sigma_{n_n}(g(a))
+\end{matrix}
+\right|
+\ne 0;
+$$
+
+由引理知 $\sigma_1(g(a)),\sigma_2(g(a)),\cdots ,\sigma_n(g(a))$ 是 $E$ 在 $F$ 上的一组基.
+
+接下来考虑 $F$ 为有限域的情况. 设 $\mathrm{char} F = p$. 记 $F = F_q$ 是 $q$ 元域. $E/F$ 是 $n$ 次扩张, 则 $E$ 是 $q^n$ 元域. 由有限域的性质, $$E^*$$ 对乘法构成循环群. 记其一生成元为 $\alpha$. $\mathrm{Gal}(E/F)$ 是循环群, 其生成元为 $\sigma: a \mapsto a^{q}$. 我们有
+
+$$
+\begin{pmatrix}
+    \alpha & \alpha^q & \cdots & \alpha^{q^{n-2}} & \alpha^{q^{n-1}} \\
+    \alpha^q & \alpha^{q^2} & \cdots & \alpha^{q^{n-1}} & \alpha \\
+    \vdots & \vdots & \ddots & \vdots & \vdots \\
+    \alpha^{q^{n-1}} & \alpha & \cdots & \alpha^{q^{n-3}} & \alpha^{q^{n-2}}
+\end{pmatrix}
+$$
