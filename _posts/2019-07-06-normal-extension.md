@@ -52,13 +52,13 @@ $$\sigma(E) = \sigma(F(\Sigma)) = F(\sigma(\Sigma)) = F(\Sigma) = E.$$
 
 $\Rightarrow$: 设 $E /F$ 是有限正规扩张, 则 $E$ 是 $F$ 上某一多项式 $f(x)$ 在 $F$ 上的分裂域. 任意不可约多项式 $g(x) \in F[x]$, 设 $p(x),q(x)$ 是 $g(x)$ 在 $E[x]$ 上两个不可约因子. 记 $E$ 的一个代数闭包为 $\Omega$. 记 $\alpha,\beta$ 分别是 $p(x),q(x)$ 的一根. 则 $\alpha,\beta$ 在 $F$ 上的极小多项式都为 $f(x)$, 存在 $F$-同构 $\sigma: F(\alpha) \rightarrow F(\beta)$ 使 $\sigma(\alpha) = \beta$.
 
-$E(\alpha)$, $E(\beta)$ 分别可以看成 $f(x)$ 在 $F(\alpha),F(\beta)$ 上的分裂域. 从而 $\sigma$ 可以延拓为 $\sigma': E(\alpha) \rightarrow E(\beta)$ 使得 $\sigma'|_{F(\alpha)} = \sigma$, 从而 $\sigma'(\alpha) = \beta$. 由于 $E/F$ 是正规扩张, $\sigma'|_F = \mathrm{Id}$, 故 $\sigma'(E) = E$. 从而 $p_1(x) = \sigma'(p(x)) \in E[x]$. 我们有 $0 =\sigma'(p(\alpha)) = p_1(\beta)$ (因为 $\sigma'(\alpha)=\beta$). 故 $p_1(x)$ 是 $\beta$ 的零化多项式. 由 $p(x)$ 不可约而 $\sigma'$ 是同构, 有 $p_1(x)$ 也不可约. 故 $p_1(x) = q(x)$, 从而 $p(x),q(x)$ 有相同的次数.
+$E(\alpha)$, $E(\beta)$ 分别可以看成 $f(x)$ 在 $F(\alpha),F(\beta)$ 上的分裂域. 从而 $\sigma$ 可以延拓为 $\sigma': E(\alpha) \rightarrow E(\beta)$ 使得 $$\sigma'|_{F(\alpha)} = \sigma$$, 从而 $\sigma'(\alpha) = \beta$. 由于 $E/F$ 是正规扩张, $$\sigma'|_F = \mathrm{Id}$$, 故 $\sigma'(E) = E$. 从而 $p_1(x) = \sigma'(p(x)) \in E[x]$. 我们有 $0 =\sigma'(p(\alpha)) = p_1(\beta)$ (因为 $\sigma'(\alpha)=\beta$). 故 $p_1(x)$ 是 $\beta$ 的零化多项式. 由 $p(x)$ 不可约而 $\sigma'$ 是同构, 有 $p_1(x)$ 也不可约. 故 $p_1(x) = q(x)$, 从而 $p(x),q(x)$ 有相同的次数.
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $E /F$ 为有限正规扩张, $G = \mathrm{Gal}(E/F)$, $M$ 是 $E /F$ 的中间域. 则 $M /F$ 是正规扩张当且仅当 $\sigma(M) = M$,$\forall \sigma \in G$.
 {:.warning}
 
-**证明** $\Rightarrow$: 设 $M /F$ 是正规扩张, 则 $M$ 是 $F$ 上某一多项式 $f(x)$ 在 $F$ 上的分裂域. $\forall \sigma \in G$, 有 $\sigma|_F = \mathrm{Id}$, 从而 $\sigma(M) = M$.
+**证明** $\Rightarrow$: 设 $M /F$ 是正规扩张, 则 $M$ 是 $F$ 上某一多项式 $f(x)$ 在 $F$ 上的分裂域. $\forall \sigma \in G$, 有 $$\sigma|_F = \mathrm{Id}$$, 从而 $\sigma(M) = M$.
 
-$\Leftarrow$: 这即是说 $\forall \sigma \in G$, $a \in M$, $\sigma(a) \in M$. 记 $f(x)$ 是 $F$ 上不可约多项式且在 $M$ 上有根 $\alpha$, 从而在 $E$ 上有根. $E /F$ 是正规扩张. 故 $f(x)$ 的所有根均在 $E$ 中. 任意 $f(x)$ 的其他根 $\beta$, 有同构 $\sigma: F(\alpha) \rightarrow F(\beta)$ 使得 $\sigma|_F = \mathrm{Id}$, $\sigma(\alpha) = \beta$. $E$ 可看成是 $F$ 上一多项式 $g(x)$ 在 $F$ 上的分裂域, $\alpha,\beta \in E$, 于是 $E$ 也是 $f(x)$ 在 $F(\alpha),F(\beta)$ 上的分裂域. $\sigma$ 可延拓为 $\pi: E\rightarrow E$ 使得 $\pi|_F = \mathrm{Id}$. 故 $\pi \in G$. $\alpha \in M$, 故 $\beta = \pi(\alpha) \in M$. 故 $f(x)$ 的所有根均在 $M$ 中, 从而 $M /F$ 是正规扩张.
+$\Leftarrow$: 这即是说 $\forall \sigma \in G$, $a \in M$, $\sigma(a) \in M$. 记 $f(x)$ 是 $F$ 上不可约多项式且在 $M$ 上有根 $\alpha$, 从而在 $E$ 上有根. $E /F$ 是正规扩张. 故 $f(x)$ 的所有根均在 $E$ 中. 任意 $f(x)$ 的其他根 $\beta$, 有同构 $\sigma: F(\alpha) \rightarrow F(\beta)$ 使得 $$\sigma|_F = \mathrm{Id}$$, $\sigma(\alpha) = \beta$. $E$ 可看成是 $F$ 上一多项式 $g(x)$ 在 $F$ 上的分裂域, $\alpha,\beta \in E$, 于是 $E$ 也是 $f(x)$ 在 $F(\alpha),F(\beta)$ 上的分裂域. $\sigma$ 可延拓为 $\pi: E\rightarrow E$ 使得 $$\pi|_F = \mathrm{Id}$$. 故 $\pi \in G$. $\alpha \in M$, 故 $\beta = \pi(\alpha) \in M$. 故 $f(x)$ 的所有根均在 $M$ 中, 从而 $M /F$ 是正规扩张.
 <p align="right">$\blacksquare$</p>
