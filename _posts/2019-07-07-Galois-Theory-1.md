@@ -209,7 +209,7 @@ d(a) =
 $$
 
 由引理知 $\sigma_1(g(a)),\sigma_2(g(a)),\cdots ,\sigma_n(g(a))$ 是 $E$ 在 $F$ 上的一组基.
-
+<!--
 接下来考虑 $F$ 为有限域的情况. 设 $\mathrm{char} F = p$. 记 $F = F_q$ 是 $q$ 元域. $E/F$ 是 $n$ 次扩张, 则 $E$ 是 $q^n$ 元域. 由有限域的性质, $$E^*$$ 对乘法构成循环群. 记其一生成元为 $\alpha$. $\mathrm{Gal}(E/F)$ 是循环群, 其生成元为 $\sigma: a \mapsto a^{q}$. 我们有
 
 $$
@@ -220,3 +220,6 @@ $$
     \alpha^{q^{n-1}} & \alpha & \cdots & \alpha^{q^{n-3}} & \alpha^{q^{n-2}}
 \end{pmatrix}
 $$
+
+-->
+
