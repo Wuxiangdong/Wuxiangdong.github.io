@@ -3,6 +3,12 @@ title: 关于群的一些东西
 tags: math Algebra 群论
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [$\bm 1$](#bm-1)
+
+<!-- vim-markdown-toc -->
+
 ## $\bm 1$
 有限 $p$-群是指阶数为 $p$ 的幂的有限群, 其中 $p$ 是一个素数.
 
