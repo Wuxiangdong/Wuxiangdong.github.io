@@ -5,18 +5,18 @@ tags: math Algebra 群论
 
 <!-- vim-markdown-toc GFM -->
 
-* [$\bm 1$](#bm-1)
+* [$\bf 1$](#bf-1)
 
 <!-- vim-markdown-toc -->
 
-## $\bm 1$
+## $\bf 1$
 有限 $p$-群是指阶数为 $p$ 的幂的有限群, 其中 $p$ 是一个素数.
 
 $p$-群在集合上的置换作用可产生一个轨道公式, 在模 $p$ 的意义下这些公式可以给出一些性质.
 
 **定理** 有限 $p$-群必有非平凡的中心.
 {:.info}
-
+<!--more-->
 **证明** 设 $G$ 是有限 $p$-群, 将 $G$ 共轭作用到 $G$ 本身:
 
 $$
@@ -43,7 +43,7 @@ $$
 **例** 令 $P_1,P_2,\cdots ,P_N$ 是有限群 $G$ 的全部 Sylow-$p$ 子群. 如果对任意 $i \ne j$, 都有 $\mid P_i : P_i \cap P_j\mid \ge p^r$, 则 $N \equiv 1\pmod{p}$.
 {:.warning}
 
-**证明** 记 $$\Sigma = \{P_1,P_2,\cdots , P_N\}$$, 将 $P_1$ 共轭作用在 $\Sigma$ 上. 每个 $P_j \in \Sigma$ 的稳定子群为 $P_1 \cap N_G(P_j)$. $N_G(P_j)$ 的所有 $p$的幂阶元均在 $P_j$ 中, 从而 $P_1 \cap (N_G(P_j) - P_j) = \empty$. 于是当 $j \ne 1$ 时
+**证明** 记 $$\Sigma = \{P_1,P_2,\cdots , P_N\}$$, 将 $P_1$ 共轭作用在 $\Sigma$ 上. 每个 $P_j \in \Sigma$ 的稳定子群为 $P_1 \cap N_G(P_j)$. $N_G(P_j)$ 的所有 $p$的幂阶元均在 $P_j$ 中, 从而 $P_1 \cap (N_G(P_j) - P_j) = \varnothing$. 于是当 $j \ne 1$ 时
 
 $$
     P_1\cap N_G(P_j) = P_1\cap (P_j \cup (N_G(P_j)-P_j)) = P_1\cap P_j.
