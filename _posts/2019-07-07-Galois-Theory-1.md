@@ -209,17 +209,20 @@ d(a) =
 $$
 
 由引理知 $\sigma_1(g(a)),\sigma_2(g(a)),\cdots ,\sigma_n(g(a))$ 是 $E$ 在 $F$ 上的一组基.
-<!--
-接下来考虑 $F$ 为有限域的情况. 设 $\mathrm{char} F = p$. 记 $F = F_q$ 是 $q$ 元域. $E/F$ 是 $n$ 次扩张, 则 $E$ 是 $q^n$ 元域. 由有限域的性质, $$E^*$$ 对乘法构成循环群. 记其一生成元为 $\alpha$. $\mathrm{Gal}(E/F)$ 是循环群, 其生成元为 $\sigma: a \mapsto a^{q}$. 我们有
+
+接下来考虑 $F$ 为有限域的情况, 首先引入一条线性代数的结论:
+
+**引理** 设 $V$ 是域 $K$ 上的线性空间, $\mathscr{A}$ 是 $V$ 上的线性变换. 设 $\mathscr{A}$ 的最小多项式为 $d(x)$, 则存在 $\alpha \in V$ 使得 $\alpha$ 关于 $\mathscr{A}$ 的最小多项式为 $d(x)$.
+{:.info}
+
+设 $E/F$ 是有限伽罗瓦扩张, $F$ 为有限域. 则 $E$ 也为有限域. 记 $\mid F\mid = q$, $q$ 是素数的幂, $[E:F] = n$, 则 $\mid E \mid = q^n$. 由有限域的性质知 $\mathrm{Gal}(E/F)$ 是循环群, 其生成元可以取 $\sigma: a \mapsto a^q$. $E$ 可以看成是 $F$ 上的线性空间, $\sigma$ 可以看成是 $E$ 上的线性变换. 其最小多项式为 $x^n-1$. (否则, 若存在不全为零的元素 $c_0,c_1,\cdots ,c_{t-1} \in F$ 使得 $\sigma^t(\alpha) + \cdots + c_1\sigma_1{(\alpha)} + c_0 = 0$, $\forall \alpha \in E$, 其中 $t < n$. 但是多项式 $x^{p^t} + c_{t-1}x^{p^{t-1}} + \cdots + c_0$ 在 $E$ 上最多有 $p^t$ 个根.) 于是存在 $a \in E$ 使得 $a$ 的最小多项式为 $x^n-1$, 从而 $a, \sigma{(a)} ,\cdots ,\sigma^{n-1}{(a)}$ 是 $F$-线性无关的. 于是 $a,\sigma(a),\cdots ,\sigma^{n-1}(a)$ 就是所求正规基.
+<p align="right">$\blacksquare$</p>
+
+**引理的证明** 记 $d(x) = p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x)$, 其中 $p_1(x),p_2(x),\cdots ,p_n(x)$ 是 $K[x]$ 上两两不同的不可约多项式, 有
 
 $$
-\begin{pmatrix}
-    \alpha & \alpha^q & \cdots & \alpha^{q^{n-2}} & \alpha^{q^{n-1}} \\
-    \alpha^q & \alpha^{q^2} & \cdots & \alpha^{q^{n-1}} & \alpha \\
-    \vdots & \vdots & \ddots & \vdots & \vdots \\
-    \alpha^{q^{n-1}} & \alpha & \cdots & \alpha^{q^{n-3}} & \alpha^{q^{n-2}}
-\end{pmatrix}
+    V = \ker{d(\mathscr{A})} = \ker{p_1^{k_1}(\mathscr{A})} \oplus \cdots \oplus \ker{p_n^{k_n}(\mathscr{A})}
 $$
 
--->
-
+对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的极小多项式刚好为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 在 的极小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
+<p align="right">$\blacksquare$</p>
