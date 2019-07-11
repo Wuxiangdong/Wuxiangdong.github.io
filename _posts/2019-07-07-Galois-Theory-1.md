@@ -232,5 +232,5 @@ $$
     V = \ker{d(\mathscr{A})} = \ker{p_1^{k_1}(\mathscr{A})} \oplus \cdots \oplus \ker{p_n^{k_n}(\mathscr{A})}.
 $$
 
-对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的最小多项式为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 在 的最小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
+对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的最小多项式为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 最小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
 <p align="right">$\blacksquare$</p>
