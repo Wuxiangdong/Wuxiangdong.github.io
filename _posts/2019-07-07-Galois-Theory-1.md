@@ -226,7 +226,7 @@ $$
 设 $E/F$ 是有限伽罗瓦扩张, $F$ 为有限域. 则 $E$ 也为有限域. 记 $\mid F\mid = q$, $q$ 是素数的幂, $[E:F] = n$, 则 $\mid E \mid = q^n$. 由有限域的性质知 $\mathrm{Gal}(E/F)$ 是循环群, 其生成元可以取 $\sigma: a \mapsto a^q$. $E$ 可以看成是 $F$ 上的线性空间, $\sigma$ 可以看成是 $E$ 上的线性变换. 其最小多项式为 $x^n-1$. (否则, 存在不全为零的元素 $c_0,c_1,\cdots ,c_{t-1} \in F$ 使得 $\sigma^t(\alpha) + \cdots + c_1\sigma_1{(\alpha)} + c_0 = 0$, $\forall \alpha \in E$, 且 $t < n$. 但是多项式 $x^{p^t} + c_{t-1}x^{p^{t-1}} + \cdots + c_0$ 在 $E$ 上最多有 $p^t$ 个根.) 于是存在 $a \in E$ 使得 $a$ 的最小多项式为 $x^n-1$, 从而 $a, \sigma{(a)} ,\cdots ,\sigma^{n-1}{(a)}$ 是 $F$-线性无关的. 于是 $a,\sigma(a),\cdots ,\sigma^{n-1}(a)$ 就是所求正规基.
 <p align="right">$\blacksquare$</p>
 
-**引理的证明** 记 $d(x) = p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x)$, 其中 $p_1(x),p_2(x),\cdots ,p_n(x)$ 是 $K[x]$ 上两两不同的不可约多项式, 有
+**引理的证明** 记 $d(x) = p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x)$, 其中 $p_1(x),p_2(x),\cdots ,p_n(x)$ 是 $K$ 上两两不同的不可约多项式, 有
 
 $$
     V = \ker{d(\mathscr{A})} = \ker{p_1^{k_1}(\mathscr{A})} \oplus \cdots \oplus \ker{p_n^{k_n}(\mathscr{A})}.
