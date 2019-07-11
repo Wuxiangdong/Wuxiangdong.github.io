@@ -40,7 +40,7 @@ $$
 现在假设 $\Delta \ne \Sigma$, 存在 $P \in \Sigma - \Delta$. 将 $P$ 共轭作用于 $\Delta$, 则 $\mid \Delta\mid \equiv 0 \pmod{p}$ (每个 $P$-轨道都是 $p$ 的幂且不为 $1$). 再取 $Q \in \Delta$, 将 $Q$ 共轭作用于 $\Delta$ 上, 可以得到 $Q \equiv 1 \pmod{p}$. 这两者不能同时发生, 只能是 $\Delta= \Sigma$, 从而 $G$ 在 $\Sigma$ 上的作用是传递的, $G$ 上的 Sylow-$p$ 子群彼此共轭.
 <p align="right">$\blacksquare$</p>
 
-**例** 令 $P_1,P_2,\cdots ,P_N$ 是有限群 $G$ 的全部 Sylow-$p$ 子群. 如果对任意 $i \ne j$, 都有 $\mid P_i : P_i \cap P_j\mid \ge p^r$, 则 $N \equiv 1\pmod{p}$.
+**例** 令 $P_1,P_2,\cdots ,P_N$ 是有限群 $G$ 的全部 Sylow-$p$ 子群. 如果对任意 $i \ne j$, 都有 $\mid P_i : P_i \cap P_j\mid \ge p^r$, 则 $N \equiv 1\pmod{p^r}$.
 {:.warning}
 
 **证明** 记 $$\Sigma = \{P_1,P_2,\cdots , P_N\}$$, 将 $P_1$ 共轭作用在 $\Sigma$ 上. 每个 $P_j \in \Sigma$ 的稳定子群为 $P_1 \cap N_G(P_j)$. $N_G(P_j)$ 的所有 $p$的幂阶元均在 $P_j$ 中, 从而 $P_1 \cap (N_G(P_j) - P_j) = \varnothing$. 于是当 $j \ne 1$ 时
