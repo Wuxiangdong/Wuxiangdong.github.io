@@ -176,7 +176,7 @@ $$
     f(x) = \prod_{t \in Gu}(x-t).
 $$
 
-记 $\sigma_{i_j} = \sigma_i\sigma_j$,$1 \le i,j \le n$. 并令 $u_{i_j} = \sigma_{i_j}(u)$. 则 $u_{1_j}, u_{2_j} \cdots ,u_{n_j}$ 和 $u_{i_1}, u_{i_2},\cdots ,u_{i_n}$ 均是 $Gu$ 的一个置换.
+记 $\sigma_{i_j} = \sigma_i\sigma_j$,$1 \le i,j \le n$. 并令 $u_{i_j} = \sigma_{i_j}(u)$. 则 $$u_{1_j}, u_{2_j} \cdots ,u_{n_j}$$ 和 $$u_{i_1}, u_{i_2},\cdots ,u_{i_n}$$ 均是 $Gu$ 的一个置换.
 
 令 $g(x) = \frac{f(x)}{(x-u)f'(u)} \in E[x]$, $g_{i_j}(x) = \frac{f(x)}{(x-u_{i_j})f'(u_{i_j})} \in E[x]$. 则当 $\alpha \in F$ 时, $g_{i_j}(\alpha) = \sigma_{i_j}(g(\alpha))$. 且 $g_{i_j}(u_{i_j}) = 1$, $g_{i_j}(u_{k_t}) = 0$, $\forall u_{i_j} \ne u_{k_t}$.
 
@@ -221,8 +221,8 @@ $$
 **引理的证明** 记 $d(x) = p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x)$, 其中 $p_1(x),p_2(x),\cdots ,p_n(x)$ 是 $K[x]$ 上两两不同的不可约多项式, 有
 
 $$
-    V = \ker{d(\mathscr{A})} = \ker{p_1^{k_1}(\mathscr{A})} \oplus \cdots \oplus \ker{p_n^{k_n}(\mathscr{A})}
+    V = \ker{d(\mathscr{A})} = \ker{p_1^{k_1}(\mathscr{A})} \oplus \cdots \oplus \ker{p_n^{k_n}(\mathscr{A})}.
 $$
 
-对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的极小多项式刚好为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 在 的极小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
+对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的最小多项式为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 在 的最小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
 <p align="right">$\blacksquare$</p>
