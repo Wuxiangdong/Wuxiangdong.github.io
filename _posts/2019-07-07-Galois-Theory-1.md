@@ -278,7 +278,16 @@ $$
 **定理** (**阿廷定理**) 记 $G$ 是域 $E$ 的自同构群的有限子群, $F=\mathrm{Inv}(G)$. 则 $E/F$ 是有限伽罗瓦扩张且 $\mathrm{Gal}(E/F) = G$.
 {:.info}
 
-**证明** $\mid \mathrm{Gal}(E/F) \mid \le [E : F] = [E : \mathrm{Inv}(G)] \le \mid G \mid$. 又 $G \subseteq \mathrm{Gal}(E/\mathrm{Inv(G)}) = \mathrm{Gal}(E/F)$, 有 $\mid G \mid \le \mid \mathrm{Gal}(E/F) \mid$. 故 $\mid G \mid = \mid\mathrm{Gal}(E/F)\mid = [E : F]$, 从而 $E/F$ 是有限伽罗瓦扩张., 且 $G = \mathrm{Gal}(E/F)$.
+**证明**
+有
+
+$$\mid \mathrm{Gal}(E/F) \mid \le [E : F] = [E : \mathrm{Inv}(G)] \le \mid G \mid.$$
+
+又 $G \subseteq \mathrm{Gal}(E/\mathrm{Inv(G)}) = \mathrm{Gal}(E/F)$, 有
+
+$$\mid G \mid \le \mid \mathrm{Gal}(E/F) \mid.$$
+
+故 $\mid G \mid = \mid\mathrm{Gal}(E/F)\mid = [E : F]$, 从而 $E/F$ 是有限伽罗瓦扩张, 且 $G = \mathrm{Gal}(E/F)$.
 <p align="right">$\blacksquare$</p>
 
 **推论** 设 $E/F$ 是 的有限扩张, 则 $\mid \mathrm{Gal}(E/F) \mid$ 整除 $[E:F]$.
@@ -294,6 +303,7 @@ $$
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $E/F$ 为域的有限扩张, $K/F$ 为域扩张. 则 $E$ 到 $K$ 的 $F$-嵌入的个数不超过 $[E:F]$.
+{:.warning}
 
 **证明** 记 $[E:F] = n$.若结论不正确, 记 $f_1,f_2,\cdot , f_{n+1}$ 是两两不同的 $E$ 到 $K$ 的 $F$-嵌入. 则由 $f_i(F) = F$ 知 $f_i$ 不是零同态. 设 $a_1,a_2,\cdots a_n$ 是 $E$ 的一组基, 考虑矩阵
 
@@ -317,6 +327,7 @@ $$
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $E$ 是 $F$ 的二次扩张且 $F$ 的特征不为 $2$. 则 $E/F$ 是伽罗瓦扩张, 且存在 $\alpha \in E$ 使得 $\alpha^2 \in F$, $E = F(\alpha)$. 由此说明复数域 $\mathbb{C}$ 没有 $2$ 次扩张.
+{:.warning}
 
 **证明** 取 $\alpha \in E - F$, 记 $\alpha$ 在 $F$ 上的极小多项式为 $f(x)$, 则 $\deg f(x) \le 2$ (否则 $[E:F] \ge [F(\alpha):F] > 2$). 由 $\alpha \notin F$ 知 $\deg f(x) \ne 1$, 只能是 $\deg f(x) = 2$. 设 $f(x) = x^2 + bx + c$. 若 $f(x)$ 有重根, 则 $b^2 = 4c$ ($F$ 的特征不为 $2$), 于是 $f(x) = (x+b/2)^2$ , 与 $f(x)$  不可约矛盾. 这说明 $f(x)$ 是可分多项式. 它的另一根 $\beta = -b - \alpha \in F(\alpha)$ (Vieta 定理), 说明 $F(\alpha)$ 是 $f(x)$ 在 $F$ 上的分裂域, 故 $F(\alpha)/F$ 是伽罗瓦扩张. $[F(\alpha) : F] = 2$ 且 $F(\alpha) \subseteq E$, 从而 $E = F(\alpha)$. 这说明 $E/F$ 是伽罗瓦扩张.
 
