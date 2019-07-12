@@ -53,7 +53,7 @@ $$
 
 其必然有非零解, 取其中的一个非零解 $(u_1,u_2,\cdots ,u_{n+1})$ 使其中非零元素最少, 不妨设 $u_1,u_2,\cdots ,u_t \ne 0$, $u_{t+1},\cdots , u_{n+1} = 0$. 不妨设 $u_1 = 1$. 下面证明 $u_1,u_2,\cdots ,u_{n+1} \in \mathrm{Inv}(Q)$, 从而由第一个方程知 $a_1,a_2,\cdots ,a_{n+1}$ 是 $\mathrm{Inv}(Q)$-线性相关的.
 
-否则, 若不然, 存在 $u_i$ 使得 $u_i \notin \mathrm{Inv}(Q)$. 不妨设 $u_2 \notin \mathrm{Inv}(Q)$, 存在 $ 2 \ge t \ge n$ 使 $f_t(u_2) \ne u_2$. 将上面的方程组两边用 $f_t$ 作用, 得
+否则, 若不然, 存在 $u_i$ 使得 $u_i \notin \mathrm{Inv}(Q)$. 不妨设 $u_2 \notin \mathrm{Inv}(Q)$, 存在 $ 2 \le t \le n$ 使 $f_t(u_2) \ne u_2$. 将上面的方程组两边用 $f_t$ 作用, 得
 
 $$
     \sum_{i=1}^{n+1}f_tf_j(a_i)f_t(u_i) = 0, j = 1,2,\cdots ,n.
