@@ -240,14 +240,14 @@ $$
 
 **解** $\mathbb{Q}(\sqrt{2},\sqrt{3})$ 是 可分多项式 $(x^2-2)(x^2-3)$ 在 $\mathbb{Q}$ 上的分裂域. 故 $\mathbb{Q}(\sqrt{2},\sqrt{3}) / \mathbb{Q}$ 是有限伽罗瓦扩张. 它的阶为 $4$. 它的一组基为 $1,\sqrt{2},\sqrt{3},\sqrt{6}$. $\mathrm{Gal}{(E/F)}$ 的四个元分别为
 
-\[
+$$
 \begin{split}
     &\sigma_1 = \mathrm{Id}; \\
     &\sigma_2: \sqrt{2} \mapsto -\sqrt{2}, \sqrt{3} \mapsto \sqrt{3}; \\
     &\sigma_3: \sqrt{2} \mapsto \sqrt{2}, \sqrt{3} \mapsto -\sqrt{3}; \\
     &\sigma_4: \sqrt{2} \mapsto -\sqrt{2}, \sqrt{3} \mapsto -\sqrt{3}.
 \end{split}
-\]
+$$
 
 取 $a = 1 + \sqrt{2} + \sqrt{3} + \sqrt{6} \in \mathbb{Q}(\sqrt{2},\sqrt{3})$, 则
 
@@ -258,7 +258,9 @@ $$
 \end{split}
 $$
 
-由 $
+由
+
+$$
 \left|
 \begin{matrix}
 1 & 1 & 1 & 1 \\
@@ -266,5 +268,7 @@ $$
 1 & 1 & -1 & -1 \\
 1 & -1 & -1 & 1
 \end{matrix}
-\right| = 16 \ne 0
-$, 知 $上述四个元素是 $\mathbb{Q}$-线性无关的. 故上述四个元素就是一组正规基.
+\right| = 16 \ne 0,
+$$
+
+知 $上述四个元素是 $\mathbb{Q}$-线性无关的. 故上述四个元素就是一组正规基.
