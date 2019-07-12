@@ -8,6 +8,7 @@ tags: Math Algebra 伽罗瓦理论
 * [有限伽罗瓦扩张](#有限伽罗瓦扩张)
     * [阿廷引理和戴德金无关性引理](#阿廷引理和戴德金无关性引理)
     * [正规基](#正规基)
+    * [一些习题](#一些习题)
 
 <!-- vim-markdown-toc -->
 
@@ -238,7 +239,7 @@ $$
 **例** 求 $\mathbb{Q}(\sqrt{2},\sqrt{3})/\mathbb{ Q }$ 的一组正规基.
 {:.warning}
 
-**解** $\mathbb{Q}(\sqrt{2},\sqrt{3})$ 是 可分多项式 $(x^2-2)(x^2-3)$ 在 $\mathbb{Q}$ 上的分裂域. 故 $\mathbb{Q}(\sqrt{2},\sqrt{3}) / \mathbb{Q}$ 是有限伽罗瓦扩张. 它的阶为 $4$. 它的一组基为 $1,\sqrt{2},\sqrt{3},\sqrt{6}$. $\mathrm{Gal}{(E/F)}$ 的四个元分别由
+**解** $\mathbb{Q}(\sqrt{2},\sqrt{3})$ 是 可分多项式 $(x^2-2)(x^2-3)$ 在 $\mathbb{Q}$ 上的分裂域. 故 $\mathbb{Q}(\sqrt{2},\sqrt{3}) / \mathbb{Q}$ 是有限伽罗瓦扩张. 它的维度为 $4$. 它的一组基为 $1,\sqrt{2},\sqrt{3},\sqrt{6}$. $\mathrm{Gal}{(E/F)}$ 的四个元分别由
 
 $$
 \begin{split}
@@ -272,3 +273,54 @@ $$
 $$
 
 知上述四个元素是 $\mathbb{Q}$-线性无关的. 故上述四个元素就是一组正规基.
+
+## 一些习题
+**定理** (**阿廷定理**) 记 $G$ 是域 $E$ 的自同构群的有限子群, $F=\mathrm{Inv}(G)$. 则 $E/F$ 是有限伽罗瓦扩张且 $\mathrm{Gal}(E/F) = G$.
+{:.info}
+
+**证明** $\mid \mathrm{Gal}(E/F) \mid \le [E : F] = [E : \mathrm{Inv}(G)] \le \mid G \mid$. 又 $G \subseteq \mathrm{Gal}(E/\mathrm{Inv(G)}) = \mathrm{Gal}(E/F)$, 有 $\mid G \mid \le \mid \mathrm{Gal}(E/F) \mid$. 故 $\mid G \mid = \mid\mathrm{Gal}(E/F)\mid = [E : F]$, 从而 $E/F$ 是有限伽罗瓦扩张., 且 $G = \mathrm{Gal}(E/F)$.
+<p align="right">$\blacksquare$</p>
+
+**推论** 设 $E/F$ 是 的有限扩张, 则 $\mid \mathrm{Gal}(E/F) \mid$ 整除 $[E:F]$.
+{:.info}
+
+**证明** 记 $F' = \mathrm{Inv}(\mathrm{Gal}(E/F))$, 则 $F$ 是 $F'$ 的子域. 由阿廷定理, 有 $[E:F'] = \mid \mathrm{Gal}(E/F')\mid = \mid \mathrm{Gal}(E/F)\mid$. 由望远镜公式,
+
+$$
+[E:F] = [E:F'][F':F] = \mid\mathrm{Gal}(E/F)\mid \cdot [F':F],
+$$
+
+这说明 $\mid \mathrm{Gal}(E/F) \mid$ 整除 $[E:F]$.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $E/F$ 为域的有限扩张, $K/F$ 为域扩张. 则 $E$ 到 $K$ 的 $F$-嵌入的个数不超过 $[E:F]$.
+
+**证明** 记 $[E:F] = n$.若结论不正确, 记 $f_1,f_2,\cdot , f_{n+1}$ 是两两不同的 $E$ 到 $K$ 的 $F$-嵌入. 则由 $f_i(F) = F$ 知 $f_i$ 不是零同态. 设 $a_1,a_2,\cdots a_n$ 是 $E$ 的一组基, 考虑矩阵
+
+$$
+\begin{pmatrix}
+f_1(a_1) & f_1(a_2) & \cdots & f_{1}(a_n) \\
+f_2(a_1) & f_2(a_2) & \cdots & f_2(a_n) \\
+\vdots & \vdots & \ddots & \vdots \\
+f_{n+1}(a_1) & f_{n+1}(a_2) & \cdot & f_{n+1}(a_n)
+\end{pmatrix}
+$$
+
+它的行向量必然线性相关. 存在 $c_1,c_2,\cdots ,
+ c_{n+1} \in K$ 使 $\sum_{1 \le i \le n+1}{c_if_i(a_j)} = 0, \forall 1\le j \le n$. 任意 $\alpha \in E$, 记 $\alpha = \sum_{1 \le i \le n}{k_ia_i}$, 其中 $k_i \in F$. 有
+
+$$
+    \sum_{i=1}^{n+1}c_if_i(\alpha) = \sum_{i=1}^{n+1}c_if_i\left(\sum_{j=1}^{n}k_ja_j\right) = \sum_{j=1}^{n}k_j\sum_{i=1}^{n+1}c_if_i(a_j) = 0
+$$
+
+这导致 $f_1,f_2,\cdots ,f_{n+1}$ $K$-线性相关. 然而它们是 $$E^*$$ 的 $K$-线性特征标, 矛盾!
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $E$ 是 $F$ 的二次扩张且 $F$ 的特征不为 $2$. 则 $E/F$ 是伽罗瓦扩张, 且存在 $\alpha \in E$ 使得 $\alpha^2 \in F$, $E = F(\alpha)$. 由此说明复数域 $\mathbb{C}$ 没有 $2$ 次扩张.
+
+**证明** 取 $\alpha \in E - F$, 记 $\alpha$ 在 $F$ 上的极小多项式为 $f(x)$, 则 $\deg f(x) \le 2$ (否则 $[E:F] \ge [F(\alpha):F] > 2$). 由 $\alpha \notin F$ 知 $\deg f(x) \ne 1$, 只能是 $\deg f(x) = 2$. 设 $f(x) = x^2 + bx + c$. 若 $f(x)$ 有重根, 则 $b^2 = 4c$ ($F$ 的特征不为 $2$), 于是 $f(x) = (x+b/2)^2$ , 与 $f(x)$  不可约矛盾. 这说明 $f(x)$ 是可分多项式. 它的另一根 $\beta = -b - \alpha \in F(\alpha)$ (Vieta 定理), 说明 $F(\alpha)$ 是 $f(x)$ 在 $F$ 上的分裂域, 故 $F(\alpha)/F$ 是伽罗瓦扩张. $[F(\alpha) : F] = 2$ 且 $F(\alpha) \subseteq E$, 从而 $E = F(\alpha)$. 这说明 $E/F$ 是伽罗瓦扩张.
+
+记 $a = b+2\alpha \in E$, 由 $2 \ne 0$ 知 $a \notin F$. 有 $a^2 = b^2 + 4b\alpha + 4\alpha^2 = b^2 + 4b\alpha -4b\alpha - 4c = b^2-4c \in F$. 且 $F(a) = F(b+2\alpha) = F(2\alpha) = F(\alpha) = E$.
+
+复数域对平方根封闭. 若 $E/\mathbb{C}$ 是二次扩张, 存在 $a \in E$ 使得 $a^2 \in \mathbb{C}$ 且 $E = \mathbb{C}(a)$. 但是 $x^2 - a^2$ 在$\mathbb{C}$ 中有根, 矛盾.
+<p align="right">$\blacksquare$</p>
