@@ -81,11 +81,14 @@ $$
 
 
 $$
-\begin{tabular}{ll}
-\sigma_1 = \mathrm{Id}; & \sigma_{2}: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega; \\
-    \sigma_3: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2; \omega \mapsto \omega; & \sigma_4: \sqrt[3]{3} \mapsto \sqrt[3]{3}, \omega \mapsto \omega^2; \\
-    \sigma_5: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega^2; & \sigma_6: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2, \omega \mapsto \omega^2.
-\end{tabular}
+\begin{split}
+\sigma_1 &= \mathrm{Id};\\ 
+\sigma_{2}&: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega; \\
+\sigma_3&: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2, \omega \mapsto \omega;\\
+\sigma_4&: \sqrt[3]{3} \mapsto \sqrt[3]{3}, \omega \mapsto \omega^2; \\
+\sigma_5&: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega^2;\\
+\sigma_6&: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2, \omega \mapsto \omega^2.
+\end{split}
 $$
 
 则 $\sigma_2$ 是 $3$ 阶元, $\sigma_4$ 是 $2$ 阶元, 且 $\sigma_4\sigma_2\sigma_4^{-1} = \sigma_2^{-1}$, $\sigma_4,\sigma_2$ 生成 $G$. 故 $G \cong D_3 \cong S_3$.
@@ -126,4 +129,4 @@ $$
 
 我们得到
 
-<center>![](./pictures/Galois-Theory-2.svg)</center>
+<center>![](https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg)</center>
