@@ -74,3 +74,56 @@ $$
 
 故上述单同态是同构, 从而 $\mathrm{Gal(\mathrm{Inv(H)}/F)} \cong G/H$.
 <p align="right">$\blacksquare$</p>
+
+下面以 $\mathbb{Q}\left(\sqrt[3]{3}, \omega\right)/\mathbb{Q}$ 为例, 展示伽罗瓦理论基本定理. 其中 $\omega = e^{\frac{2\pi i}{3}}$.
+
+记 $E = \mathbb{Q}\left(\sqrt[3]{3}, \omega\right)$. $E$ 是 $x^3-3$ 在 $\mathbb{Q}$ 上的分裂域, 且 $[E :\mathbb{Q}] = 6$. 于是 $G = \mathrm{Gal}(E /\mathbb{Q})$ 是 $6$ 阶群, 它的元素必将 $x^3 - 3$ 的根变到 $x^3 - 3$ 的根, 也必将 $x^2 + x + 1$ 的根变到 $x^2+x+1$ 的根. 因此 $G$ 的 $6$ 个元为:
+
+
+$$
+\begin{tabular}{ll}
+\sigma_1 = \mathrm{Id}; & \sigma_{2}: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega; \\
+    \sigma_3: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2; \omega \mapsto \omega; & \sigma_4: \sqrt[3]{3} \mapsto \sqrt[3]{3}, \omega \mapsto \omega^2; \\
+    \sigma_5: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega, \omega \mapsto \omega^2; & \sigma_6: \sqrt[3]{3} \mapsto \sqrt[3]{3}\omega^2, \omega \mapsto \omega^2.
+\end{tabular}
+$$
+
+则 $\sigma_2$ 是 $3$ 阶元, $\sigma_4$ 是 $2$ 阶元, 且 $\sigma_4\sigma_2\sigma_4^{-1} = \sigma_2^{-1}$, $\sigma_4,\sigma_2$ 生成 $G$. 故 $G \cong D_3 \cong S_3$.
+
+将 $x^3 - 3$ 的 $3$ 个根记为 $r_1 = \sqrt[3]{3}$, $r_2 = \sqrt[3]{3}\omega$, $r_3 = \sqrt[3]{3}\omega^2$. 则将 $G$ 作用于 $$\{r_1,r_2 ,r_3\}$$, 得到一个同态 $G \rightarrow S_3$. 这个群同态是单射, 可知这个同态是同构. 在这个意义下, $G$ 等同于
+
+$$\begin{split}
+S_3 = \{
+    &\sigma_1 = (1),\sigma_2 = (123),\sigma_3 = (132),\\
+    &\sigma_4 = (23),\sigma_5 = (12),\sigma_6 = (13)
+\}.
+\end{split}$$
+
+其中 $(13)$ 表示 $(r_1r_3)$, 诸如此类. $S_3$ 的全部子群为
+
+$$\begin{split}
+A_3 &= \{(1),(123),(132)\}, \\
+H_1 &= \{(1),(12)\},\\
+H_2 &= \{(1),(13)\},\\
+H_3 &= \{(1),(23)\}.
+\end{split}$$
+
+其中 $A_3 \triangleleft S_3$, 而 $H_1,H_2,H_3$ 是一个共轭类. 我们首先计算 $\mathrm{Inv}(H_1)$. $E$ 的一组 $F$-基为 $1,\sqrt[3]{3},\sqrt[3]{6},\omega,\sqrt[3]{3}\omega,\sqrt[3]{6}\omega$. 记 $\alpha \in \mathrm{Inv}(H_1)$, 设
+
+$$
+\alpha = a_1+ a_2\sqrt[3]{3}+ a_3\sqrt[3]{6}+ a_4\omega+ a_5\sqrt[3]{3}\omega+ a_6\sqrt[3]{6}\omega, \\
+$$
+
+其中 $a_1,a_2,a_3,a_4,a_6,a_6 \in \mathbb{Q}$. 则
+
+$$
+\sigma_5(\alpha) = a_1-a_4 + a_5\sqrt[3]{3} - a_3\sqrt[3]{6} -a_4\omega + a_2\sqrt[3]{3}\omega + (a_6-a_3)\sqrt[3]{6}\omega.
+$$
+
+比较系数, 得 $a_3 = a_4 = 0,a_2 = a_5$. 故 $\alpha = a_1 + a_2\sqrt[3]{3} + a_2\sqrt[3]{3}\omega + a_6\sqrt[3]{6}\omega = a_1 - a_2\sqrt[3]{3}\omega^2 + a_6\sqrt[3]{6}\omega$. 这说明 $\alpha \in \mathrm{Inv}(H_1)$ 当且仅当 $\alpha \in \mathbb{Q}(\sqrt[3]{3}\omega^2)$. 故 $\mathrm{Inv}(H_1) = \mathbb{Q}(\sqrt[3]{3}\omega^2)$. 由 $\sigma_6 = \sigma_4\sigma_5\sigma_4^{-1}$, 知 $H_2 = \sigma_4 H_1 \sigma_4^{-1}$. 故 $\mathrm{Inv}(H_2) = \sigma_4(\mathrm{Inv}(H_1)) = \mathbb{Q}(\sqrt[3]{3}\omega)$. 同理, 由 $H_3 = \sigma_6H_1 \sigma_6^{-1}$ 知 $\mathrm{Inv}(H_3) = \sigma_6(\mathrm{Inv}(H_1)) = \mathbb{Q}(\sqrt[3]{3})$.
+
+下面决定 $\mathrm{Inv}(A_3)$. $S_3$ 的 $3$ 阶子群只有 $A_3$. 故满足 $M/\mathbb{Q}$ 是 $2$ 次扩张的中间域 $M$ 一定是 $\mathrm{Inv}(A_3)$. 考虑 $\mathbb{Q}(\omega)/\mathbb{Q}$, $\omega$ 在 $\mathbb{Q}$ 上的极小多项式是 $2$ 次的, 故 $[\mathbb{Q}(\omega) : \mathbb{Q}] = 2$, 从而 $\mathrm{Inv}(A_3) = \mathbb{Q}(\omega)$.
+
+我们得到
+
+<center>![](./pictures/Galois-Theory-2.svg)</center>
