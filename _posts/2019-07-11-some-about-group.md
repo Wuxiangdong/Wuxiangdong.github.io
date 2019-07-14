@@ -51,3 +51,11 @@ $$
 
 这说明 $P_j$ 所在轨道的长度为 $\mid P_1 : P_1 \cap P_j \mid \ge p^r$, 它一定是 $p$ 的幂, 从而是 $p^r$ 的倍数. 又 $P_1$ 单独在一个轨道, 故 $N \equiv 1\pmod{p^r}$.
 <p align="right">$\blacksquare$</p>
+
+**例** $p$-群的极大子群是正规子群且指数为 $p$.
+{:.info}
+
+**证明** 设 $\mid G\mid = p^n$,$n \ge 1$. 对 $n$ 用数学归纳法. $n=1$ 时结论成立. 设 $n > 1$. 设 $M$ 是 $G$ 的极大子群. $G$ 的中心不是平凡的, 故 $G$ 的中心有 $p$ 阶子群 $P$. 若 $P$ 不是 $M$ 的子群, 则 $MP = G$, 从而 $M \triangleleft G$. 由 $G/M \cong P/(P \cap M) = P$ 知 $[G:M] = p$.
+
+若 $P$ 是 $M$ 的子群, 则 $M/P$ 是 $G/P$ 的极大子群. 由归纳假设, 有 $M/P \triangleleft G/P$ 且 $[G/P : M/P] = p$, 从而 $M \triangleleft G$ 且 $[G:M] = p$.
+<p align="right">$\blacksquare$</p>
