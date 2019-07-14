@@ -129,4 +129,6 @@ $$
 
 我们得到
 
-![](https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg)
+<center>
+![](https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg?sanitize=true)
+</center>
