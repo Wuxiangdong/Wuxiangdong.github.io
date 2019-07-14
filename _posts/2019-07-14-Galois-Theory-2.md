@@ -66,7 +66,10 @@ $$\ker \pi = \{\sigma\in G \mid \sigma(a) = a,\forall a \in \mathrm{Inv}(H)\} = 
 故 $\pi$ 诱导出单同态 $G/H \rightarrow \mathrm{Gal}(\mathrm{Inv}(H)/F)$.  又
 
 $$
-|G/H| = |G|/|H| = [E:F]/[E:\mathrm{Inv(H)}] = [\mathrm{Inv}(H):F] = |\mathrm{Gal(\mathrm{Inv}(H)/F)}|.
+\begin{split}
+|G/H| &= |G|/|H| = [E:F]/[E:\mathrm{Inv(H)}] \\
+&= [\mathrm{Inv}(H):F] = |\mathrm{Gal(\mathrm{Inv}(H)/F)}|.
+\end{split}
 $$ 
 
 故上述单同态是同构, 从而 $\mathrm{Gal(\mathrm{Inv(H)}/F)} \cong G/H$.
