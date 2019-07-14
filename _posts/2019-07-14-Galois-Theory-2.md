@@ -128,6 +128,5 @@ $$
 下面决定 $\mathrm{Inv}(A_3)$. $S_3$ 的 $3$ 阶子群只有 $A_3$. 故满足 $M/\mathbb{Q}$ 是 $2$ 次扩张的中间域 $M$ 一定是 $\mathrm{Inv}(A_3)$. 考虑 $\mathbb{Q}(\omega)/\mathbb{Q}$, $\omega$ 在 $\mathbb{Q}$ 上的极小多项式是 $2$ 次的, 故 $[\mathbb{Q}(\omega) : \mathbb{Q}] = 2$, 从而 $\mathrm{Inv}(A_3) = \mathbb{Q}(\omega)$.
 
 我们得到
-<p align="center">
+
 ![](https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg?sanitize=true)
-</p>
