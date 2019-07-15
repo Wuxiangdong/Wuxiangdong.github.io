@@ -143,7 +143,7 @@ $$
 
 (反证) 若不然. 记 $G =\mathrm{Gal}(N/\mathbb{R})$. 则 
 
-$$\mid G\mid = [N : \mathbb{R}] = [N:\mathbb{C}][\mathbb{C}:\mathbb{R}] = 2[N: \mathbb{C}].$$
+$$\mid G\mid = [N : \mathbb{R}] = [N:\mathbb{C}][\mathbb{C}:\mathbb{R}] = 2[N: \mathbb{C}]$$.
 
 这说明 $\mid G\mid$ 含素因子 $2$. 设 $H$ 是 $G$ 的 Sylow-2 子群. 对 $N/\mathbb{R}$ 使用伽罗瓦理论基本定理. $ L = \mathrm{Inv}(H) $ . 则 $[L:\mathbb{R}] = [G:H]$ 是奇数. 而 $L/\mathbb{R}$ 是有限可分扩张, 从而是单扩张. 记 $L = \mathbb{R}(b)$, 其中 $b$ 在 $\mathbb{R}$ 上的极小多项式的次数为奇数. 实数域上奇次多项式必有实根. 因此 $[L:\mathbb{R}] = 1$, 从而 $G = H$. 这说明 $G$ 是 $2$-群. 由 $\mid\mathrm{Gal}(N/\mathbb{C})\mid \ne 1$ 知 $\mathrm{Gal}(N/\mathbb{C})$ 也是 $2$-群. 从而 $\mathrm{Gal}(N/\mathbb{C})$ 有指数为 $2$ 的极大子群 $P$ ([详见](https://wuxiangdong.github.io/2019/07/11/some-about-group.html)). 现在对 $N/\mathbb{C}$ 使用伽罗瓦理论基本定理. 设 $M= \mathrm{Inv}({P})$. 则
 
@@ -162,15 +162,14 @@ $$
 $$
 {:.warning}
 
-**证明** 记 $G = \mathrm{Gal}(E/F)$, $$\Sigma = \bigcup_{\sigma \in G}{\sigma(M)}$$. 有 $F(\Sigma) \subseteq E$, 断言 $N = F(\Sigma)$. 这是因为 $\sigma(N) = N,\forall N \in G$, 从而 $N$ 应该包含 $\sigma(M)$ ,$\forall \sigma \in G$. 从而 $F(\Sigma) \subseteq N$. 又 $G$ 是群, 有 $\sigma(\Sigma) = \Sigma$, $\forall \sigma \in G$. 从而 $\sigma(F(\Sigma)) = F(\sigma(\Sigma)) = F(\Sigma)$, $\forall \sigma \in G$.  这导致 $F(\Sigma)/F$ 是正规扩张, $F(\Sigma)$ 包含 $M$, 从而 $F(\Sigma) \supseteq N$. 从而 $N = F(\Sigma)$.
+记 $G = \mathrm{Gal}(E/F)$, 对 $E/F$ 使用伽罗瓦理论基本定理.
 
-于是
+记 $N' = \mathrm{Inv}\left(\bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1}\right)$. 由于 $\bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1} \triangleleft G$, 有 $N'/F$ 是正规扩张. $\bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1}$ 是 $\mathrm{Gal}(E/M)$ 的子群, 从而 $N' \supseteq M$.  这说明 $N \subseteq N'$. 又 $N/F$ 是正规扩张, 从而 $\mathrm{Gal}(E/N) \triangleleft G$. 而 $N \supseteq M$, 从而 $\mathrm{Gal}(E/N) \leqslant \mathrm{Gal}(E/M)$. 于是 $\mathrm{Gal}(E/N) \leqslant \bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1}$, 所以 $N \supseteq N'$. 这导致 $N = N'$, 即
 
-$$\begin{split}
-\mathrm{Inv}\left(\bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1}\right) &= \{\sigma\pi\sigma^{-1}(a) = a \mid \forall \sigma \in G,\pi \in \mathrm{Gal}(E/M)\} \\
-&= \{\pi\sigma^{-1}(a) = \sigma^{-1}(a) \mid \forall \sigma \in G, \pi \in \mathrm{Gal}(E/M)\} \\
-&= \{\sigma^{-1}(a) \in \mathrm{Inv}(\mathrm{Gal}(E/M)) = M\mid \forall \sigma \in G\} \\
-&= \bigcap_{\sigma \in G}{\sigma(M)}.
-\end{split}$$
+$$
+\mathrm{Gal}(E/N) = \mathrm{Gal}(E/N') = \bigcap_{\sigma \in \mathrm{Gal}(E/F)} \sigma\mathrm{Gal}(E/M)\sigma^{-1}.
+$$
+<p align="right">$\blacksquare$</p>
 
-吃饭去了等会再写qwq
+**例** 设 $\alpha$ 在 $\mathbb{Q}$ 上代数, $F$ 是 $\mathbb{Q}(\alpha)$ 的伽罗瓦闭包 (即包含 $\mathbb{Q}(\alpha)$ 的最小的 $\mathbb{Q}$ 的伽罗瓦扩张). 若 $\mid\mathrm{Gal}(F/\mathbb{Q})\mid$ 含素因子 $p$, 求证: 存在 $F/\mathbb{Q}$ 的中间域 $L$ 使 $[F : L] = p$ 且 $F = L(\alpha)$.
+{:.warning} 
