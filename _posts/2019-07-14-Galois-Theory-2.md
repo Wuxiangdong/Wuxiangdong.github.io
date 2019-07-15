@@ -3,6 +3,15 @@ title:  伽罗瓦理论基本定理
 tags: Math Algebra 伽罗瓦理论
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [伽罗瓦理论基本定理](#伽罗瓦理论基本定理)
+    * [伽罗瓦对应的一个例子](#伽罗瓦对应的一个例子)
+    * [代数基本定理](#代数基本定理)
+    * [一些例题](#一些例题)
+
+<!-- vim-markdown-toc -->
+
 # 伽罗瓦理论基本定理
 
 伽罗瓦理论基本定理是说: 对于有限伽罗瓦扩张, 伽罗瓦对应是反序的一一对应, 且保持共轭性.
@@ -173,4 +182,19 @@ $$
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $\alpha$ 在 $\mathbb{Q}$ 上代数, $F$ 是 $\mathbb{Q}(\alpha)$ 的伽罗瓦闭包 (即包含 $\mathbb{Q}(\alpha)$ 的最小的 $\mathbb{Q}$ 的伽罗瓦扩张). 若 $\mid\mathrm{Gal}(F/\mathbb{Q})\mid$ 含素因子 $p$, 求证: 存在 $F/\mathbb{Q}$ 的中间域 $L$ 使 $[F : L] = p$ 且 $F = L(\alpha)$.
-{:.warning} 
+{:.warning}
+
+**证明** 设 $\alpha$ 在 $\mathbb{Q}$ 上的极小多项式为 $f(x)$. 记 $f(x)$ 在 $\mathbb{Q}$ 上的分裂域为 $F'$. 一方面 $f(x)$ 的根都在 $F$ 中, 从而 $F \supseteq F'$. 另一方面 $F'/\mathbb{Q}$ 是域的伽罗瓦扩张且 $F'$ 包含 $\mathbb{Q}(\alpha)$, 从而 $F \subseteq F'$. 这导致 $F' = F$, $F$ 是 $f(x)$ 在 $\mathbb{Q}$ 上的分裂域.
+
+记 $G = \mathrm{Gal}(F /\mathbb{Q})$, $f(x)$ 在 $\mathbb{Q}$ 上不可约, 故 $f(x)$ 的全部根恰为 $$G\alpha = \{\sigma(\alpha) \mid \sigma \in G\}$$. 记 $\alpha_1 = \alpha, \alpha_2, \alpha_3,\cdots ,\alpha_n$ 为 $f(x)$ 的全部根, 并记 $\alpha_i = \sigma_i(\alpha)$, $\sigma_i \in G$, $i = 1,2,\cdots ,n$.
+
+$\mid G\mid$ 含素因子 $p$, 由 Sylow 定理, $G$ 存在 $p$ 阶元 $\pi$. $F = \mathbb{Q}(\alpha_1,\alpha_2 ,\cdots ,\alpha_n)$, 故 $\pi$ 由 $\pi(\alpha_1),\pi(\alpha_2),\cdots ,\pi(\alpha_n)$ 决定. $\pi \ne \mathrm{Id}$, 故 $\pi$ 一定变换某一个 $\alpha_i$. $\pi$ 将 $f(x)$ 的根变换到 $f(x)$ 的根, 记 $\pi(\alpha_i) = \alpha_j$, $i\ne j$. 于是 $\pi' = \sigma_i^{-1}\pi\sigma_i$ 也是 $p$ 阶元, 且 $\pi'(\alpha) = \sigma_i^{-1}(\alpha_j)$. $\alpha_i \ne \alpha_j$, 故 $\pi'(\alpha) \ne \alpha$. 这样 $\pi'$ 是 $p$ 阶元且变换 $\alpha$.
+
+现在对 $F /\mathbb{Q}$ 使用伽罗瓦理论基本定理. 记 $H = \langle \pi' \rangle$, $L = \mathrm{Inv}(H)$. 有 $[F:L] = \mid H\mid = p$. $\pi'$ 变换 $\alpha$, 故 $\alpha \notin L$. 有
+
+$$
+p = [F:L] = [F:L(\alpha)][L(\alpha):L],
+$$
+
+其中 $[L(\alpha):L] \ne 1$, 于是只能是 $[L(\alpha):L] = p$ 和 $[F: L(\alpha)] = 1$. 这说明 $F = L(\alpha)$, 说明 $L$ 符合题意.
+<p align="right">$\blacksquare$</p>
