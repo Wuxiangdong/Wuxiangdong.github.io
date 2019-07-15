@@ -280,7 +280,7 @@ $$
 (\sigma_1(u),\cdots ,\sigma_n(u)) 是基 \Leftrightarrow \det(\sigma_i\sigma_j(u)) \ne 0.
 $$
 
-记 $\sigma_{i}\sigma_j = \sigma_{i_j}$. 则 $1_i,2_i ,\cdots ,n_i$ 和 $i_1,i_2,\cdots ,i_n$是 $1,2,\cdots ,n$ 的一个置换. 现在考虑 $E[x_1,\cdots ,x_n]$ 上的多项式 $d(x_1,\cdots ,x_n) = \det(x_{i_j})$. 选取 $x_1 = 1,x_i = 0, i > 1$. 因为 $j \mapsto j_i$ 对不同的 $i$ 是不同的. 所以 $x_1$ 在行列式中的每一行和每一列仅出现一次. 于是 $d(1,0,0,\cdots,0) = \pm 1 \ne 0$, 从而 $d \ne 0$.
+记 $\sigma_{i}\sigma_j = \sigma_{i_j}$. 则 $$1_i,2_i ,\cdots ,n_i$$ 和 $$i_1,i_2,\cdots ,i_n$$ 是 $$1,2,\cdots ,n$$ 的一个置换. 现在考虑 $E[x_1,\cdots ,x_n]$ 上的多项式 $d(x_1,\cdots ,x_n) = \det(x_{i_j})$. 选取 $x_1 = 1,x_i = 0, i > 1$. 因为 $j \mapsto j_i$ 对不同的 $i$ 是不同的. 所以 $x_1$ 在行列式中的每一行和每一列仅出现一次. 于是 $d(1,0,0,\cdots,0) = \pm 1 \ne 0$, 从而 $d \ne 0$.
 
 $\sigma_i$ 在 $E$ 上代数无关, 存在 $u \in E$ 使 $\det(\sigma_i\sigma_j(u)) \ne 0$. 于是 $\sigma_1(u),\cdots ,\sigma_n(u)$ 是正规基.
 <p align="right">$\blacksquare$</p>
