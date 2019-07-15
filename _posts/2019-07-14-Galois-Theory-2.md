@@ -75,7 +75,9 @@ $$
 故上述单同态是同构, 从而 $\mathrm{Gal(\mathrm{Inv(H)}/F)} \cong G/H$.
 <p align="right">$\blacksquare$</p>
 
-下面以 $\mathbb{Q}\left(\sqrt[3]{3}, \omega\right)/\mathbb{Q}$ 为例, 展示伽罗瓦理论基本定理. 其中 $\omega = e^{\frac{2\pi i}{3}}$.
+## 伽罗瓦对应的一个例子
+
+下面以 $\mathbb{Q}\left(\sqrt[3]{3}, \omega\right)/\mathbb{Q}$ 为例, 展示伽罗瓦对应. 其中 $\omega = e^{\frac{2\pi i}{3}}$.
 
 记 $E = \mathbb{Q}\left(\sqrt[3]{3}, \omega\right)$. $E$ 是 $x^3-3$ 在 $\mathbb{Q}$ 上的分裂域, 且 $[E :\mathbb{Q}] = 6$. 于是 $G = \mathrm{Gal}(E /\mathbb{Q})$ 是 $6$ 阶群, 它的元素必将 $x^3 - 3$ 的根变到 $x^3 - 3$ 的根, 也必将 $x^2 + x + 1$ 的根变到 $x^2+x+1$ 的根. 因此 $G$ 的 $6$ 个元为:
 
@@ -130,3 +132,23 @@ $$
 我们得到
 
 <img src="https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg?sanitize=true" width="90%" height="90%">
+
+## 代数基本定理
+作为伽罗瓦理论基本定理的一个应用, 我们证明代数基本定理. 代数基本定理指出 $\mathbb{C}[x]$ 中任意多项式在 $\mathbb{C}$ 中均有根. 即
+
+**定理** (**代数基本定理**) 复数域 $\mathbb{C}$ 是代数闭域.
+
+**证明** 设 $f(x) \in \mathbb{C}[x]$, $E$ 是其在 $\mathbb{C}$ 上的分裂域. 则 $E/\mathbb{C}$ 是有限扩张, $E/\mathbb{R}$ 也是有限扩张. 记 $E = \mathbb{R}(a_1,a_2,\cdots a_n)$. 其中 $a_1,a_2,\cdots a_n$ 在 $\mathbb{R}$ 上代数. 记 $a_i$ 在 $\mathbb{R}$ 上的极小多项式为 $g_i(x)$, $N$ 是 $g(x)=g_1(x)g_2(x)\cdots g_n(x)$ 在 $\mathbb{R}$ 上的分裂域. 则 $\mathbb{C} \subseteq E \subseteq N$. $N/\mathbb{R}$ 和 $N/\mathbb{C}$ 都是有限伽罗瓦扩张. 下证 $N = \mathbb{C}$  (等价的, $\mid\mathrm{Gal}(N/\mathbb{C})\mid = 1$), 从而 $E = \mathbb{C}$, $f(x)$ 的根均在 $\mathbb{C}$ 中.
+
+(反证) 若不然. 记 $G =\mathrm{Gal}(N/\mathbb{R})$. 则 
+
+$$\mid G\mid = [N : \mathbb{R}] = [N:\mathbb{C}][\mathbb{C}:\mathbb{R}] = 2[N: \mathbb{C}]$$.
+
+这说明 $\mid G\mid$ 含素因子 $2$. 设 $H$ 是 $G$ 的 Sylow-2 子群. 对 $N/\mathbb{R}$ 使用伽罗瓦理论基本定理. $ L = \mathrm{Inv}(H) $ . 则 $[L:\mathbb{R}] = [G:H]$ 是奇数. 而 $L/\mathbb{R}$ 是有限可分扩张, 从而是单扩张. 记 $L = \mathbb{R}(b)$, 其中 $b$ 在 $\mathbb{R}$ 上的极小多项式的次数为奇数. 实数域上奇次多项式必有实根. 因此 $[L:\mathbb{R}] = 1$, 从而 $G = H$. 这说明 $G$ 是 $2$-群. 由 $\mid\mathrm{Gal}(N/\mathbb{C})\mid \ne 1$ 知 $\mathrm{Gal}(N/\mathbb{C})$ 也是 $2$-群. 从而 $\mathrm{Gal}(N/\mathbb{C})$ 有指数为 $2$ 的极大子群 $P$. 现在对 $N/\mathbb{C}$ 使用伽罗瓦理论基本定理. 设 $M= \mathrm{Inv}({P})$. 则
+
+$$
+[M:\mathbb{C}] = [\mathrm{Gal}(N/\mathbb{C}): P] = 2.
+$$
+
+但复数域无 $2$ 次扩张, 矛盾!
+<p align="right">$\blacksquare$</p>
