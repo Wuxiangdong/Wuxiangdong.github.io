@@ -179,6 +179,8 @@ $\Leftarrow$ 假若 $p_1,\cdots ,p_n$ 不是 $E$ 的一组 $F$-基, 则它们 $F
 **定理** (**正规基**) 若 $E/F$ 是有限伽罗瓦扩张, 则存在 $a \in E$ 使 $$\{\sigma{(a)} \mid \sigma \in \mathrm{Gal}(E/F)\}$$ 是 $E$ 的一组 $F$-基.
 {:.info}
 
+以下证明主要摘录自 E.Artin 的 《Galois Theory》.
+
 **证明** 先证明 $F$ 是无限域的情况. $E/F$ 是有限伽罗瓦扩张, 从而是单扩张. 记 $E = F(u)$, $u$ 在 $F$ 上的极小多项式为 $f(x)$, 有 $f(x)$ 无重根. 记 $[E:F] = n$, $$G = \mathrm{Gal}(E/F) = \{\sigma_1,\cdots ,\sigma_n\}$$. 可知 $f(x)$  的根恰是 $$Gu = \{\sigma(u) \mid \sigma \in G\}$$, 且
 
 $$
@@ -234,6 +236,53 @@ $$
 $$
 
 对每个 $1 \le i \le n$, 存在 $\beta_i \in \ker{p_i^{k_i}(\mathscr{A})}$ 使 $\beta_i$ 的最小多项式为 $p_i^{k_i}(x)$ (否则 ,$k_i$ 不是最小的, 从而 $d(x)$ 不是最小多项式). 于是 $\beta = \beta_1 + \beta_2 + \cdots + \beta_n$ 的最小多项式恰为 $p_1^{k_1}(x)p_2^{k_2}(x)\cdots p_n^{k_n}(x) = d(x)$. (因为 $p_1^{k_1}(x) ,p_2^{k_2}(x), \cdots, p_n^{k_n}(x)$ 两两互素)
+<p align="right">$\blacksquare$</p>
+
+ 此处再摘录另一个证明, 它来自柯斯特利金的《代数学引论》.
+
+**定义** 设 $K,L$ 是两个域. 一组单同态 $\eta_1,\eta_2,\cdots ,\eta_n : K \rightarrow L$ 叫做在 $L$ 上**代数无关**, 如果  
+$$f \in L[x_1,x_2,\cdots ,x_n], f(\eta_1(u),\eta_2(u),\cdots ,\eta_n(u)) = 0, \forall u \in K \Rightarrow f = 0.$$
+{:.success}
+
+**引理** 设 $F$ 是无限域, $E$ 是 $F$ 上有限可分扩张, $L$ 是 $E /F$ 的正规闭包. 设 $\eta_1,\eta_2,\cdots ,\eta_n$ 是 $n = [E:F]$ 个两两不同的单同态 $E \rightarrow L$ 且 $\eta_i\mid_F = \mathrm{Id}$. 则 $\eta_i$ 在 $L$ 上代数无关.
+{:.info}
+
+**证明** (反证) 否则, 假定 $f \in L[x_1,x_2,\cdots x_n]$ 使得 $f(\eta_1(u),\cdots,\eta_n(u)) = 0, \forall u \in E$. 设 $(u_i)$ 是 $E$ 的一组 $F$-基, 则任意 $a_i \in F$, 记 $u = \sum_ia_iu_i$, 有
+
+$$
+0 = f(\eta_1(u),\cdots,\eta_n(u))= f\left(\sum_{i}a_i\eta_1(u_i),\cdots,\sum_ia_i\eta_n(u_i)\right).
+$$
+
+命
+
+$$g(x_1,x_2,\cdots ,x_n) = f\left(\sum_i\eta_1(u_i)x_i,\cdots ,\sum_{i}\eta_n(u_i)x_i\right)$$
+
+是 $L$ 上的多项式, 则 $g(a_1,\cdots ,a_n) = 0$, $\forall a_i \in F$. 设 $(v_1,\cdots ,v_m)$ 是 $L$ 的一组 $F$-基. 则可写
+
+$$
+g(x_1,\cdots ,x_n) = \sum_{j=1}^m{g_j(x_1,\cdots ,x_n)v_j},
+$$
+
+其中 $g_j \in F[x_1,\cdots ,x_n]$. 于是 $g_j(a_1,\cdots,a_n) = 0, \forall  1 \le j \le m$. 由 $F$ 是无限域, 推出 $g_j = 0$, 于是 $g = 0$.
+
+由 $u_1,\cdots ,u_n$ 是 $E$ 的一组基, 推出 $\det(\eta_j(u_i)) \ne 0$ (证明类似于前文引理). 因此矩阵 $(\eta_j(u_i))$ 有逆 $(v_{ij}) \in M_n(L)$. 这就是说
+
+$$
+g\left(\sum_{j,k}v_{1j}\eta_j(u_k)x_k,\cdots,\sum_{j,k}v_{nj}\eta_j(u_k)x_k\right) = f(x_1,\cdots , x_n).
+$$
+
+所以 $f = 0$. 这说明 $\eta_i$ 在 $L$ 上代数无关.
+<p align="right">$\blacksquare$</p>
+
+**正规基定理的证明** 只证 $F$ 是无限域的情况. 由引理知 $G=\mathrm{Gal}(E /F)$ 的元素是 $E$-代数无关的. 记 $$G = \{\sigma_1,\cdots ,\sigma_n\}$$, $n = [E:F]$. 对于 $u \in E$,
+
+$$
+(\sigma_1(u),\cdots ,\sigma_n(u)) 是基 \Leftrightarrow \det(\sigma_i\sigma_j(u)) \ne 0.
+$$
+
+记 $\sigma_{i}\sigma_j = \sigma_{i_j}$. 则 $1_i,2_i ,\cdots ,n_i$ 和 $i_1,i_2,\cdots ,i_n$是 $1,2,\cdots ,n$ 的一个置换. 现在考虑 $E[x_1,\cdots ,x_n]$ 上的多项式 $d(x_1,\cdots ,x_n) = \det(x_{i_j})$. 选取 $x_1 = 1,x_i = 0, i > 1$. 因为 $j \mapsto j_i$ 对不同的 $i$ 是不同的. 所以 $x_1$ 在行列式中的每一行和每一列仅出现一次. 于是 $d(1,0,0,\cdots,0) = \pm 1 \ne 0$, 从而 $d \ne 0$.
+
+$\sigma_i$ 在 $E$ 上代数无关, 存在 $u \in E$ 使 $\det(\sigma_i\sigma_j(u)) \ne 0$. 于是 $\sigma_1(u),\cdots ,\sigma_n(u)$ 是正规基.
 <p align="right">$\blacksquare$</p>
 
 **例** 求 $\mathbb{Q}(\sqrt{2},\sqrt{3})/\mathbb{ Q }$ 的一组正规基.
