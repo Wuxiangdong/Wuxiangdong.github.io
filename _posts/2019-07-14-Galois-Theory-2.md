@@ -111,7 +111,7 @@ H_2 &= \{(1),(13)\},\\
 H_3 &= \{(1),(23)\}.
 \end{split}$$
 
-其中 $A_3 \triangleleft S_3$, 而 $H_1,H_2,H_3$ 是一个共轭类. 我们首先计算 $\mathrm{Inv}(H_1)$. $E$ 的一组 $F$-基为 $1,\sqrt[3]{3},\sqrt[3]{6},\omega,\sqrt[3]{3}\omega,\sqrt[3]{6}\omega$. 记 $\alpha \in \mathrm{Inv}(H_1)$, 设
+其中 $A_3 \triangleleft S_3$, 而 $H_1,H_2,H_3$ 是一个共轭类. 我们首先计算 $\mathrm{Inv}(H_1)$. $E$ 的一组 $\mathbb{Q}$-基为 $1,\sqrt[3]{3},\sqrt[3]{6},\omega,\sqrt[3]{3}\omega,\sqrt[3]{6}\omega$. 记 $\alpha \in \mathrm{Inv}(H_1)$, 设
 
 $$
 \alpha = a_1+ a_2\sqrt[3]{3}+ a_3\sqrt[3]{6}+ a_4\omega+ a_5\sqrt[3]{3}\omega+ a_6\sqrt[3]{6}\omega, \\
