@@ -169,6 +169,7 @@ $$
 $$
 \mathrm{Gal}(E/N) = \mathrm{Gal}(E/N') = \bigcap_{\sigma \in \mathrm{Gal}(E/F)} \sigma\mathrm{Gal}(E/M)\sigma^{-1}.
 $$
+
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $\alpha$ 在 $\mathbb{Q}$ 上代数, $F$ 是 $\mathbb{Q}(\alpha)$ 的伽罗瓦闭包 (即包含 $\mathbb{Q}(\alpha)$ 的最小的 $\mathbb{Q}$ 的伽罗瓦扩张). 若 $\mid\mathrm{Gal}(F/\mathbb{Q})\mid$ 含素因子 $p$, 求证: 存在 $F/\mathbb{Q}$ 的中间域 $L$ 使 $[F : L] = p$ 且 $F = L(\alpha)$.
