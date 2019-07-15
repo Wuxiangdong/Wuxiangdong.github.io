@@ -335,3 +335,11 @@ $$
 
 复数域对平方根封闭. 若 $E/\mathbb{C}$ 是二次扩张, 存在 $a \in E$ 使得 $a^2 \in \mathbb{C}$ 且 $E = \mathbb{C}(a)$. 但是 $x^2 - a^2$ 在$\mathbb{C}$ 中有根, 矛盾.
 <p align="right">$\blacksquare$</p>
+
+**例** 设 $E /F$ 是有限伽罗瓦扩张, $G = \mathrm{Gal}(E /F)$, $\alpha \in E$, $$G\alpha = \{\alpha = \alpha_1, \alpha_2,\cdots ,\alpha_r\}$$. 则 $\alpha$ 在 $F$ 上的极小多项式为 $\prod_{1 \le i \le r}(x-\alpha_i)$.
+{:.warning}
+
+**证明** 记 $g(x) = \prod_{1 \le i \le r}(x -\alpha_i)$, 设 $\alpha$ 在 $F$ 上的极小多项式为 $f(x)$. 则 $f(\sigma(\alpha)) = \sigma(f(\alpha)) = 0$, $\forall \sigma \in G$. 这说明 $\alpha_1,\cdots ,\alpha_r$ 都是 $f(x)$ 的根. 从而在 $E[x]$ 上 $g(x) \mid f(x)$. 任意 $\sigma \in G$, 有 $\sigma(g(x)) = \prod_{1 \le i \le r}(x- \sigma(\alpha_i))$, 而 $\sigma(\alpha_1),\sigma(\alpha_2), \cdots ,\sigma(\alpha_r)$ 是 $\sigma_1,\cdots ,\alpha_r$ 的一个置换. 故 $\sigma(g(x)) = g(x)$, 从而 $g(x) \in \mathrm{Inv}(\mathrm{Gal}(\frac{E}{F}))[x] = F[x]$. 结合 $f(x)$ 在 $F$ 上不可约, 只能是 $f(x) = g(x)$.
+<p align="right">$\blacksquare$</p>
+
+这个例子说明对有限伽罗瓦扩张 $E /F$, 若 $f(x)$ 是在 $E$ 上有根的 $F$ 上的不可约多项式, 则 $f(x)$ 的全部根在 $E$ 中且它们是共轭的. (注: $E$ 上的两元素 $\alpha, \beta$ 共轭, 是指存在 $\sigma \in \mathrm{Gal}(E /F)$ 使 $\beta = \sigma(\alpha)$.)
