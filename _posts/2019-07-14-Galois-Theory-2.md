@@ -134,9 +134,10 @@ $$
 <img src="https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/Galois-Theory-2.svg?sanitize=true" width="90%" height="90%">
 
 ## 代数基本定理
-作为伽罗瓦理论基本定理的一个应用, 我们证明代数基本定理. 代数基本定理指出 $\mathbb{C}[x]$ 中任意多项式在 $\mathbb{C}$ 中均有根. 即
+利用伽罗瓦理论基本定理的一个应用, 我们证明代数基本定理. 代数基本定理指出 $\mathbb{C}[x]$ 中任意多项式在 $\mathbb{C}$ 中均有根. 即
 
 **定理** (**代数基本定理**) 复数域 $\mathbb{C}$ 是代数闭域.
+{:.info}
 
 **证明** 设 $f(x) \in \mathbb{C}[x]$, $E$ 是其在 $\mathbb{C}$ 上的分裂域. 则 $E/\mathbb{C}$ 是有限扩张, $E/\mathbb{R}$ 也是有限扩张. 记 $E = \mathbb{R}(a_1,a_2,\cdots a_n)$. 其中 $a_1,a_2,\cdots a_n$ 在 $\mathbb{R}$ 上代数. 记 $a_i$ 在 $\mathbb{R}$ 上的极小多项式为 $g_i(x)$, $N$ 是 $g(x)=g_1(x)g_2(x)\cdots g_n(x)$ 在 $\mathbb{R}$ 上的分裂域. 则 $\mathbb{C} \subseteq E \subseteq N$. $N/\mathbb{R}$ 和 $N/\mathbb{C}$ 都是有限伽罗瓦扩张. 下证 $N = \mathbb{C}$  (等价的, $\mid\mathrm{Gal}(N/\mathbb{C})\mid = 1$), 从而 $E = \mathbb{C}$, $f(x)$ 的根均在 $\mathbb{C}$ 中.
 
@@ -144,7 +145,7 @@ $$
 
 $$\mid G\mid = [N : \mathbb{R}] = [N:\mathbb{C}][\mathbb{C}:\mathbb{R}] = 2[N: \mathbb{C}]$$.
 
-这说明 $\mid G\mid$ 含素因子 $2$. 设 $H$ 是 $G$ 的 Sylow-2 子群. 对 $N/\mathbb{R}$ 使用伽罗瓦理论基本定理. $ L = \mathrm{Inv}(H) $ . 则 $[L:\mathbb{R}] = [G:H]$ 是奇数. 而 $L/\mathbb{R}$ 是有限可分扩张, 从而是单扩张. 记 $L = \mathbb{R}(b)$, 其中 $b$ 在 $\mathbb{R}$ 上的极小多项式的次数为奇数. 实数域上奇次多项式必有实根. 因此 $[L:\mathbb{R}] = 1$, 从而 $G = H$. 这说明 $G$ 是 $2$-群. 由 $\mid\mathrm{Gal}(N/\mathbb{C})\mid \ne 1$ 知 $\mathrm{Gal}(N/\mathbb{C})$ 也是 $2$-群. 从而 $\mathrm{Gal}(N/\mathbb{C})$ 有指数为 $2$ 的极大子群 $P$. 现在对 $N/\mathbb{C}$ 使用伽罗瓦理论基本定理. 设 $M= \mathrm{Inv}({P})$. 则
+这说明 $\mid G\mid$ 含素因子 $2$. 设 $H$ 是 $G$ 的 Sylow-2 子群. 对 $N/\mathbb{R}$ 使用伽罗瓦理论基本定理. $ L = \mathrm{Inv}(H) $ . 则 $[L:\mathbb{R}] = [G:H]$ 是奇数. 而 $L/\mathbb{R}$ 是有限可分扩张, 从而是单扩张. 记 $L = \mathbb{R}(b)$, 其中 $b$ 在 $\mathbb{R}$ 上的极小多项式的次数为奇数. 实数域上奇次多项式必有实根. 因此 $[L:\mathbb{R}] = 1$, 从而 $G = H$. 这说明 $G$ 是 $2$-群. 由 $\mid\mathrm{Gal}(N/\mathbb{C})\mid \ne 1$ 知 $\mathrm{Gal}(N/\mathbb{C})$ 也是 $2$-群. 从而 $\mathrm{Gal}(N/\mathbb{C})$ 有指数为 $2$ 的极大子群 $P$ ([详见](https://wuxiangdong.github.io/2019/07/11/some-about-group.html)). 现在对 $N/\mathbb{C}$ 使用伽罗瓦理论基本定理. 设 $M= \mathrm{Inv}({P})$. 则
 
 $$
 [M:\mathbb{C}] = [\mathrm{Gal}(N/\mathbb{C}): P] = 2.
@@ -152,3 +153,24 @@ $$
 
 但复数域无 $2$ 次扩张, 矛盾!
 <p align="right">$\blacksquare$</p>
+
+## 一些例题
+
+**例** 设 $N$ 和 $M$ 均是有限伽罗瓦扩张 $E/F$ 的中间域, 且 $N$ 是 $M$ 在 $F$ 上的正规闭包. (即 $N$ 是包含 $M$ 的 $F$ 的最小正规扩域). 求证:
+$$
+\mathrm{Gal}(E/N) = \bigcap_{\sigma \in \mathrm{Gal}(E/F)} \sigma\mathrm{Gal}(E/M)\sigma^{-1}.
+$$
+{:.warning}
+
+**证明** 记 $G = \mathrm{Gal}(E/F)$, $$\Sigma = \bigcup_{\sigma \in G}{\sigma(M)}$$. 有 $F(\Sigma) \subseteq E$, 断言 $N = F(\Sigma)$. 这是因为 $\sigma(N) = N,\forall N \in G$, 从而 $N$ 应该包含 $\sigma(M)$ ,$\forall \sigma \in G$. 从而 $F(\Sigma) \subseteq N$. 又 $G$ 是群, 有 $\sigma(\Sigma) = \Sigma$, $\forall \sigma \in G$. 从而 $\sigma(F(\Sigma)) = F(\sigma(\Sigma)) = F(\Sigma)$, $\forall \sigma \in G$.  这导致 $F(\Sigma)/F$ 是正规扩张, $F(\Sigma)$ 包含 $M$, 从而 $F(\Sigma) \supseteq N$. 从而 $N = F(\Sigma)$.
+
+于是
+
+$$\begin{split}
+\mathrm{Inv}\left(\bigcap_{\sigma \in G} \sigma\mathrm{Gal}(E/M)\sigma^{-1}\right) &= \{\sigma\pi\sigma^{-1}(a) = a \mid \forall \sigma \in G,\pi \in \mathrm{Gal}(E/M)\} \\
+&= \{\pi\sigma^{-1}(a) = \sigma^{-1}(a) \mid \forall \sigma \in G, \pi \in \mathrm{Gal}(E/M)\} \\
+&= \{\sigma^{-1}(a) \in \mathrm{Inv}(\mathrm{Gal}(E/M)) = M\mid \forall \sigma \in G\} \\
+&= \bigcap_{\sigma \in G}{\sigma(M)}.
+\end{split}$$
+
+吃饭去了等会在写qwq
