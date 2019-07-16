@@ -275,7 +275,7 @@ $$\pi: \mathrm{Gal}(LM/M) \rightarrow \mathrm{Gal}(L/L\cap M), \sigma \mapsto \s
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $E/F$ 是有限伽罗瓦扩张, $\mathrm{Gal}(E/F)$ 是 $2p$ 阶非阿贝尔群, 其中 $p$ 是奇素数, $L$ 是满足 $[E:L] = 2$ 的中间域. 则 $L/F$ 不是有限伽罗瓦扩张.
-{.:warning}
+{:.warning}
 
 **证明** $[E:L]=2$, 说明 $H = \mathrm{Gal}(E/L)$ 是 $G = \mathrm{Gal}(E/F)$ 的 $2$ 阶子群. 取 $P$ 是 $G$ 的 Sylow-$p$ 子群. $P$ 的指数为 $2$, 从而 $P$ 是正规子群. $L/F$ 是有限伽罗瓦扩张等价于 $H \triangleleft G$. 若 $H \triangleleft G$, 由 $$H \cap P = \{1\}$$ 知 $G = HP \cong \mathbb{Z_2} \oplus \mathbb{Z_p} \cong \mathbb{Z}_{2p}$. 这与 $G$ 非 Abel 矛盾.
 <p align="right">$\blacksquare$</p>
