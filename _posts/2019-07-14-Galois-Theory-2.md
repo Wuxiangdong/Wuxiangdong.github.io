@@ -208,7 +208,54 @@ $$
 **例** 设 $E = \mathbb{C}(t)$ (复数域上有理函数域), $F = \mathbb{C}(t^3 + t^{-3})$. 求 $E/F$ 的全部中间域.
 {:.warning}
 
-**解** $t$ 是多项式 $x^6-(t^3+t^{-3})x^3 + 1$ 的一根,  而这个多项式的全部根为 $t,t\omega, t\omega^2 ,t^{-1}, t^{-1}\omega ,t^{-1}\omega^{2} \in \mathbb{C}(t)$. 这说明 $E$ 是 $x^6 - (t^3+t^{-3})x^3 + 1$ 在 $F$ 上的分裂域, 从而 $E/F$ 是有限伽罗瓦扩张.
+**解** $t$ 是多项式 $x^6-(t^3+t^{-3})x^3 + 1$ 的一根,  而这个多项式的全部根为 $t,t\omega, t\omega^2 ,t^{-1}, t^{-1}\omega ,t^{-1}\omega^{2} \in \mathbb{C}(t)$., 其中 $\omega = e^{\frac{2\pi i}{3}}$. 这说明 $E$ 是 $f(x) = x^6 - (t^3+t^{-3})x^3 + 1$ 在 $F$ 上的分裂域, 从而 $E/F$ 是有限伽罗瓦扩张.  在 $\mathbb{C}(t^3)$ 中 $f(x)$ 被分解为不可约多项式的积 $(x^3-t^3)(x^{-3}-t^{-3})$. 而 $t^3, t^{-3} \notin F$. 这说明 $f(x)$ 在 $F$ 上不可约, 从而 $[E:F] = \deg f(x) = 6$, $G = \mathrm{Gal}(E/F)$ 是 $6$ 阶群. $G$ 的六个元分别为
 
-吃饭吃饭qwq.
+$$
+\begin{split}
+\pi_1 &= \mathrm{Id}; \\
+\pi_2 &:  t\mapsto t\omega; \\
+\pi_3 &: t \mapsto t\omega^2; \\
+\pi_4 &: t \mapsto t^{-1}; \\
+\pi_5&: t \mapsto t^{-1}\omega; \\
+\pi_6&: t \mapsto t^{-1}\omega^2.
+\end{split}
+$$
 
+其中 $\pi_2$ 是 $3$ 阶元, $\pi_4$ 是 $2$ 阶元. 且 $\pi_2 ,\pi_4$ 生成 $G$, $\pi_4\pi_2\pi_4^{-1} = \pi_2^{-1}$. 这说明 $G \cong S_3$. 其所有真子群为
+
+$$\begin{split}
+A_3 &= \{\pi_1 ,\pi_2 ,\pi_3\}, \\
+H_1 &= \{\pi_1, \pi_4\}, \\
+H_2 &= \{\pi_1, \pi_5\}, \\
+H_3 &= \{\pi_1,\pi_6\}.
+\end{split}$$  
+
+$S_3$ 只有一个 $3$ 阶子群, 从而 $E/F$ 只有一个中间域 $M$ 使 $M/F$ 是二次扩张. 记 $M = \mathbb{C}(t^3)$, $t^3$ 在 $F$ 上的极小多项式为 $x^2 - (t^3+t^{-3})x + 1$. 从而 $M/F$ 是二次扩张, 这说明 $M = \mathrm{Inv}(A_3) = \mathbb{C}(t^3)$.
+
+下面计算 $L_1 = \mathrm{Inv}(H_1)$. $1, t, t^{2}, t^{-1}, t^{-2}, t^{-3} $ 是 $E$ 的一组基. 记 $\alpha \in L_1$, 设 $\alpha = a_1 + a_2 t + a_3 t^2 + a_4 t^{-1} + a_5 t^{-2} + a_6 t^{-3}$, $a_i \in F$, $t^3 = (t^3+t^{-3}) - t^{-3}$. 因此 
+
+$$
+\pi_4(\alpha) = a_1 + a_6(t^3+t^{-3}) + a_4t + a_5t^2 + a_2t^{-1} + a_3t^{-2} - a_6t^{-3}.
+$$
+
+比较系数, 得 $a_6 = 0,a_4 = a_2, a_3 = a_5$. 这说明 $\alpha \in M_1 \Leftrightarrow \alpha \in \mathbb{C}(t+t^{-1})$. 从而 $M_1 = \mathbb{C}(t+t^{-1})$.
+
+$H_1,H_2,H_3$ 共轭, 我们可以算出 $\mathrm{Inv}(H_2) = \mathbb{C}(t\omega + (t\omega)^{-1})$, $\mathrm{Inv}(H_3) = \mathbb{C}(t\omega^2 + (t\omega^2)^{-1})$.
+
+于是 $E/F$ 的全部中间域为 $\mathbb{C}(t+t^{-1}),\mathbb{C}(t\omega + (t\omega)^{-1}), \mathbb{C}(t\omega^2 + (t\omega^2)^{-1}), \mathbb{C}(t^3)$.
+
+**例** 设 $L$ 和 $M$ 均是 $E$ 的子域且 $L / (L\cap M)$ 为有限伽罗瓦扩张. 求证 $LM/M$ 也为有限伽罗瓦扩张, 且 $\mathrm{Gal}(LM/M)\cong \mathrm{Gal}(L/(L\cap M))$.
+{:.warning}
+
+**证明** $L / (L\cap M)$ 是有限伽罗瓦扩张, 从而是 $L \cap M$ 上某一可分多项式在 $L / (L\cap M)$ 上的分裂域. 设这个多项式为 $f(x)$, 则 $f(x) \in L[x]$. 设 $F$ 是 $f(x)$ 在 $M$ 上的分裂域. 一方面, $f(x)$ 的所有根都在 $L$ 中, 从而 $ML \supseteq F$. 另一方面, $M \supseteq L \cap M$, 从而 $F \supseteq L$ ($F$ 和 $L$ 分别是 $f(x)$ 在 $M$ 和 $L \cap M$ 上的分裂域), 又有 $F\supseteq M$, 从而 $F \supseteq LM$. 这说明 $F = LM$, 从而 $LM$ 是 $f(x)$ 在 $M$ 上的分裂域, $LM/M$ 是有限伽罗瓦扩张.
+
+记 $f(x)$ 的全部根为 $\alpha_1,\cdots ,\alpha_n \in L$, 则 $L = (L\cap M)(\alpha_1,\cdots ,\alpha_n)$. 任意 $\sigma \in \mathrm{Gal}(LM/M)$, $\sigma$ 给出 $\alpha_1,\cdots ,\alpha_n$ 的置换, 故 $\sigma(L) = \sigma((L\cap M)(\alpha_1 ,\cdots ,\alpha_n) )= L$. 于是可以给出映射 
+
+$$\pi: \mathrm{Gal}(LM/M) \rightarrow \mathrm{Gal}(L/L\cap M), \sigma \mapsto \sigma\mid_L.$$
+
+任意 $\sigma \in \mathrm{Gal}(LM/M)$, $\sigma \in \ker \pi \Rightarrow \sigma(a) = a,\forall a \in L$., 这导致 $\sigma$ 保持 $\alpha_1,\cdots ,\alpha_n$ 不变, 从而 $\sigma$ 保持 $LM = M(\alpha_1,\cdots ,\alpha_n)$ 的元素不变. 这说明 $\sigma = \mathrm{Id}$, 从而 $\pi$ 是单同态.
+
+接下来, 我们只需证明 $[LM:M] = [L:L\cap M]$. $L/L\cap M$ 是有限可分扩张, 故是单扩张. 设 $L= L\cap M(\beta)$. 设 $\beta$ 在 $L\cap M$ 上的极小多项式为 $g(x)$. 因 $LM = M(L\cap M)(\beta) = M(\beta)$, 我们只需证明 $g(x)$ 在 $M[x]$ 中不可约, 从而 $g(x)$ 也是 $\beta$ 在 $M$ 上的极小多项式, 有 $[LM:M] = \deg g(x) = [L:L \cap M]$.
+
+设 $g(x)$ 在 $M[x]$ 中有分解 $g(x) = h(x)l(x)$. 因 $L /L\cap M$ 是正规扩张, 故 $L$ 包含 $g(x)$ 的全部根 $\beta_1,\cdots ,\beta_n$. 而 $h(x)$ 和 $l(x)$ 的系数是这些根的系数为 $\pm 1$ 的多项式, 故 $h(x), l(x) \in L[x]$, 从而 $h(x), l(x)\in L\cap M[x]$. 由 $g(x)$ 在 $L \cap M$ 上不可约知 $g(x)$ 在 $M[x]$ 中不可约, 从而证明了结论.
+<p align="right">$\blacksquare$</p>
