@@ -259,3 +259,24 @@ $$\pi: \mathrm{Gal}(LM/M) \rightarrow \mathrm{Gal}(L/L\cap M), \sigma \mapsto \s
 
 设 $g(x)$ 在 $M[x]$ 中有分解 $g(x) = h(x)l(x)$. 因 $L /L\cap M$ 是正规扩张, 故 $L$ 包含 $g(x)$ 的全部根 $\beta_1,\cdots ,\beta_n$. 而 $h(x)$ 和 $l(x)$ 的系数是这些根的系数为 $\pm 1$ 的多项式, 故 $h(x), l(x) \in L[x]$, 从而 $h(x), l(x)\in L\cap M[x]$. 由 $g(x)$ 在 $L \cap M$ 上不可约知 $g(x)$ 在 $M[x]$ 中不可约, 从而证明了结论.
 <p align="right">$\blacksquare$</p>
+
+**例** 设 $E /F$ 是有限伽罗瓦扩张, $\mathrm{Gal}(E /F) = A_n$ (交错群), $n \ge 4$. 则不存在 $E /F$ 的中间域 $L$ 使 $[L:F] = 2$.
+{:.warning}
+
+**证明** 使 $[L:F] = 2$ 的中间域 $L$ 导致 $\mathrm{Gal}(E /L)$ 的对 $A_n$ 的指数为 $2$, 从而是 $A_n$ 的正规子群. $n \ge 5$ 时 $A_n$ 是单群, 而 $n= 4$ 时 $A_4$ 无 $6$ 阶子群. 从而不存在这样的中间域 $L$ 满足题意.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $E/F$ 是有限伽罗瓦扩张. 如果对任一域 $K$ ($F \subsetneqq K \subseteq E$), $K$ 对 $F$ 均有相同的扩张次数 $[K:F]$. 则 $[E:F]$ 是素数.
+{:.warning}
+
+**证明** 这即是说任一 $G = \mathrm{Gal}(E/F)$ 的真子群 $H$, $[G:H]$ 都是相同的. 若 $\mid G\mid$ 含有两个以上的素因子, 设素数 $p_1,p_2$ 是它的因子, 则 $G$ 的 Sylow-$p_1$ 子群 $H_1$ 和 Sylow-$p_2$ 子群的指数是不同的. 因为 $H_1$ 的指数是 $p_2$ 的倍数, 而 $H_2$ 的指数不是. 这说明 $G$ 是 $p$-群. 若 $\mid G \mid = p^n$, $n \ge 2$. 则 $G$ 有指数为 $p^{n-1}$ 的子群 (阶数为 $p$) 和指数为 $p$ 的极大子群. 这说明 $n$ 只能为 $1$, 从而 $G$ 是素数阶群, $[E:F]$ 是素数.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $E/F$ 是有限伽罗瓦扩张, $\mathrm{Gal}(E/F)$ 是 $2p$ 阶非阿贝尔群, 其中 $p$ 是奇素数, $L$ 是满足 $[E:L] = 2$ 的中间域. 则 $L/F$ 不是有限伽罗瓦扩张.
+{.:warning}
+
+**证明** $[E:L]=2$, 说明 $H = \mathrm{Gal}(E/L)$ 是 $G = \mathrm{Gal}(E/F)$ 的 $2$ 阶子群. 取 $P$ 是 $G$ 的 Sylow-$p$ 子群. $P$ 的指数为 $2$, 从而 $P$ 是正规子群. $L/F$ 是有限伽罗瓦扩张等价于 $H \triangleleft G$. 若 $H \triangleleft G$, 由 $$H \cap P = \{1\}$$ 知 $G = HP \cong \mathbb{Z_2} \oplus \mathbb{Z_p} \cong \mathbb{Z}_{2p}$. 这与 $G$ 非 Abel 矛盾.
+<p align="right">$\blacksquare$</p>
+
+
+
