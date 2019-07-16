@@ -160,7 +160,7 @@ $$
 [M:\mathbb{C}] = [\mathrm{Gal}(N/\mathbb{C}): P] = 2.
 $$
 
-但复数域无 $2$ 次扩张, 矛盾!
+但复数域无 $2$ 次扩张([习题](https://wuxiangdong.github.io/2019/07/07/Galois-Theory-1.html#%E4%B8%80%E4%BA%9B%E4%B9%A0%E9%A2%98)), 矛盾!
 <p align="right">$\blacksquare$</p>
 
 ## 一些例题
@@ -198,3 +198,17 @@ $$
 
 其中 $[L(\alpha):L] \ne 1$, 于是只能是 $[L(\alpha):L] = p$ 和 $[F: L(\alpha)] = 1$. 这说明 $F = L(\alpha)$, 说明 $L$ 符合题意.
 <p align="right">$\blacksquare$</p>
+
+**例** 设 $E/F$ 是有限伽罗瓦扩张, $F$ 的特征不为 $2$, $\mathrm{Gal}(E/F) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$. 则 $E = F(\sqrt{a},\sqrt{b})$. 其中 $a,b \in F$.
+{:.warning}
+
+**证明** 对 $E/F$ 使用伽罗瓦理论基本定理. $\mathbb{Z}_2 \oplus \mathbb{Z}_2$ 的全部子群为 $$\{0\}, H_1 = \{0\} \oplus \mathbb{Z}_2 , H_2 = \mathbb{Z}_2 \oplus \{0\}, \mathbb{Z}_2 \oplus \mathbb{Z}_2$$. 记 $M_1 = \mathrm{Inv}(H_1)$, 则 $H_1/F$ 是二次扩张, 存在 $a \in F$ 使 $H_1 = F(\sqrt{a})$ ([例题](https://wuxiangdong.github.io/2019/07/07/Galois-Theory-1.html#%E4%B8%80%E4%BA%9B%E4%B9%A0%E9%A2%98)). 同理记 $M_2 = \mathrm{Inv}(H_2)$, 则 $H_2 = F(\sqrt{b}), b\in F$. 有 $\sqrt{b} \notin F(\sqrt{a})$ (否则 $F(\sqrt{b}) \subseteq F(\sqrt{a})$, 这导致 $H_1 \leqslant H_2$), 从而 $[F(\sqrt{a},\sqrt{b}) : F(\sqrt{a})] = 2$ ($\sqrt{b}$ 在 $F(\sqrt{a})$ 上极小多项式为 $x^2 - b$). 从而 $[F(\sqrt{a},\sqrt{b}) :F] = 4 = [E:F]$. 而 $F(\sqrt{a},\sqrt{b}) \subseteq E$, 这说明 $E = F(\sqrt{a},\sqrt{b})$.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $E = \mathbb{C}(t)$ (复数域上有理函数域), $F = \mathbb{C}(t^3 + t^{-3})$. 求 $E/F$ 的全部中间域.
+{:.warning}
+
+**解** $t$ 是多项式 $x^6-(t^3+t^{-3})x^3 + 1$ 的一根,  而这个多项式的全部根为 $t,t\omega, t\omega^2 ,t^{-1}, t^{-1}\omega ,t^{-1}\omega^{2} \in \mathbb{C}(t)$. 这说明 $E$ 是 $x^6 - (t^3+t^{-3})x^3 + 1$ 在 $F$ 上的分裂域, 从而 $E/F$ 是有限伽罗瓦扩张.
+
+吃饭吃饭qwq.
+
