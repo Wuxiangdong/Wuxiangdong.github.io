@@ -253,7 +253,7 @@ $H_1,H_2,H_3$ 共轭, 我们可以算出 $\mathrm{Inv}(H_2) = \mathbb{C}(t\omega
 
 $$\pi: \mathrm{Gal}(LM/M) \rightarrow \mathrm{Gal}(L/L\cap M), \sigma \mapsto \sigma\mid_L.$$
 
-任意 $\sigma \in \mathrm{Gal}(LM/M)$, $\sigma \in \ker \pi \Rightarrow \sigma(a) = a,\forall a \in L$., 这导致 $\sigma$ 保持 $\alpha_1,\cdots ,\alpha_n$ 不变, 从而 $\sigma$ 保持 $LM = M(\alpha_1,\cdots ,\alpha_n)$ 的元素不变. 这说明 $\sigma = \mathrm{Id}$, 从而 $\pi$ 是单同态.
+任意 $\sigma \in \mathrm{Gal}(LM/M)$, $\sigma \in \ker \pi \Rightarrow \sigma(a) = a,\forall a \in L$, 这导致 $\sigma$ 保持 $\alpha_1,\cdots ,\alpha_n$ 不变, 从而 $\sigma$ 保持 $LM = M(\alpha_1,\cdots ,\alpha_n)$ 的元素不变. 这说明 $\sigma = \mathrm{Id}$, 从而 $\pi$ 是单同态.
 
 接下来, 我们只需证明 $[LM:M] = [L:L\cap M]$. $L/L\cap M$ 是有限可分扩张, 故是单扩张. 设 $L= L\cap M(\beta)$. 设 $\beta$ 在 $L\cap M$ 上的极小多项式为 $g(x)$. 因 $LM = M(L\cap M)(\beta) = M(\beta)$, 我们只需证明 $g(x)$ 在 $M[x]$ 中不可约, 从而 $g(x)$ 也是 $\beta$ 在 $M$ 上的极小多项式, 有 $[LM:M] = \deg g(x) = [L:L \cap M]$.
 
