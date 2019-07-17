@@ -26,7 +26,7 @@ $$
 \sigma\mapsto \begin{pmatrix} 
 r_1 & r_2 & \cdots & r_n \\
 \sigma(r_1) & \sigma(r_2) & \cdots & \sigma(r_n)
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 是 $G_f$ 到 $S_n$ 的同态. 因 $E = F(r_1,\cdots ,r_n)$, 故 $\sigma$ 由值 $\sigma(r_1),\cdots ,\sigma(r_n)$ 唯一确定, 因此这个同态是单射, 从而 $G_f$ 可以视为 $S_n$ 的子群. 由 $f(x)$ 无重根知 $\mid G_f \mid = \mid \mathrm{Gal}(E/F) \mid = [E:F]$.
