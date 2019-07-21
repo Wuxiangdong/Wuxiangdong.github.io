@@ -66,7 +66,7 @@ $$
 注: $r_1$ 和 $r_4$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 -2x + 2$. $r_2$ 和 $r_3$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 + 2x + 2$. 而 $x^4 + 4 = (x^2 - 2x+ 2)(x^2 + 2x + 2)$.
 
 **例** 设 $G$ 是 $S_n$ 的可迁子群, $H$ 是 $G$ 的正规子群. 则 $$\{1,2,\cdots ,n\}$$ 每个 $H$-轨道有相同的长度. 由此证明: 若 $n=p$ 是素数且 $$H \ne \{1\}$$, 则 $H$ 也是 $S_n$ 的可迁子群, 从而 $p \mid \,\mid H\mid$, 进而 $H$ 含有 $p$-轮换.
-{:.info}
+{:.warning}
 
 **证明** 对 $1 \le a\le n$, 记 $a$ 所在的 $H$-轨道为 $\Delta_a$. 由轨道公式, 有 $\mid \Delta_a \mid = [H : G_a]$, 其中 $$G_{a} = \{\sigma \in H \mid \sigma(a) = a\}$$. 只需证明 $\mid G_{a}\mid = \mid G_{b} \mid$, $\forall 1\le a,b \le n$. $G$ 是可迁子群, 存在 $\pi \in G$ 使得 $\pi(a) = b$.  $H$ 是 $G$ 的正规子群, 故 $\forall \sigma \in H$, $\pi\sigma\pi^{-1} \in H$. 记
 
@@ -80,4 +80,44 @@ $$
 下设 $n=p$ 是素数且 $$H \ne {1}$$. 则 $$\{1,2,\cdots ,p\}$$ 的每一个 $H$-轨道有相同的长度. 记每一个轨道的长度为 $l$, 则 $l \mid p$. $$H \ne \{1\}$$ 故 $l \ne 1$, 从而只能是 $l = p$. 这说明 $H$ 在 $$\{1,2,\cdots ,p\}$$ 上的作用是传递的, 从而 $H$ 也是可迁子群. $p$ 是 $H$ 某个子群的阶数, 故 $p \mid \, \mid{H}\mid$. 从而 $H$ 有 $p$ 阶元. $H$ 的每个元素写为不相交轮换之积, 有 $H$ 的每个元素的阶为其每个轮换长度的最小公倍数. $p$ 是素数, 从而 $H$ 的 $p$ 阶元素必然是 $p$-轮换. 这说明 $H$ 有 $p$-轮换.
 <p align="right">$\blacksquare$</p>
 
+## 判别式
 
+设 $f(x)$ 是 $F$ 上无重根多项式, $r_1,\cdots, r_n$ 是其全部根. $E$ 是 $f(x)$ 在 $F$ 上的分裂域. 并且视伽罗瓦群 $G_f$ 为对称群 $S_n$ 的子群. 记 $A_n$ 为 $n$ 次交错群. 那么在 $E/F$ 的对应下 $G_f \cap A_n$ 对应的中间域是什么?
+
+令 $\Delta = \Delta(f) = \prod_{1 \le i < j \le n} (r_i-r_j) \in E$. 对每个 $\sigma \in G_f$, 有 $\sigma(\Delta^2) = \sigma(\Delta)^2 = (\pm \Delta)^2 = \Delta^2$ (因为 $\sigma$ 置换 $r_1,\cdots ,r_n$, 从而只改变 $\Delta$ 的符号). 这说明 $\Delta^2 \in F$. 称 $d(f) = \Delta^2 \in F$ 为 $f(x)$ 在 $F$ 上的 **判别式**. 对任意多项式(不一定无重根) $f(x)$, 其判别式同样定义, 则 $f(x)$ 无重根当且仅当 $d(f) \ne 0$. 令 $$F^2 = \{a^2 \mid a \in F\}$$. 则 $\Delta \in F$ 当且仅当 $d(f) = \Delta^2 \in F^2$. 若 $\mathrm{Char} F \ne 2$, 一个置换 $\sigma$ 是偶置换当且仅当 $\sigma(\Delta) = \Delta$ (一次对换改变一次 $\Delta$ 的符号). 于是 $G_f \cap A_n = \mathrm{Gal}(E/F(\Delta))$, 从而 $G_f \cap A_n$ 对应的中间域就是 $F(\Delta)$. 这证明了下面的 $\mathrm{(i)}$.
+
+**引理** 设域 $F$ 特征不为 $2$, $E$ 是 $n$ 次无重根多项式 $f(X) \in F[x]$ 在 $F$ 上的分裂域. 则  
+$\mathrm{(i)}$ $\mathrm{Gal}(E/F(\Delta)) = G_f \cap A_n$, $\mathrm{Inv}(G_f\cap A_n) = F(\Delta)$.  
+$\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $\Delta \in F$, 这等价于 $d(f) \in F^2$.  
+$\mathrm{(iii)}$ 若 $f(x)$ 是 $F$ 上的 $3$ 次不可约多项式, 则  
+$$
+	G_f = 
+		\begin{cases}
+			A_3 &, \text{若 $d(f) \in F^2$},\\
+			S_3  &, \text{若 $d(f) \notin F^2$}.
+		\end{cases}
+$$
+{:.info}
+
+**证明** $\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $G_f \cap A_n = G_f$, 使用伽罗瓦理论基本定理, 这等价于 $F(\Delta) = F$, 等价于 $\Delta \in F$.
+
+$\mathrm{(iii)}$ $G_f$ 是 $S_3$ 的可迁子群, 从而只是 $S_3$ 或 $A_3$. 再由 $\mathrm{(ii)}$ 可知结论成立.
+<p align="right">$\blacksquare$</p>
+
+$\Delta$ 是 $r_1,r_2,\cdots ,r_n$ 的范德蒙行列式, 记 $r_1,\cdots ,r_n$ 的初等对称多项式 
+
+$$p_i  = \sum_{1 \le k_1 < \cdots < k_i \le n}{r_{k_1}r_{k_2}\cdots r_{k_i}}, i=1,2,\cdots ,n.$$
+
+则 $d(f) = \Delta^2$ 是关于 $r_1,\cdots ,r_n$ 的对称多项式, 从而是 $p_1,\cdots ,p_n$ 的多项式. 例如
+
+$2$ 次多项式 $f(x) = x^2 - a_1x + a_2$ 的判别式为
+
+$$
+d(f) = a_1^2 - 4a_2.
+$$ 
+
+$3$ 次多项式 $f(x) = x^3 - a_1x^2 + a_2x - a_3$ 的判别式为
+
+$$
+d(f) = -4a_1^3a_3 + a_1^2a_2^2 + 18a_1a_2a_3 - 4a_2^3 - 27a_3^2.
+$$
