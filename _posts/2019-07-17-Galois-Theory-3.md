@@ -99,7 +99,7 @@ $$
 $$
 {:.info}
 
-**证明** $\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $G_f \cap A_n = G_f$, 使用伽罗瓦理论基本定理, 这等价于 $F(\Delta) = F$, 等价于 $\Delta \in F$.
+**证明** $\mathrm{(ii)}$ $G_f \subseteq A_n$ 当且仅当 $G_f \cap A_n = G_f$, 使用伽罗瓦理论基本定理, 这等价于 $F(\Delta) = F$, 等价于 $\Delta \in F$.
 
 $\mathrm{(iii)}$ $G_f$ 是 $S_3$ 的可迁子群, 从而只是 $S_3$ 或 $A_3$. 再由 $\mathrm{(ii)}$ 可知结论成立.
 <p align="right">$\blacksquare$</p>
