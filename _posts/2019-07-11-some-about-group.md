@@ -6,6 +6,7 @@ tags: Math Algebra 群论
 <!-- vim-markdown-toc GFM -->
 
 * [$\bf 1$](#bf-1)
+* [$\bf 2$](#bf-2)
 
 <!-- vim-markdown-toc -->
 
@@ -59,3 +60,23 @@ $$
 
 若 $P$ 是 $M$ 的子群, 则 $M/P$ 是 $G/P$ 的极大子群. 由归纳假设, 有 $M/P \triangleleft G/P$ 且 $[G/P : M/P] = p$, 从而 $M \triangleleft G$ 且 $[G:M] = p$.
 <p align="right">$\blacksquare$</p>
+
+## $\bf 2$
+2019-7-23
+
+**例** 设 $G_1$ 和 $G_2$ 是两个非交换单群, 试证 $G_1 \times G_2$ 的非平凡正规子群只有 $G_1$ 和 $G_2$.
+{:.warning}
+
+**证明** 记 $G = G_1 \times G_2$, 设 $H \triangleleft G$ 且 $H$ 非平凡. 有 $H \cap G_1 \triangleleft G_1$, $H \cap G_2 \triangleleft G_2$. $G_1,G_2$ 是单群, 所以 $$H \cap G_i = \{1\}$$ 或 $G_i$, $i = 1,2$. 若 $H \cap G_1 = G_1$, $H \cap G_2 = G_2$, 则 $\forall (g_1,g_2) \in G$, $(g_1,g_2) = (g_1,1_{G_2})(1_{G_1},g_2) \in H$. 这导致 $H = G$ 是平凡的. 因此 $H \cap G_1$, $H \cap G_2$ 必有一个为 $$\{1\}$$.
+
+不妨设 $$H \cap G_1 = \{1\}$$. $H$ 是 $G$ 的正规子群, 从而 $\forall g \in G_1$, $(a,b) \in H$, 都有 $g(a,b)g^{-1} = (gag^{-1},b) \in H$. 于是 $$(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1 = \{1\}$$, 从而 $gag^{-1}a^{-1} = 1_{G_1}$. 这说明 $a \in Z(G_1)$. 而 $Z(G_1) \triangleleft G_1$, 且 $G_1$ 为不交换的单群, 因此 $$Z(G_1) = \{1\}$$. 于是 $a \in Z(G_1) \Rightarrow a = 1_{G_1}$. 这说明 $\forall (a,b) \in H$, 都有 $a = 1_{G_1}$, 于是 $H \leqslant G_2$. $H \cap G_2 = H$ 可以为 $$\{1\}$$ 或 $G_2$. $H$ 不平凡, 故 $H = G_2$.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $G = G_1 \times G_2$, $H \triangleleft G$ 且 $$H \cap G_i = \{1\}$$, $i = 1,2$. 试证 $H \leqslant Z(G)$. 特别地, $H$ 是 $\mathrm{Abel}$ 群.
+{:.warning}
+
+**证明** 设 $(a,b) \in H$. 任意 $g \in G_1$, $g(a,b)g^{-1} = (gag^{-1},b)\in H$. 从而 $(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1$. 这说明 $ga = ag$, $\forall g \in G_1$. 同理 $\forall g \in G_2$, $gb = bg$. 这说明 $\forall (a,b) \in H$, $a \in Z(G_1), b\in Z(G_2)$. 从而 $H \leqslant Z(G_1) \times Z(G_2) = Z(G)$.
+<p align="right">$\blacksquare$</p>
+
+
+
