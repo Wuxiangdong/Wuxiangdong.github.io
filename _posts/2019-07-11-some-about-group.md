@@ -69,7 +69,7 @@ $$
 
 **证明** 记 $G = G_1 \times G_2$, 设 $H \triangleleft G$ 且 $H$ 非平凡. 有 $H \cap G_1 \triangleleft G_1$, $H \cap G_2 \triangleleft G_2$. $G_1,G_2$ 是单群, 所以 $$H \cap G_i = \{1\}$$ 或 $G_i$, $i = 1,2$. 若 $H \cap G_1 = G_1$, $H \cap G_2 = G_2$, 则 $\forall (g_1,g_2) \in G$, $$(g_1,g_2) = (g_1,1_{G_2})(1_{G_1},g_2) \in H$$. 这导致 $H = G$ 是平凡的. 因此 $H \cap G_1$, $H \cap G_2$ 必有一个为 $$\{1\}$$.
 
-不妨设 $$H \cap G_1 = \{1\}$$. $H$ 是 $G$ 的正规子群, 从而 $\forall g \in G_1$, $(a,b) \in H$, 都有 $g(a,b)g^{-1} = (gag^{-1},b) \in H$. 于是 $$(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1 = \{1\}$$, 从而 $$gag^{-1}a^{-1} = 1_{G_1}$$. 这说明 $a \in Z(G_1)$. 而 $Z(G_1) \triangleleft G_1$, 且 $G_1$ 为不交换的单群, 因此 $$Z(G_1) = \{1\}$$. 于是 $a \in Z(G_1) \Rightarrow a = 1_{G_1}$. 这说明 $\forall (a,b) \in H$, 都有 $a = 1_{G_1}$, 于是 $H \leqslant G_2$. $H \cap G_2 = H$ 可以为 $$\{1\}$$ 或 $G_2$. $H$ 不平凡, 故 $H = G_2$.
+不妨设 $$H \cap G_1 = \{1\}$$. $H$ 是 $G$ 的正规子群, 从而 $\forall g \in G_1$, $(a,b) \in H$, 都有 $g(a,b)g^{-1} = (gag^{-1},b) \in H$. 于是 $$(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1 = \{1\}$$, 从而 $$gag^{-1}a^{-1} = 1_{G_1}$$. 这说明 $a \in Z(G_1)$. 而 $Z(G_1) \triangleleft G_1$, 且 $G_1$ 为不交换的单群, 因此 $$Z(G_1) = \{1\}$$. 于是 $$a \in Z(G_1) \Rightarrow a = 1_{G_1}$$. 这说明 $$\forall (a,b) \in H$$, 都有 $$a = 1_{G_1}$$, 于是 $$H \leqslant G_2$$. $$H \cap G_2 = H$$ 可以为 $$\{1\}$$ 或 $$G_2$$. $$H$$ 不平凡, 故 $$H = G_2$$.
 <p align="right">$\blacksquare$</p>
 
 **例** 设 $G = G_1 \times G_2$, $H \triangleleft G$ 且 $$H \cap G_i = \{1\}$$, $i = 1,2$. 试证 $H \leqslant Z(G)$. 特别地, $H$ 是 $\mathrm{Abel}$ 群.
