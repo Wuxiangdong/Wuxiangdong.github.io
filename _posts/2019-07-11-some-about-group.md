@@ -5,8 +5,8 @@ tags: Math Algebra 群论
 
 <!-- vim-markdown-toc GFM -->
 
-* [$\bf 1$](#bf-1)
-* [$\bf 2$](#bf-2)
+* [$\bf 1$](#$\bf-1$)
+* [$\bf 2$](#$\bf-2$)
 
 <!-- vim-markdown-toc -->
 
@@ -78,5 +78,31 @@ $$
 **证明** 设 $(a,b) \in H$. 任意 $g \in G_1$, $g(a,b)g^{-1} = (gag^{-1},b)\in H$. 从而 $(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1$. 这说明 $ga = ag$, $\forall g \in G_1$. 同理 $\forall g \in G_2$, $gb = bg$. 这说明 $\forall (a,b) \in H$, $a \in Z(G_1), b\in Z(G_2)$. 从而 $H \leqslant Z(G_1) \times Z(G_2) = Z(G)$.
 <p align="right">$\blacksquare$</p>
 
+2019-7-26
 
+**例** 设 $G$ 是群, $N \triangleleft G$, $NG_2 \triangleleft NG_1$.  
+$\mathrm{(i)}$ 证明: $NG_1/NG_2 \cong G_1/G_1\cap NG_2$. 特别的, 取 $$G_2 = \{1\}$$, 得到 $NG_1/N \cong G_1/N\cap G_1$.  
+$\mathrm{(ii)}$ 若 $G_2 \triangleleft G_1$, $G_1/G_2$ 是单群, 证明: $NG_1/NG_2$ 也是单群.
+{:.warning}
 
+**证明** $\mathrm{(i)}$ 记
+
+$$
+\sigma: G_1 \rightarrow NG_1/NG_2, g \mapsto gNG_2.
+$$
+
+这给出 $G_1$ 到 $NG_1/NG_2$ 的满同态 (满射是因为 $ngNG_2 = gNG_2 = \sigma(g)$, $\forall g \in G_1, n \in N$). 并且
+
+$$
+\ker \sigma = \{a \in G_1 \mid a \in NG_2\} = G_1 \cap NG_2.
+$$
+
+从而 $NG_1/NG_2 \cong G_1/G_1 \cap NG_2$.
+
+$\mathrm{(ii)}$ 有 
+
+$$
+NG_1/NG_2 \cong G_1/G_1\cap NG_2=G_1/G_2(G_1\cap N) \cong \frac{G_1/G_2}{G_2(G_1\cap N)/G_2}.
+$$
+
+$G_1/G_2$ 单, 从而 $NG_1/NG_2$ 要么同构于 $$\{1\}$$, 要么同构于 $G_1/G_2$. 这两种情况 $NG_1/NG_2$ 都是单群.
