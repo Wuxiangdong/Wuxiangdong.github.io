@@ -1,109 +1,173 @@
 ---
-title: 关于群的一些东西
-tags: Math Algebra 群论
+title: 伽罗瓦群的计算
+tags: Math Algebra 伽罗瓦理论
 ---
+~~认真抄书(逃~~
 
 <!-- vim-markdown-toc GFM -->
 
-* [$\bf 1$](#bf-1)
-* [$\bf 2$](#bf-2)
+* [伽罗瓦的原始思想](#伽罗瓦的原始思想)
+* [判别式](#判别式)
 
 <!-- vim-markdown-toc -->
 
-## $\bf 1$
-有限 $p$-群是指阶数为 $p$ 的幂的有限群, 其中 $p$ 是一个素数.
+## 伽罗瓦的原始思想
 
-$p$-群在集合上的置换作用可产生一个轨道分解公式, 有时在模 $p$ 的意义下这些公式可以给出一些性质.
-
-**定理** 有限 $p$-群必有非平凡的中心.
-{:.info}
+设 $E$ 是域 $F$ 上多项式 $f(x)$ 在域 $F$ 上的分裂域. 将伽罗瓦群 $\mathrm{Gal}(E/F)$ 称为多项式 $f(x)$ 或方程 $f(x)=0$ 在 $F$ 上的伽罗瓦群, 记为 $\mathrm{Gal}(f(x), F)$. 或简记为 $G_f$. 具体方程的伽罗瓦群的计算是伽罗瓦理论的重要课题. 这里主要讨论无重根多项式的伽罗瓦群, 这里 "无重根" 保证了 $E/F$ 是有限伽罗瓦扩张, 从而 $\mid G_f \mid = [E:F]$.
 <!--more-->
-**证明** 设 $G$ 是有限 $p$-群, 将 $G$ 共轭作用到 $G$ 本身:
 
-$$
-    \rho: G \rightarrow S(G), \rho(a)\circ b = a{b}a^{-1}.
-$$
+对称群 $S_n$ 的子群 $G$ 称为 $S_n$ 的可迁子群, 或称为集合 $$\Lambda = \{1,2,\cdots ,n\} $$ 上的可迁置换群, 如果任意 $i, j\in\Lambda$, 存在 $\sigma \in G$ 使得 $\sigma(i) = j$. 我们将 $S_n$ 视为 $f(x)$ 的根集 $$\{r_1,\cdots ,r_n\} $$ 上的对称群. 例如, $(12)$ 指的是 $(r_1r_2)$.
 
-将 $G$ 拆分为轨道的无交并 $G = \bigcup_{i=1}^{t}{\Delta_{i}}$, $\mid G \mid = \sum_{i=1}^{t}{ \mid  \Delta_i  \mid}$. 记 $a_i$ 是 $\Delta_i$ 的代表元, $G_{a_i}$ 是 $a_i$ 的稳定子群, 则 $\mid \Delta_i \mid = \frac{ \mid G \mid }{ \mid G_{a_i} \mid}$. 这说明 $\mid \Delta_i \mid$ 要么为 $1$, 要么为 $p$ 的幂. $a \in G$ 单独在一个轨道等价于 $a \in Z(G)$. 从而
-
-$$
-    |G| = |Z(G)| + \sum_{1\le i \le n, |\Delta_i| \ne 1} |\Delta_i| \equiv |Z(G)|\pmod{p}
-$$
-
-这说明 $\mid Z(G) \mid \equiv 0 \pmod{p}$, 从而 $\mid Z(G) \mid \ne 1$. $Z(G)$ 非空, 故 $G$ 有非平凡的中心.
-<p align="right">$\blacksquare$</p>
-
-**定理** (**Sylow 定理, 之一**) 设 $G$ 为有限群, 则 $G$ 的 Sylow-$p$ 子群彼此共轭.
+**定理** 设 $r_1,\cdots ,r_n$ 是域 $F$ 上 $n$ 次无重根多项式 $f(x)$ 的全部根. 则  
+$\mathrm{(i)}$ 伽罗瓦群 $G_f$ 是 $S_n$ 的阶为 $[E:F]$ 的子群;  
+$\mathrm{(ii)}$ 设 $\sigma \in S_n$, 则 $\sigma\in G_f$ 当且仅当 $\sigma$ 保持 $f(x)$ 的根之间的所有代数关系, 即若 $g(r_1,\cdots ,r_n) = 0$, 其中 $g \in F[x_1,\cdots ,x_n]$. 则 $g(\sigma(r_1),\cdots ,\sigma(r_n)) = 0$;  
+$\mathrm{(iii)}$ $f(x)$ 在 $F$ 上不可约当且仅当 $G_f$ 是可迁子群.
 {:.info}
 
-**证明** 记 $p^r \mid\mid\,\,\mid G \mid$. 令 $\Sigma$ 是 $G$ 的所有 Sylow-$p$ 子群构成的集合, 将 $G$ 共轭作用于其上. 令 $\Delta$ 是一个 $G$-轨道. 取 $G$ 的一个 Sylow-$p$ 子群 $P$. 可 $P$ 作用于 $\Delta$ 上, $\Delta$ 被拆分为 $P$-轨道. 且每个 $P$-轨道的长度是 $\mid P \mid = p^r$ 的因子. 若 $P' \in \Delta$ 单独在一个 $P$-轨道, 则 $PP' = P'P$, 从而 $PP'$ 是 $G$ 的子群. $\mid PP'\mid = \mid P \mid\mid P' \mid / \mid P \cap P'\mid$, 仍然是 $p$ 的幂. 又 $P \leqslant PP' \leqslant G$, 只能是 $PP' = P = P'$. 上述说明长度为 $1$ 的 $P$-轨道只能是 $$\{P\}$$ 本身. 
 
-现在假设 $\Delta \ne \Sigma$, 存在 $P \in \Sigma - \Delta$. 将 $P$ 共轭作用于 $\Delta$, 则 $\mid \Delta\mid \equiv 0 \pmod{p}$ (每个 $P$-轨道都是 $p$ 的幂且不为 $1$). 再取 $Q \in \Delta$, 将 $Q$ 共轭作用于 $\Delta$ 上, 可以得到 $\mid\Delta\mid \equiv 1 \pmod{p}$. 这两者矛盾! 故 $\Delta= \Sigma$, 从而 $G$ 在 $\Sigma$ 上的作用是传递的, $G$ 上的 Sylow-$p$ 子群彼此共轭.
+**证明** 设 $E$ 是 $f(x)$ 在 $F$ 上的分裂域.
+
+$\mathrm{(i)}$: 设 $\sigma \in G_f$.由 $0 = f(r_i)$ 知 $0 = \sigma(0) = f(\sigma(r_i))$, 因而 $\sigma(r_1),\sigma(r_2),\cdots ,\sigma(r_n)$ 也是 $f(x)$ 的两两不同的根, 从而是 $r_1,\cdots ,r_n$ 的一个置换. 于是
+
+$$
+\sigma\mapsto \begin{pmatrix} 
+r_1 & r_2 & \cdots & r_n \\
+\sigma(r_1) & \sigma(r_2) & \cdots & \sigma(r_n)
+\end{pmatrix}
+$$
+
+是 $G_f$ 到 $S_n$ 的同态. 因 $E = F(r_1,\cdots ,r_n)$, 故 $\sigma$ 由值 $\sigma(r_1),\cdots ,\sigma(r_n)$ 唯一确定, 因此这个同态是单射, 从而 $G_f$ 可以视为 $S_n$ 的子群. 由 $f(x)$ 无重根知 $\mid G_f \mid = \mid \mathrm{Gal}(E/F) \mid = [E:F]$.
+
+$\mathrm{(ii)}:$ 设 $\sigma \in G_f$. 若 $g(r_1,\cdots ,r_n) = 0$, 则
+
+$$
+0 = \sigma(0) = \sigma(g(r_1,\cdots,r_n)) = g(\sigma(r_1),\cdots,\sigma(r_n)).
+$$
+
+即 $\sigma$ 保持 $f(x)$ 根之间的所有代数关系. 反之, 设 $\sigma \in S_n$ 且保持 $f(x)$ 根之间的所有代数关系. 任意 $a \in E$, 存在 $\psi \in F[x_1,\cdots ,x_n]$ 使 $a = \psi(r_1,\cdots ,r_n)$. 定义 $E$ 的一个 $F$-自同构为
+
+$$
+\pi: E\rightarrow E, a = \psi(r_1,\cdots ,r_n) \mapsto \psi(\sigma(r_1),\cdots ,\sigma(r_n)).
+$$
+
+首先说明这个映射的定义是合理的, 即映射的值 $\pi(a)$ 与 $\psi$ 的选取无关. 若 $a = \psi(r_1,\cdots ,r_n) = \phi(r_1,\cdots ,r_n)$, 则 $\psi(r_1,\cdots ,r_n) - \phi(r_1,\cdots ,r_n) = 0$, 其中 $\psi,\phi \in F[x_1,\cdots ,x_n]$. $\sigma$ 保持 $r_1,\cdots ,r_n$ 的代数关系, 故 $\psi(\sigma(r_1), \cdots , \sigma(r_n)) - \phi(\sigma(r_1),\cdots ,\sigma(r_n)) = 0$, 从而 $\psi(\sigma(r_1), \cdots , \sigma(r_n)) = \phi(\sigma(r_1),\cdots ,\sigma(r_n))$. 于是 $\pi$ 确实是 $E$ 到自身的映射. 可以看出 $\pi$ 保持 $E$ 的加法和乘法, 从而 $\pi \in \mathrm{Gal}(E/F) = G_f$. 因为 $\pi(r_i) = \sigma(r_i)$, 故 $\pi$ 作为 $S_n$ 的元就是 $\sigma$.
+
+$\mathrm{(iii)}$: 设 $f(x)$ 在 $F[x]$ 中不可约. 对于 $f(x)$ 的任意根 $r_i$, $r_j$ 来说, $r_i$, $r_j$ 在 $F$ 上的极小多项式均为 $f(x)$, 因此存在 $F$-同构 $\sigma: F(r_i) \rightarrow F(r_j)$ 使得 $\sigma(r_i) = r_j$. $E$ 可以看成 $f(x)$ 在 $F(r_i)$ 和 $F(r_j)$ 上的分裂域, 由同构延拓定理, $\sigma$ 可以延拓为 $\pi: E\rightarrow E$, 从而 $\pi \in G_f$ 且 $\pi(r_i) = r_j$, 即 $G_f$ 是 $S_n$ 的可迁子群. 反之, 设 $G_f$ 是 $S_n$ 的可迁子群. 对于 $f(x)$ 的任意根, 存在 $\sigma \in G_f$ 使 $\sigma(r_1) = r_j$. 令 $f_1(x)$ 是 $r_1$ 在 $F$ 上的极小多项式. 将 $\sigma$ 作用在等式 $0 = f_1(r_1)$ 的两边, 我们得到
+
+$$
+0 = \sigma(0) = \sigma(f_1(r_1)) = f_1(r_j).
+$$
+
+这说明 $f(x)$ 的任意根均为 $f_1(x)$ 的根, 于是 $f(x) \mid f_1(x)$, 由 $f_1(x)$ 不可约知 $f(x) = f_1(x)$, 从而 $f(x)$ 在 $F$ 上不可约.
 <p align="right">$\blacksquare$</p>
 
-**例** 令 $P_1,P_2,\cdots ,P_N$ 是有限群 $G$ 的全部 Sylow-$p$ 子群. 如果对任意 $i \ne j$, 都有 $\mid P_i : P_i \cap P_j\mid \ge p^r$, 则 $N \equiv 1\pmod{p^r}$.
+伽罗瓦本人就是将 $G_f$ 定义为保持 $f(x)$ 的根 $r_1,\cdots ,r_n$ 之间全部代数关系的根集 $$\{r_1,\cdots ,r_n\}$$ 上的所有置换构成的群. 于是 $G_f$ 反映了 $f(x)$ 根之间的对称. $G_f$ 需保持 $f(x)$ 对称, 因此 $G_f$ 一般不是 $S_n$, 而是 $S_n$ 的某个子群.
+
+将 $G_f$ 定义为 $\mathrm{Gal}(E/F)$ 是戴德金的贡献: 这不仅使得伽罗瓦理论取得了现代的形式, 而且使伽罗瓦群的计算更具可操作性: 因为从计算的观点来看, 确定 $f(x)$ 的根之间的所有代数关系是困难的. 当然, 将伽罗瓦原始思想理解清楚了也恰好就是我们今天使用的戴德金的定义.
+
+**例** 求有理数域 $\mathbb{Q}$ 上可约多项式 $x^4 + 4$ 的伽罗瓦群.
 {:.warning}
 
-**证明** 记 $$\Sigma = \{P_1,P_2,\cdots , P_N\}$$, 将 $P_1$ 共轭作用在 $\Sigma$ 上. 每个 $P_j \in \Sigma$ 的稳定子群为 $P_1 \cap N_G(P_j)$. $N_G(P_j)$ 的所有 $p$的幂阶元均在 $P_j$ 中, 从而 $P_1 \cap (N_G(P_j) - P_j) = \varnothing$. 于是当 $j \ne 1$ 时
+**解** 设 $f(x) = x^4 + 4$, $E$ 是 $f(x)$ 在 $\mathbb{Q}$ 上的分裂域. $f(x)$ 的四个根分别为 $1+i, -1 + i, -1 -i, 1 - i$. 于是 $E =\mathbb{Q}(i)$. 从而 $[E:F] = 2$. $\mathrm{Gal}(E/F)$ 有两个元 $\sigma_1 = \mathrm{Id}$, $\sigma_2: i \mapsto -i$. 记 $r_1 = 1+i, r_2 = -1+i, r_3 = -1-i, r_4 = 1-i$, 将 $G_f$ 看成 $$\{r_1,r_2,r_3,r_4 \}$$ 的对称群. 则 $\sigma_1 = (1),\sigma_2 = (14)(23)$. 这说明 $$G_f = \{(1), (14)(23)\}$$.
+
+注: $r_1$ 和 $r_4$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 -2x + 2$. $r_2$ 和 $r_3$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 + 2x + 2$. 而 $x^4 + 4 = (x^2 - 2x+ 2)(x^2 + 2x + 2)$.
+
+**例** 设 $G$ 是 $S_n$ 的可迁子群, $H$ 是 $G$ 的正规子群. 则 $$\{1,2,\cdots ,n\}$$ 每个 $H$-轨道有相同的长度. 由此证明: 若 $n=p$ 是素数且 $$H \ne \{1\}$$, 则 $H$ 也是 $S_n$ 的可迁子群, 从而 $p \mid \,\mid H\mid$, 进而 $H$ 含有 $p$-轮换.
+{:.warning}
+
+**证明** 对 $1 \le a\le n$, 记 $a$ 所在的 $H$-轨道为 $\Delta_a$. 由轨道公式, 有 $\mid \Delta_a \mid = [H : G_a]$, 其中 $$G_{a} = \{\sigma \in H \mid \sigma(a) = a\}$$. 只需证明 $\mid G_{a}\mid = \mid G_{b} \mid$, $\forall 1\le a,b \le n$. $G$ 是可迁子群, 存在 $\pi \in G$ 使得 $\pi(a) = b$.  $H$ 是 $G$ 的正规子群, 故 $\forall \sigma \in H$, $\pi\sigma\pi^{-1} \in H$. 记
 
 $$
-    P_1\cap N_G(P_j) = P_1\cap (P_j \cup (N_G(P_j)-P_j)) = P_1\cap P_j.
+	\eta_1: G_a \rightarrow G_b, \sigma \mapsto \pi\sigma\pi^{-1}. \\
+	\eta_2: G_b \rightarrow G_a, \sigma \mapsto \pi^{-1}\sigma\pi.
 $$
 
-这说明 $P_j$ 所在轨道的长度为 $\mid P_1 : P_1 \cap P_j \mid \ge p^r$, 它一定是 $p$ 的幂, 从而是 $p^r$ 的倍数. 又 $P_1$ 单独在一个轨道, 故 $N \equiv 1\pmod{p^r}$.
+对任意 $\sigma \in G_a$, $\pi\sigma\pi^{-1}(b) = \pi\sigma(a) = \pi(a) = b$, 因此 $\eta_1$ 确实是 $G_a \rightarrow G_b$ 的映射. 同理 $\eta_2$ 是 $G_b \rightarrow G_a$ 的映射. 可以验证 $\eta_1\eta_2 = \eta_2\eta_1 = \mathrm{Id}$, 这说明 $\eta_1$, $\eta_2$ 是双射, 从而 $\mid G_a\mid = \mid G_b\mid$.
+
+下设 $n=p$ 是素数且 $$H \ne {1}$$. 则 $$\{1,2,\cdots ,p\}$$ 的每一个 $H$-轨道有相同的长度. 记每一个轨道的长度为 $l$, 则 $l \mid p$. $$H \ne \{1\}$$ 故 $l \ne 1$, 从而只能是 $l = p$. 这说明 $H$ 在 $$\{1,2,\cdots ,p\}$$ 上的作用是传递的, 从而 $H$ 也是可迁子群. $p$ 是 $H$ 某个子群的指数, 故 $p \mid \, \mid{H}\mid$. 从而 $H$ 有 $p$ 阶元. $H$ 的每个元素写为不相交轮换之积, 有 $H$ 的每个元素的阶为其每个轮换长度的最小公倍数. $p$ 是素数, 从而 $H$ 的 $p$ 阶元素必然是 $p$-轮换. 这说明 $H$ 有 $p$-轮换.
 <p align="right">$\blacksquare$</p>
 
-**例** $p$-群的极大子群是正规子群且指数为 $p$.
+**例** 证明对称群 $S_4$ 的全部可迁子群是  
+$\mathrm{(i)} S_4,$  
+$\mathrm{(ii)} A_4,$  
+$$\mathrm{(iii)} V = \{(1), (12)(34), (13)(24), (14)(23)\},$$  
+$\mathrm{(iv)} C_4 = \langle(1234)\rangle$ 及其共轭子群 $\langle(1243)\rangle$ 和 $\langle(1324)\rangle.$  
+$\mathrm{(v)}$ 3 个 Sylow-$2$ 子群: $$D_4 = V \cup \{(1234),(1432),(24),(13)\}$$ 及其共轭子群 $$V \cup \{(1423), (1324), (12), (34)\}$$ 和 $$V \cup \{(1243),(1342),(14),(23)\}.$$
+{:.warning}
+
+**证明**  设 $H$ 是 $S_4$ 的可迁子群,  $H$ 在 $$\{1,2,3,4\}$$ 上的作用只有一个轨道, 长度为 $4$. 从而 $4 \mid\,\mid H\mid\,\mid 24$. 于是 $H$ 的阶只能是 $4, 8, 12$ 或 $24$. 若 $\mid H\mid = 24$, 则 $H = S_4$. 若 $\mid H \mid = 12$, 则 $H = A_4$. 若 $\mid H\mid = 8$, 则 $H$ 是 $S_4$ 的 Sylow-$2$ 子群, 可以验证它们都是可迁子群. 接下来计算 $S_4$ 的阶为 $4$ 的可迁子群. 设 $\mid H\mid = 4$, 若 $H$ 为循环群, 则 $H = \langle(1234)\rangle$ 或它的共轭. 此时 $H$ 为可迁子群. 若 $H$ 不为循环群, $H$ 的全部可能为
+
+$$
+\{(1),(12),(34),(12)(34)\}, \{(1),(13),(24),(13)(24)\}, \\
+\{(1),(14),(23),(14)(23)\}, \{(1),(12)(34),(13)(24),(14)(23)\}.
+$$
+
+其中只有 $$V = \{(1),(12)(34),(13)(24),(14)(23)\}$$ 是可迁子群, 故 $S_4$ 的所有可迁子群如题所列.
+<p align="right">$\blacksquare$</p>
+
+**例** 设 $F$ 是特征为 $2$ 的域, 求 $f(x)$ 在 $F$ 上的伽罗瓦群. 其中  
+$\mathrm{(i)}\, f(x) = x^3 + x + 1$;  
+$\mathrm{(ii)}\, f(x) = x^3 + x^2 + 1$.
+{:.warning}
+
+**解** $\mathrm{(i)}$ 设 $u$ 是 $f(x)$ 的一个根, 则 $f(x) = (x-u)(x^2 + ux + u^2 + 1) = (x-u)(x-u^2)(x-u^2-u)$. 这说明 $u^2, u^2+u$ 也是 $f(x)$ 的根. 若 $u \in F$, 则 $F$ 包含 $f(x)$ 的所有根. 若 $u\notin F$, 则 $f(x)$ 在 $F$ 上的分裂域恰是 $F(u)$. 从而 $\mid G_f\mid = [F(u) : F] = 3$. 这说明 $G_f = A_3$. 我们得到
+
+$$
+G_f = \begin{cases}
+\{1\},  & f(x) \text{在} F \text{上有根};\\
+A_3, & f(x) \text{在} F \text{上没有根}.
+\end{cases}
+$$
+
+$\mathrm{(ii)}$ 设 $u$ 是 $f(x)$ 的一个根, 则 $u^2, u^2+u+1$ 也是 $f(x)$ 的根 (尝试待定系数和 Vieta 定理). 同上, 有
+
+$$
+G_f = \begin{cases}
+\{1\},  & f(x) \text{在} F \text{上有根};\\
+A_3, & f(x) \text{在} F \text{上没有根}.
+\end{cases}
+$$
+
+<p align="right">$\blacksquare$</p>
+
+## 判别式
+
+设 $f(x)$ 是 $F$ 上无重根多项式, $r_1,\cdots, r_n$ 是其全部根. $E$ 是 $f(x)$ 在 $F$ 上的分裂域. 并且视伽罗瓦群 $G_f$ 为对称群 $S_n$ 的子群. 记 $A_n$ 为 $n$ 次交错群. 那么在 $E/F$ 的对应下 $G_f \cap A_n$ 对应的中间域是什么?
+
+令 $\Delta = \Delta(f) = \prod_{1 \le i < j \le n} (r_i-r_j) \in E$. 对每个 $\sigma \in G_f$, 有 $\sigma(\Delta^2) = \sigma(\Delta)^2 = (\pm \Delta)^2 = \Delta^2$ (因为 $\sigma$ 置换 $r_1,\cdots ,r_n$, 从而只改变 $\Delta$ 的符号). 这说明 $\Delta^2 \in F$. 称 $d(f) = \Delta^2 \in F$ 为 $f(x)$ 在 $F$ 上的 **判别式**. 对任意多项式(不一定无重根) $f(x)$, 其判别式同样定义, 则 $f(x)$ 无重根当且仅当 $d(f) \ne 0$. 令 $$F^2 = \{a^2 \mid a \in F\}$$. 则 $\Delta \in F$ 当且仅当 $d(f) = \Delta^2 \in F^2$. 若 $\mathrm{Char} F \ne 2$, 一个置换 $\sigma$ 是偶置换当且仅当 $\sigma(\Delta) = \Delta$ (一次对换改变一次 $\Delta$ 的符号). 于是 $G_f \cap A_n = \mathrm{Gal}(E/F(\Delta))$, 从而 $G_f \cap A_n$ 对应的中间域就是 $F(\Delta)$. 这证明了下面的 $\mathrm{(i)}$.
+
+**引理** 设域 $F$ 特征不为 $2$, $E$ 是 $n$ 次无重根多项式 $f(X) \in F[x]$ 在 $F$ 上的分裂域. 则  
+$\mathrm{(i)}$ $\mathrm{Gal}(E/F(\Delta)) = G_f \cap A_n$, $\mathrm{Inv}(G_f\cap A_n) = F(\Delta)$.  
+$\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $\Delta \in F$, 这等价于 $d(f) \in F^2$.  
+$\mathrm{(iii)}$ 若 $f(x)$ 是 $F$ 上的 $3$ 次不可约多项式, 则  
+$$
+	G_f = 
+		\begin{cases}
+			A_3 &, \text{若 $d(f) \in F^2$},\\
+			S_3  &, \text{若 $d(f) \notin F^2$}.
+		\end{cases}
+$$
 {:.info}
 
-**证明** 设 $\mid G\mid = p^n$,$n \ge 1$. 对 $n$ 用数学归纳法. $n=1$ 时结论成立. 设 $n > 1$. 设 $M$ 是 $G$ 的极大子群. $G$ 的中心不是平凡的, 故 $G$ 的中心有 $p$ 阶子群 $P$. 若 $P$ 不是 $M$ 的子群, 则 $MP = G$, 从而 $M \triangleleft G$. 由 $G/M \cong P/(P \cap M) = P$ 知 $[G:M] = p$.
+**证明** $\mathrm{(ii)}$ $G_f \subseteq A_n$ 当且仅当 $G_f \cap A_n = G_f$, 使用伽罗瓦理论基本定理, 这等价于 $F(\Delta) = F$, 等价于 $\Delta \in F$.
 
-若 $P$ 是 $M$ 的子群, 则 $M/P$ 是 $G/P$ 的极大子群. 由归纳假设, 有 $M/P \triangleleft G/P$ 且 $[G/P : M/P] = p$, 从而 $M \triangleleft G$ 且 $[G:M] = p$.
+$\mathrm{(iii)}$ $G_f$ 是 $S_3$ 的可迁子群, 从而只是 $S_3$ 或 $A_3$. 再由 $\mathrm{(ii)}$ 可知结论成立.
 <p align="right">$\blacksquare$</p>
 
-## $\bf 2$
-2019-7-23
+$\Delta$ 是 $r_1,r_2,\cdots ,r_n$ 的范德蒙行列式, 记 $r_1,\cdots ,r_n$ 的初等对称多项式 
 
-**例** 设 $G_1$ 和 $G_2$ 是两个非交换单群, 试证 $G_1 \times G_2$ 的非平凡正规子群只有 $G_1$ 和 $G_2$.
-{:.warning}
+$$p_i  = \sum_{1 \le k_1 < \cdots < k_i \le n}{r_{k_1}r_{k_2}\cdots r_{k_i}}, i=1,2,\cdots ,n.$$
 
-**证明** 记 $G = G_1 \times G_2$, 设 $H \triangleleft G$ 且 $H$ 非平凡. 有 $H \cap G_1 \triangleleft G_1$, $H \cap G_2 \triangleleft G_2$. $G_1,G_2$ 是单群, 所以 $$H \cap G_i = \{1\}$$ 或 $G_i$, $i = 1,2$. 若 $H \cap G_1 = G_1$, $H \cap G_2 = G_2$, 则 $\forall (g_1,g_2) \in G$, $$(g_1,g_2) = (g_1,1_{G_2})(1_{G_1},g_2) \in H$$. 这导致 $H = G$ 是平凡的. 因此 $H \cap G_1$, $H \cap G_2$ 必有一个为 $$\{1\}$$.
+则 $d(f) = \Delta^2$ 是关于 $r_1,\cdots ,r_n$ 的对称多项式, 从而是 $p_1,\cdots ,p_n$ 的多项式. 例如
 
-不妨设 $$H \cap G_1 = \{1\}$$. $H$ 是 $G$ 的正规子群, 从而 $\forall g \in G_1$, $(a,b) \in H$, 都有 $g(a,b)g^{-1} = (gag^{-1},b) \in H$. 于是 $$(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1 = \{1\}$$, 从而 $$gag^{-1}a^{-1} = 1_{G_1}$$. 这说明 $a \in Z(G_1)$. 而 $Z(G_1) \triangleleft G_1$, 且 $G_1$ 为不交换的单群, 因此 $$Z(G_1) = \{1\}$$. 于是 $$a \in Z(G_1) \Rightarrow a = 1_{G_1}$$. 这说明 $$\forall (a,b) \in H$$, 都有 $$a = 1_{G_1}$$, 于是 $$H \leqslant G_2$$. $$H \cap G_2 = H$$ 可以为 $$\{1\}$$ 或 $$G_2$$. $$H$$ 不平凡, 故 $$H = G_2$$.
-<p align="right">$\blacksquare$</p>
-
-**例** 设 $G = G_1 \times G_2$, $H \triangleleft G$ 且 $$H \cap G_i = \{1\}$$, $i = 1,2$. 试证 $H \leqslant Z(G)$. 特别地, $H$ 是 $\mathrm{Abel}$ 群.
-{:.warning}
-
-**证明** 设 $(a,b) \in H$. 任意 $g \in G_1$, $g(a,b)g^{-1} = (gag^{-1},b)\in H$. 从而 $(gag^{-1},b)(a^{-1},b^{-1}) = (gag^{-1}a^{-1},1_{G_2}) \in H \cap G_1$. 这说明 $ga = ag$, $\forall g \in G_1$. 同理 $\forall g \in G_2$, $gb = bg$. 这说明 $\forall (a,b) \in H$, $a \in Z(G_1), b\in Z(G_2)$. 从而 $H \leqslant Z(G_1) \times Z(G_2) = Z(G)$.
-<p align="right">$\blacksquare$</p>
-
-2019-7-26
-
-**例** 设 $G$ 是群, $N \triangleleft G$, $NG_2 \triangleleft NG_1$.  
-$\mathrm{(i)}$ 证明: $NG_1/NG_2 \cong G_1/G_1\cap NG_2$. 特别的, 取 $$G_2 = \{1\}$$, 得到 $NG_1/N \cong G_1/N\cap G_1$.  
-$\mathrm{(ii)}$ 若 $G_2 \triangleleft G_1$, $G_1/G_2$ 是单群, 证明: $NG_1/NG_2$ 也是单群.
-{:.warning}
-
-**证明** $\mathrm{(i)}$ 记
+$2$ 次多项式 $f(x) = x^2 - a_1x + a_2$ 的判别式为
 
 $$
-\sigma: G_1 \rightarrow NG_1/NG_2, g \mapsto gNG_2.
-$$
+d(f) = a_1^2 - 4a_2.
+$$ 
 
-这给出 $G_1$ 到 $NG_1/NG_2$ 的满同态 (满射是因为 $ngNG_2 = gNG_2 = \sigma(g)$, $\forall g \in G_1, n \in N$). 并且
-
-$$
-\ker \sigma = \{a \in G_1 \mid a \in NG_2\} = G_1 \cap NG_2.
-$$
-
-从而 $NG_1/NG_2 \cong G_1/G_1 \cap NG_2$.
-
-$\mathrm{(ii)}$ 有 
+$3$ 次多项式 $f(x) = x^3 - a_1x^2 + a_2x - a_3$ 的判别式为
 
 $$
-NG_1/NG_2 \cong G_1/G_1\cap NG_2=G_1/G_2(G_1\cap N) \cong \frac{G_1/G_2}{G_2(G_1\cap N)/G_2}.
+d(f) = -4a_1^3a_3 + a_1^2a_2^2 + 18a_1a_2a_3 - 4a_2^3 - 27a_3^2.
 $$
-
-$G_1/G_2$ 单, 从而 $NG_1/NG_2$ 要么同构于 $$\{1\}$$, 要么同构于 $G_1/G_2$. 这两种情况 $NG_1/NG_2$ 都是单群.
-<p align="right">$\blacksquare$</p>
