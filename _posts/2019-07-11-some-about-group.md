@@ -5,8 +5,8 @@ tags: Math Algebra 群论
 
 <!-- vim-markdown-toc GFM -->
 
-* [$\bf 1$](#$\bf-1$)
-* [$\bf 2$](#$\bf-2$)
+* [$\bf 1$](#bf-1)
+* [$\bf 2$](#bf-2)
 
 <!-- vim-markdown-toc -->
 
@@ -106,3 +106,4 @@ NG_1/NG_2 \cong G_1/G_1\cap NG_2=G_1/G_2(G_1\cap N) \cong \frac{G_1/G_2}{G_2(G_1
 $$
 
 $G_1/G_2$ 单, 从而 $NG_1/NG_2$ 要么同构于 $$\{1\}$$, 要么同构于 $G_1/G_2$. 这两种情况 $NG_1/NG_2$ 都是单群.
+<p align="right">$\blacksquare$</p>
