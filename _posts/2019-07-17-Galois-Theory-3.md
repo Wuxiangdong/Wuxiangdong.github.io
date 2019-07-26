@@ -119,6 +119,17 @@ A_3, & f(x) \text{在} F \text{上没有根}.
 \end{cases}
 $$
 
+$\mathrm{(ii)}$ 设 $u$ 是 $f(x)$ 的一个根, 则 $u^2, u^2+u+1$ 也是 $f(x)$ 的根 (尝试待定系数和 Vieta 定理). 同上, 有
+
+$$
+G_f = \begin{cases}
+\{1\},  & f(x) \text{在} F \text{上有根};\\
+A_3, & f(x) \text{在} F \text{上没有根}.
+\end{cases}
+$$
+
+<p align="right">$\blacksquare$</p>
+
 ## 判别式
 
 设 $f(x)$ 是 $F$ 上无重根多项式, $r_1,\cdots, r_n$ 是其全部根. $E$ 是 $f(x)$ 在 $F$ 上的分裂域. 并且视伽罗瓦群 $G_f$ 为对称群 $S_n$ 的子群. 记 $A_n$ 为 $n$ 次交错群. 那么在 $E/F$ 的对应下 $G_f \cap A_n$ 对应的中间域是什么?
