@@ -171,3 +171,13 @@ $3$ 次多项式 $f(x) = x^3 - a_1x^2 + a_2x - a_3$ 的判别式为
 $$
 d(f) = -4a_1^3a_3 + a_1^2a_2^2 + 18a_1a_2a_3 - 4a_2^3 - 27a_3^2.
 $$
+
+**例** 求 $f(x)$ 在域 $F$ 上的伽罗瓦群, 其中  
+$\mathrm{(i)}\, f(x) = x^3 - x - 1$, $F = \mathbb{Q}$;  
+$\mathrm{(ii)}\, f(x) = x^3 - 3x + 1$, $F = \mathbb{Q}$.
+{:.warning}
+
+**解** $\mathrm{(i)}$ 验证得 $f(x)$ 没有有理根, 从而 $f(x)$ 在 $\mathbb{Q}$ 上不可约(若 $f(x)$ 可约, 则 $f(x)$ 必有一次因子). $f(x)$ 的判别式为 $d(f) = -23 \notin \mathbb{Q}^2$. 由上文结论得 $G_f = S_3$.
+
+$\mathrm{ii}$ 可验证 $f(x)$ 没有有理根, 从而是 $\mathbb{Q}$ 上不可约多项式. 其判别式为 $d(f) = 81 = 9^2 \in \mathbb{Q}^2$. 有 $G_f = A_3$.
+<p align="right">$\blacksquare$</p>
