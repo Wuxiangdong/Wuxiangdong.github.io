@@ -8,6 +8,7 @@ tags: Math Algebra 伽罗瓦理论
 
 * [伽罗瓦的原始思想](#伽罗瓦的原始思想)
 * [判别式](#判别式)
+    * [四次方程的伽罗瓦群](#四次方程的伽罗瓦群)
 
 <!-- vim-markdown-toc -->
 
@@ -181,3 +182,43 @@ $\mathrm{(ii)}\, f(x) = x^3 - 3x + 1$, $F = \mathbb{Q}$.
 
 $\mathrm{ii}$ 可验证 $f(x)$ 没有有理根, 从而是 $\mathbb{Q}$ 上不可约多项式. 其判别式为 $d(f) = 81 = 9^2 \in \mathbb{Q}^2$. 有 $G_f = A_3$.
 <p align="right">$\blacksquare$</p>
+
+### 四次方程的伽罗瓦群
+首先回顾习题: $S_4$ 共有 $5$ 种 互不同构的可迁子群, 共 $9$ 个. 其中
+
+$$
+V = \{(1),(12)(34),(13)(24),(14)(23)\}
+$$
+
+是 $S_4$ 正规的可迁子群.
+
+设 $f(x)= x^4-p_1x^3 +p_2x^2-p_3x+p_4 \in F[x]$ 是无重根的不可约多项式, $E$ 是 $f(x)$ 在 $F$ 上的分裂域, $r_1,r_2,r_3,r_4$ 是 $f(x)$ 的 $4$ 个根. 令
+
+$$
+\alpha = r_1r_2 + r_3r_4, \beta=r_1r_3 + r_2r_4, \gamma=r_1r_4 + r_2r_3.
+$$
+
+则在 $V$ 的作用下 $F(\alpha,\beta,\gamma)$ 不变, 从而 $F(\alpha,\beta,\gamma) \subseteq \mathrm{Inv}(G_f\cap V)$, 即 $\mathrm{Gal}(E/F(\alpha,\beta,\gamma)) \supseteq G_f\cap V$. 另一方面, 对于 $\sigma \in S_4\setminus V$, 由 $r_1,r_2,r_3,r_4$ 两两不同, $\sigma$ 至少变换 $\alpha,\beta,\gamma$ 之一, 这导致 $\sigma \notin \mathrm{Gal}(E/F(\alpha,\beta,\gamma)$. 于是 $\sigma \notin G_f\cap V \Rightarrow \sigma \notin \mathrm{Gal}(E/F(\alpha,\beta,\gamma)$. 我们得到
+
+$$
+G_f \cap V = \mathrm{Gal}(E/F(\alpha,\beta,\gamma)); \mathrm{Inv}(G_f \cap V) = F(\alpha,\beta,\gamma).
+$$
+
+考虑 $f(x)$ 的预解式
+
+$$
+\begin{aligned}
+r(x) &= (x-\alpha)(x-\beta)(x-\gamma) \\
+&= x^3 - p_2x^2 + (p_1p_3-4p_4)x + 4p_2p_4-p_1^2p_4-p_3^2 \in F[x].
+\end{aligned}
+$$
+
+$F(\alpha,\beta,\gamma)$ 恰是 $r(x)$ 在 $F$ 上的分裂域. $F(\alpha,\beta,\gamma)/F$ 是有限伽罗瓦扩张. 令 $m = [F(\alpha,\beta,\gamma) : F]$, 由 $\mathrm{Gal}(F(\alpha,\beta,\gamma)/F)$ 是 $S_3$ 的子群, 故 $m \mid 6$.
+
+**定理** 设 $\mathrm{Char} F\ne 2$, $f(x) \in F[x]$ 是 $4$ 次不可约多项式, $\alpha,\beta,\gamma$ 的定义同上. 记 $L = F(\alpha,\beta,\gamma)$, $m = [L:F]$, 则  
+$\mathrm{(i)}$ $G_f = S_4$ 当且仅当 $r(x)$ 在 $F$ 上不可约且 $d(f) \notin F^2$; 当且仅当 $m= 6$;  
+$\mathrm{(ii)}$ $G_f = A_4$ 当且仅当 $r(x)$ 在 $F$ 上不可约且 $d(f) \in F^2$; 当且仅当 $m = 3$;  
+$\mathrm{(iii)}$ $G_f = V$ 当且仅当 $m = 1$;  
+$\mathrm{(iv)}$ $G_f \cong C_4 = \langle(1234)\rangle$ 当且仅当 $m=2$ 且 $f(x)$ 在 $F(\alpha,\beta,\gamma)$ 上可约.  
+$\mathrm{(v)}$ $G_f \cong D_4$ 当且仅当 $m = 2$ 且 $f(x)$ 在 $F(\alpha,\beta,\gamma)$ 上不可约.
+{:.info}
