@@ -222,3 +222,51 @@ $\mathrm{(iii)}$ $G_f = V$ 当且仅当 $m = 1$;
 $\mathrm{(iv)}$ $G_f \cong C_4 = \langle(1234)\rangle$ 当且仅当 $m=2$ 且 $f(x)$ 在 $F(\alpha,\beta,\gamma)$ 上可约.  
 $\mathrm{(v)}$ $G_f \cong D_4$ 当且仅当 $m = 2$ 且 $f(x)$ 在 $F(\alpha,\beta,\gamma)$ 上不可约.
 {:.info}
+
+**例** 求 $f(x)$ 在域 $F$ 上的伽罗瓦群, 其中  
+$\mathrm{(i)}$ $f(x) = x^4-5$, $F = \mathbb{Q}(\sqrt{5})$;  
+$\mathrm{(ii)}$ $f(x) = x^4 - 5$, $F = \mathbb{Q}(\sqrt{5}i)$;  
+$\mathrm{(iii)}$ $f(x) = x^4+2x+2$, $F = \mathbb{Q}$;  
+$\mathrm{(iv)}$ $f(x) = x^4+8x+12$, $F = \mathbb{Q}$.
+{:.warning}
+
+**解** $\mathrm{(i)}$ 在 $\mathbb{Q}(\sqrt{5})$ 上 $x^4 - 5 = (x^2 - \sqrt{5})(x^2 + \sqrt{5})$, 它的四个根为 $\sqrt[4]{5}, -\sqrt[4]{5}, \sqrt[4]{5}i, -\sqrt[4]{5}$. 记 $E$ 是 $f(x)$ 在 $F$ 上的分裂域, 则 $[E:F] = [\mathbb{Q}(\sqrt[4]{5},i): \mathbb{Q}(\sqrt{5})] = 4$. 从而 $\mid G_f \mid = 4$. 可以知道 $G_f$ 的四个元为
+
+$$
+\begin{aligned}
+\sigma_1 = \mathrm{Id}&; \sigma_2: \sqrt[4]{5} \mapsto -\sqrt[4]{5},i \mapsto i; \\
+\sigma_3: \sqrt[4]{5} \mapsto \sqrt[4]{5}, i\mapsto -i&; \sigma_4: \sqrt[4]{5}\mapsto -\sqrt[4]{5},i \mapsto -i.
+\end{aligned}
+$$
+
+从而 $G_f \cong K_4$ ($\rm Klein$ 四元群).
+
+$\mathrm{(ii)}$ 记 $E$ 是 $f(x)$ 在 $F$ 上的分裂域, 有 $E =\mathbb{Q}(\sqrt[4]{5},i) = \mathbb{Q}(\sqrt{5}i)(\sqrt[4]{5})$. 于是 $[E:F] = 4$. $f(x)$ 在 $F$ 上不可约, 于是 $G_f$ 的四个元为
+
+$$
+\begin{aligned}
+\sigma_1 = \mathrm{Id}&; \sigma_2: \sqrt[4]{5} \mapsto -\sqrt[4]{5};\\
+\sigma_3: \sqrt[4]{5} \mapsto \sqrt[4]{5}i&; \sigma_4: \sqrt[4]{5} \mapsto -\sqrt[4]{5}i.
+\end{aligned}
+$$
+
+由于 $i = \frac{1}{5}(\sqrt{5}i)(\sqrt[4]{5})^2$, 故 $\sigma_2(i) = i,\sigma_3(i)=-i,\sigma_4(i) = -i$. 于是 $\sigma_2,\sigma_3,\sigma_4$ 皆为 $2$ 阶元, 故 $G_f \cong K_4$.
+
+$\mathrm{(iii)}$ 由 $\rm Eisenstein$ 判别法知 $f(x)$ 不可约. $f(x)$ 导出预解式 $r(x) = x^3-8x-4$. $r(x)$ 没有有理根, 从而 $r(x)$ 也不可约. $d(r) = 1616 \notin \mathbb{Q}^2$, 由四次方程伽罗瓦群的一般结论知 $G_f \cong S_4$.
+
+$\mathrm{(iv)}$ 首先, $f(x)$ 没有有理根. 其次, 若 $f(x)$ 分解为两个(整系数首一)二次多项式之积, 设 $f(x) = h(x)g(x)$, $h(x) = x^2 + a_1x + a_2$, $g(x) = x^2+b_1x+b_2$, $a_1,a_2,b_1,b_2 \in \mathbb{Z}$, 则
+
+$$
+\begin{cases}
+a_1+b_1 = 0 \\
+a_2 + a_1b_1 + b_2 = 0 \\
+a_1b_2 + a_2b_1 = 8 \\
+a_2b_2 = 12
+\end{cases}
+$$
+
+这推出 $a_1^6 - 48a_1^2 - 64 = 0$, 然而 $x^3 - 48x - 64$ 没有有理根, 矛盾. 这说明 $f(x)$ 不能分解为两个二次多项式的乘积. 上述说明 $f(x)$ 不可约.
+
+$f(x)$ 导出的预解式 $r(x)= x^3 - 48x - 64$. $r(x)$ 在 $\mathbb{Q}$ 上不可约, $d(r) = 331776 = 576^2 \in \mathbb{Q}^2$. 由四次方程伽罗瓦群的一般结论知 $G_f \cong A_4$.
+
+<p align="right">$\blacksquare$</p>
