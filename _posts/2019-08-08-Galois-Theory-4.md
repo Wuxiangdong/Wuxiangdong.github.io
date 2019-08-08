@@ -12,7 +12,7 @@ $\mathrm{(i)}$ 设 $f(x)=x^n - 1 \in F[x]$. 则 $G_f$ 是 $$\mathbb{Z}_n^*$$ 的
 特别的, 分圆多项式 $\Phi_n(x)$ 在 $\mathbb{Q}$ 上的伽罗瓦群同构于 $$\mathbb{Z}_n^*$$.  
 $\mathrm{(ii)}$ 设 $\omega \in F$, $g(x) = x^n - a$, $0 \ne a \in F$. 则 $G_g$ 是 $m$ 阶循环群, 其中 $m \mid n$; 且 $G_g$ 是 $n$ 阶循环群当且仅当 $g(x)$ 在 $F$ 上不可约.  
 $\mathrm{(iii)}$ 设 $\omega \notin F$. 用 $GL(2,\mathbb{Z}_n)$ 表示剩余类环 $\mathbb{Z}_n$ 上的所有 $2$ 阶可逆矩阵的集合对于矩阵乘法作成的群. 则 $G_g$ 是 $H$ 的子群, 其中  
-$$H = \left\{\begin{pmatrix} k & l \\ 0 & 1 \end{pmatrix} \mid k \in \mathbb{Z_n}^*, l \in \mathbb{Z}_n\right\}$$  
+$$H = \left\{\begin{pmatrix} k & l \\ 0 & 1 \end{pmatrix} \mid k \in \mathbb{Z}_n^*, l \in \mathbb{Z}_n\right\}$$  
 是 $GL(2,\mathbb{Z}_n)$ 的子群.  
 $\mathrm{(iv)}$ 设 $p$ 为素数, $g(x) = x^p - a$ 为有理数域 $\mathbb{Q}$ 上的不可约多项式. 则 $G_g$ 同构于子群 $$H = \left\{
 \begin{pmatrix}
