@@ -8,8 +8,8 @@ tags: Math Algebra 伽罗瓦理论
 设 $F$ 是域. 将方程 $g(x) = x^n - a = 0\, (0 \ne a \in F, n \ge 2)$ 称为 **纯粹方程**. 这类方程的伽罗瓦群是研究任意方程的根式可解性的重要一步. 这里假设 $F$ 特征为零, 或这为不整除 $n$ 的素数 $p$. 这等价于 $g(x)$ 无重根. 下面计算 $G_g = \mathrm{Gal}(E/F)$, 其中 $E$ 是 $g(x)$ 在 $F$ 上的分裂域.
 
 **引理** 设整数 $n\ge 2$, 域 $F$ 的特征为零或与 $n$ 互素, $\omega$ 是一个 $n$ 次本原根.  
-$\mathrm{(i)}$ 设 $f(x)=x^n - 1 \in F[x]$. 则 $G_f$ 是 $\mathbb{Z}_n^*$ 的子群, 从而是 $\rm Abel$ 群. 而 $G_f = \mathbb{Z}_n^*$ 当且仅当分圆多项式 $\Phi_n(x)$ 是 $F$ 上的不可约多项式.  
-特别的, 分圆多项式 $\Phi_n(x)$ 在 $\mathbb{Q}$ 上的伽罗瓦群同构于 $\mathbb{Z}_n^*$.  
+$\mathrm{(i)}$ 设 $f(x)=x^n - 1 \in F[x]$. 则 $G_f$ 是 $$\mathbb{Z}_n^*$$ 的子群, 从而是 $\rm Abel$ 群. 而 $$G_f = \mathbb{Z}_n^*$$ 当且仅当分圆多项式 $\Phi_n(x)$ 是 $F$ 上的不可约多项式.  
+特别的, 分圆多项式 $\Phi_n(x)$ 在 $\mathbb{Q}$ 上的伽罗瓦群同构于 $$\mathbb{Z}_n^*$$.  
 $\mathrm{(ii)}$ 设 $\omega \in F$, $g(x) = x^n - a$, $0 \ne a \in F$. 则 $G_g$ 是 $m$ 阶循环群, 其中 $m \mid n$; 且 $G_g$ 是 $n$ 阶循环群当且仅当 $g(x)$ 在 $F$ 上不可约.  
 $\mathrm{(iii)}$ 设 $\omega \notin F$. 用 $GL(2,\mathbb{Z}_n)$ 表示剩余类环 $\mathbb{Z}_n$ 上的所有 $2$ 阶可逆矩阵的集合对于矩阵乘法作成的群. 则 $G_g$ 是 $H$ 的子群, 其中  
 $$H = \left\{\begin{pmatrix} k & l \\ 0 & 1 \end{pmatrix} \mid k \in \mathbb{Z_n}^*, l \in \mathbb{Z}_n\right\}$$  
@@ -21,10 +21,11 @@ k & l \\
 \end{pmatrix} \mid k \in \mathbb{Z}_p^*, l \in\mathbb{Z}_p
 \right\}$$.
 {:.info}
+<!--more-->
 
 **证明** 首先, $F$ 的特征为零或与 $n$ 互素, 故 $n$ 次本原根是存在的.
 
-$\mathrm{(i)}$ 设 $E$ 是 $f(x) = x^n - 1$ 在 $F$ 上的分裂域, 有 $E = F(\omega)$. 对 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma(\omega) = \omega^{k}\,(1\le k\le n-1)$ 也是 $n$ 次本原根, 故 $(k,n) = 1$. $\sigma$ 由 $k$ 唯一决定, 则 $\sigma \mapsto \overline{k}$ 给出群的单同态 $G_f \rightarrow \mathbb{Z}_n^*$.
+$\mathrm{(i)}$ 设 $E$ 是 $f(x) = x^n - 1$ 在 $F$ 上的分裂域, 有 $E = F(\omega)$. 对 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma(\omega) = \omega^{k}\,(1\le k\le n-1)$ 也是 $n$ 次本原根, 故 $(k,n) = 1$. $\sigma$ 由 $k$ 唯一决定, 则 $\sigma \mapsto \overline{k}$ 给出群的单同态 $$G_f \rightarrow \mathbb{Z}_n^*$$.
 
 这个同态是满射, 当且仅当任意 $(k,n) = 1\, (1\le k\le n-1)$, 存在 $F$-同构 $\sigma$ 使得 $\sigma(\omega) = \omega^k$; 即 $\omega$ 和 $\omega^k$ 在 $F$ 上的极小多项式相同. 这等价于多项式
 
