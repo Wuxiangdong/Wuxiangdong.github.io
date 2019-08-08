@@ -252,7 +252,7 @@ $$
 
 由于 $i = \frac{1}{5}(\sqrt{5}i)(\sqrt[4]{5})^2$, 故 $\sigma_2(i) = i,\sigma_3(i)=-i,\sigma_4(i) = -i$. 于是 $\sigma_2,\sigma_3,\sigma_4$ 皆为 $2$ 阶元, 故 $G_f \cong K_4$.
 
-$\mathrm{(iii)}$ 由 $\rm Eisenstein$ 判别法知 $f(x)$ 不可约. $f(x)$ 导出预解式 $r(x) = x^3-8x-4$. $r(x)$ 没有有理根, 从而 $r(x)$ 也不可约. $d(r) = 1616 \notin \mathbb{Q}^2$, 由四次方程伽罗瓦群的一般结论知 $G_f \cong S_4$.
+$\mathrm{(iii)}$ 由 $\rm Eisenstein$ 判别法知 $f(x)$ 不可约. $f(x)$ 导出预解式 $r(x) = x^3-8x-4$. $r(x)$ 没有有理根, 从而 $r(x)$ 也不可约. $d(r) = 1616 \notin \mathbb{Q}^2$, 从而 $G_r \cong S_3$. 由四次方程伽罗瓦群的一般结论知 $G_f \cong S_4$.
 
 $\mathrm{(iv)}$ 首先, $f(x)$ 没有有理根. 其次, 若 $f(x)$ 分解为两个(整系数首一)二次多项式之积, 设 $f(x) = h(x)g(x)$, $h(x) = x^2 + a_1x + a_2$, $g(x) = x^2+b_1x+b_2$, $a_1,a_2,b_1,b_2 \in \mathbb{Z}$, 则
 
@@ -267,6 +267,6 @@ $$
 
 这推出 $a_1^6 - 48a_1^2 - 64 = 0$, 然而 $x^3 - 48x - 64$ 没有有理根, 矛盾. 这说明 $f(x)$ 不能分解为两个二次多项式的乘积. 上述说明 $f(x)$ 不可约.
 
-$f(x)$ 导出的预解式 $r(x)= x^3 - 48x - 64$. $r(x)$ 在 $\mathbb{Q}$ 上不可约, $d(r) = 331776 = 576^2 \in \mathbb{Q}^2$. 由四次方程伽罗瓦群的一般结论知 $G_f \cong A_4$.
+$f(x)$ 导出的预解式 $r(x)= x^3 - 48x - 64$. $r(x)$ 在 $\mathbb{Q}$ 上不可约, $d(r) = 331776 = 576^2 \in \mathbb{Q}^2$, 从而 $G_r \cong A_3$. 由四次方程伽罗瓦群的一般结论知 $G_f \cong A_4$.
 
 <p align="right">$\blacksquare$</p>
