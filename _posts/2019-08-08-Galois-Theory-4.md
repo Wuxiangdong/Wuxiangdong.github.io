@@ -27,7 +27,7 @@ k & l \\
 
 $\mathrm{(i)}$ 设 $E$ 是 $f(x) = x^n - 1$ 在 $F$ 上的分裂域, 有 $E = F(\omega)$. 对 $\sigma \in \mathrm{Gal}(E/F)$, $\sigma(\omega) = \omega^{k}\,(1\le k\le n-1)$ 也是 $n$ 次本原根, 故 $(k,n) = 1$. $\sigma$ 由 $k$ 唯一决定, 则 $\sigma \mapsto \overline{k}$ 给出群的单同态 $$G_f \rightarrow \mathbb{Z}_n^*$$.
 
-这个同态是满射, 当且仅当任意 $(k,n) = 1\, (1\le k\le n-1)$, 存在 $F$-同构 $\sigma$ 使得 $\sigma(\omega) = \omega^k$; 即 $\omega$ 和 $\omega^k$ 在 $F$ 上的极小多项式相同. 这等价于多项式
+这个同态是满射, 当且仅当任意 $(k,n) = 1\, (1\le k\le n-1)$, 存在 $F$-同构 $\sigma$ 使得 $\sigma(\omega) = \omega^k$, 即 $\omega$ 和 $\omega^k$ 在 $F$ 上的极小多项式相同. 这等价于多项式
 
 $$
 \Phi_n(x) = \prod_{1\le k \le n, (k,n) = 1} (x-\omega^k) \in F[x]
@@ -60,7 +60,7 @@ $$
 
 是群的单同态. 因此 $\mathrm{Gal}(E/F)$ 是 $H$ 的一个子群.
 
-$\mathrm{(iv)}$ 由 $\mathrm{(iii)}$, 只需证明 $G_g$ 和 $H$ 的阶相同. 设 $b$ 是 $g(x)$ 的一个根, 则 $[\mathbb{Q}(b) : \mathbb{Q}] = p$. 而 $p$ 次本原根 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式为 $x^{p-1} + \cdots + x + 1$, 故 $[\mathbb{Q}(\omega) :\mathbb{Q}] = p-1$. 由 $[\mathbb{Q}(b,\omega):\mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(b)]p = [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)](p-1)$ 知道 $p \mid [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)]$, 从而 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] \ge p$. 而 $b$ 在 $\mathbb{Q}(\omega)$ 上的极小多项式的次数小于或等于 $p$. 故 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] = p$, 从而 
+$\mathrm{(iv)}$ 由 $\mathrm{(iii)}$, 只需证明 $G_g$ 和 $H$ 的阶相同. 设 $b$ 是 $g(x)$ 的一个根, 则 $[\mathbb{Q}(b) : \mathbb{Q}] = p$. 而 $p$ 次本原根 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式为 $x^{p-1} + \cdots + x + 1$, 故 $[\mathbb{Q}(\omega) :\mathbb{Q}] = p-1$. 由 $$[\mathbb{Q}(b,\omega):\mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(b)]p = [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)](p-1)$$ 知道 $p \mid [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)]$, 从而 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] \ge p$. 而 $b$ 在 $\mathbb{Q}(\omega)$ 上的极小多项式的次数小于或等于 $p$. 故 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] = p$, 从而 
 
 $$\mid G_g\mid = [\mathbb{Q}(b,\omega) : \mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)][\mathbb{Q}(\omega) : \mathbb{Q}] = p(p-1) = H.$$
 
