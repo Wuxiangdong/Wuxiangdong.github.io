@@ -91,6 +91,6 @@ $$
 
 任意 $$x, y\in\mathbb{Z}_p$$, 映射 $\sigma_{1,y-x} \in L$ 满足 $\sigma_{1,y-x}(x) = x + y - x = y$. 这说明 $L$ 是 $\mathbb{Z}_p$ 的可迁置换群.
 
-最后证明 $L$ 是可解群. 这等价于 $G$ 可解. 由 $\mid G\mid = p(p-1)$.
+最后证明 $L$ 是可解群. 这等价于 $G$ 可解. 由 $\mid G\mid = p(p-1)$, 知道 $G$ 有唯一的 $\mathrm{Sylow}$-$p$ 子群. 即题中所指 $T$. 记 $$M = \left\{\begin{pmatrix}a & 0 \\ 0 & 1\end{pmatrix}\mid a \in \mathbb{Z}_p^*\right\}$$, 则 $MT = G$ 且 $$M\cap T = \left\{\begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}\right\}$$. 从而 $G/T = MT/T \cong M/T\cap M = M$. $T$ 和 $G/T$ 皆是可解群, 从而 $G$ 是可解群.
 
-未完待续.
+待续.
