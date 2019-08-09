@@ -73,7 +73,7 @@ $$\mid G_g\mid = [\mathbb{Q}(b,\omega) : \mathbb{Q}] = [\mathbb{Q}(b,\omega) : \
 由 $\mathrm{(iii)}$ 知 $G_g$ 同构于 $H$.
 <p align="right">$\blacksquare$</p>
 
-**例** 设 $p$ 是素数, 用 $L$ 表示 $p$ 元域 $\mathbb{Z}_p$ 的所有形如 $\sigma_{a,b}: x \mapsto ax+b$, $a\ne 0,b \in \mathbb{Z}_p$ 的一一变换对于映射的合成作成的群, 用 $T$ 表示 $L$ 中所有形如 $\sigma_b: x \mapsto x_b$, $b \in \mathbb{Z}_p$ 的元作成的群. 将 $L$ 视为 $\mathbb{Z}_p$ 的置换群, 即视 $L$ 为对称群 $S_p$ 的子群. 证明  
+**例** 设 $p$ 是素数, 用 $L$ 表示 $p$ 元域 $\mathbb{Z}_p$ 的所有形如 $$\sigma_{a,b}: x \mapsto ax+b$, $a\ne 0,b \in \mathbb{Z}_p$$ 的一一变换对于映射的合成作成的群, 用 $T$ 表示 $L$ 中所有形如 $\sigma_b: x \mapsto x_b$, $b \in \mathbb{Z}_p$ 的元作成的群. 将 $L$ 视为 $\mathbb{Z}_p$ 的置换群, 即视 $L$ 为对称群 $S_p$ 的子群. 证明  
 $\mathrm{(i)}$ $$L \cong \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \mathbb{Z}_p^*, b\in\mathbb{Z}_p\right\}$$, $L$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $L$ 是可解群;  
 $\mathrm{(ii)}$ $$T \cong \left\{\begin{pmatrix}1 & b \\ 0 & 1\end{pmatrix}\mid b \in \mathbb{Z}_p\right\}$$, $T$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $T$ 是 $L$ 的唯一 $\rm{Sylow}$ -$p$ 子群 (从而 $T$ 是 $L$ 的正规子群);  
 $\mathrm{(iii)}$ 设 $$\{1\} \ne H \leqslant L$$. 利用习题 $7$ 证明: $H$ 是 $L$ 的正规子群当且仅当 $T \leqslant H$;  
