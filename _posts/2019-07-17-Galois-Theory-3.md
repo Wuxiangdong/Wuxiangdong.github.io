@@ -31,7 +31,7 @@ $\mathrm{(iii)}$ $f(x)$ 在 $F$ 上不可约当且仅当 $G_f$ 是可迁子群.
 $\mathrm{(i)}$: 设 $\sigma \in G_f$.由 $0 = f(r_i)$ 知 $0 = \sigma(0) = f(\sigma(r_i))$, 因而 $\sigma(r_1),\sigma(r_2),\cdots ,\sigma(r_n)$ 也是 $f(x)$ 的两两不同的根, 从而是 $r_1,\cdots ,r_n$ 的一个置换. 于是
 
 $$
-\sigma\mapsto \begin{pmatrix} 
+\sigma\mapsto \begin{pmatrix}
 r_1 & r_2 & \cdots & r_n \\
 \sigma(r_1) & \sigma(r_2) & \cdots & \sigma(r_n)
 \end{pmatrix}
@@ -73,7 +73,7 @@ $$
 
 注: $r_1$ 和 $r_4$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 -2x + 2$. $r_2$ 和 $r_3$ 有相同的代数关系, 它们在 $\mathbb{Q}$ 上的极小多项式为 $x^2 + 2x + 2$. 而 $x^4 + 4 = (x^2 - 2x+ 2)(x^2 + 2x + 2)$.
 
-**例** 设 $G$ 是 $S_n$ 的可迁子群, $H$ 是 $G$ 的正规子群. 则 $$\{1,2,\cdots ,n\}$$ 每个 $H$-轨道有相同的长度. 由此证明: 若 $n=p$ 是素数且 $$H \ne \{1\}$$, 则 $H$ 也是 $S_n$ 的可迁子群, 从而 $p \mid \,\mid H\mid$, 进而 $H$ 含有 $p$-轮换.
+**例 $\bf 7$** 设 $G$ 是 $S_n$ 的可迁子群, $H$ 是 $G$ 的正规子群. 则 $$\{1,2,\cdots ,n\}$$ 每个 $H$-轨道有相同的长度. 由此证明: 若 $n=p$ 是素数且 $$H \ne \{1\}$$, 则 $H$ 也是 $S_n$ 的可迁子群, 从而 $p \mid \,\mid H\mid$, 进而 $H$ 含有 $p$-轮换.
 {:.warning}
 
 **证明** 对 $1 \le a\le n$, 记 $a$ 所在的 $H$-轨道为 $\Delta_a$. 由轨道公式, 有 $\mid \Delta_a \mid = [H : G_a]$, 其中 $$G_{a} = \{\sigma \in H \mid \sigma(a) = a\}$$. 只需证明 $\mid G_{a}\mid = \mid G_{b} \mid$, $\forall 1\le a,b \le n$. $G$ 是可迁子群, 存在 $\pi \in G$ 使得 $\pi(a) = b$.  $H$ 是 $G$ 的正规子群, 故 $\forall \sigma \in H$, $\pi\sigma\pi^{-1} \in H$. 记
@@ -142,7 +142,7 @@ $\mathrm{(i)}$ $\mathrm{Gal}(E/F(\Delta)) = G_f \cap A_n$, $\mathrm{Inv}(G_f\cap
 $\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $\Delta \in F$, 这等价于 $d(f) \in F^2$.  
 $\mathrm{(iii)}$ 若 $f(x)$ 是 $F$ 上的 $3$ 次不可约多项式, 则  
 $$
-	G_f = 
+	G_f =
 		\begin{cases}
 			A_3 &, \text{若 $d(f) \in F^2$},\\
 			S_3  &, \text{若 $d(f) \notin F^2$}.
@@ -155,7 +155,7 @@ $$
 $\mathrm{(iii)}$ $G_f$ 是 $S_3$ 的可迁子群, 从而只是 $S_3$ 或 $A_3$. 再由 $\mathrm{(ii)}$ 可知结论成立.
 <p align="right">$\blacksquare$</p>
 
-$\Delta$ 是 $r_1,r_2,\cdots ,r_n$ 的范德蒙行列式, 记 $r_1,\cdots ,r_n$ 的初等对称多项式 
+$\Delta$ 是 $r_1,r_2,\cdots ,r_n$ 的范德蒙行列式, 记 $r_1,\cdots ,r_n$ 的初等对称多项式
 
 $$p_i  = \sum_{1 \le k_1 < \cdots < k_i \le n}{r_{k_1}r_{k_2}\cdots r_{k_i}}, i=1,2,\cdots ,n.$$
 
@@ -165,7 +165,7 @@ $2$ 次多项式 $f(x) = x^2 - a_1x + a_2$ 的判别式为
 
 $$
 d(f) = a_1^2 - 4a_2.
-$$ 
+$$
 
 $3$ 次多项式 $f(x) = x^3 - a_1x^2 + a_2x - a_3$ 的判别式为
 

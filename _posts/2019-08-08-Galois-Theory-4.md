@@ -66,7 +66,7 @@ $$
 
 是群的单同态. 因此 $\mathrm{Gal}(E/F)$ 是 $H$ 的一个子群.
 
-$\mathrm{(iv)}$ 由 $\mathrm{(iii)}$, 只需证明 $G_g$ 和 $H$ 的阶相同. 设 $b$ 是 $g(x)$ 的一个根, 则 $[\mathbb{Q}(b) : \mathbb{Q}] = p$. 而 $p$ 次本原根 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式为 $x^{p-1} + \cdots + x + 1$, 故 $[\mathbb{Q}(\omega) :\mathbb{Q}] = p-1$. 由 $$[\mathbb{Q}(b,\omega):\mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(b)]p = [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)](p-1)$$ 知道 $p \mid [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)]$, 从而 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] \ge p$. 而 $b$ 在 $\mathbb{Q}(\omega)$ 上的极小多项式的次数小于或等于 $p$. 故 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] = p$, 从而 
+$\mathrm{(iv)}$ 由 $\mathrm{(iii)}$, 只需证明 $G_g$ 和 $H$ 的阶相同. 设 $b$ 是 $g(x)$ 的一个根, 则 $[\mathbb{Q}(b) : \mathbb{Q}] = p$. 而 $p$ 次本原根 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式为 $x^{p-1} + \cdots + x + 1$, 故 $[\mathbb{Q}(\omega) :\mathbb{Q}] = p-1$. 由 $$[\mathbb{Q}(b,\omega):\mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(b)]p = [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)](p-1)$$ 知道 $p \mid [\mathbb{Q}(b,\omega):\mathbb{Q}(\omega)]$, 从而 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] \ge p$. 而 $b$ 在 $\mathbb{Q}(\omega)$ 上的极小多项式的次数小于或等于 $p$. 故 $[\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)] = p$, 从而
 
 $$\mid G_g\mid = [\mathbb{Q}(b,\omega) : \mathbb{Q}] = [\mathbb{Q}(b,\omega) : \mathbb{Q}(\omega)][\mathbb{Q}(\omega) : \mathbb{Q}] = p(p-1) = H.$$
 
@@ -76,8 +76,8 @@ $$\mid G_g\mid = [\mathbb{Q}(b,\omega) : \mathbb{Q}] = [\mathbb{Q}(b,\omega) : \
 **例** 设 $p$ 是素数, 用 $L$ 表示 $p$ 元域 $$\mathbb{Z}_p$$ 的所有形如 $\sigma_{a,b}: x \mapsto ax+b$, $a\ne 0,b \in \mathbb{Z}_p$ 的一一变换对于映射的合成作成的群, 用 $T$ 表示 $L$ 中所有形如 $\sigma_b: x \mapsto x+b$, $b \in \mathbb{Z}_p$ 的元作成的群. 将 $L$ 视为 $\mathbb{Z}_p$ 的置换群, 即视 $L$ 为对称群 $S_p$ 的子群. 证明  
 $\mathrm{(i)}$ $$L \cong \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \mathbb{Z}_p^*, b\in\mathbb{Z}_p\right\}$$, $L$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $L$ 是可解群;  
 $\mathrm{(ii)}$ $$T \cong \left\{\begin{pmatrix}1 & b \\ 0 & 1\end{pmatrix}\mid b \in \mathbb{Z}_p\right\}$$, $T$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $T$ 是 $L$ 的唯一 $\rm{Sylow}$ -$p$ 子群 (从而 $T$ 是 $L$ 的正规子群);  
-$\mathrm{(iii)}$ 设 $$\{1\} \ne H \leqslant L$$. 利用习题 $7$ 证明: $H$ 是 $L$ 的正规子群当且仅当 $T \leqslant H$;  
-$\mathrm{(iv)}$ 设 $T \leqslant H \leqslant L$. 设 $T$ 恰是 $H$ 中所有没有固定点的元生成的子群;  
+$\mathrm{(iii)}$ 设 $$\{1\} \ne H \leqslant L$$. 利用[习题 $7$](https://wuxiangdong.github.io/2019/07/17/Galois-Theory-3.html#伽罗瓦的原始思想)证明: $H$ 是 $L$ 的正规子群当且仅当 $T \leqslant H$;  
+$\mathrm{(iv)}$ 设 $T \leqslant H \leqslant L$. 则 $T$ 恰是 $H$ 中所有没有固定点的元生成的子群;  
 $\mathrm{(v)}$ 设 $T \leqslant H \leqslant L$. 则 $T$ 恰是 $H$ 中所有 $p$-轮换生成的子群.
 {:.warning}
 
@@ -93,4 +93,32 @@ $$
 
 最后证明 $L$ 是可解群. 这等价于 $G$ 可解. 由 $\mid G\mid = p(p-1)$, 知道 $G$ 有唯一的 $\mathrm{Sylow}$-$p$ 子群. 即题中所指 $T$. 记 $$M = \left\{\begin{pmatrix}a & 0 \\ 0 & 1\end{pmatrix}\mid a \in \mathbb{Z}_p^*\right\}$$, 则 $MT = G$ 且 $$M\cap T = \left\{\begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}\right\}$$. 从而 $G/T = MT/T \cong M/T\cap M = M$. $T$ 和 $G/T$ 皆是可解群, 从而 $G$ 是可解群.
 
-待续.
+$\mathrm{(ii)}$ $$\pi(T) = \left\{\begin{pmatrix}1&b \\ 0 & 1\end{pmatrix}\mid b \in \mathbb{Z}_p\right\}$$. 由 $\mathrm{(i)}$ 中的证明也可知 $T$ 是 $\mathrm{Z}_p$ 的可迁置换群. 由 $\mid L\mid=p(p-1)$ 知 $L$ 只有唯一的 $\mathrm{Sylow}$-$p$ 子群.
+
+$\mathrm{(iii)}$ 设 $H \triangleleft L$. $L$ 是 $\mathbb{Z}_p$ 的可迁置换群, 从而 $H$ 含有 $p$-轮换. $T$ 是 $L$ 唯一的 $\mathrm{Sylow}$-$p$ 子群且 $\mid T\mid = p$. 故 $H$ 包含 $T$.
+
+反之, 设 $T \leqslant H$, 任意 $\sigma_{a,b} \in L$ 和 $\sigma_{a',b'} \in H$, 有
+
+$$
+\begin{aligned}
+\sigma_{a,b}^{-1}\sigma_{a',b'}\sigma_{a,b}(x) &= \sigma_{a^{-1},-a^{-1}b}\sigma_{a',b'}(ax+b) \\
+&= \sigma_{a^{-1},-a^{-1}b}(a'ax+a'b+b') \\
+&= a'x+a^{-1}a'b+a^{-1}b' - a^{-1}b.
+\end{aligned}
+$$
+
+于是
+
+$$
+\begin{aligned}
+\sigma_{a,b}^{-1}\sigma_{a',b'}\sigma_{a,b} &= \sigma_{a',a^{-1}a'b+a^{-1}b'-a^{-1}b} = \sigma_{1,a^{-1}a'b+a^{-1}b'-a^{-1}b-b'}\sigma_{a',b'} \\
+&\in T\sigma_{a',b'} \subseteq H.
+\end{aligned}
+$$
+
+这说明 $H$ 是 $L$ 的正规子群.
+
+$\mathrm{(iv)}$ 对于 $\sigma_{a,b} \in H$, $\sigma_{a,b}$ 没有固定点当且仅当 $a \ne 1$ 且 $b \ne 0$, 当且仅当 $\sigma_{a,b} \in T$ 且 $b \ne 0$, 即 $\sigma_{a,b}$ 是 $T$ 中的元且 $\sigma_{a,b}$ 不是幺元.
+
+$\mathrm{(v)}$ $T$ 是 $L$ 唯一的 $\mathrm{Sylow}$-$p$ 子群, 从而 $H$ 中的 $p$-轮换属于 $T$. 又 $T \leqslant H$, 且 $T$ 是 $p$ 阶群, 从而 $H$ 中的 $p$-轮换生成 $T$.
+<p align="right">$\blacksquare$</p>
