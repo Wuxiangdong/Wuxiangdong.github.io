@@ -7,6 +7,9 @@ tags: Math Algebra 伽罗瓦理论
 <!-- vim-markdown-toc GFM -->
 
 * [纯粹方程](#纯粹方程)
+* [分圆域](#分圆域)
+* [素数次对称群](#素数次对称群)
+* [一些习题](#一些习题)
 
 <!-- vim-markdown-toc -->
 
@@ -73,6 +76,46 @@ $$\mid G_g\mid = [\mathbb{Q}(b,\omega) : \mathbb{Q}] = [\mathbb{Q}(b,\omega) : \
 由 $\mathrm{(iii)}$ 知 $G_g$ 同构于 $H$.
 <p align="right">$\blacksquare$</p>
 
+## 分圆域
+
+**引理** 设 $L_i\, (i = 1,2,\cdots ,s)$ 是域扩张 $E/F$ 的中间域且 $L_i/F$ 均为有限伽罗瓦扩张. 则 $L_1\cdots L_s/F$ 也是有限伽罗瓦扩张, 映射  
+$$\begin{aligned}
+\pi: \mathrm{Gal}(L_1\cdots L_s/F) &\rightarrow \mathrm{Gal}(L_1/F) \times \cdots \times \mathrm{Gal}(L_s/F), \\ \sigma &\mapsto (\sigma\mid_{L_1},\cdots,\sigma\mid_{L_s})
+\end{aligned}$$  
+是群的单同态; 且这一同态是同构当且仅当 $[L_1L_2\cdots L_s : F] = [L_1:F]\cdots [L_s:F]$
+{:.info}
+
+**证明** 设 $L_i$ 是 $f_i(x) \in F$ 在 $F$ 上的分裂域 $(i = 1,2,\cdots ,s)$, 则 $L_1\cdots L_s$ 是 $f_1(x)\cdots f_s(x)$ 在 $F$ 上的分裂域, 从而 $L_1\cdots L_s/F$ 是有限伽罗瓦扩张. 易见 $\pi$ 保持乘法, 从而是群同态. $\sigma \in \mathrm{Gal}(L_1\cdots L_s/F)$ 可以由 $\sigma$ 在 $f_1(x),f_2(x),\cdots f_s(x)$ 的根上的取值确定, 即可以由 $\sigma\mid_{L_1},\cdots ,\sigma\mid_{L_s}$ 确定. 从而 $\pi$ 是单同态. $\pi$ 给出群同构当且仅当 $\mid  \mathrm{Gal}(L_1\cdots L_s/F)\mid = \mid \mathrm{Gal}(L_1/F) \times \cdots \times \mathrm{Gal}(L_s/F)\mid$, 即 $[L_1\cdots L_s : F] = [L_1:F]\cdots [L_s:F]$.
+<p align="right">$\blacksquare$</p>
+
+接下来, 设 $n = n_1n_2\cdots n_s$, 其中 $n_1,\cdots ,n_s$ 是两两互素的大于 $1$ 的正整数. 记 $\omega_k = e^{\frac{2\pi i}{k}}$. 则 $\omega_{n_1}\omega_{n_2}\cdots\omega_{n_s}$ 是一个 $n$ 次本原单位根. 从而 $\mathbb{Q}(\omega_n) = \mathbb{Q}(\omega_{n_1}\cdots\omega_{n_s}) = \mathbb{Q}(\omega_{n_1})\mathbb{Q}(\omega_{n_2})\cdots\mathbb{Q}(\omega_{n_s})$. 又有
+
+$$
+\mid\mathbb{Q}(\omega_n)\mid = \varphi(n) = \varphi(n_1)\cdots\varphi(n_s) = \mid\mathbb{Q}(\omega_{n_1})\mathbb{Q}(\omega_{n_2})\cdots\mathbb{Q}(\omega_{n_s})\mid,
+$$
+
+这说明 
+
+$$
+\mathrm{Gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong \mathrm{Gal}(\mathbb{Q}(\omega_{n_1})/\mathbb{Q}) \times\cdots\times \mathrm{Gal}(\mathbb{Q}(n_s))
+$$
+
+这即是 $$\mathbb{Z}_n^* \cong \mathbb{Z}_{n_1}^* \times\cdots\times \mathbb{Z}_{n_s}^*$$.
+
+当 $k$ 是某一素数 $p$ 的幂时, $$\mathbb{Z}_k^*$$ 的结构已被探明. 于是对任意 $\omega_n$, $\mathrm{Gal}(\mathbb{Q}(\omega_n)/\mathbb{Q})$ 的结构也就已经明确了.
+
+## 素数次对称群
+
+**定理** 设 $f(x) \in \mathbb{Q}[x]$ 是有理数域 $\mathbb{Q}$ 上的 $p$ 次不可约多项式, $p$ 为素数. 若 $f(x)$ 恰好有两个非实的复根 (其余的根均为实数), 则 $f(x)$ 的伽罗瓦群 $G_f$ 同构于对称群 $S_p$.
+
+**证明** 设 $E$ 是 $f(x)$ 在 $\mathbb{Q}$ 上的分裂域, $r_1,r_2,\cdots, r_p$ 是 $f(x)$ 的所有根, 且 $r_1,r_2 \notin \mathbb{R}$, $r_3,\cdots, r_p \in \mathbb{R}$. 则 $p = [\mathbb{Q}(r_1) : \mathbb{Q}]\mid [\mathbb{Q}(r_1,\cdots ,r_n) : \mathbb{Q}] = \mid G_f\mid$. 由 $\mathrm{Sylow}$ 定理, $G_f$ 存在 $p$ 阶元 $\sigma$. 又 $p$ 是素数, 知 $\sigma$ 一定是 $p$-轮换, 这说明 $(1\,2\,3\,\cdots\, p) \in G_f$. $r_1,r_2$ 是 $f(x)$ 唯二的非实根, 从而 $r_1,r_2$ 是共轭的. 令 $\pi: \mathbb{C}\rightarrow\mathbb{C}, a+bi \mapsto a-bi$ 是复数域的复共轭自同构, 则 $\pi\mid_{E} \in G_f$ 且 $\pi$ 交换 $r_1,r_2$, 固定 $r_3,\cdots, r_p$. 这说明 $(1\, 2) \in G_f$. $(1\, 2)$ 和 $(1\,2\,\cdots\, p)$ 生成 $S_p$, 从而 $G_f = S_p$.
+<p align="right">$\blacksquare$</p>
+
+**定理(布饶尔)** 设 $p$ 是奇素数, $n_1 \le \cdots \le n_{p-2}$ 均为偶数, $m$ 是满足 $2m > \sum_{1 \le i \le p-2}n_i^2$ 的正偶数. 则 $f(x) = (x^2+m)(x-n_1)\cdots (x-n_{p-2}) - 2$ 
+是 $\mathbb{Q}$ 上的不可约多项式且恰好有两个非实的复根. 即 $f(x)$ 在 $\mathbb{Q}$ 上的伽罗瓦群 $G_f \cong S_p$.
+
+## 一些习题
+
 **例** 设 $p$ 是素数, 用 $L$ 表示 $p$ 元域 $$\mathbb{Z}_p$$ 的所有形如 $\sigma_{a,b}: x \mapsto ax+b$, $a\ne 0,b \in \mathbb{Z}_p$ 的一一变换对于映射的合成作成的群, 用 $T$ 表示 $L$ 中所有形如 $\sigma_b: x \mapsto x+b$, $b \in \mathbb{Z}_p$ 的元作成的群. 将 $L$ 视为 $\mathbb{Z}_p$ 的置换群, 即视 $L$ 为对称群 $S_p$ 的子群. 证明  
 $\mathrm{(i)}$ $$L \cong \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \mathbb{Z}_p^*, b\in\mathbb{Z}_p\right\}$$, $L$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $L$ 是可解群;  
 $\mathrm{(ii)}$ $$T \cong \left\{\begin{pmatrix}1 & b \\ 0 & 1\end{pmatrix}\mid b \in \mathbb{Z}_p\right\}$$, $T$ 是 $\mathbb{Z}_p$ 的可迁置换群, 且 $T$ 是 $L$ 的唯一 $\rm{Sylow}$ -$p$ 子群 (从而 $T$ 是 $L$ 的正规子群);  
@@ -122,3 +165,4 @@ $\mathrm{(iv)}$ 对于 $\sigma_{a,b} \in H$, $\sigma_{a,b}$ 没有固定点当�
 
 $\mathrm{(v)}$ $T$ 是 $L$ 唯一的 $\mathrm{Sylow}$-$p$ 子群, 从而 $H$ 中的 $p$-轮换属于 $T$. 又 $T \leqslant H$, 且 $T$ 是 $p$ 阶群, 从而 $H$ 中的 $p$-轮换生成 $T$.
 <p align="right">$\blacksquare$</p>
+
