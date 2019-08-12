@@ -175,7 +175,7 @@ $\mathrm{(ii)}\, G \leqslant L$.
 
 设 $1 \ne \sigma \in G$, 记 $\sigma_1 \in T$, 且 $\sigma_1(x) = x+1$. 则 $\sigma\sigma_1\sigma^{-1} \in T$. 记 $\sigma\sigma_1\sigma^{-1}(x) = x + a$, $a \in \mathbb{Z}_p$. 则 $\sigma(x+1) = \sigma\sigma_1(x) = \sigma\sigma_1\sigma^{-1}\sigma(x) = \sigma(x) + a$.
 
-$\mathrm{(ii)}$ 任意 $x \in \mathbb{Z}_p$, 设 $x = \underbrace{1+1+\cdots +1}_{i\,\text{个}}$, $0 \le i \le p-1$. 则 
+$\mathrm{(ii)}$ 任意 $$x \in \mathbb{Z}_p$$, 设 $$x = \underbrace{1+1+\cdots +1}_{i\,\text{个}}$$, $$0 \le i \le p-1$$. 则 
 
 $$\begin{aligned}
 \sigma(x) = \sigma(\underbrace{1+\cdots + 1}_{i\, \text{个}}) &= \sigma(\underbrace{1+\cdots + 1}_{(i-1)\,\text{个}}) + a \\
