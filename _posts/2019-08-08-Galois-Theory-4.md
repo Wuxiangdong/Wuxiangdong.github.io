@@ -166,3 +166,23 @@ $\mathrm{(iv)}$ 对于 $\sigma_{a,b} \in H$, $\sigma_{a,b}$ 没有固定点当�
 $\mathrm{(v)}$ $T$ 是 $L$ 唯一的 $\mathrm{Sylow}$-$p$ 子群, 从而 $H$ 中的 $p$-轮换属于 $T$. 又 $T \leqslant H$, 且 $T$ 是 $p$ 阶群, 从而 $H$ 中的 $p$-轮换生成 $T$.
 <p align="right">$\blacksquare$</p>
 
+**例** 设 $L$ 和 $T$ 同上题, $T \leqslant H \leqslant L$, $G$ 是 $S_p$ 的子群且 $H$ 是 $G$ 的正规子群. 证明  
+$\mathrm{(i)}$ 设 $1 \ne \sigma \in G$. 利用上题 $\mathrm{(iv)}$ 证明: 存在 $0 \ne a \in \mathbb{Z}_p$ 使得 $\sigma(x+1) = \sigma(x) + a$, $\forall x \in \mathbb{Z}_p$.  
+$\mathrm{(ii)}\, G \leqslant L$.
+{:.warning}
+
+**证明** $\mathrm{(i)}$ 首先说明 $T \triangleleft G$. $T$ 恰是 $H$ 中所有没有固定点的元生成的子群. 现设 $\sigma \in H$ 且 $\sigma$ 没有固定点. 由 $H \triangleleft G$, 知任意 $\pi \in G$, $\pi\sigma\pi^{-1} \in H$. 且 $\pi\sigma\pi^{-1}$ 也没有固定点 (否则, 若 $x$ 是其固定点, 则 $\pi^{-1}(x)$ 是 $\sigma$ 的固定点). 设 $S$ 是 $H$ 中所有没有固定点的元组成的集合, 则 $\pi S\pi^{-1}$ 是 $S$ 的一个置换, 故 $\pi T\pi^{-1} = T$.
+
+设 $1 \ne \sigma \in G$, 记 $\sigma_1 \in T$, 且 $\sigma_1(x) = x+1$. 则 $\sigma\sigma_1\sigma^{-1} \in T$. 记 $\sigma\sigma_1\sigma^{-1}(x) = x + a$, $a \in \mathbb{Z}_p$. 则 $\sigma(x+1) = \sigma\sigma_1(x) = \sigma\sigma_1\sigma^{-1}\sigma(x) = \sigma(x) + a$.
+
+$\mathrm{(ii)}$ 任意 $x \in \mathbb{Z}_p$, 设 $x = \underbrace{1+1+\cdots +1}_{i\,\text{个}}$, $0 \le i \le p-1$. 则 
+
+$$\begin{aligned}
+\sigma(x) = \sigma(\underbrace{1+\cdots + 1}_{i\, \text{个}}) &= \sigma(\underbrace{1+\cdots + 1}_{(i-1)\,\text{个}}) + a \\
+&\cdots \\
+& = \sigma(1) + (i-1)a = ax + \sigma(1) - a.
+\end{aligned}$$ 
+
+这说明 $G \leqslant L$.
+<p align="right">$\blacksquare$</p>
+
