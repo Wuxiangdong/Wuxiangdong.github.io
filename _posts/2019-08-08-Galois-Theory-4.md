@@ -193,12 +193,13 @@ $\mathrm{(iii)}\, K$ 的 $\mathrm{Sylow}$-$p$ 子群 $P$ 是 $K$ 的正规子群
 $\mathrm{(iv)}\, K$ 与群 $H$ 在 $S_p$ 中共轭, 其中 $H$ 满足 $T \leqslant H \leqslant L$, $L$ 和 $T$ 的定义如同上题. (利用 $P$ 与 $T$ 共轭的事实和上题)
 {:.info}
 
-**证明** $\mathrm{(i)}\, K$ 是 $S_p$ 的可迁子群, 由习题 $7$, $K$ 包含 $p$-轮换. 记 $Q = \langle(1\, 2\, \cdots\, p)\rangle$, 则 $Q \triangleleft K$ 且 $Q$ 是不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 群.
+**证明** 由习题 $7$,  $S_p$ 的任意可迁子群包含 $p$-轮换, 从而包含 $S_p$ 的一个 $\mathrm{Sylow}$-$p$ 子群.
+$\mathrm{(ii)}$ 设  $Q \triangleleft K$,  由习题 $7$, $Q$ 是 $S_p$ 的可迁子群, 从而包含 $p$ 阶群. 设其中一个为 $P$, 则 $P$ 是 $K$ 的一个 $\mathrm{Sylow}$-$p$ 子群. 设 $P'$ 为 $K$ 的任意一个 $\mathrm{Sylow}$-$p$ 子群, 由 $\mathrm{Sylow}$ 定理, $P$ 和 $P'$ 在 $K$ 中共轭.设 $P' = aPa^{-1}$,  $a \in K$, 则 $P' \leqslant aQa^{-1} = Q$. 这说明 $P'$ 也在 $Q$ 中, 从而 $Q$ 包含 $K$ 的全部 $\mathrm{Sylow}$-$p$ 子群.
 
-$\mathrm{(ii)}$ 设 $Q \triangleleft K$ 且 $Q$ 不为 $$\{1\}$$. 由习题 $7$, $Q$ 也是 $S_p$ 的可迁子群, 且 $Q$ 包含 $p$-轮换. $S_p$ 的阶为 $p!$, 从而 $S_p$ 的 $\mathrm{Sylow}$-$p$ 子群的阶为 $p$. 这说明 $K$ 的 $\mathrm{Sylow}$-$p$ 子群只有 $\langle(1\,2\,\cdots\,p)\rangle$. $Q$ 含 $p$-轮换, 故 $Q$ 包含 $K$ 的 $\mathrm{Sylow}$-$p$ 子群.
+$\mathrm{(i)}$ 由题意 $$K \ne \{1\}$$. $K$ 是可解群, 从而存在最小的正整数 $n$ 使得 $$K^{(n)} = \{1\}$$, 对 $n$ 使用数学归纳法. $n=1$ 时 $K$ 为 $\mathrm{Abel}$ 群, 命题成立. 设 $n  < k$ 时命题已成立, 考虑 $n = k$ 时. $$K'^{(n-1)} = \{1\}$$, 由归纳假设知 $K'$ 有不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 群 $Q$. 对任意 $g \in K$, $a \in K'$,  有 $gag^{-1} \in K'$, 从而 $gag^{-1}Qga^{-1}g^{-1} = Q$. 这说明 $g^{-1}Qg \triangleleft K'$.  由 $\mathrm{(ii)}$, $g^{-1}Qg$ 包含 $K'$ 的所有 $\mathrm{Sylow}$-$p$ 子群, 从而 $G = \bigcap_{g \in K} g^{-1}Qg$ 也包含 $K'$ 的所有 $\mathrm{Sylow}$-$p$ 子群. $K'$ 的 $\mathrm{Sylow}$-$p$ 子群不为 $$\{1\}$$. 从而 $$G \ne \{1\}$$. 由 $G$ 的构造知 $G \triangleleft K$ 且 $G$ 是 $\mathrm{Abel}$ 群. 这说明 $n=k$ 时命题成立. 由数学归纳原理知 $\mathrm{(i)}$ 成立.
 
-$\mathrm{(iii)}$ $K$ 的 $\mathrm{Sylow}$-$p$ 子群是 $\langle(1\,2\,\cdots\,p)\rangle$, 而 $\langle(1\,2\,\cdots\,p)\rangle \triangleleft S_p$.
+$\mathrm{(iii)}$ 取 $K$ 的一个不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 正规子群 $Q$,  $Q$ 包含 $K$ 的所有 $\mathrm{Sylow}$-$p$ 子群. 用反证法, 若 $K$ 有两个或以上的 $\mathrm{Sylow}$-$p$ 子群, 设 $P,P'$ 是它的两个不同的 $\mathrm{Sylow}$-$p$ 子群. $\sigma,\pi$ 分别是 $P,P'$ 的生成元, 有 $\sigma,\pi$ 不交换, 矛盾.
 
-$\mathrm{(iv)}$ 
+$\mathrm{(iv)}$ 取 $K$ 的 $\mathrm{Sylow}$-$p$ 子群 $P$, 则 $P,T$ 都是 $S_p$ 的 $\mathrm{Sylow}$-$p$子群, 存在 $g \in S_p$ 使 $gPg^{-1} = T$. 设 $H = gKg^{-1}$, 则 $T\triangleleft H$. 由上题知 $H \leqslant L$. 从而 $T \leqslant H \leqslant L$.
+<p align="right">$\blacksquare$</p>
 
-未完待续
