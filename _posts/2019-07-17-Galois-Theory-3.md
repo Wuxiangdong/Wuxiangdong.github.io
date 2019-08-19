@@ -139,7 +139,7 @@ $$
 
 **引理** 设域 $F$ 特征不为 $2$, $E$ 是 $n$ 次无重根多项式 $f(X) \in F[x]$ 在 $F$ 上的分裂域. 则  
 $\mathrm{(i)}$ $\mathrm{Gal}(E/F(\Delta)) = G_f \cap A_n$, $\mathrm{Inv}(G_f\cap A_n) = F(\Delta)$.  
-$\mathrm{(ii)}$ $G_f \in A_n$ 当且仅当 $\Delta \in F$, 这等价于 $d(f) \in F^2$.  
+$\mathrm{(ii)}$ $G_f \subseteq A_n$ 当且仅当 $\Delta \in F$, 这等价于 $d(f) \in F^2$.  
 $\mathrm{(iii)}$ 若 $f(x)$ 是 $F$ 上的 $3$ 次不可约多项式, 则  
 $$
 	G_f =
