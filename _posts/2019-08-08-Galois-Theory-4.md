@@ -209,7 +209,7 @@ $\mathrm{(i)}\, \mid G\mid = \mid H\mid = pm$, 其中 $m \mid (p-1)$;
 $\mathrm{(ii)}$ 设 $s \mid (p-1)$. $L$ 的 $ps$ 阶子群必为 $$\left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$, 其中 $c$ 是乘法循环群 $$\mathbb{Z}_p^*$$ 的生成元;  
 $\mathrm{(iii)}\, L$ 中任一非单位元的阶或者是 $p$, 或者是 $s$, 其中 $s \mid (p-1)$;  
 $$\mathrm{(iv)}\, \begin{pmatrix}1 & b \\ 0 & 1\end{pmatrix}, 0 \ne b \in \mathbb{Z}_p$$, 是 $L$ 中全部阶为 $p$ 的元;  
-$\begin{pmatrix}c^{\frac{p-1}{s}} & b \\ 0 & 1\end{pmatrix}, b\in\mathbb{Z}_{p}$, 是 $L$ 中全部阶为 $s$ 的元, 其中 $c$ 是 $$\mathbb{Z}_p^*$$ 的生成元;  
+$$\begin{pmatrix}c^{\frac{p-1}{s}} & b \\ 0 & 1\end{pmatrix}, b\in\mathbb{Z}_{p}$$, 是 $L$ 中全部阶为 $s$ 的元, 其中 $c$ 是 $$\mathbb{Z}_p^*$$ 的生成元;  
 $\mathrm{(v)}$ 设 $W$ 是 $H$ 的任意 $m$ 阶子群. 则 $H = TW$.  
 特别地, $H = TV$, 其中 $$V = \left\{\begin{pmatrix} a & 0 \\ 0 & 1 \end{pmatrix} \mid a \in \langle c^{\frac{p-1}{m}}\rangle\right\} = \left\langle\begin{pmatrix}c^{\frac{p-1}{m}} & 0 \\ 0 & 1 \end{pmatrix}\right\rangle$$.  
 由此证明: $H$ 的任意 $m$ 阶子群均同构于 $V$, 从而是循环群;  
