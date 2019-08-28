@@ -34,7 +34,7 @@ ul.toc {
   .toc-h6 {
     &, a {
       // font-size: map-get($base, font-size-xs);
-      font-size: map-get($base, font-size-sm);
+      font-size: map-get($base, font-size);
       font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-xs);
     }
@@ -46,7 +46,7 @@ ul.toc {
     color: $text-color-d;
     &, a {
       // font-size: map-get($base, font-size-sm);
-      font-size: map-get($base, font-size);
+      font-size: map-get($base, font-size-lg);
       font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-sm);
     }
@@ -108,7 +108,7 @@ ul.toc--navigator {
   }
   .toc-h1 {
     &, a {
-      font-size: map-get($base, font-size);
+      font-size: map-get($base, font-size-lg);
       line-height: map-get($base, line-height);
     }
     color: $text-color;
@@ -118,7 +118,7 @@ ul.toc--navigator {
   }
   .toc-h2 {
     &, a {
-      font-size: map-get($base, font-size-sm);
+      font-size: map-get($base, font-size);
       font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-sm);
     }
