@@ -18,11 +18,11 @@ ul.toc {
   .toc-h5,
   .toc-h6 {
     a {
-      @include link-colors($text-color, $main-color-2);
+      @include link-colors($text-color, $main-color-1);
     }
     &.active {
       a {
-        @include link-colors($main-color-2);
+        @include link-colors($main-color-1);
       }
     }
   }
@@ -47,16 +47,16 @@ ul.toc {
     &, a {
       // font-size: map-get($base, font-size-sm);
       font-size: map-get($base, font-size);
-      font-weight: map-get($base, font-weight-bold);
+      font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-sm);
     }
     a {
-      @include link-colors($text-color-d, $main-color-2);
+      @include link-colors($text-color-d, $main-color-1);
     }
   }
   .toc-h2 {
     &, a {
-      font-weight: map-get($base, font-weight-bold);
+      font-weight: map-get($base, font-weight);
     }
   }
   .toc-h3 {
@@ -72,7 +72,7 @@ ul.toc {
   .toc-h6 {
     color: $text-color-l;
     a {
-      @include link-colors($text-color-l, $main-color-2);
+      @include link-colors($text-color-l, $main-color-1);
     }
   }
 }
@@ -94,7 +94,7 @@ ul.toc--navigator {
     &.active {
       a {
         margin-left: -4px;
-        @include split-line(left, 4px, $main-color-2);
+        @include split-line(left, 4px, $main-color-1);
       }
     }
   }
@@ -119,7 +119,7 @@ ul.toc--navigator {
   .toc-h2 {
     &, a {
       font-size: map-get($base, font-size-sm);
-      font-weight: map-get($base, font-weight-bold);
+      font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-sm);
     }
   }
