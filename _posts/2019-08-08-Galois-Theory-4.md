@@ -279,7 +279,7 @@ F_1 = \mathbb{Q} & - & \langle\sigma\rangle
 \end{array}
 $$
 
-有 $\mathrm{Gal}(F_2/F_1) = \langle\sigma\rangle/\langle\sigma^3\rangle$. 且 $\sigma(\omega+\omega^{-1}) = \omega^{3} + \omega^{-3}$, $\sigma^2{\omega+\omega^{-1}} = \omega^2 + \omega^{-2}$. 从而 $\omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为
+有 $\mathrm{Gal}(F_2/F_1) = \langle\sigma\rangle/\langle\sigma^3\rangle$. 且 $\sigma(\omega+\omega^{-1}) = \omega^{3} + \omega^{-3}$, $\sigma^2({\omega+\omega^{-1}}) = \omega^2 + \omega^{-2}$. 从而 $\omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为
 
 $$\begin{aligned}
 (x &- (\omega+\omega^{-1}))(x - (\omega^2+\omega^{-2}))(x - (\omega^3 + \omega^{-3})) \\
@@ -439,3 +439,52 @@ $$
 
 $\cos 72^\circ > 0$, 故 $\cos 72^\circ = \frac{\sqrt{5}-1}{4}$
 <p align="right">$\blacksquare$</p>
+
+**例** 用根式表示 $\cos \frac{2\pi}{15}$.
+{:.warning}
+
+**解** $$\mathbb{Z}_{15}^* \cong \mathbb{Z}_3^* \times \mathbb{Z}_5^*$$. 设 $\omega = e^{\frac{2\pi i}{15}}$, $G = \mathrm{Gal}(\mathbb{Q}(\omega) / \mathbb{Q}) = \langle\sigma\rangle\langle\pi\rangle$. 其中 $\sigma(\omega) = \omega^{2}$, $\pi{\omega} = \omega^{-1}$. 仿上
+
+$$
+\begin{array}{lcc}
+F_4 = \mathbb{Q}(\omega) & - & \{1\} \\
+| & & | \\
+F_3 = \mathbb{Q}(\eta_2) & - & \langle\pi\rangle \\
+| && | \\
+F_2 = \mathbb{Q}(\eta_1) & - & \langle\sigma^2\rangle\langle\pi\rangle \\
+| && | \\
+F_1=\mathbb{Q} & - & \langle\sigma\rangle\langle\pi\rangle
+\end{array}
+$$
+
+其中 $\eta_1 = \omega^4+\omega^{-4}+\omega+\omega^{-1}$, $\eta_2 = \omega+\omega^{-1}$.
+
+$\mathrm{(a)}$ 域扩张 $\mathbb{Q}(\eta_1)/\mathbb{Q}$ 是二次扩张, $\mathrm{Gal}(\mathbb{Q}(\eta_1) /\mathbb{Q}) = \langle\sigma\rangle\langle\pi\rangle / \langle\sigma^2\rangle\langle\pi\rangle$. 于是 $\eta_1$ 在 $\mathbb{Q}$ 上的极小多项式为
+
+$$
+(x - \eta_1)(x - \sigma(\eta_1)) = x^2 - x - 1.
+$$
+
+注意到 $\eta_1 = 2\cos\frac{8\pi}{15} + 2\cos\frac{2\pi}{15} > 0$, 故 $\eta_1 = \frac{1+\sqrt{5}}{2}$.
+
+$\mathrm{(b)}$ 接下来考虑域扩张 $\mathbb{Q}(\eta_2) /\mathbb{Q}(\eta_1)$. 它是二次扩张, $\mathrm{Gal}(\mathbb{Q}(\eta_2) /\mathbb{Q}(\eta_1)) = \langle\sigma^2\rangle\langle\pi\rangle /\langle\pi\rangle$. 于是 $\eta_2$ 在 $\mathbb{Q}(\eta_1)$ 上的极小多项式为
+
+$$\begin{aligned}
+(x-&\eta_2)(x-\sigma^2(\eta_2)) = (x - (\omega+\omega^{-1}))(x-(\omega^4+\omega^{-4})) \\
+&= x^2 - (\omega+\omega^{-1}+\omega^4+\omega^{-4})x + (\omega+\omega^{-1})(\omega^4+\omega^{-4}) \\
+&= x^2 - \eta_1x + 2\cos\frac{2\pi}{3} + 2\cos\frac{2\pi}{5} \\
+&= x^2 - \eta_1x + \frac{\sqrt{5}-3}{2}.
+\end{aligned}$$
+
+注意 $\eta_2 = 2\cos\frac{2\pi}{15} > 0$, 解得 
+
+$$
+\begin{aligned}
+\eta_2 &= \cfrac{\eta_1 + \sqrt{\eta_1^2 - 4\times\cfrac{\sqrt{5}-3}{2}}}{2} = \cfrac{\cfrac{\sqrt{5}+1}{2} + \sqrt{\cfrac{15-3\sqrt{5}}{2}}}{2}\\
+&=\frac{\sqrt{5}+1 + \sqrt{30-6\sqrt{5}}}{4}.
+\end{aligned}
+$$
+
+从而
+
+$$\cos\frac{2\pi}{15} = \frac{\eta_2}{2} = \frac{1+\sqrt{5}+\sqrt{30-6\sqrt{5}}}{8}.$$
