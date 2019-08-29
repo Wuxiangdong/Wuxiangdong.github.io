@@ -205,7 +205,7 @@ $\mathrm{(iii)}$ 取 $K$ 的一个不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 正规子
 $\mathrm{(iv)}$ 取 $K$ 的 $\mathrm{Sylow}$-$p$ 子群 $P$, 则 $P,T$ 都是 $S_p$ 的 $\mathrm{Sylow}$-$p$子群, 存在 $g \in S_p$ 使 $gPg^{-1} = T$. 设 $H = gKg^{-1}$, 则 $T\triangleleft H$. 由上题知 $H \leqslant L$. 从而 $T \leqslant H \leqslant L$.
 <p align="right">$\blacksquare$</p>
 
-<!--
+
 **例** 设 $G$ 是 $S_p$ 的可解的可迁子群, $G$ 与 群 $H$ 在 $S_p$ 中共轭, 其中 $H$ 满足 $T \leqslant H \leqslant L$, $L$ 和 $T$ 的定义如同上题. 证明  
 $\mathrm{(i)}\, \mid G\mid = \mid H\mid = pm$, 其中 $m \mid (p-1)$;  
 $\mathrm{(ii)}$ 设 $s \mid (p-1)$. $L$ 的 $ps$ 阶子群必为 $$\left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$, 其中 $c$ 是乘法循环群 $$\mathbb{Z}_p^*$$ 的生成元;  
@@ -217,7 +217,7 @@ $\mathrm{(v)}$ 设 $W$ 是 $H$ 的任意 $m$ 阶子群. 则 $H = TW$.
 由此证明: $H$ 的任意 $m$ 阶子群均同构于 $V$, 从而是循环群;  
 $\mathrm{(vi)}\, G$ 的任意两个 $m$ 阶子群交为 $$\{1\}$$.
 {:.warning}
--->
+
 
 **证明** $\mathrm{(i)}$ 由 $$|T| = p \mid |H| \mid p(p-1) = |L|$$ 知.
 
