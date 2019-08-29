@@ -228,7 +228,7 @@ $$
 
 从而 $ \mid M \cap K \mid  = s$. $ M\cap K$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $$\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
 
-$\mathrm{(iii)}$ 设非单位元 $$g = \begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in L$. 若 $a = 1$$, 则 $g$ 是 $p$ 阶元. 若 $a \ne 1$, 有
+$\mathrm{(iii)}$ 设非单位元 $$g = \begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in L$$. 若 $$a = 1$$, 则 $g$ 是 $p$ 阶元. 若 $a \ne 1$, 有
 
 $$
 \begin{pmatrix}
