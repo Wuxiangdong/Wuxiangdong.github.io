@@ -219,14 +219,14 @@ $\mathrm{(vi)}\, G$ 的任意两个 $m$ 阶子群交为 $$\{1\}$$.
 {:.warning}
 
 
-**证明** $\mathrm{(i)}$ 由 $$|T| = p \mid |H| \mid p(p-1) = |L|$$ 知.
+**证明** $\mathrm{(i)}$ 由 $$ \mid T \mid  = p \mid  \mid H \mid  \mid p(p-1) =  \mid L \mid $$ 知.
 
-$\mathrm{(ii)}$ 设 $M$ 是 $L$ 的一个 $ps$ 阶子群. 记 $$K = \left\{\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix}\mid a\in \mathbb{Z}_{p}^*\right\} \leqslant L$$. $p \mid M$, 于是 $M$ 有 $\mathrm{Sylow}$-$p$ 子群 $T$. 任意 $\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in M$, 都有 $\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & -b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \in M$. 从而 $\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a & 0 \\ 0 & 1 \end{pmatrix}\in T(M\cap K)$. 这说明 $M = T(M\cap K)$. 于是
+$\mathrm{(ii)}$ 设 $M$ 是 $L$ 的一个 $ps$ 阶子群. 记 $$K = \left\{\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix}\mid a\in \mathbb{Z}_{p}^*\right\} \leqslant L$$. $p \mid M$, 于是 $M$ 有 $\mathrm{Sylow}$-$p$ 子群 $T$. 任意 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in M$$, 都有 $$\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & -b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \in M$$. 从而 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a & 0 \\ 0 & 1 \end{pmatrix}\in T(M\cap K)$$. 这说明 $M = T(M\cap K)$. 于是
 
 $$
 |M| = \frac{|T| |M\cap K|}{| T \cap M \cap K|}= p |M\cap K|.
 $$
 
-从而 $|M \cap K| = s$. $|M\cap K|$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
+从而 $ \mid M \cap K \mid  = s$. $ M\cap K$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
 
 未完.
