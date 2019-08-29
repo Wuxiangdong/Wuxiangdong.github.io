@@ -269,7 +269,7 @@ $$
 
  设 $\omega = e^{\frac{2\pi i}{7}} = \sin \frac{2\pi}{7} + \cos \frac{2\pi}{7}i$. $\mathbb{Q}(\omega)/\mathbb{Q}$ 是有限伽罗瓦扩张, 且 $\mathrm{Gal}(\mathbb{Q}(\omega) /\mathbb{Q}) = \langle\sigma\rangle$, 其中 $\sigma(\omega) = \omega^{3}$. $G$ 的正规列和对应的中间域如下
 
- $$
+$$
 \begin{array}{lcc}
 F_3 = \mathbb{Q}(\omega) & - & \{1\} \\
 | & & | \\
@@ -282,7 +282,160 @@ $$
 有 $\mathrm{Gal}(F_2/F_1) = \langle\sigma\rangle/\langle\sigma^3\rangle$. 且 $\sigma(\omega+\omega^{-1}) = \omega^{3} + \omega^{-3}$, $\sigma^2{\omega+\omega^{-1}} = \omega^2 + \omega^{-2}$. 从而 $\omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为
 
 $$\begin{aligned}
-(x - &(\omega+\omega^{-1}))(x - (\omega^2+\omega^{-2}))(x - (\omega^3 + \omega^{-3}))
+(x &- (\omega+\omega^{-1}))(x - (\omega^2+\omega^{-2}))(x - (\omega^3 + \omega^{-3})) \\
+&=
+\begin{aligned}
+    &x^3 - (\omega+\omega^{-1}+\omega^2+\omega^{-2}+\omega^3+\omega^{-3})x^2 + ((\omega+\omega^{-1})(\omega^2+\omega^{-2})\\
+    &+(\omega+\omega^{-1})(\omega^3+\omega^{-3})+ (\omega^2+\omega^{-2})(\omega^3+\omega^{-3}))x \\
+    &-(\omega+\omega^{-1})(\omega^2+\omega^{-2})(\omega^3+\omega^{-3})
+\end{aligned} \\
+&= x^3 + x^2 - 2x - 1
 \end{aligned}$$
 
-未完.
+这说明 $2\cos \frac{2\pi}{7} = \omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为 $x^3+x^2-2x-1$. 记 $y = x+\frac{1}{3}$, 则多项式变为
+
+$$
+g(y) = y^3-\frac{7}{3}y-\frac{7}{27}
+$$
+
+它是 $\mathbb{Q}$ 上的不可约多项式. 设 $y_1,y_2,y_3$ 是它的三个根. 记 $\zeta = e^{\frac{2\pi i}{3}}$, 作拉格朗日预解式
+
+$$\begin{aligned}
+z_1 &= y_1 + \zeta y_2 +\zeta^2y_3, \\
+z_2 &= y_1 + \zeta^2 y_2 + \zeta y_3, \\
+z_3 &= y_1 + y_2 + y_3 = 0.
+\end{aligned}$$
+
+这即是
+
+$$
+\begin{pmatrix}
+z_1 \\ z_2 \\ z_3
+\end{pmatrix} =
+\begin{pmatrix} 
+1 & \zeta & \zeta^2 \\
+1 & \zeta^2 & \zeta \\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix} 
+y_1 \\ y_2 \\ y_3
+\end{pmatrix}.
+$$
+
+又 
+
+$$
+\begin{pmatrix}
+1 & \zeta^2 & \zeta \\
+1 & \zeta & \zeta^2 \\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & \zeta & \zeta^2 \\
+1 & \zeta^2 & \zeta \\
+1 & 1 & 1
+\end{pmatrix}
+= 
+\begin{pmatrix} 
+0 & 3\zeta & 0 \\
+0 & 0 & 3\zeta^2 \\
+3 & 0 & 0
+\end{pmatrix}.
+$$
+
+有
+
+$$
+\begin{pmatrix}
+3\zeta y_2 \\ 3\zeta^2 y_3 \\ 3y_1
+\end{pmatrix} =
+\begin{pmatrix}
+1 & \zeta^2 & \zeta \\
+1 & \zeta & \zeta^2 \\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix} z_1 \\ z_2 \\ z_3 \end{pmatrix} =
+\begin{pmatrix} 
+z_1 + \zeta^2 z_2 + \zeta z_3 \\
+z_1 + \zeta z_2 + \zeta^2 z_3 \\
+z_1 + z_2 + z_3
+\end{pmatrix}
+$$
+
+从而
+
+$$\begin{aligned}
+z_1^3 + z_2^3 &= (z_1+z_2)(z_1+\zeta z_2)(z_1 + \zeta^2 z_2) \\
+&= (z_1+z_2+z_3)(z_1+\zeta z_2 + \zeta^2 z_3)(z_1 + \zeta^2 z_2 + \zeta z_3) \\
+&= (3y_1)(3\zeta^2 y_3)(3 \zeta y_2) = 27y_1y_2y_3 = 7; \\
+
+z_1^3z_2^3 &= [(y_1 +\zeta y_2 +\zeta^2 y_3)(y_1 + \zeta^2 y_2 + \zeta y_3)]^3 \\
+&= (y_1^2+y_2^2+y_3^2 - y_1y_2 - y_1y_3 - y_2y_3)^3 \\
+&= (-3(y_1y_2+y_1y_3+y_2y_3)) ^ 3 = 343.
+\end{aligned}$$
+
+这说明 $z_1^3, z_2^3$ 是 $x^2 - 7x + 343$ 的两个根. 取
+
+$$
+z_1^3 = \frac{7 + 21i\sqrt{3}}{2}, z_2^3 = \frac{7 - 21i\sqrt{3}}{2}.
+$$
+
+这可以解出 $9$ 对 $(z_1,z_2)$. 但 $(z_1,z_2)$ 应满足 $z_1z_2 = 7$. 取这样的 $(z_1,z_2)$, 有
+
+$$
+y_1 = \frac{z_1+z_2}{3}, y_2=\frac{\zeta^2z_1 + \zeta z_2}{3}, y_3 = \frac{\zeta z_1+\zeta^2z_2}{3}.
+$$
+
+于是求出 $\frac{x}{2} = \frac{y - \frac{1}{3}}{2}$.
+
+(答案就是 $\frac{1}{6} \left(\sqrt[3]{\frac{7+21i\sqrt{3}}{2}} + \sqrt[3]{\frac{7-21i\sqrt{3}}{2}}\right) - \frac{1}{6}$ 咯, 但这个根号我化不开啊啊啊啊啊啊啊啊啊啊啊啊 $\mathrm{QAQ}$).
+<p align="right">$\blacksquare$</p>
+
+**例** 用根式表示 $\cos \frac{2\pi}{5}$.
+{:.warning}
+
+**解** $3$ 是模 $5$ 的原根, 有
+
+$$
+\begin{array}{c|cccc}
+\hline n & 0 & 1 & 2 & 3  \\ \hline
+3^n \pmod{5} & 1 & 3 & 4 & 2  \\ \hline
+\end{array}
+$$
+
+记 $\omega = e^{\frac{2\pi i}{5}}$. 则 $\mathbb{Q}(\omega)/\mathbb{Q}$ 是有限伽罗瓦扩张. $\mathrm{Gal}(\mathbb{Q}(\omega)/\mathbb{Q}) = \langle\sigma\rangle$, 其中 $\sigma(\omega) = \omega^3$. $G$ 的正规列和对应的中间域如下
+
+$$
+\begin{array}{lcc}
+F_3 = \mathbb{Q}(\omega) & - & \{1\} \\
+| & & | \\
+F_2 = \mathbb{Q}(\omega + \omega^{-1}) & - & \langle\sigma^2\rangle \\
+| && | \\
+F_1 = \mathbb{Q} & - & \langle\sigma\rangle
+\end{array}
+$$
+
+$\mathrm{Gal}(F_2/F_1) = \langle\sigma\rangle/\langle\sigma^2\rangle$. $\sigma(\omega+\omega^{-1}) = \omega^3+\omega^{-3}$, 从而 $\omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为
+
+$$
+\begin{aligned}
+(x&-(\omega+\omega^{-1}))(x-(\omega^3+\omega^{-3})) \\
+&= x^2 - (\omega+\omega^{-1}+\omega^3 +\omega^{-3})x + (\omega+\omega^{-1})(\omega^3+\omega^{-3}) \\
+&= x^2 + x - 1.
+\end{aligned}
+$$
+
+注意 $\omega+\omega^{-1} =2\cos \frac{2\pi}{5}> 0$, 有 $2\cos \frac{2\pi}{5} = \frac{-1 + \sqrt{5}}{2}$, 从而 $\cos\frac{2\pi}{5} = \frac{\sqrt{5}-1}{4}$.
+
+**几何法**
+
+<img src="https://raw.githubusercontent.com/Wuxiangdong/Wuxiangdong.github.io/master/_posts/pictures/72.svg?sanitize=true" width="50%" height="50%" align="left">
+
+如图, $\mathrm{\angle CAB = \angle ABC = \angle ADB} = 72^\circ$, $\mathrm{CA} = 1$. 则 $\mathrm{AB} = \mathrm{AD} = 2\cos 72^\circ$. 又 $\angle{\mathrm{CAD}} = \angle{\mathrm{ACD}} = 36^\circ$, 所以 $\mathrm{CD} = 2\cos 72^\circ$. $\triangle \mathrm{ABD} \sim \triangle\mathrm{CAB}$, 从而 $\mathrm{BD} = 4\cos^2 72^{\circ}$, $\mathrm{CD} = 1-4\cos^2 72^\circ$. 于是
+
+$$
+1-4\cos^2 72^\circ = 2\cos 72^\circ.
+$$
+
+$\cos 72^\circ > 0$, 故 $\cos 72^\circ = \frac{\sqrt{5}-1}{4}$
+<p align="right">$\blacksquare$</p>
