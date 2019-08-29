@@ -6,10 +6,11 @@ tags: Math Algebra 伽罗瓦理论
 
 <!-- vim-markdown-toc GFM -->
 
-* [纯粹方程](#纯粹方程)
-* [分圆域](#分圆域)
-* [素数次对称群](#素数次对称群)
-* [一些习题](#一些习题)
+    * [纯粹方程](#纯粹方程)
+    * [分圆域](#分圆域)
+    * [素数次对称群](#素数次对称群)
+    * [一些习题](#一些习题)
+* [\end{pmatrix}](#endpmatrix)
 
 <!-- vim-markdown-toc -->
 
@@ -205,7 +206,6 @@ $\mathrm{(iii)}$ 取 $K$ 的一个不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 正规子
 $\mathrm{(iv)}$ 取 $K$ 的 $\mathrm{Sylow}$-$p$ 子群 $P$, 则 $P,T$ 都是 $S_p$ 的 $\mathrm{Sylow}$-$p$子群, 存在 $g \in S_p$ 使 $gPg^{-1} = T$. 设 $H = gKg^{-1}$, 则 $T\triangleleft H$. 由上题知 $H \leqslant L$. 从而 $T \leqslant H \leqslant L$.
 <p align="right">$\blacksquare$</p>
 
-
 **例** 设 $G$ 是 $S_p$ 的可解的可迁子群, $G$ 与 群 $H$ 在 $S_p$ 中共轭, 其中 $H$ 满足 $T \leqslant H \leqslant L$, $L$ 和 $T$ 的定义如同上题. 证明  
 $\mathrm{(i)}\, \mid G\mid = \mid H\mid = pm$, 其中 $m \mid (p-1)$;  
 $\mathrm{(ii)}$ 设 $s \mid (p-1)$. $L$ 的 $ps$ 阶子群必为 $$\left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$, 其中 $c$ 是乘法循环群 $$\mathbb{Z}_p^*$$ 的生成元;  
@@ -218,7 +218,6 @@ $\mathrm{(v)}$ 设 $W$ 是 $H$ 的任意 $m$ 阶子群. 则 $H = TW$.
 $\mathrm{(vi)}\, G$ 的任意两个 $m$ 阶子群交为 $$\{1\}$$.
 {:.warning}
 
-
 **证明** $\mathrm{(i)}$ 由 $$ \mid T \mid  = p \mid  \mid H \mid  \mid p(p-1) =  \mid L \mid $$ 知.
 
 $\mathrm{(ii)}$ 设 $M$ 是 $L$ 的一个 $ps$ 阶子群. 记 $$K = \left\{\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix}\mid a\in \mathbb{Z}_{p}^*\right\} \leqslant L$$. $p \mid M$, 于是 $M$ 有 $\mathrm{Sylow}$-$p$ 子群 $T$. 任意 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in M$$, 都有 $$\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & -b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \in M$$. 从而 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a & 0 \\ 0 & 1 \end{pmatrix}\in T(M\cap K)$$. 这说明 $M = T(M\cap K)$. 于是
@@ -229,4 +228,33 @@ $$
 
 从而 $ \mid M \cap K \mid  = s$. $ M\cap K$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $$\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
 
-未完.
+$\mathrm{(iii)}$ 设非单位元 $$g = \begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in L$. 若 $a = 1$$, 则 $g$ 是 $p$ 阶元. 若 $a \ne 1$, 有
+
+$$
+\begin{pmatrix}
+a & 0 \\ 0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}1 & b(1-a)^{-1} \\ 0 & 1\end{pmatrix}^{-1}\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}1 & b(1-a)^{-1} \\ 0 & 1 \end{pmatrix}. \\
+$$
+
+从而 $$\begin{pmatrix}a & b\\ 0 & 1 \end{pmatrix}$$ 和 $$\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix}$$ 的阶相同. 后者的阶 $s$ 为 $a$ 在 $$\mathbb{Z}_p^*$$ 中的阶, 故 $s \mid (p-1)$.
+
+$\mathrm{(iv)}$ 由 $\mathrm{(iii)}$ 知.
+
+$\mathrm{(v)}$ $m \mid (p-1)$, 故 $(m,p)=1$, 从而 $\mid W \cap T\mid = 1$. 于是 $\mid TW \mid=  \mid T \mid  \mid W \mid  = pm$. 说明 $H = TW$.
+
+任意 $H$ 的 $m$ 阶子群 $M$, $H= TM$, 且 $$T \cap M = \{1\}$$. 于是 $M \cong M/T\cap M \cong TM/T = TV/T \cong V/T\cap V \cong V$.
+
+$\mathrm{(vi)}$ 设 $M,N$ 是 $H$ 的两个 $m$ 阶子群, 由上知 $M,N$ 是循环群. 设 $c$ 是 $$\mathbb{Z}_p^*$$ 的一个 $m$ 阶元, 设 $$\begin{pmatrix}c & b_1 \\ 0 & 1 \end{pmatrix}$$ 和 $$\begin{pmatrix}c & b_2 \\ 0 & 1 \end{pmatrix}$$ 分别是 $M$ 和 $N$ 的生成元, $b_1\ne b_2$. 设 $0 \le k,l < m$, 则
+
+$$
+\begin{aligned}
+\begin{pmatrix}c & b_1 \\ 0 & 1\end{pmatrix}^k = \begin{pmatrix}c & b_2 \\ 0 & 1 \end{pmatrix}^l &\Rightarrow c^k = c^l \Rightarrow k = l.
+\end{aligned}
+$$
+
+再比较 $b_1(1+c+ \cdots + c^{k-1}) = b_2(1+c+ \cdots + c^{l-1})$ 知 $k = l = 0$. 这说明 $M \cap N$ 为 $$\{1\}$$.
+<p align="right">$\blacksquare$</p>
+
+
