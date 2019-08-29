@@ -6,11 +6,10 @@ tags: Math Algebra 伽罗瓦理论
 
 <!-- vim-markdown-toc GFM -->
 
-    * [纯粹方程](#纯粹方程)
-    * [分圆域](#分圆域)
-    * [素数次对称群](#素数次对称群)
-    * [一些习题](#一些习题)
-* [\end{pmatrix}](#endpmatrix)
+* [纯粹方程](#纯粹方程)
+* [分圆域](#分圆域)
+* [素数次对称群](#素数次对称群)
+* [一些习题](#一些习题)
 
 <!-- vim-markdown-toc -->
 
@@ -205,7 +204,7 @@ $\mathrm{(iii)}$ 取 $K$ 的一个不为 $$\{1\}$$ 的 $\mathrm{Abel}$ 正规子
 
 $\mathrm{(iv)}$ 取 $K$ 的 $\mathrm{Sylow}$-$p$ 子群 $P$, 则 $P,T$ 都是 $S_p$ 的 $\mathrm{Sylow}$-$p$子群, 存在 $g \in S_p$ 使 $gPg^{-1} = T$. 设 $H = gKg^{-1}$, 则 $T\triangleleft H$. 由上题知 $H \leqslant L$. 从而 $T \leqslant H \leqslant L$.
 <p align="right">$\blacksquare$</p>
-
+<!--
 **例** 设 $G$ 是 $S_p$ 的可解的可迁子群, $G$ 与 群 $H$ 在 $S_p$ 中共轭, 其中 $H$ 满足 $T \leqslant H \leqslant L$, $L$ 和 $T$ 的定义如同上题. 证明  
 $\mathrm{(i)}\, \mid G\mid = \mid H\mid = pm$, 其中 $m \mid (p-1)$;  
 $\mathrm{(ii)}$ 设 $s \mid (p-1)$. $L$ 的 $ps$ 阶子群必为 $$\left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$, 其中 $c$ 是乘法循环群 $$\mathbb{Z}_p^*$$ 的生成元;  
@@ -217,7 +216,7 @@ $\mathrm{(v)}$ 设 $W$ 是 $H$ 的任意 $m$ 阶子群. 则 $H = TW$.
 由此证明: $H$ 的任意 $m$ 阶子群均同构于 $V$, 从而是循环群;  
 $\mathrm{(vi)}\, G$ 的任意两个 $m$ 阶子群交为 $$\{1\}$$.
 {:.warning}
-
+-->
 **证明** $\mathrm{(i)}$ 由 $$ \mid T \mid  = p \mid  \mid H \mid  \mid p(p-1) =  \mid L \mid $$ 知.
 
 $\mathrm{(ii)}$ 设 $M$ 是 $L$ 的一个 $ps$ 阶子群. 记 $$K = \left\{\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix}\mid a\in \mathbb{Z}_{p}^*\right\} \leqslant L$$. $p \mid M$, 于是 $M$ 有 $\mathrm{Sylow}$-$p$ 子群 $T$. 任意 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\in M$$, 都有 $$\begin{pmatrix}a & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & -b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \in M$$. 从而 $$\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a & 0 \\ 0 & 1 \end{pmatrix}\in T(M\cap K)$$. 这说明 $M = T(M\cap K)$. 于是
@@ -233,8 +232,7 @@ $\mathrm{(iii)}$ 设非单位元 $$g = \begin{pmatrix}a & b \\ 0 & 1 \end{pmatri
 $$
 \begin{pmatrix}
 a & 0 \\ 0 & 1
-\end{pmatrix}
-=
+\end{pmatrix}=
 \begin{pmatrix}1 & b(1-a)^{-1} \\ 0 & 1\end{pmatrix}^{-1}\begin{pmatrix}a & b \\ 0 & 1 \end{pmatrix}\begin{pmatrix}1 & b(1-a)^{-1} \\ 0 & 1 \end{pmatrix}. \\
 $$
 
@@ -257,4 +255,34 @@ $$
 再比较 $b_1(1+c+ \cdots + c^{k-1}) = b_2(1+c+ \cdots + c^{l-1})$ 知 $k = l = 0$. 这说明 $M \cap N$ 为 $$\{1\}$$.
 <p align="right">$\blacksquare$</p>
 
+**例** 用根式表示 $\cos \frac{2\pi}{7}$.
+{:.warning}
 
+**解** $3$ 是模 $7$ 的原根, 有
+
+$$
+\begin{array}{c|cccccc}
+\hline n & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+3^n \pmod{7} & 1 & 3 & 2 & 6 & 4 & 5 \\ \hline
+\end{array}
+$$
+
+ 设 $\omega = e^{\frac{2\pi i}{7}} = \sin \frac{2\pi}{7} + \cos \frac{2\pi}{7}i$. $\mathbb{Q}(\omega)/\mathbb{Q}$ 是有限伽罗瓦扩张, 且 $\mathrm{Gal}(\mathbb{Q}(\omega) /\mathbb{Q}) = \langle\sigma\rangle$, 其中 $\sigma(\omega) = \omega^{3}$. $G$ 的正规列和对应的中间域如下
+
+ $$
+\begin{array}{lcc}
+F_3 = \mathbb{Q}(\omega) & - & \{1\} \\
+| & & | \\
+F_2 = \mathbb{Q}(\omega + \omega^{-1}) & - & \langle\sigma^3\rangle \\
+| && | \\
+F_1 = \mathbb{Q} & - & \langle\sigma\rangle
+\end{array}
+$$
+
+有 $\mathrm{Gal}(F_2/F_1) = \langle\sigma\rangle/\langle\sigma^3\rangle$. 且 $\sigma(\omega+\omega^{-1}) = \omega^{3} + \omega^{-3}$, $\sigma^2{\omega+\omega^{-1}} = \omega^2 + \omega^{-2}$. 从而 $\omega + \omega^{-1}$ 在 $\mathbb{Q}$ 上的极小多项式为
+
+$$\begin{aligned}
+(x - &(\omega+\omega^{-1}))(x - (\omega^2+\omega^{-2}))(x - (\omega^3 + \omega^{-3}))
+\end{aligned}$$
+
+未完.
