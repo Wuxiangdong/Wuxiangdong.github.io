@@ -131,7 +131,7 @@ $$
 \sigma_{a,b}\sigma_{a',b'}(x) = \sigma_{a,b}(a'x+b') = aa'x+ab'+b
 $$
 
-知 $$\pi: \sigma_{a,b} \mapsto \begin{pmatrix}a & b \\ 0 & 1\end{pmatrix}$$ 给出 $L \rightarrow G$ 的群同态. 这个同态的核为 $$\{\sigma_{1,0}\}$$, 从而这个同态是单同态. 任意 $$a \in \mathbb{Z}_p^*$$, $$b \in \mathbb{Z}_p$$, $\sigma_{a,b}$$ 给出 $\mathbb{Z}_p$ 的一一变换 (因为 $ax+b = ay+b \Leftrightarrow ax = ay \Leftrightarrow x = y$), 从而 $\pi$ 是满射, 推出 $\pi$ 给出同构 $L \cong G$.
+知 $$\pi: \sigma_{a,b} \mapsto \begin{pmatrix}a & b \\ 0 & 1\end{pmatrix}$$ 给出 $L \rightarrow G$ 的群同态. 这个同态的核为 $$\{\sigma_{1,0}\}$$, 从而这个同态是单同态. 任意 $$a \in \mathbb{Z}_p^*$$, $$b \in \mathbb{Z}_p$$, $\sigma_{a,b}$ 给出 $\mathbb{Z}_p$ 的一一变换 (因为 $ax+b = ay+b \Leftrightarrow ax = ay \Leftrightarrow x = y$), 从而 $\pi$ 是满射, 推出 $\pi$ 给出同构 $L \cong G$.
 
 任意 $$x, y\in\mathbb{Z}_p$$, 映射 $\sigma_{1,y-x} \in L$ 满足 $\sigma_{1,y-x}(x) = x + y - x = y$. 这说明 $L$ 是 $\mathbb{Z}_p$ 的可迁置换群.
 
@@ -488,4 +488,5 @@ $$
 从而
 
 $$\cos\frac{2\pi}{15} = \frac{\eta_2}{2} = \frac{1+\sqrt{5}+\sqrt{30-6\sqrt{5}}}{8}.$$
+
 <p align="right">$\blacksquare$</p>
