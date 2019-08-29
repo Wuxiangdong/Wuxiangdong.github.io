@@ -227,6 +227,6 @@ $$
 |M| = \frac{|T| |M\cap K|}{| T \cap M \cap K|}= p |M\cap K|.
 $$
 
-从而 $ \mid M \cap K \mid  = s$. $ M\cap K$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
+从而 $ \mid M \cap K \mid  = s$. $ M\cap K$ 可以看成循环群 $$\mathbb{Z}_p^*$$ 的子群, 故 $M \cap K$ 也是循环群. 这说明 $$\left\langle\begin{pmatrix}c^{\frac{p-1}{s}} & 0\\0 & 1 \end{pmatrix}\right\rangle = M\cap K$$, 从而 $$M = T(M \cap K) = \left\{\begin{pmatrix}a & b \\ 0 & 1\end{pmatrix} \mid a \in \langle c^{\frac{p-1}{s}}\rangle, b \in \mathbb{Z}_p\right\}$$.
 
 未完.
