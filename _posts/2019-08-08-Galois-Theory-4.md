@@ -526,5 +526,5 @@ $$
 
 验证得到, $\alpha$ 可以是 $0,\cfrac{\pi}{3}$ 或 $\cfrac{\pi}{2}$.
 
-**法二** 设 $\alpha = \frac{2\pi p}{q}$, 其中 $p,q$ 互素. 设 $2\cos\alpha = \frac{t}{s}$, $(s,t) = 1$. 则 $f(x) = sx^2 - tx+s$ 是本原多项式. $f(x)$ 是 $g(x) = x^q - 1$ 的因子. $f(x)$ 本原, 有 $\frac{g(x)}{f(x)}$ 也是整系数多项式, 这迫使 $s = \pm 1$. 又 $0 \le \frac{t}{s} \le 2$, 故 $$\cos\alpha \in \{0,\frac{1}{2},1\}$$. 得到 $\alpha \in \{0,\cfrac{\pi}{3},\cfrac{\pi}{2}\}$.
+**法二** 设 $\alpha = \frac{2\pi p}{q}$, 其中 $p,q$ 互素. 设 $2\cos\alpha = \frac{t}{s}$, $(s,t) = 1$. 则 $f(x) = sx^2 - tx+s$ 是本原多项式. $f(x)$ 是 $g(x) = x^q - 1$ 的因子. $f(x)$ 本原, 有 $\frac{g(x)}{f(x)}$ 也是整系数多项式, 这迫使 $s = \pm 1$. 又 $0 \le \frac{t}{s} \le 2$, 故 $$\cos\alpha \in \{0,\frac{1}{2},1\}$$. 得到 $$\alpha \in \{0,\cfrac{\pi}{3},\cfrac{\pi}{2}\}$$.
 <p align="right">$\blacksquare$</p>
