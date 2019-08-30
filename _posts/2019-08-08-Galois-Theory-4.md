@@ -490,3 +490,41 @@ $$
 $$\cos\frac{2\pi}{15} = \frac{\eta_2}{2} = \frac{1+\sqrt{5}+\sqrt{30-6\sqrt{5}}}{8}.$$
 
 <p align="right">$\blacksquare$</p>
+
+**例** 用根式表示 $\cos\frac{\pi}{8}$.
+{:.warning}
+
+> 怎么还求 $\cos$ ~~(大雾)~~
+
+**解** $2\cos^{2}\cfrac{\pi}{8}-1 = \cos{\cfrac{\pi}{4}} = \cfrac{\sqrt{2}}{2}$
+
+解得 $\cos\cfrac{\pi}{8} = \cfrac{\sqrt{2+\sqrt{2}}}{2}$
+<p align="right">$\blacksquare$</p>
+
+**例** 用根式表示 $\cos\frac{\pi}{6}$.
+{:.warning}
+
+> ??? ~~迷惑~~
+
+**解** 记 $\omega = e^{\frac{\pi}{6}}$, 则
+
+$$
+(x-(\omega+\omega^{-1}))(x-(\omega^{5}+\omega^{-5})) = x^2 - 3.
+$$
+
+从而 $2\cos\frac{\pi}{6} = \sqrt{3}$, $\cos\frac{\pi}{6} = \frac{\sqrt{3}}{2}$.
+<p align="right">$\blacksquare$</p>
+
+**例** 求所有 $0 \le \alpha \le \frac{\pi}{2}$, 使 $\alpha$ 在角度制表示下为有理数, $\cos\alpha$ 也是有理数.
+{:.warning}
+
+**解** 设 $\alpha = \frac{2\pi p}{q}$, 其中整数 $p,q$ 互素. 设 $\omega = e^{\alpha i}$, 则 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式为 $\Phi_q(x)$. 又 $\omega+\omega^{-1} = 2\cos\alpha \in \mathbb{Q}$, 从而 $x^2 - (\omega+\omega^{-1})x + 1 \in \mathbb{Q}[x]$.
+
+若 $\omega \in\mathbb{R}$, 则 $q \mid 2p$, 又 $(q,p) = 1$, 有 $q \mid 2$, 即 $q = 1$ 或 $2$. 此时 $\cos \alpha \in \mathbb{Q}$.
+
+若 $\omega \notin\mathbb{R}$, 则 $x^2 - (\omega+\omega^{-1})x + 1$ 是 $\omega$ 在 $\mathbb{Q}$ 上的极小多项式. 于是 $\varphi(q) = 2$, 即 $q = 3,4$ 或 $6$.
+
+验证得到, $\alpha$ 可以是 $0,\cfrac{\pi}{3}$ 或 $\cfrac{\pi}{2}$.
+
+**法二** 设 $\alpha = \frac{2\pi p}{q}$, 其中 $p,q$ 互素. 设 $2\cos\alpha = \frac{t}{s}$, $(s,t) = 1$. 则 $f(x) = sx^2 - tx+s$ 是本原多项式. $f(x)$ 是 $g(x) = x^q - 1$ 的因子. $f(x)$ 本原, 有 $\frac{g(x)}{f(x)}$ 也是整系数多项式, 这迫使 $s = \pm 1$. 又 $0 \le \frac{t}{s} \le 2$, 故 $$\cos\alpha \in \{0,\frac{1}{2},1\}$$. 得到 $\alpha \in \{0,\cfrac{\pi}{3},\cfrac{\pi}{2}\}$.
+<p align="right">$\blacksquare$</p>
