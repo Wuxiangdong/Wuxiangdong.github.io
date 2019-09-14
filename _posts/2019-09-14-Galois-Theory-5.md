@@ -1,5 +1,5 @@
 ---
-title: 一般方程
+title: 一般方程的伽罗瓦群
 tags: Math Algebra 伽罗瓦理论
 ---
 
@@ -12,7 +12,7 @@ tags: Math Algebra 伽罗瓦理论
 另一方面, $S_n$ 的任意元 $\sigma$ 都给出 $F[x_1,\cdots ,x_n]$ 的一个自同构, 即将 $x_i$ 映射为 $x_{\sigma(i)}$, $1 \le i \le n$. 从而 $\sigma$ 诱导出商域 $F(x_1,\cdots ,x_n)$ 的自同构, 且它保持 $F(p_1,\cdots ,p_n)$ 的元不懂. 故 $\sigma \in G$. 这说明 $G = S_n$.
 
 进一步, 由伽罗瓦理论基本定理, $\mathrm{Inv}(S_n) = F(p_1,\cdots ,p_n)$, 即任意对称的有理函数都可以表为初等对称多项式的有理函数.
-
+<!--more-->
 设 $F$ 是域, $t_1,\cdots ,t_n$ 是独立的不定元. 称有理函数域 $F(t_1,\cdots, t_n)$ 上的方程 $f(x) = x^n - t_1x^{n-1} + \cdots + (-1)^n t_n = 0$ 是 $F$ 上的 $n$ 次一般方程.
 
 **定理 $\mathbf{4.2}$** 域 $F$ 上的 $n$ 次一般方程 $f(x) = x^n - t_1x^{n-1} + \cdots + (-1)^nt_n = 0$ 在 $F(t_1,\cdots ,t_n)$ 上不可约且无重根; 并且它在域 $F(t_1,\cdots ,t_n)$ 上的伽罗瓦群是对称群 $S_n$.
