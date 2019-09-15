@@ -9,7 +9,7 @@ tags: Math Algebra 伽罗瓦理论
 
 令 $g(x) = (x-x_1)(x-x_2)\cdots (x-x_n) \in F(p_1,\cdots ,p_n)[x]$, 则 $F(x_1,\cdots ,x_n)$ 是 $g(x)$ 在 $F(p_1,\cdots ,p_n)$ 上的分裂域. 这说明 $F(x_1,\cdots ,x_n) /F(p_1,\cdots ,p_n)$ 是有限伽罗瓦扩张, 记其伽罗瓦群为 $G$, 可以将其看成 $S_n$ 的子群.
 
-另一方面, $S_n$ 的任意元 $\sigma$ 都给出 $F[x_1,\cdots ,x_n]$ 的一个自同构, 即将 $x_i$ 映射为 $x_{\sigma(i)}$, $1 \le i \le n$. 从而 $\sigma$ 诱导出商域 $F(x_1,\cdots ,x_n)$ 的自同构, 且它保持 $F(p_1,\cdots ,p_n)$ 的元不懂. 故 $\sigma \in G$. 这说明 $G = S_n$.
+另一方面, $S_n$ 的任意元 $\sigma$ 都给出 $F[x_1,\cdots ,x_n]$ 的一个自同构, 即将 $x_i$ 映射为 $x_{\sigma(i)}$, $1 \le i \le n$. 从而 $\sigma$ 诱导出商域 $F(x_1,\cdots ,x_n)$ 的自同构, 且它保持 $F(p_1,\cdots ,p_n)$ 的元不动. 故 $\sigma \in G$. 这说明 $G = S_n$.
 
 进一步, 由伽罗瓦理论基本定理, $\mathrm{Inv}(S_n) = F(p_1,\cdots ,p_n)$, 即任意对称的有理函数都可以表为初等对称多项式的有理函数.
 <!--more-->
@@ -52,5 +52,5 @@ $$
 (x-x_1)\cdots (x-x_n) = g(x) = \sigma(f(x)) = (x-\pi(y_1))\cdots (x-\pi(y_n)).
 $$
 
-$x_1,\cdots ,x_n$ 两两不同, 故 $\pi(y_1),\cdots ,\pi(y_n)$ 两两不同, 从而 $y_1,\cdots ,y_n)$ 两两不同. 这说明 $f(x)$ 无重根. 再由 $S_n$ 可迁知 $f(x)$ 在 $F(t_1,\cdots ,t_n)$ 上不可约. 这就完成证明.
+$x_1,\cdots ,x_n$ 两两不同, 故 $\pi(y_1),\cdots ,\pi(y_n)$ 两两不同, 从而 $y_1,\cdots ,y_n$ 两两不同. 这说明 $f(x)$ 无重根. 再由 $S_n$ 可迁知 $f(x)$ 在 $F(t_1,\cdots ,t_n)$ 上不可约. 这就完成证明.
 <p align="right">$\blacksquare$</p>
