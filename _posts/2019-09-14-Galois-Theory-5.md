@@ -54,3 +54,31 @@ $$
 
 $x_1,\cdots ,x_n$ 两两不同, 故 $\pi(y_1),\cdots ,\pi(y_n)$ 两两不同, 从而 $y_1,\cdots ,y_n)$ 两两不同. 这说明 $f(x)$ 无重根. 再由 $S_n$ 可迁知 $f(x)$ 在 $F(t_1,\cdots ,t_n)$ 上不可约. 这就完成证明.
 <p align="right">$\blacksquare$</p>
+
+## 一些习题
+
+**习题** $\mathbf{1}$ 设域 $F$ 特征不为 $2$, $f(x)\in F(t_1,\cdots ,t_n)[x]$ 是 $F$ 上 $n$ 次一般方程, 其根为 $x_1,\cdots ,x_n$. 则 $\mathrm{Gal}(F(x_1,\cdots ,x_n) /K) = A_n$, 其中 $K = F(t_1,\cdots ,t_n, \sqrt{d(f)})$, $d(f)$ 是 $f(x)$ 的判别式.
+{:.warning}
+
+**证明** $f(x)$ 是 $n$ 次无重根多项式, $F(x_1,\cdots ,x_n)$ 是 $f(x)$ 在 $F(t_1,\cdots ,t_n)$ 上的分裂域. 故
+
+$$
+\mathrm{Gal}\left(F(x_1,\cdots ,x_n) /F(t_1,\cdots ,t_n)\left(\sqrt{d(f)}\right)\right) = G_f \cap A_n = S_n \cap A_n = A_n.
+$$
+
+<p align="right">$\blacksquare$</p>
+
+**习题** $\bf{2}$ 设 $f(x) \in F(t_1,\cdots ,t_5)$ 是域 $F$ 上 $5$ 次一般方程, 其根为 $x_1,\cdots, x_5$. 令  
+$$
+\alpha = x_1x_2+x_2x_3+x_3x_4+x_4x_5+x_5x_1, \\
+\beta = x_1x_3 + x_1x_4 + x_2x_4 + x_2x_5 + x_3x_5.
+$$  
+则  
+$\mathrm{(i)}$ $$D_5 = \left\{
+\begin{aligned}
+&1,(12345),(13524),(14253),(15432),\\ &(12)(35),(13)(45),(14)(23),(15)(24),(25)(34)
+\end{aligned}\right\} = \langle(12345),(12)(35)\rangle$$ 是交错群 $A_5$ 的可解子群;  
+$\mathrm{ii}$ $\alpha - \beta \in \mathrm{Inv}(D_5)$;  
+$\mathrm{iii}$ 求 $A_5(\alpha-\beta)$;  
+$\mathrm{iv}$ 设 $F$ 的特征不为 $2$. 则 $[K(\alpha-\beta:K)] = 6$, 其中 $K = F(t_1,\cdots ,t_5,\sqrt{d(f)})$, $d(f)$ 是 $f(x)$ 的判别式.
+{:.warning}
