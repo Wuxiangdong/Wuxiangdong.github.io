@@ -3,6 +3,13 @@ title: 一般方程的伽罗瓦群
 tags: Math Algebra 伽罗瓦理论
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [一般方程](#一般方程)
+* [一些习题](#一些习题)
+
+<!-- vim-markdown-toc -->
+
 ## 一般方程
 
 设 $F$ 是域, $x_1,\cdots,x_n$ 是独立的不定元, $p_1,\cdots ,p_n$ 是 $x_1,\cdots, x_n$ 的初等对称多项式, 下面计算域扩张 $F(x_1,\cdots ,x_n)/F(o_1,\cdots, p_n)$ 的伽罗瓦群.
@@ -72,13 +79,13 @@ $$
 $$
 \alpha = x_1x_2+x_2x_3+x_3x_4+x_4x_5+x_5x_1, \\
 \beta = x_1x_3 + x_1x_4 + x_2x_4 + x_2x_5 + x_3x_5.
-$$  
+$$
 则  
 $\mathrm{(i)}$ $$D_5 = \left\{
 \begin{aligned}
 &1,(12345),(13524),(14253),(15432),\\ &(12)(35),(13)(45),(14)(23),(15)(24),(25)(34)
 \end{aligned}\right\} = \langle(12345),(12)(35)\rangle$$ 是交错群 $A_5$ 的可解子群;  
-$\mathrm{ii}$ $\alpha - \beta \in \mathrm{Inv}(D_5)$;  
-$\mathrm{iii}$ 求 $A_5(\alpha-\beta)$;  
-$\mathrm{iv}$ 设 $F$ 的特征不为 $2$. 则 $[K(\alpha-\beta:K)] = 6$, 其中 $K = F(t_1,\cdots ,t_5,\sqrt{d(f)})$, $d(f)$ 是 $f(x)$ 的判别式.
+$\mathrm{(ii)}$ $\alpha - \beta \in \mathrm{Inv}(D_5)$;  
+$\mathrm{(iii)}$ 求 $A_5(\alpha-\beta)$;  
+$\mathrm{(iv)}$ 设 $F$ 的特征不为 $2$. 则 $[K(\alpha-\beta:K)] = 6$, 其中 $K = F(t_1,\cdots ,t_5,\sqrt{d(f)})$, $d(f)$ 是 $f(x)$ 的判别式.
 {:.warning}
