@@ -9,4 +9,4 @@ tags: Math Algebra
 
 方法二:
 
-$x^6+x^3+1 = \frac{x^9-1}{x^3-1} \in \mathbb{F}_2[x]$ 无重根. 设 $\alpha$ 是它的一个根, 则 $\alpha^9 = 1$. 设 $F = \mathbb{F}_2(\alpha)$, 易知 $\alpha$ 在 $F^*$ 中的阶是 $9$. 故 $9 \mid |F|-1$. 设 $F=2^k$, 有 $k \le 6$, 结合 $9 \mid 2^k-1$ 知道 $k=6$, 故 $[F:\mathbb{F}_2] = 6$, 这直接导致 $x^6+x^3+1$ 在 $\mathbb{F}_2$ 上不可约.
+$x^6+x^3+1 = \frac{x^9-1}{x^3-1} \in \mathbb{F}_2[x]$ 无重根. 设 $\alpha$ 是它的一个根, 则 $\alpha^9 = 1$. 设 $F = \mathbb{F}_2(\alpha)$, 易知 $\alpha$ 在 $F^*$ 中的阶是 $9$. 故 $9 \mid  \mid F \mid -1$. 设 $F=2^k$, 有 $k \le 6$, 结合 $9 \mid 2^k-1$ 知道 $k=6$, 故 $[F:\mathbb{F}_2] = 6$, 这直接导致 $x^6+x^3+1$ 在 $\mathbb{F}_2$ 上不可约.
