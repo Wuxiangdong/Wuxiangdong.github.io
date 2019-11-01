@@ -110,6 +110,6 @@ $$\begin{aligned}
     \right\}.
 \end{aligned}$$
 
-$\mathrm{(iv)}$ 记 $$\overline{{F}}=F(x_1,x_2,x_3,x_4,x_5)$$, 则 $$\mathrm{Gal}( \overline{F}/K )=A_5$$.$$\mid A_5(\alpha-\beta)\mid=6$$, 故 $$[\mathrm{Gal}(\overline{F}/K):\mathrm{Inv}(K(\alpha-\beta))]=6$$. 即 $$[K(\alpha-\beta):K]=6$$.
+$\mathrm{(iv)}$ 记 $$\overline{F}=F(x_1,x_2,x_3,x_4,x_5)$$, 则 $$\mathrm{Gal}( \overline{F}/K )=A_5$$.$$\mid A_5(\alpha-\beta)\mid=6$$, 故 $$[\mathrm{Gal}(\overline{F}/K):\mathrm{Inv}(K(\alpha-\beta))]=6$$. 即 $$[K(\alpha-\beta):K]=6$$.
 
 <p align="right">$\blacksquare$</p>
