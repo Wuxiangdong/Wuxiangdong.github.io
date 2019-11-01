@@ -89,3 +89,25 @@ $\mathrm{(ii)}$ $\alpha - \beta \in \mathrm{Inv}(D_5)$;
 $\mathrm{(iii)}$ 求 $A_5(\alpha-\beta)$;  
 $\mathrm{(iv)}$ 设 $F$ 的特征不为 $2$. 则 $[K(\alpha-\beta:K)] = 6$, 其中 $K = F(t_1,\cdots ,t_5,\sqrt{d(f)})$, $d(f)$ 是 $f(x)$ 的判别式.
 {:.warning}
+
+**证明** $\mathrm{(i)}$ $D_5 \triangleright \langle(12345)\rangle \triangleright {1}$, $\langle(12345)\rangle$ 和 $D_5/\langle(12345)\rangle$ 都是 $\mathrm{Abel}$ 群.  
+$\mathrm{(ii)}$ 只需验证 $(12345)$ 和 $(12)(35)$ 保持 $\alpha-\beta$ 不动.  
+$\mathrm{(iii)}$ 考虑 $A_5$ 的左陪集分解 $A_5 = D_5\cup (345)D_5 \cup (354)D_5 \cup (23)(45)D_5 \cup (234)D_5 \cup (243)D_5$. $\alpha - \beta \in \mathrm{Inv}(D_5)$, 故
+
+$$\begin{aligned}
+    &A_5(\alpha-\beta) = \{(1),(345),(354),(23)(45),(234),(243)\}(\alpha-\beta) \\
+    &= \left\{
+        \begin{aligned}
+            &x_1x_2 + x_2x_3 + x_3x_4 + x_4x_5 + x_5x_1 - x_1x_3 - x_1x_4 - x_2x_4 - x_2x_5 - x_3x_5\\
+            &x_1x_2 + x_2x_4 + x_4x_5 + x_5x_3 + x_3x_1 - x_1x_4 - x_1x_5 - x_2x_5 - x_2x_3 - x_4x_3\\
+            &x_1x_2 + x_2x_5 + x_5x_3 + x_3x_4 + x_4x_1 - x_1x_5 - x_1x_3 - x_2x_3 - x_2x_4 - x_5x_4\\
+            &x_1x_3 + x_3x_2 + x_2x_5 + x_5x_4 + x_4x_1 - x_1x_2 - x_1x_5 - x_3x_5 - x_3x_4 - x_2x_4\\
+            &x_1x_3 + x_3x_4 + x_4x_2 + x_2x_5 + x_5x_1 - x_1x_4 - x_1x_2 - x_3x_2 - x_3x_5 - x_4x_5\\
+            &x_1x_4 + x_4x_2 + x_2x_3 + x_3x_5 + x_5x_1 - x_1x_2 - x_1x_3 - x_4x_3 - x_4x_5 - x_2x_5\\
+        \end{aligned}
+    \right\}.
+\end{aligned}$$
+
+$\mathrm{(iv)}$ 记 $\overline{{F}}=F(x_1,x_2,x_3,x_4,x_5)$, 则 $\mathrm{Gal}( \overline{F}/K )=A_5$.$|A_5(\alpha-\beta)|=6$, 故 $[\mathrm{Gal}(\overline{F}/K):\mathrm{Inv}(K(\alpha-\beta))]=6$. 即 $[K(\alpha-\beta):K]=6$.
+
+<p align="right">$\blacksquare$</p>
