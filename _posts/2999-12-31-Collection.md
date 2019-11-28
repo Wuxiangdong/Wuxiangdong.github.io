@@ -33,7 +33,7 @@ $\bf 2.$ 记 $C_{[a,b]}$ 是 $[a,b]$ 上所有连续函数构成的环(加法和
 
 $$\mathfrak{m}_{x_0} := \{f \in C_{[a,b]}: f(x_0) = 0\}\,\,\, x_0 \in [a,b].$$
 
-任$f,g\in \mathfrak{m}_{x_0}$,任意$h \in C_{[a,b]}$, 有$(f+g)(x_0) = 0$, $(hf)(x_0) = 0$. 这说明  $\mathfrak{m}_{x_0}$ 是 $C_{[a,b]}$ 的极大理想. 下面说明其所有极大理想都有形式 $\mathfrak{m}_{x_0}$.
+任$$f,g\in \mathfrak{m}_{x_0}$$,任意$$h \in C_{[a,b]}$, 有$(f+g)(x_0) = 0$$, $$(hf)(x_0) = 0$$. 这说明  $$\mathfrak{m}_{x_0}$$ 是 $C_{[a,b]}$ 的极大理想. 下面说明其所有极大理想都有形式 $\mathfrak{m}_{x_0}$.
 
 设 $\mathfrak{m}$ 是 $C_{[a,b]}$ 的极大理想. 记
 
@@ -47,9 +47,9 @@ $$
 	f = f_1^2 + f_2^2 + \cdots + f_n^2 \in \mathfrak{m}, \,\,\,\,\,\,\, f(x) > 0, \forall x \in [a,b].
 $$
 
-这导致 $C_{[a,b]}$ 的单位 $f$ 属于 $\mathfrak{m}$, 矛盾.
+这导致 $C_{[a,b]}$ 的单位 $f$ 属于 $$\mathfrak{m}$$, 矛盾.
 
-现在取 $x_0 \in V$, 有 $\mathfrak{m} \subset \mathfrak{m}_{x_0}$, 而 $\mathfrak{m}$ 是极大理想, 这导致 $\mathfrak{m} = \mathfrak{m}_{x_0}$.
+现在取 $x_0 \in V$, 有 $$\mathfrak{m} \subset \mathfrak{m}_{x_0}$$, 而 $$\mathfrak{m}$$ 是极大理想, 这导致 $$\mathfrak{m} = \mathfrak{m}_{x_0}$$.
 <p align="right">$\blacksquare$</p>
 
 $\bf 11.28$
