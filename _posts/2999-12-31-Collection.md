@@ -74,3 +74,7 @@ $$
 同理, $C-I_n$ 可逆.
 
 设
+
+$\bf 12.4$
+
+$\bf 1.$ 设正整数 $a,b$. $a\mathbb{Z}/ab\mathbb{Z} \cong \mathbb{Z}/b\mathbb{Z}$(环), $(a,b)=1$?.
