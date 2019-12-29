@@ -53,7 +53,7 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 **Example.** 设 $n \geqslant 0$, 集合 $X$, $\mid X\mid \geqslant n$. $$\mathcal{S}_X$$ 自然地作用于 $X^n$ 上. 对 $x = (x_i)_{i=1}^n \in X^n$, 按照 $i \equiv j \Longleftrightarrow x_i = x_j$ 定义 $\{1,2,\cdots ,n\}$ 的等价关系 $R_x$. 设 $x,y \in X^n$, 则 $R_x = R_y$ 当且仅当 $x,y$ 在相同的 $\mathcal{S}_X$-轨道中.
 {:.warning}
 
-于是, $\mathcal{S}_X$ 作用在 $X^n$ 产生的轨道和 $\{1,2,\cdots ,n\}$ 上的等价关系是一一对应的. 从而 $X^n/\mathcal{S}_X$ 的大小恰为 $B(n)$, 即第 $n$ 个 Bell 数. Bell 数满足熟知的公式 $B(n+1) = \sum_{k=0}^n\binom{n}{k}B(k)$. 当 $X$ 有限时, 由 Burnside 引理, 这个公式等价于
+清晰地看到, $$\mathcal{S}_X$$ 作用在 $$X^n$$ 产生的轨道和 $$\{1,2,\cdots ,n\}$$ 上的等价关系是一一对应的. 从而 $$X^n/\mathcal{S}_X$$ 的大小恰为 $B(n)$, 即第 $n$ 个 Bell 数. Bell 数满足熟知的公式 $B(n+1) = \sum_{k=0}^n\binom{n}{k}B(k)$. 当 $X$ 有限时, 由 Burnside 引理, 这个公式等价于
 
 $$
     \sum_{g\in G}\chi_{X}(g)^n = \sum_{g\in G}(\chi_X(g)+1)^{n-1}, \,\,\,\,\,\,\forall n \leqslant |X|. \tag{1}\label{r1}
@@ -74,7 +74,7 @@ $$
 **证明的概要** 令 $$S = \{(g,x) \in G \times X \mid gx = x\}$$. 用两种方法计算 $\mid S\mid$.
 
 ## n-Transitivity
-令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$. 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
+令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $$X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$$. 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
 
 **Proposition.** 设 $X$ 是 $G$-Set, 整数 $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
 $(\rm{i})$ $G$ 在 $X$ 上的作用 $n$ 重传递.  
