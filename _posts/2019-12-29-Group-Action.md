@@ -171,7 +171,7 @@ $$\mathcal{A}_{n-1}$$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重�
 
 在 $$\mathcal{A}_5$$ 的情况. 记 $$G = \mathcal{A}_5$$.
 
-令 $X=\{(u,v) \in G\times G\mid o(u) = 2,o(v) = 3,o(xy) = 5\}$. 则 $\mid X\mid = 120$. (由共轭,只需考虑 $u = (12)(34)$, $v$ 有 $8$ 种取法, 从而 $X$ 有 $8\times 15 = 120$ 个元素). $\mathrm{Aut}(G)$ 自然地作用于 $X$ 上, 且是自由的. 因为设 $(u,v) \in X$, 则 $u,v$ 生成 $G$ ($2\times 3 \times 5 =30$, $G$ 无 $30$ 阶子群). 从而若 $\sigma \in \mathrm{Aut}(G)$ 使 $u,v$ 不动, 则 $\sigma = 1$. 这说明 $120 = \mid X\mid \geqslant \mid \mathrm{Aut}(G)\mid$. $\mathrm{Aut}(G)$ 包含 $$\mathcal{S}_5$$ 作为子群, 只有 $$\mathrm{Aut}(G) = \mathcal{S}_5$$.
+令 $$X=\{(u,v) \in G\times G\mid o(u) = 2,o(v) = 3,o(xy) = 5\}$$. 则 $\mid X\mid = 120$. (由共轭,只需考虑 $u = (12)(34)$, $v$ 有 $8$ 种取法, 从而 $X$ 有 $8\times 15 = 120$ 个元素). $\mathrm{Aut}(G)$ 自然地作用于 $X$ 上, 且是自由的. 因为设 $(u,v) \in X$, 则 $u,v$ 生成 $G$ ($2\times 3 \times 5 =30$, $G$ 无 $30$ 阶子群). 从而若 $\sigma \in \mathrm{Aut}(G)$ 使 $u,v$ 不动, 则 $\sigma = 1$. 这说明 $120 = \mid X\mid \geqslant \mid \mathrm{Aut}(G)\mid$. $\mathrm{Aut}(G)$ 包含 $$\mathcal{S}_5$$ 作为子群, 只有 $$\mathrm{Aut}(G) = \mathcal{S}_5$$.
 
 对 $$\mathcal{A}_4$$, 令 $$X = \{(u,v) \mid o(u) = 2,o(v) = 3\}$$. 有 $$\mathrm{Aut}(\mathcal{A}_4) = \mathcal{S}_4$$.
 
