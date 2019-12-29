@@ -36,7 +36,7 @@ $(2)\, 1x = x,\forall x \in X$.
 **Definition.** 设 $X$ 是一个 $G$-Set, $x \in X$, 用 $G_x$ 表示 $x$ 的稳定子群(Stabilizer)
 {:.success}
 
-**Definition.** $G$ 在 $X$ 上的作用被称为$\ldots$, 若$\ldots$.  
+**Definition.** $G$ 在 $X$ 上的作用被称为  
 $(1)$ 忠实的(faithful), 若 $$G \to \mathcal{S}_X$$ 是单射. 这等价于 $$\bigcap_{x \in X}G_x = 1$$.  
 $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.  
 若 $G$ 自由且传递地作用于 $X$, 则 $X$ 称为 $G$-torsor.
