@@ -42,7 +42,13 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 若 $G$ 自由且传递地作用于 $X$, 则 $X$ 称为 $G$-torsor.
 {:.success}
 
+其他需要的概念和性质, 例如 $G$-轨道(Orbit), 轨道-稳定子群定理, 这里省去.
+
 设 $G$ 传递地作用于 $X$, 取 $x \in X$, 有 $G$-同构 $G/G_x \to X, gG_x \mapsto gx$. $G$ 传递地作用于一个集合 $X$, 等价于给定一个子群 $H \subset G$, $G$ 作用于(左)陪集 $G/H$.
+
+设 $X$ 是 $G$-torsor, 我们有 $G$ 在 $X$ 上的作用同构于 $G$ 的(左)正则表示.
+
+设 $G$ 自由地作用于 $X$ 上, 任取 $X$ 的一个 $G$-轨道 $\mathcal{O}$, $\mathcal{O}$ 是 $G$-torsor, 而 $X$ 是这些 $G$-torsor 的无交并.
 
 ## Burnside's Lemma
 
