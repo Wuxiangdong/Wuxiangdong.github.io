@@ -51,6 +51,15 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 
 设 $G$ 自由地作用于 $X$ 上, 任取 $X$ 的一个 $G$-轨道 $\mathcal{O}$, $\mathcal{O}$ 是 $G$-torsor, 而 $X$ 是这些 $G$-torsor 的无交并.
 
+## Burnside's Lemma
+**Proposition.** 设 $G$ 为有限群, 令 $X$ 是一个有限 $G$-Set. 对每一个 $g \in F$, 令 $X^g \subset X$ 为 $g$ 的不动点集, 并令 $\chi_X(g) = \mid X^g \mid$. 有:  
+$$
+    \mid X/G \mid = \frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g).
+$$
+{:.info}
+
+**证明的概要** 令 $$S = \{(g,x) \in G \times X \mid gx = x\}$$. 用两种方法计算 $\mid S\mid$.
+
 **Example.** 设 $n \geqslant 0$, 集合 $X$, $\mid X\mid \geqslant n$. $$\mathcal{S}_X$$ 自然地作用于 $X^n$ 上. 对 $x = (x_i)_{i=1}^n \in X^n$, 按照 $i \equiv j \Longleftrightarrow x_i = x_j$ 定义 $$\{1,2,\cdots ,n\}$$ 的等价关系 $R_x$. 设 $x,y \in X^n$, 则 $R_x = R_y$ 当且仅当 $x,y$ 在相同的 $\mathcal{S}_X$-轨道中.
 {:.warning}
 
@@ -84,15 +93,6 @@ $$\begin{aligned}
 \end{aligned}$$
 
 当 $i \geqslant 1$ 时, $\sum_{k=0}^{i} \binom{i}{k}(-1)^{i-k} = 0$, $i = 0$ 时它为 $1$, 由此左边 $= \frac{m!}{n!} =$ 右边.
-
-## Burnside's Lemma
-**Proposition.** 设 $G$ 为有限群, 令 $X$ 是一个有限 $G$-Set. 对每一个 $g \in F$, 令 $X^g \subset X$ 为 $g$ 的不动点集, 并令 $\chi_X(g) = \mid X^g \mid$. 有:  
-$$
-    \mid X/G \mid = \frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g).
-$$
-{:.info}
-
-**证明的概要** 令 $$S = \{(g,x) \in G \times X \mid gx = x\}$$. 用两种方法计算 $\mid S\mid$.
 
 ## n-Transitivity
 令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $$X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$$. 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
