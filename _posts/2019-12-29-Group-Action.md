@@ -63,6 +63,10 @@ $$
 **Example.** 设 $n \geqslant 0$, 集合 $X$, $\mid X\mid \geqslant n$. $$\mathcal{S}_X$$ 自然地作用于 $X^n$ 上. 对 $x = (x_i)_{i=1}^n \in X^n$, 按照 $i \equiv j \Longleftrightarrow x_i = x_j$ 定义 $$\{1,2,\cdots ,n\}$$ 的等价关系 $R_x$. 设 $x,y \in X^n$, 则 $R_x = R_y$ 当且仅当 $x,y$ 在相同的 $\mathcal{S}_X$-轨道中.
 {:.warning}
 
+**证明的概要** $\Leftarrow:$ 设 $x = (x_i), y = (y_i)$, $x = gy$, $$g\in \mathcal{S}_X$$. 则 $x_i = x_j \Longleftrightarrow gx_i = gx_j \Longleftrightarrow y_i = y_j$.
+
+$\Rightarrow:$ 构造置换将 $x_i$ 对应到 $y_i$ 即可, 而 $x_i = x_j \Longleftrightarrow y_i = y_j$, 这当然是可以的, 细节略去.
+
 清晰地看到, $$\mathcal{S}_X$$ 作用在 $$X^n$$ 产生的轨道和 $$\{1,2,\cdots ,n\}$$ 上的等价关系是一一对应的. 从而 $$X^n/\mathcal{S}_X$$ 的大小恰为 $B(n)$, 即第 $n$ 个 Bell 数. Bell 数满足熟知的公式 $B(n+1) = \sum_{k=0}^n\binom{n}{k}B(k)$. 当 $X$ 有限时, 由 Burnside 引理, 这个公式等价于
 
 $$
@@ -106,6 +110,30 @@ $(\rm{iv})$ $G$ 作用在 $X^n$ 上的轨道数是 $B(n)$, 其中 $B(n)$ 是第 
 $(\rm{v})$ $\frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g)^n \leqslant B(n)$, 其中 $\chi_X(g) = \mid X^g\mid$.  
 $(\rm{vi})$ $\frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g)^n = B(n)$.
 {:.info}
+
+**证明的概要** $(\rm ii)$ 略. 设 $x,y \in X^n$ 在相同的 $G$-轨道, 则 $x,y$ 在相同的 $$\mathcal{S}_X$$-轨道, 取 $$\mathcal{O} \in X^n/\mathcal{S}_X$$, 则 $G$ 作用在 $$\mathcal{O}$$ 上封闭, 设 $$\{\mathcal{O}_i\} = X^n/\mathcal{S}_X$$, 则 $$X^n/G = \bigcup_{i}\mathcal{O_i}/G$$. 这说明 $\mid X^n/G\mid \geqslant B(n)$, 且取等号当且仅当 $$X^n/G = X^n/\mathcal{S}_X$$. 因此 $(\rm iii),(\rm iv),(\rm v),(\rm vi)$ 是等价的. 下证 $(\rm iii) \Longleftrightarrow (\rm i)$.
+
+$(\rm iii) \Longrightarrow (\rm i)$ 是显然的, 因为 $$X_{\mathrm{dist}}^n$$ 本身是一个 $$\mathcal{S}_X$$-轨道. 
+
+对于 $(\rm i) \Longrightarrow (\rm iii)$, $G$ 在 $$X_{\mathrm{dist}}^n$$ 上传递, 则任意 $m \leqslant n$, $G$ 在 $X_{\mathrm{dist}}^m$ 上传递. 因为由 $\mid X\mid \geqslant n$, 对 $(x_1,x_2,\cdots,x_m) \in X_{\mathrm{dist}}^m$, 可选取 $n-m$ 个两两不同的元素 $\in X-\{x_1,x_2,\cdots, x_m\}$, 使 $(x_1,\cdots,x_m)$ 扩充成 $(x_1,\cdots,x_m,x_{m+1},\cdots ,x_n) \in X_{\mathrm{dist}}^n$. 任意 $x,y \in X_{\mathrm{dist}}^m$, 将它们扩充为 $x',y' \in X_{\mathrm{dist}}^n$, $x',y'$ 在同一 $G$-轨道, 故 $x,y$ 在同一 $G$-轨道.
+
+这说明 $\mid X^n/G\mid \leqslant B(n)$, 结合上文讨论只有 $\mid X^n/G\mid = B(n)$, 且 $$X^n/G = X^n/\mathcal{S}_X$$.
+
+**Example.** 设 $n \geqslant 2$. $X = \{1,2,3,\cdots ,n\}$ 的对称群 $$\mathcal{S}_n$$ 在 $X$ 上的作用是 $n$ 重传递的, 而 $$\mathcal{A}_n$$ 在 $X$ 上的作用是 $n-2$ 重传递的.{:.warning}
+
+**Example.** 设 $G$ 在 $X$ 上的作用 $2$ 重传递, 则 $G$ 在 $X$ 上的作用 Primitive. 见 [Primitive Actions](#primitive-actions){:.warning}
+
+**Example.** 设 $G$ 为阶大于等于 $3$ 的有限群, 设 $\mathrm{Aut}(G)$ 传递地作用于 $$G-\{1\}$$.  
+$\rm a)$ 证明存在素数 $p$, 使得 $$G-\{1\}$$ 的每一个元素都是 $p$ 阶的.  
+$\rm b)$ 若 $p=2$, 证明 $G$ 是 $2$ 阶群的直积.  
+$\rm c)$ 若 $p > 2$, 且 $\mathrm{Aut}(G)$ 在 $$G-\{1\}$$ 上 $2$ 重传递. 证明 $\mid G\mid = 3$.  
+$\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$ 重传递, 证明 $\mid G\mid = 4$.{:.warning}
+
+**证明** $\rm a)$ 直接由 $$G-\{1\}$$ 的每一个元素的阶都相同得到. $\rm b)$ 由结构定理. 对于 $\rm c)$, 若 $\mid G\mid \ne 3$, 则 $\mid G\mid > 3$ ($2$ 重传递, 故 $\mid G\mid \geqslant 3$). 取 $$x\in G-\{1\}$$, 则 $x \ne x^{-1}$, 再取 $$y \in G-\{1,x,x^{-1}\}$$, 由条件, $(x,y)$ 和 $(x,x^{-1})$ 在同一个 $\mathrm{Aut}(G)$-轨道中. 这不可能, 因为若自同构 $\sigma$ 使 $\sigma(x) = x$, 则 $\sigma(x^{-1}) = x^{-1}$.
+
+最后看 $\rm d)$ $\mathrm{Aut}(G)$ 三重传递地作用于 $$G-\{1\}$$, 从而也是二重传递的. 若 $p > 2$, 由 $\rm c)$, 有 $\mid G\mid = 3$, 与 $\mid G\mid \geqslant 4$ 不符, 从而 $p = 2$. 设 $G = \mathbb{Z}_2^n$, 若 $n > 2$, 取 $e_1 = (1,0,0,\underbrace{\cdots}_{\text{皆为 0,下同.}}),e_2=(0,1,0,\cdots),e_3=(0,0,1,\cdots),e_4=(1,0,1,\cdots)$. 不可能有自同构 $\sigma$, 变换 $(e_1,e_2,e_3)$ 到 $(e_1,e_4,e_3)$. 只有 $n = 2$. 易验证 $n=2$ 满足条件.
+
 ## Primitive Actions
+
 
 ## Applications
