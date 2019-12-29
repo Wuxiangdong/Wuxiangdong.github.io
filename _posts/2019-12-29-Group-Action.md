@@ -13,6 +13,7 @@ tags: Math Algebra
 * [Applications](#applications)
 
 <!-- vim-markdown-toc -->
+主要是 "Finite Groups, an Introduction" 第一章关于群作用部分的总结和习题.
 
 ## Preliminaries
 设 $G$ 是一个群. $G$ (左)作用在集合 $X$ 上是指一个映射
