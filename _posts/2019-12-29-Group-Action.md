@@ -156,7 +156,7 @@ $\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$
 $\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且 $H \ne 1,\mathcal{A}_5$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
 
 设 $n \geqslant 6$, 假设已经证明 $\mathcal{A}_{n-1}$ 是单群, 下证 $\mathcal{A}_n$ 单.
-
+<!--
 $$\mathcal{A}_{n-1}$$ 是点 $n$ 在 $\mathcal{A}_n$ 作用下的稳定子群. $$\mathcal{A}_n$$ 二重传递(实际上, $n-2$ 重传递)作用于 $X$, 从而 Primitive. 因此 $$\mathcal{A}_{n-1}$$ 是 $$\mathcal{A}_n$$ 的极大子群.
 
 若 $$\mathcal{A}_n$$ 不单, 设 $N$ 是 $$\mathcal{A}_n$$ 的正规子群, $$N \ne 1, \mathcal{A}_n$$, 则 $$N \cap \mathcal{A}_{n-1}$$ 正规于 $$\mathcal{A}_{n-1}$$, $$\mathcal{A}_{n-1}$$ 单, 故 $$N \cap \mathcal{A}_{n-1} = 1$$ 或 $$\mathcal{A}_{n-1}$$. 若 $$\mathcal{A}_{n-1} \subset N$$, 由 $$\mathcal{A}_{n-1}$$ 极大, $$N \ne \mathcal{A}_n$$, 只有 $$N = \mathcal{A}_{n-1}$$. 但 $$\mathcal{A}_{n-1}$$ 不正规于 $$\mathcal{A}_{n}$$ (它分别与 $1,2,\cdots ,n-1$ 的稳定子群共轭), 矛盾. 故 $$N \cap \mathcal{A}_{n-1} = 1$$. 再由 $$\mathcal{A}_{n-1}$$ 极大知 $$N\mathcal{A}_{n-1} =\mathcal{A}_n$$. 这说明 $\mid N\mid = n$.
@@ -166,5 +166,15 @@ $$\mathcal{A}_{n-1}$$ 是点 $n$ 在 $\mathcal{A}_n$ 作用下的稳定子群. $
 $$\mathcal{A}_{n-1}$$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重传递), $\varphi^{-1}(n) = 1$, 从而 $\mathcal{A}_{n-1}$ 三重传递地作用于 $$N-\{1\}$$. 这导致 $\mathrm{Aut}(N)$ 三重传递地作用于 $$N-\{1\}$$, 只有 $\mid N\mid = 4$, 矛盾.
 
 这说明 $\mathcal{A}_n$ 单.
-
+-->
 **$$\mathcal{A}_5,\mathcal{A}_4,\mathcal{S}_4$$ 的自同构群.**
+
+在 $$\mathcal{A}_5$$ 的情况. 记 $$G = \mathcal{A}_5$$.
+
+令 $X=\{(u,v) \in G\times G\mid o(u) = 2,o(v) = 3,o(xy) = 5\}$. 则 $\mid X\mid = 120$. (由共轭,只需考虑 $u = (12)(34)$, $v$ 有 $8$ 种取法, 从而 $X$ 有 $8\times 15 = 120$ 个元素). $\mathrm{Aut}(G)$ 自然地作用于 $X$ 上, 且是自由的. 因为设 $(u,v) \in X$, 则 $u,v$ 生成 $G$ ($2\times 3 \times 5 =30$, $G$ 无 $30$ 阶子群). 从而若 $\sigma \in \mathrm{Aut}(G)$ 使 $u,v$ 不动, 则 $\sigma = 1$. 这说明 $120 = \mid X\mid \geqslant \mid \mathrm{Aut}(G)\mid$. $\mathrm{Aut}(G)$ 包含 $$\mathcal{S}_5$$ 作为子群, 只有 $$\mathrm{Aut}(G) = \mathcal{S}_5$$.
+
+对 $$\mathcal{A}_4$$, 令 $$X = \{(u,v) \mid o(u) = 2,o(v) = 3\}$$. 有 $$\mathrm{Aut}(\mathcal{A}_4) = \mathcal{S}_4$$.
+
+对 $$\mathcal{S}_4$$, 令 $$X = \{(u,v) \mid u \text{ 是对换}, v \text{ 是 } 3\text{-轮换}, uv \text{ 是 } 4\text{-轮换}\}$$. 得到 $$\mathrm{Aut}(\mathcal{S}_4) = \mathcal{S}_4$$.
+
+有趣的材料: [V](https://groupprops.subwiki.org/wiki/Von_Dyck_group) 和 [A](https://groupprops.subwiki.org/wiki/Symmetric_group:S4).
