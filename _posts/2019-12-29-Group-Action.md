@@ -56,14 +56,34 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 清晰地看到, $$\mathcal{S}_X$$ 作用在 $$X^n$$ 产生的轨道和 $$\{1,2,\cdots ,n\}$$ 上的等价关系是一一对应的. 从而 $$X^n/\mathcal{S}_X$$ 的大小恰为 $B(n)$, 即第 $n$ 个 Bell 数. Bell 数满足熟知的公式 $B(n+1) = \sum_{k=0}^n\binom{n}{k}B(k)$. 当 $X$ 有限时, 由 Burnside 引理, 这个公式等价于
 
 $$
-    \sum_{g\in G}\chi_{X}(g)^n = \sum_{g\in G}(\chi_X(g)+1)^{n-1}, \,\,\,\,\,\,\forall n \leqslant |X|. \tag{1}\label{r1}
+    \sum_{g\in \mathcal{S}_X}\chi_{X}(g)^n = \sum_{g\in \mathcal{S}_X}(\chi_X(g)+1)^{n-1}, \,\,\,\,\,\,\forall n \leqslant |X|. \tag{1}\label{r1}
 $$
 
 ($g \in \mathcal{S}_X$ 作用在 $X^m$ 上不动点个数为 $\chi_X(g)^m$)
 
-下面用组合方法证明 $\eqref{r1}$ 式.
+下面给出 $\eqref{r1}$ 式的直接证明. (大飞机太强啦~!)
 
-**证明 (大飞机)** 
+**证明** 记 $$|X| = m, G = \mathcal{S}_X$$. 我们只需证明任意 $n \leqslant m$ 有 $\sum_{g\in G} \binom{\chi_X(g)}{n} = \sum_{g\in G} \frac{1}{\chi_X(g) + 1}\binom{\chi_X(g) + 1}{n}$ (将 $\binom{-}{n}$ 看成 $n$ 次多项式), 只需证明 $\sum_{g\in G}\binom{\chi_X(g)}{n} = \frac{1}{n}\sum_{g\in G}\binom{\chi_X(g)}{n-1}$, 再考虑 $\sum_{g\in G}\binom{\chi_X(g)}{0} = m!$, 只需证明
+
+$$\sum_{g\in \mathcal{S}_X}\binom{\chi_X(g)}{n} = \frac{|X|!}{n!}. \tag{2}\label{r2}$$
+
+设 $k \leqslant m$, 则 $$\mathcal{S}_X$$ 中不动点个数为 $k$ 的置换的个数为 $\binom{m}{k}$ 乘 $m-k$ 全错排数, 为
+
+$$
+    \binom{m}{k}(m-k)!\sum_{i=0}^{m-k}(-1)^i\frac{1}{i!} = \frac{m!}{k!}\sum_{i=0}^{m-k}{(-1)^i\frac{1}{i!}}.
+$$
+
+从而, $\eqref{r2}$ 左边为
+
+$$\begin{aligned}
+    \sum_{k=0}^m\sum_{i=0}^{m-k}\binom{k}{n}\frac{m!}{k!i!}(-1)^i &= \sum_{k=n}^{m}\sum_{i=k}^{m}\binom{k}{n}\frac{m!}{k!(i-k)!}(-1)^{i-k} \\
+    &=\frac{m!}{n!}\sum_{i=n}^{m}\sum_{k=n}^{i}\frac{(-1)^{i-k}}{(k-n)!(i-k)!} \\
+    &=\frac{m!}{n!}\sum_{i=0}^{m-n}\sum_{k=0}^{i}\frac{(-1)^{i-k}}{k!(i-k)!} \\
+    &= \frac{m!}{n!}\sum_{i=0}^{m-n}\frac{1}{i!}\sum_{k=0}^{i}\binom{i}{k}(-1)^{i-k}
+\end{aligned}$$
+
+当 $i \geqslant 1$ 时, $\sum_{k=0}^{i} \binom{i}{k}(-1)^{i-k} = 0$, $i = 0$ 时它为 $1$, 由此左边 $= \frac{m!}{n!} =$ 右边.
+
 ## Burnside's Lemma
 **Proposition.** 设 $G$ 为有限群, 令 $X$ 是一个有限 $G$-Set. 对每一个 $g \in F$, 令 $X^g \subset X$ 为 $g$ 的不动点集, 并令 $\chi_X(g) = \mid X^g \mid$. 有:  
 $$
