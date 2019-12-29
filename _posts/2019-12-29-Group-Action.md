@@ -50,7 +50,7 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 
 设 $G$ 自由地作用于 $X$ 上, 任取 $X$ 的一个 $G$-轨道 $\mathcal{O}$, $\mathcal{O}$ 是 $G$-torsor, 而 $X$ 是这些 $G$-torsor 的无交并.
 
-**Example.** 设 $n \geqslant 0$, 集合 $X$, $\mid X\mid \geqslant n$. $$\mathcal{S}_X$$ 自然地作用于 $X^n$ 上. 对 $x = (x_i)_{i=1}^n \in X^n$, 按照 $i \equiv j \Longleftrightarrow x_i = x_j$ 定义 $\{1,2,\cdots ,n\}$ 的等价关系 $R_x$. 设 $x,y \in X^n$, 则 $R_x = R_y$ 当且仅当 $x,y$ 在相同的 $\mathcal{S}_X$-轨道中.
+**Example.** 设 $n \geqslant 0$, 集合 $X$, $\mid X\mid \geqslant n$. $$\mathcal{S}_X$$ 自然地作用于 $X^n$ 上. 对 $x = (x_i)_{i=1}^n \in X^n$, 按照 $i \equiv j \Longleftrightarrow x_i = x_j$ 定义 $$\{1,2,\cdots ,n\}$$ 的等价关系 $R_x$. 设 $x,y \in X^n$, 则 $R_x = R_y$ 当且仅当 $x,y$ 在相同的 $\mathcal{S}_X$-轨道中.
 {:.warning}
 
 清晰地看到, $$\mathcal{S}_X$$ 作用在 $$X^n$$ 产生的轨道和 $$\{1,2,\cdots ,n\}$$ 上的等价关系是一一对应的. 从而 $$X^n/\mathcal{S}_X$$ 的大小恰为 $B(n)$, 即第 $n$ 个 Bell 数. Bell 数满足熟知的公式 $B(n+1) = \sum_{k=0}^n\binom{n}{k}B(k)$. 当 $X$ 有限时, 由 Burnside 引理, 这个公式等价于
