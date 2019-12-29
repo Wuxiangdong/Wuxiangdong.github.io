@@ -99,7 +99,7 @@ $$
 **Proposition.** 设 $X$ 是 $G$-Set, 整数 $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
 $(\rm{i})$ $G$ 在 $X$ 上的作用 $n$ 重传递.  
 $(\rm{ii})$ $G$ 在 $X$ 上的作用传递, 并且如果 $H \subset G$ 是 $X$ 一点 $x$ 的稳定子群, 则 $H$ 在 $X-\{x\}$ 上的作用是 $n-1$ 重传递的.  
-$(\rm{iii})$ $G$ 作用在 $X^n$ 上的轨道和 $\mathcal{S}_X$ 作用在 $X^n$ 上的相同.  
+$(\rm{iii})$ $G$ 作用在 $X^n$ 上的轨道和 $$\mathcal{S}_X$$ 作用在 $X^n$ 上的相同.  
 $(\rm{iv})$ $G$ 作用在 $X^n$ 上的轨道数是 $B(n)$, 其中 $B(n)$ 是第 $n$ 个 Bell 数.  
 当 $X$, $G$ 皆有限时,还有  
 $(\rm{v})$ $\frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g)^n \leqslant B(n)$, 其中 $\chi_X(g) = \mid X^g\mid$.  
