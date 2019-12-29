@@ -107,7 +107,7 @@ $$\begin{aligned}
 
 **Proposition.** 设 $X$ 是 $G$-Set, $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
 $(\rm{i})$ $G$ 在 $X$ 上的作用 $n$ 重传递.  
-$(\rm{ii})$ $G$ 在 $X$ 上的作用传递, 并且如果 $H \subset G$ 是 $X$ 一点 $x$ 的稳定子群, 则 $H$ 在 $X-\{x\}$ 上的作用是 $n-1$ 重传递的.  
+$(\rm{ii})$ $G$ 在 $X$ 上的作用传递, 并且如果 $H \subset G$ 是 $X$ 一点 $x$ 的稳定子群, 则 $H$ 在 $$X-\{x\}$$ 上的作用是 $n-1$ 重传递的.  
 $(\rm{iii})$ $G$ 作用在 $X^n$ 上的轨道和 $$\mathcal{S}_X$$ 作用在 $X^n$ 上的相同.  
 $(\rm{iv})$ $G$ 作用在 $X^n$ 上的轨道数是 $B(n)$, 其中 $B(n)$ 是第 $n$ 个 Bell 数.  
 当 $X$, $G$ 皆有限时,还有  
@@ -153,7 +153,7 @@ $\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$
 
 **$$\mathcal{A}_n$$ ($n \geqslant 5$) 的单性**, 归纳法.
 
-$\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且 $H \ne 1,\mathcal{A}_5$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
+$\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且 $H \ne 1,\mathcal{A}_5$, H 包含 $1$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
 
 设 $n \geqslant 6$, 假设已经证明 $\mathcal{A}_{n-1}$ 是单群, 下证 $\mathcal{A}_n$ 单.
 
