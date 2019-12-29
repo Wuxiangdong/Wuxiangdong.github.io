@@ -99,7 +99,10 @@ $$\begin{aligned}
 当 $i \geqslant 1$ 时, $\sum_{k=0}^{i} \binom{i}{k}(-1)^{i-k} = 0$, $i = 0$ 时它为 $1$, 由此左边 $= \frac{m!}{n!} =$ 右边.
 
 ## n-Transitivity
-令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $$X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$$. 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
+令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $$X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$$. 
+
+**Definition.** 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
+{:.success}
 
 **Proposition.** 设 $X$ 是 $G$-Set, $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
 $(\rm{i})$ $G$ 在 $X$ 上的作用 $n$ 重传递.  
@@ -137,7 +140,30 @@ $\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$
 最后看 $\rm d)$ $\mathrm{Aut}(G)$ 三重传递地作用于 $$G-\{1\}$$, 从而也是二重传递的. 若 $p > 2$, 由 $\rm c)$, 有 $\mid G\mid = 3$, 与 $\mid G\mid \geqslant 4$ 不符, 从而 $p = 2$. 设 $$G = (\mathbb{Z}/2\mathbb{Z})^n$$, 若 $n > 2$, 取 $$e_1 = (1,0,0,\underbrace{\cdots}_{\text{皆为 0,下同.}}),e_2=(0,1,0,\cdots),e_3=(0,0,1,\cdots),e_4=(1,0,1,\cdots)$$. 可见不可能有自同构 $\sigma$, 变换 $(e_1,e_2,e_3)$ 到 $(e_1,e_4,e_3)$. 因此只能是 $n = 2$. 易验证 $n=2$ 满足条件.
 
 ## Primitive Actions
-**Definition.** 令 $G$ 传递地作用于 $X$, $\mid X\mid \geqslant 2$.
+**Definition.** 令 $G$ 传递地作用于 $X$, $\mid X\mid \geqslant 2$. 设 $H$ 是 $X$ 一点的稳定子群, 称 $G$ 在 $X$ 上的作用是 Primitive, 如果 $H$ 是极大子群.
+{:.success}
 
+**Proposition.** 设 $X$ 是 $G$-Set. $G$ 在 $X$ 上的作用 Primitive, 当且仅当任何 $G$-Map $X \to Y$ 是单的或平凡的(像退化为一个点).
+{:.info}
 
+**Proposition** 设 $G$ 二重传递于 $X$, 则 $G$ 在 $X$ 上的作用 Primitive.
+{:.info}
 ## Applications
+
+**$$\mathcal{A}_n$$ ($n \geqslant 5$) 的单性**, 归纳法.
+
+$\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且 $H \ne 1,\mathcal{A}_5$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
+
+设 $n \geqslant 6$, 假设已经证明 $\mathcal{A}_{n-1}$ 是单群, 下证 $\mathcal{A}_n$ 单.
+
+$\mathcal{A}_{n-1}$ 是点 $n$ 在 $\mathcal{A}_n$ 作用下的稳定子群. $\mathcal{A}_n$ 二重传递(实际上, $n-2$ 重传递)作用于 $X$, 从而 Primitive. 因此 $\mathcal{A}_{n-1}$ 是 $\mathcal{A}_n$ 的极大子群.
+
+设 $N$ 是 $\mathcal{A}_n$ 的非平凡正规子群, 则 $N \cap \mathcal{A}_{n-1}$ 正规于 $\mathcal{A}_{n-1}$, $\mathcal{A}_{n-1}$ 单, 故 $N \cap \mathcal{A}_{n-1} = 1$ 或 $\mathcal{A}_{n-1}$. 若 $\mathcal{A}_{n-1} \subset N$, 由 $\mathcal{A}_{n-1}$ 极大, $N \ne \mathcal{A}_n$, 只有 $N = \mathcal{A}_{n-1}$. 但 $\mathcal{A}_{n-1}$ 不正规于 $\mathcal{A}_{n}$ (它分别与 $1,2,\cdots ,n-1$ 的稳定子群共轭), 矛盾. 故 $N \cap \mathcal{A}_{n-1} = 1$. 再由 $\mathcal{A}_{n-1}$ 极大知 $N\mathcal{A}_{n-1} =\mathcal{A}_n$. 这说明 $\mid N\mid = n$.
+
+令 $\mathcal{A}_{n-1}$ 共轭地作用于 $N$ 上, 作映射 $\varphi: N \to X, g \mapsto g(n)$. 设 $g \in \mathcal{A}_{n-1}$, 则 $\varphi(gxg^{-1}) = gxg^{-1}(n) = gx(n) = g\varphi(x)$, 说明 $\varphi$ 是 $\mathcal{A}_{n-1}$-Map. 设 $g_1 \in N$, 令 $x_1 = \varphi(g_1) = g_1(n)$, 任意 $x_2 \in X$, $x_2 \ne x_1$,取 $$x_3 \in X-\{x_1,x_2\}$$, 则 $(x_1x_2x_3)g_1(x_1x_2x_3)^{-1} \in N$, 且 $\varphi((x_1x_2x_3)g_1(x_1x_2x_3)^{-1}) = x_2$. 这说明 $\varphi$ 是满射, 结合 $\mid N\mid = \mid X\mid = n$ 知 $\varphi$ 是双射, 从而给出 $\mathcal{A}_{n-1}$-同构.
+
+$\mathcal{A}_{n-1}$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重传递), $\varphi^{-1}(n) = 1$, 从而 $\mathcal{A}_{n-1}$ 三重传递地作用于 $$N-\{1\}$$. 这导致 $\mathrm{Aut}(N)$ 三重传递地作用于 $$N-\{1\}$$, 只有 $\mid N\mid = 4$, 矛盾.
+
+这说明 $\mathcal{A}_n$ 单.
+
+**$$\mathcal{A}_5,\mathcal{A}_4,\mathcal{S}_4$$ 的自同构群.**
