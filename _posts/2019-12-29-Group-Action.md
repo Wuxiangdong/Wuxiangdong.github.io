@@ -115,25 +115,29 @@ $(\rm{vi})$ $\frac{1}{\mid G\mid}\sum_{g\in G}\chi_X(g)^n = B(n)$.
 
 $(\rm iii) \Longrightarrow (\rm i)$ 是显然的, 因为 $$X_{\mathrm{dist}}^n$$ 本身是一个 $$\mathcal{S}_X$$-轨道. 
 
-对于 $(\rm i) \Longrightarrow (\rm iii)$, $G$ 在 $$X_{\mathrm{dist}}^n$$ 上传递, 则任意 $m \leqslant n$, $G$ 在 $X_{\mathrm{dist}}^m$ 上传递. 因为由 $\mid X\mid \geqslant n$, 对 $(x_1,x_2,\cdots,x_m) \in X_{\mathrm{dist}}^m$, 可选取 $n-m$ 个两两不同的元素 $\in X-\{x_1,x_2,\cdots, x_m\}$, 使 $(x_1,\cdots,x_m)$ 扩充成 $(x_1,\cdots,x_m,x_{m+1},\cdots ,x_n) \in X_{\mathrm{dist}}^n$. 任意 $x,y \in X_{\mathrm{dist}}^m$, 将它们扩充为 $x',y' \in X_{\mathrm{dist}}^n$, $x',y'$ 在同一 $G$-轨道, 故 $x,y$ 在同一 $G$-轨道.
+对于 $(\rm i) \Longrightarrow (\rm iii)$, $G$ 在 $$X_{\mathrm{dist}}^n$$ 上传递, 则任意 $m \leqslant n$, $G$ 在 $X_{\mathrm{dist}}^m$ 上传递. 因为由 $\mid X\mid \geqslant n$, 对 $(x_1,x_2,\cdots,x_m) \in X_{\mathrm{dist}}^m$, 可选取 $n-m$ 个两两不同的元素 $$\in X-\{x_1,x_2,\cdots, x_m\}$$, 使 $(x_1,\cdots,x_m)$ 扩充成 $(x_1,\cdots,x_m,x_{m+1},\cdots ,x_n) \in X_{\mathrm{dist}}^n$. 任意 $x,y \in X_{\mathrm{dist}}^m$, 将它们扩充为 $x',y' \in X_{\mathrm{dist}}^n$, $x',y'$ 在同一 $G$-轨道, 故 $x,y$ 在同一 $G$-轨道.
 
 这说明 $\mid X^n/G\mid \leqslant B(n)$, 结合上文讨论只有 $\mid X^n/G\mid = B(n)$, 且 $$X^n/G = X^n/\mathcal{S}_X$$.
 
-**Example.** 设 $n \geqslant 2$. $X = \{1,2,3,\cdots ,n\}$ 的对称群 $$\mathcal{S}_n$$ 在 $X$ 上的作用是 $n$ 重传递的, 而 $$\mathcal{A}_n$$ 在 $X$ 上的作用是 $n-2$ 重传递的.{:.warning}
+**Example.** 设 $n \geqslant 3$. $$X = \{1,2,3,\cdots ,n\}$$ 的对称群 $$\mathcal{S}_n$$ 在 $X$ 上的作用是 $n$ 重传递的, 而 $$\mathcal{A}_n$$ 在 $X$ 上的作用是 $n-2$ 重传递的.
+{:.warning}
 
-**Example.** 设 $G$ 在 $X$ 上的作用 $2$ 重传递, 则 $G$ 在 $X$ 上的作用 Primitive. 见 [Primitive Actions](#primitive-actions){:.warning}
+**Example.** 设 $G$ 在 $X$ 上的作用 $2$ 重传递, 则 $G$ 在 $X$ 上的作用 Primitive. 见 [Primitive Actions](#primitive-actions)
+{:.warning}
 
 **Example.** 设 $G$ 为阶大于等于 $3$ 的有限群, 设 $\mathrm{Aut}(G)$ 传递地作用于 $$G-\{1\}$$.  
 $\rm a)$ 证明存在素数 $p$, 使得 $$G-\{1\}$$ 的每一个元素都是 $p$ 阶的.  
 $\rm b)$ 若 $p=2$, 证明 $G$ 是 $2$ 阶群的直积.  
 $\rm c)$ 若 $p > 2$, 且 $\mathrm{Aut}(G)$ 在 $$G-\{1\}$$ 上 $2$ 重传递. 证明 $\mid G\mid = 3$.  
-$\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$ 重传递, 证明 $\mid G\mid = 4$.{:.warning}
+$\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$ 重传递, 证明 $\mid G\mid = 4$.
+{:.warning}
 
 **证明** $\rm a)$ 直接由 $$G-\{1\}$$ 的每一个元素的阶都相同得到. $\rm b)$ 由结构定理. 对于 $\rm c)$, 若 $\mid G\mid \ne 3$, 则 $\mid G\mid > 3$ ($2$ 重传递, 故 $\mid G\mid \geqslant 3$). 取 $$x\in G-\{1\}$$, 则 $x \ne x^{-1}$, 再取 $$y \in G-\{1,x,x^{-1}\}$$, 由条件, $(x,y)$ 和 $(x,x^{-1})$ 在同一个 $\mathrm{Aut}(G)$-轨道中. 这不可能, 因为若自同构 $\sigma$ 使 $\sigma(x) = x$, 则 $\sigma(x^{-1}) = x^{-1}$.
 
-最后看 $\rm d)$ $\mathrm{Aut}(G)$ 三重传递地作用于 $$G-\{1\}$$, 从而也是二重传递的. 若 $p > 2$, 由 $\rm c)$, 有 $\mid G\mid = 3$, 与 $\mid G\mid \geqslant 4$ 不符, 从而 $p = 2$. 设 $G = \mathbb{Z}_2^n$, 若 $n > 2$, 取 $e_1 = (1,0,0,\underbrace{\cdots}_{\text{皆为 0,下同.}}),e_2=(0,1,0,\cdots),e_3=(0,0,1,\cdots),e_4=(1,0,1,\cdots)$. 不可能有自同构 $\sigma$, 变换 $(e_1,e_2,e_3)$ 到 $(e_1,e_4,e_3)$. 只有 $n = 2$. 易验证 $n=2$ 满足条件.
+最后看 $\rm d)$ $\mathrm{Aut}(G)$ 三重传递地作用于 $$G-\{1\}$$, 从而也是二重传递的. 若 $p > 2$, 由 $\rm c)$, 有 $\mid G\mid = 3$, 与 $\mid G\mid \geqslant 4$ 不符, 从而 $p = 2$. 设 $$G = (\mathbb{Z}/2\mathbb{Z})^n$$, 若 $n > 2$, 取 $$e_1 = (1,0,0,\underbrace{\cdots}_{\text{皆为 0,下同.}}),e_2=(0,1,0,\cdots),e_3=(0,0,1,\cdots),e_4=(1,0,1,\cdots)$$. 可见不可能有自同构 $\sigma$, 变换 $(e_1,e_2,e_3)$ 到 $(e_1,e_4,e_3)$. 因此只能是 $n = 2$. 易验证 $n=2$ 满足条件.
 
 ## Primitive Actions
+**Definition.** 令 $G$ 传递地作用于 $X$, $\mid X\mid \geqslant 2$.
 
 
 ## Applications
