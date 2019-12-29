@@ -101,7 +101,7 @@ $$\begin{aligned}
 ## n-Transitivity
 令 $n$ 为大于 $1$ 的整数, 群 $G$ 作用于一集合 $X$, 且 $\mid X\mid \geqslant n$. $G$ 按照自然的方式作用于 $X^n$, 即 $g(x_1,x_2,\cdots,x_n) = (gx_1,gx_2,\cdots ,gx_n)$. 令 $$X_{\mathrm{dist}}^n = \{(x_i)_{1 \leqslant i \leqslant n} \in X^n \mid x_{i} \ne x_{j}, \forall i \ne j\}$$. 称 $G$ 在 $X$ 上的作用是 $n$ 重传递的($n$-transitive), 如果 $G$ 在 $X_{\mathrm{dist}}^n$ 上的作用是传递的. 即对两个两两不同的 $n$ 元组 $(x_1,x_2,\cdots,x_n)$, $(y_1,y_2,\cdots,y_n) \in X^n$, 存在 $g \in G$, 使 $gx_i = y_i, 1 \le i \le n$.
 
-**Proposition.** 设 $X$ 是 $G$-Set, 整数 $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
+**Proposition.** 设 $X$ 是 $G$-Set, $$|X| \geqslant n \geqslant 2$$. 则以下条件等价:  
 $(\rm{i})$ $G$ 在 $X$ 上的作用 $n$ 重传递.  
 $(\rm{ii})$ $G$ 在 $X$ 上的作用传递, 并且如果 $H \subset G$ 是 $X$ 一点 $x$ 的稳定子群, 则 $H$ 在 $X-\{x\}$ 上的作用是 $n-1$ 重传递的.  
 $(\rm{iii})$ $G$ 作用在 $X^n$ 上的轨道和 $$\mathcal{S}_X$$ 作用在 $X^n$ 上的相同.  
