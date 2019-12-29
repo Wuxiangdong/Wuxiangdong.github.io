@@ -27,7 +27,7 @@ $(1)\, g(g'x) = (gg')x, \forall x \in X, g,g' \in G$.
 $(2)\, 1x = x,\forall x \in X$.
 
 等价的, $G$ 在 $X$ 上的作用也可由群同态 $G \to \mathcal{S}_X$ 给出, 其中 $\mathcal{S}_X$ 指 $X$ 的对称群.
-
+<!--more-->
 **Definition.** 若集合 $X$ 被 $G$ 作用, 称 $X$ 为 $G$-Set.  
 设 $X,Y$ 是两个 $G$-Set, 映射 $f: X \to Y$ 被称为 $G$-Map, 如果 $f(gx) = gf(x)$ 对任意 $x \in X, g \in G$ 成立.  
 设 $X,Y$ 是 $G$-Set, 若存在一一对应的 $G$-Map $X \to Y$, 称 $G$ 在 $X,Y$ 上的作用同构的. 下文简称 $X,Y$ 是 $G$-同构的.
