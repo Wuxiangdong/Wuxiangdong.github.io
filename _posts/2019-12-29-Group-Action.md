@@ -63,7 +63,7 @@ $$
 
 下面给出 $\eqref{r1}$ 式的直接证明. (大飞机太强啦~!)
 
-**证明** 记 $$|X| = m, G = \mathcal{S}_X$$. 我们只需证明任意 $n \leqslant m$ 有 $\sum_{g\in G} \binom{\chi_X(g)}{n} = \sum_{g\in G} \frac{1}{\chi_X(g) + 1}\binom{\chi_X(g) + 1}{n}$ (将 $\binom{-}{n}$ 看成 $n$ 次多项式), 只需证明 $\sum_{g\in G}\binom{\chi_X(g)}{n} = \frac{1}{n}\sum_{g\in G}\binom{\chi_X(g)}{n-1}$, 再考虑 $\sum_{g\in G}\binom{\chi_X(g)}{0} = m!$, 只需证明
+**证明** 记 $$\mid X\mid = m, G = \mathcal{S}_X$$. 我们只需证明任意 $n \leqslant m$ 有 $\sum_{g\in G} \binom{\chi_X(g)}{n} = \sum_{g\in G} \frac{1}{\chi_X(g) + 1}\binom{\chi_X(g) + 1}{n}$ (将 $$\binom{-}{n}$$ 看成 $$n$$ 次多项式), 只需证明 $\sum_{g\in G}\binom{\chi_X(g)}{n} = \frac{1}{n}\sum_{g\in G}\binom{\chi_X(g)}{n-1}$, 再考虑 $\sum_{g\in G}\binom{\chi_X(g)}{0} = m!$, 只需证明
 
 $$\sum_{g\in \mathcal{S}_X}\binom{\chi_X(g)}{n} = \frac{|X|!}{n!}. \tag{2}\label{r2}$$
 
