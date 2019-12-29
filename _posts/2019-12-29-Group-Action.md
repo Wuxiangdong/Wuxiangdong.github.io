@@ -159,11 +159,11 @@ $\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset 
 
 $\mathcal{A}_{n-1}$ 是点 $n$ 在 $\mathcal{A}_n$ 作用下的稳定子群. $\mathcal{A}_n$ 二重传递(实际上, $n-2$ 重传递)作用于 $X$, 从而 Primitive. 因此 $\mathcal{A}_{n-1}$ 是 $\mathcal{A}_n$ 的极大子群.
 
-设 $N$ 是 $\mathcal{A}_n$ 的非平凡正规子群, 则 $N \cap \mathcal{A}_{n-1}$ 正规于 $\mathcal{A}_{n-1}$, $\mathcal{A}_{n-1}$ 单, 故 $N \cap \mathcal{A}_{n-1} = 1$ 或 $\mathcal{A}_{n-1}$. 若 $\mathcal{A}_{n-1} \subset N$, 由 $\mathcal{A}_{n-1}$ 极大, $N \ne \mathcal{A}_n$, 只有 $N = \mathcal{A}_{n-1}$. 但 $\mathcal{A}_{n-1}$ 不正规于 $\mathcal{A}_{n}$ (它分别与 $1,2,\cdots ,n-1$ 的稳定子群共轭), 矛盾. 故 $N \cap \mathcal{A}_{n-1} = 1$. 再由 $\mathcal{A}_{n-1}$ 极大知 $N\mathcal{A}_{n-1} =\mathcal{A}_n$. 这说明 $\mid N\mid = n$.
+否则, 设 $N$ 是 $$\mathcal{A}_n$$ 的非平凡正规子群, 则 $N \cap \mathcal{A}_{n-1}$ 正规于 $\mathcal{A}_{n-1}$, $\mathcal{A}_{n-1}$ 单, 故 $N \cap \mathcal{A}_{n-1} = 1$ 或 $\mathcal{A}_{n-1}$. 若 $\mathcal{A}_{n-1} \subset N$, 由 $\mathcal{A}_{n-1}$ 极大, $N \ne \mathcal{A}_n$, 只有 $N = \mathcal{A}_{n-1}$. 但 $\mathcal{A}_{n-1}$ 不正规于 $\mathcal{A}_{n}$ (它分别与 $1,2,\cdots ,n-1$ 的稳定子群共轭), 矛盾. 故 $N \cap \mathcal{A}_{n-1} = 1$. 再由 $\mathcal{A}_{n-1}$ 极大知 $N\mathcal{A}_{n-1} =\mathcal{A}_n$. 这说明 $\mid N\mid = n$.
 
-令 $\mathcal{A}_{n-1}$ 共轭地作用于 $N$ 上, 作映射 $\varphi: N \to X, g \mapsto g(n)$. 设 $g \in \mathcal{A}_{n-1}$, 则 $\varphi(gxg^{-1}) = gxg^{-1}(n) = gx(n) = g\varphi(x)$, 说明 $\varphi$ 是 $\mathcal{A}_{n-1}$-Map. 设 $g_1 \in N$, 令 $x_1 = \varphi(g_1) = g_1(n)$, 任意 $x_2 \in X$, $x_2 \ne x_1$,取 $$x_3 \in X-\{x_1,x_2\}$$, 则 $(x_1x_2x_3)g_1(x_1x_2x_3)^{-1} \in N$, 且 $\varphi((x_1x_2x_3)g_1(x_1x_2x_3)^{-1}) = x_2$. 这说明 $\varphi$ 是满射, 结合 $\mid N\mid = \mid X\mid = n$ 知 $\varphi$ 是双射, 从而给出 $\mathcal{A}_{n-1}$-同构.
+令 $$\mathcal{A}_{n-1}$$ 共轭地作用于 $N$ 上, 作映射 $\varphi: N \to X, g \mapsto g(n)$. 设 $g \in \mathcal{A}_{n-1}$, 则 $\varphi(gxg^{-1}) = gxg^{-1}(n) = gx(n) = g\varphi(x)$, 说明 $\varphi$ 是 $\mathcal{A}_{n-1}$-Map. 设 $g_1 \in N$, 令 $x_1 = \varphi(g_1) = g_1(n)$, 任意 $x_2 \in X$, $x_2 \ne x_1$,取 $$x_3 \in X-\{x_1,x_2\}$$, 则 $(x_1x_2x_3)g_1(x_1x_2x_3)^{-1} \in N$, 且 $\varphi((x_1x_2x_3)g_1(x_1x_2x_3)^{-1}) = x_2$. 这说明 $\varphi$ 是满射, 结合 $\mid N\mid = \mid X\mid = n$ 知 $\varphi$ 是双射, 从而给出 $\mathcal{A}_{n-1}$-同构.
 
-$\mathcal{A}_{n-1}$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重传递), $\varphi^{-1}(n) = 1$, 从而 $\mathcal{A}_{n-1}$ 三重传递地作用于 $$N-\{1\}$$. 这导致 $\mathrm{Aut}(N)$ 三重传递地作用于 $$N-\{1\}$$, 只有 $\mid N\mid = 4$, 矛盾.
+$$\mathcal{A}_{n-1}$$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重传递), $\varphi^{-1}(n) = 1$, 从而 $\mathcal{A}_{n-1}$ 三重传递地作用于 $$N-\{1\}$$. 这导致 $\mathrm{Aut}(N)$ 三重传递地作用于 $$N-\{1\}$$, 只有 $\mid N\mid = 4$, 矛盾.
 
 这说明 $\mathcal{A}_n$ 单.
 
