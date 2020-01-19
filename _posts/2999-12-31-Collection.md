@@ -82,7 +82,9 @@ $\bf 12.4$
 $\bf 1.$ 设正整数 $a,b$. $a\mathbb{Z}/ab\mathbb{Z} \cong \mathbb{Z}/b\mathbb{Z}$(环同构) $\Leftrightarrow (a,b)=1$.
 {:.warning}
 
-**思路** 若有上述同构, 则 $a\mathbb{Z}/ab\mathbb{Z}$ 含幺元. 试着找到这个幺元.
+由 $a\mathbb{Z} + b\mathbb{Z} = (a,b)\mathbb{Z}$ 和 $a\mathbb{Z} \cap b\mathbb{Z} = [a,b]\mathbb{Z}$.
+
+注: 若有上述同构, 则 $a\mathbb{Z}/ab\mathbb{Z}$ 含幺元. 试着找到这个幺元:
 
 $$
 a^2xy \equiv ay \pmod{ab}, \forall y \in \mathbb{Z} \Longleftrightarrow (ax-1)y \equiv 0 \pmod {b}, \forall y \in \mathbb{Z}.
