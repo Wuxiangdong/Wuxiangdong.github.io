@@ -153,7 +153,7 @@ $\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$
 
 **$$\mathcal{A}_n$$ ($n \geqslant 5$) 的单性**, 归纳法.
 
-$\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且 $H \ne 1,\mathcal{A}_5$, H 包含 $1$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
+$\mathcal{A}_5$ 的共轭类分别有 $1,12,12,15,20$ 个元素, 设 $H \subset \mathcal{A}_5$ 在 $\mathcal{A}_5$ 的内自同构下不变, 且满足 $H \ne 1,\mathcal{A}_5$ 和 $H$ 包含 $1$. $H$ 是一些共轭类的无交并, $H$ 的大小只可能为 $13,16,21,25,28,33,36,40,45$ 或 $48$, 都不是 $60$ 的因子,故 $H$ 不可能是 $\mathcal{A}_5$ 的子群. 这说明 $\mathcal{A}_5$ 单.
 
 设 $n \geqslant 6$, 假设已经证明 $\mathcal{A}_{n-1}$ 是单群, 下证 $\mathcal{A}_n$ 单.
 
@@ -161,7 +161,7 @@ $$\mathcal{A}_{n-1}$$ 是点 $n$ 在 $\mathcal{A}_n$ 作用下的稳定子群. $
 
 若 $$\mathcal{A}_n$$ 不单, 设 $N$ 是 $$\mathcal{A}_n$$ 的正规子群, $$N \ne 1, \mathcal{A}_n$$, 则 $$N \cap \mathcal{A}_{n-1}$$ 正规于 $$\mathcal{A}_{n-1}$$, $$\mathcal{A}_{n-1}$$ 单, 故 $$N \cap \mathcal{A}_{n-1} = 1$$ 或 $$\mathcal{A}_{n-1}$$. 若 $$\mathcal{A}_{n-1} \subset N$$, 由 $$\mathcal{A}_{n-1}$$ 极大, $$N \ne \mathcal{A}_n$$, 只有 $$N = \mathcal{A}_{n-1}$$. 但 $$\mathcal{A}_{n-1}$$ 不正规于 $$\mathcal{A}_{n}$$ (它分别与 $1,2,\cdots ,n-1$ 的稳定子群共轭), 矛盾. 故 $$N \cap \mathcal{A}_{n-1} = 1$$. 再由 $$\mathcal{A}_{n-1}$$ 极大知 $$N\mathcal{A}_{n-1} =\mathcal{A}_n$$. 这说明 $\mid N\mid = n$.
 
-令 $$\mathcal{A}_{n-1}$$ 共轭地作用于 $N$ 上, 作映射 $$\varphi: N \to X, g \mapsto g(n)$$. 设 $$g \in \mathcal{A}_{n-1}$$, 则 $\varphi(gxg^{-1}) = gxg^{-1}(n) = gx(n) = g\varphi(x)$, 说明 $\varphi$ 是 $$\mathcal{A}_{n-1}$$-Map. 设 $g_1 \in N$, 令 $x_1 = \varphi(g_1) = g_1(n)$, 任意 $x_2 \in X$, $x_2 \ne x_1$,取 $$x_3 \in X-\{x_1,x_2\}$$, 则 $(x_1x_2x_3)g_1(x_1x_2x_3)^{-1} \in N$, 且 $\varphi((x_1x_2x_3)g_1(x_1x_2x_3)^{-1}) = x_2$. 这说明 $\varphi$ 是满射, 结合 $\mid N\mid = \mid X\mid = n$ 知 $\varphi$ 是双射, 从而给出 $$\mathcal{A}_{n-1}$$-同构.
+令 $$\mathcal{A}_{n-1}$$ 共轭地作用于 $N$ 上, 作映射 $$\varphi: N \to X, g \mapsto g(n)$$. 设 $$g \in \mathcal{A}_{n-1}$$, 则 $\varphi(gxg^{-1}) = gxg^{-1}(n) = gx(n) = g\varphi(x)$, 说明 $\varphi$ 是 $$\mathcal{A}_{n-1}$$-Map. 设 $g_1,g_2 \in N$ 使 $\varphi(g_1)=\varphi(g_2)$, 有 $g_2^{-1}g_1(n) = n$, 从而 $g_2^{-1}g_1 \in \mathcal{A}_{n-1} \cap N = 1$, 只有 $g_1=g_2$, 故 $\varphi$ 是单射. 结合 $\mid N\mid = \mid X\mid = n$ 知 $\varphi$ 是双射, 从而给出 $$\mathcal{A}_{n-1}$$-同构.
 
 $$\mathcal{A}_{n-1}$$ 三重传递地作用于 $$X-\{n\}$$(实际上, $n-3$ 重传递), $\varphi^{-1}(n) = 1$, 从而 $\mathcal{A}_{n-1}$ 三重传递地作用于 $$N-\{1\}$$. 这导致 $\mathrm{Aut}(N)$ 三重传递地作用于 $$N-\{1\}$$, 只有 $\mid N\mid = 4$, 矛盾.
 
