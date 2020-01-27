@@ -52,6 +52,16 @@ $(2)$ 自由的(free), 若任意 $x \in X$, 有 $G_x = 1$.
 
 设 $G$ 自由地作用于 $X$ 上, 任取 $X$ 的一个 $G$-轨道 $\mathcal{O}$, $\mathcal{O}$ 是 $G$-torsor, 而 $X$ 是这些 $G$-torsor 的无交并.
 
+**Example.** 设 $G$ 是 $\mathcal{S}_n$ 的可迁子群, $H$ 是 $G$ 的正规子群. 则 $X=\{1,2,\cdots ,n\}$ 的每个 $H$-轨道有相同的长度.
+{:.warning}
+
+**证明的概要** 设 $a,b \in X$. 设 $b = ga,a \in G$.记 $a$ 的 $H$-稳定子群 $H_a$, 则 $b$ 的 $H$-稳定子群为 $gH_ag^{-1}$.
+
+**Example.** 设 $G$ 忠实且传递地作用于一 $p$ 元集 $X$, $p$ 为素数(即 $G$ 是 $\mathcal{S}_p$ 的可迁子群). 设 $G$ 的 $p$ 阶元生成 $H$, 则 $H$ 是单群.
+{:.warning}
+
+**证明** 只考虑 $H \ne 1$, 从而 $H$ 是 $\mathcal{S}_p$ 的可迁子群. 设 $N$ 是 $H$ 的正规子群, 有 $\{1,2,\cdots , p\}$ 的每个 $N$-轨道长度相同, 从而是 $p$ 的因子, 只能为 $1$ 或 $p$. 若为 $1$, 则 $N = 1$. 若为 $p$, 则 $p \mid \,\mid N\mid$, 从而 $N$ 有 $p$ 阶元. $H$ 的 $p$-Sylow 子群彼此共轭, 由此, $H$ 的 $p$ 阶元都在 $N$ 中, $H = N$.
+
 ## Burnside's Lemma
 **Proposition.** 设 $G$ 为有限群, 令 $X$ 是一个有限 $G$-Set. 对每一个 $g \in F$, 令 $X^g \subset X$ 为 $g$ 的不动点集, 并令 $\chi_X(g) = \mid X^g \mid$. 有:  
 $$
@@ -147,7 +157,7 @@ $\rm d)$ 若 $\mid G\mid \geqslant 4$, $\mathrm{Aut}{G}$ 在 $$G-\{1\}$$ 上 $3$
 **Proposition.** 设 $X$ 是 $G$-Set. $G$ 在 $X$ 上的作用 Primitive, 当且仅当任何 $G$-Map $X \to Y$ 是单的或平凡的(像退化为一个点).
 {:.info}
 
-**Proposition** 设 $G$ 二重传递于 $X$, 则 $G$ 在 $X$ 上的作用 Primitive.
+**Proposition.** 设 $G$ 二重传递于 $X$, 则 $G$ 在 $X$ 上的作用 Primitive.
 {:.info}
 ## Applications
 
