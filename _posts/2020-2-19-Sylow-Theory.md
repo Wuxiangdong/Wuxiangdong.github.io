@@ -10,6 +10,7 @@ tags: Math Algebra
 * [Sylow Theorems](#sylow-theorems)
 * [Fusion in the normalizer of a $\bm p$-Sylow subgroup](#fusion-in-the-normalizer-of-a-bm-p-sylow-subgroup)
 * [Local conjugacy and Alperin's Theorem](#local-conjugacy-and-alperins-theorem)
+* [Exercises](#exercises)
 
 <!-- vim-markdown-toc -->
 
@@ -56,3 +57,16 @@ _proof._ 令 $N_A = \bigcap_{i \in I} N_G(A_i)$ 和 $N_B = \bigcap_{i \in I} N_G
 (3) $A^{g_1\cdots g_{i-1}} \subset U_i$, 对 $1 \le i \le n$.
 {:.warning}
 
+## Exercises
+_(Construction of subgroups of index 2)_ 令 $S$ 是一有限群 $G$ 的 $2$-Sylow 子群. 令 $H$ 是 $S$ 的子群.则 $G$ 作用于 $G /H$,令 $\varepsilon_H$ 是映射的合成
+
+$$
+    G \longrightarrow \mathcal{S}_{G /H} \xrightarrow{\varepsilon} \{\pm 1\}.
+$$
+
+其中 $\varepsilon(\sigma)$ 给出 $\sigma$ 的符号.
+
+令 $C$ 是 $S$ 的一个非平凡循环群.且 $\mid C\mid \times  \mid H \mid =  \mid S \mid$, 对每一个 $g \in G$,$C \cap gHg^{-1} = 1$.
+
+a) $C$ 在 $G /H$ 上的作用作用自由,它的轨道数是奇数.  
+b) $\varepsilon_H(C) = \{1,-1\}$.从而 $\ker \varepsilon_H$ 是 $G$ 的一个指数为 $2$ 的子群,并且不包含 $C$.
