@@ -103,3 +103,10 @@ $\bf 1.$ 现有 $1000$ 名员工与一个老板. 老板将员工排成一排, �
 https://math.stackexchange.com/questions/2634576/localization-of-maximal-ideal-is-again-a-maximal-ideal-and-the-residue-fields-ar?r=SearchResults
 
 我裂开来,分式环保证正合列.
+
+
+3-29
+
+https://math.stackexchange.com/questions/74198/question-on-a-result-of-artin-and-tate?r=SearchResults
+
+https://math.stackexchange.com/questions/1674183/integral-and-prime-ideal-in-dedekind-domain?r=SearchResults&newreg=f1891a0988704aa487759eb4ca802b0c
