@@ -110,3 +110,30 @@ https://math.stackexchange.com/questions/2634576/localization-of-maximal-ideal-i
 https://math.stackexchange.com/questions/74198/question-on-a-result-of-artin-and-tate?r=SearchResults
 
 https://math.stackexchange.com/questions/1674183/integral-and-prime-ideal-in-dedekind-domain?r=SearchResults&newreg=f1891a0988704aa487759eb4ca802b0c
+
+4-14
+
+Problem. 求
+
+$$\sum_{k=0}^{n}\frac{k}{k+2}\binom{n}{k}(-1)^k$$
+
+解1. 看到$\frac{k}{k+2} = 1 - \int_{0}^1 2x^{k+1} \mathrm{d}x$,有
+
+$$\begin{aligned}
+    \mathrm{Left}&= \sum_{k=0}^{n} \binom{n}{k}(-1)^k + 2\sum_{k=0}^{n}\int_{0}^1 x^{k+1}\binom{n}{k}(-1)^{k+1} \mathrm{d}x\\
+    &= -2\int_{0}^1 x(1-x)^n \mathrm{d}x = -\frac{2}{n^{2}+3n+2}.
+\end{aligned}$$
+
+解2.
+
+$$
+    \frac{2}{k+2}\binom{n}{k} = 2\frac{n!(k+1)}{(k+2)!(n-k)!} = \frac{2}{n+1}\binom{n+1}{k+1} - \frac{2}{(n+1)(n+2)}\binom{n+2}{k+2}.
+$$
+
+Problem. 求$d= \mathrm{gcd}\left(\binom{n}{1},\cdots,\binom{n}{n-1}\right)$.
+
+解1. 设素数$p$,有$p \mid d \Longleftrightarrow (t+1)^n = t^n+1 \in \mathbb{F}_p[t]$.后者导致$t^n+1$只有一个根.设$n = p^rs$,$\mathrm{gcd}(s,p) = 1$,有$t^n+1=(t^s+1)^{p^r}$,从而$t^s+1$只有一根,而$(st^{s-1},t^s+1) \overset{\underset{\mathrm{s \ne 0}}{}}{=} (t^{s-1},t^s+1)=1$,有$t^s+1$无重根,从而$s=1$,$n = p^r$.
+
+也就是说,当$n$包含两个或以上个素因子时,$d=1$.
+
+我们有$p \mid\mid \binom{p^r}{p^{r-1}}$.故当$n = p^r$时,$d=p$.
