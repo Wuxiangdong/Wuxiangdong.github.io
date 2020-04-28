@@ -137,3 +137,18 @@ Problem. 求$d= \mathrm{gcd}\left(\binom{n}{1},\cdots,\binom{n}{n-1}\right)$.
 也就是说,当$n$包含两个或以上个素因子时,$d=1$.
 
 我们有$p \mid\mid \binom{p^r}{p^{r-1}}$.故当$n = p^r$时,$d=p$.
+
+2020.4.29
+
+$(1+6\mathbb{Z})^{-1}\mathbb{Z}[\frac{1}{6}] =\mathbb{Q}$.
+{:.warning}
+
+设$k \in \mathbb{Z}$,设$k = k_0k_1$,其中$k_1$与$6$互素,$k_0$只有素因子$2,3$.存在$u \in \mathbb{Z}$,使得$uk_1 \equiv 1 \pmod{6}$.存在$v \in \mathbb{Z}$使得$k_0v$是$6$的幂,记为$6^n$.于是
+
+$$
+\frac{1}{k} = \frac{1}{k_0k_1} = \frac{uv}{k_0k_1uv} = \frac{uv}{6^nk_1u} \in (1+6\mathbb{Z})^{-1}\mathbb{Z}[\frac{1}{6}].
+$$
+
+注, $(1+6\mathbb{Z})^{-1}\mathbb{Z}$是主理想整环,也就是.设$R$是PID,设$u$是$R$的不可约元.即使$R$有超过两个极大理想,$R[\frac{1}{u}]$也可能是域.
+
+请对域上一元多项式环$F[x]$考虑以上命题.
