@@ -152,3 +152,12 @@ $$
 注, $(1+6\mathbb{Z})^{-1}\mathbb{Z}$是主理想整环,也就是.设$R$是PID,设$u$是$R$的不可约元.即使$R$有超过两个极大理想,$R[\frac{1}{u}]$也可能是域.
 
 请对域上一元多项式环$F[x]$考虑以上命题.
+
+
+2020.6.16
+
+设$$\mathbb{F}$$是域,设$V$是有限维$F$线性空间.设$A,B$是$V$的线性变化.若$B$和任何和$A$交换的线性变化交换,证明$B$可以表示为$A$的多项式.
+
+https://math.stackexchange.com/questions/497806/matrices-b-that-commute-with-every-matrix-commuting-with-a
+
+https://math.stackexchange.com/questions/767975/textv-is-semisimple-as-a-kx-module-if-and-only-if-a-in-operatornameen
