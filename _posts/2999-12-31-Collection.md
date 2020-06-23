@@ -164,7 +164,8 @@ https://math.stackexchange.com/questions/767975/textv-is-semisimple-as-a-kx-modu
 
 2020.6.23
 
-找到群 $G$ 和其正规子群 $K$, 使得 $(G'k,G'K) \ne G''k'$(我们有 $G''K' \subset (G'K,G'K)$).{:.warning}
+找到群 $G$ 和其正规子群 $K$, 使得 $(G'k,G'K) \ne G''k'$(我们有 $G''K' \subset (G'K,G'K)$).
+{:.warning}
 
 令 $G = \mathcal{S}_3 \times \mathcal{S}_3$.则 $G' = \mathcal{A}_3 \times \mathcal{A}_3$, $G'' = 1$.
 
@@ -179,11 +180,13 @@ $$
 若$G''K' = D(G'K)$, 则 $G'K / G''K'$ 是 $6$ 阶交换群从而循环,这导致 $G'K / G''K'$ 有 $6$ 阶元,矛盾.
 
 
-求 $N^{\mathbb{Q}(\zeta_n)}_{\mathbb{Q}}(1-\zeta_n)$, 其中 $\zeta_n$ 是本原 $n$ 次单位根.{:.warning}
+求 $N^{\mathbb{Q}(\zeta_n)}_{\mathbb{Q}}(1-\zeta_n)$, 其中 $\zeta_n$ 是本原 $n$ 次单位根.
+{:.warning}
 
 注意 $\prod_{i=1}^{n-1}(1-\zeta_n^i) = n$.记 $\Phi_n = \prod_{(i,n) = 1} (1-\zeta_n^i)$, 则 $\prod_{d \mid n} \Phi_d= n$,从而 $\Phi_n=\prod_{d \mid n} d^{\mu(n /d)}$. 分$n$是素数的幂和$n$有两个或以上素因子考虑.
 
-设 $\alpha_1,\ldots ,\alpha_k$ 不同向量的内积两两小于零, 证明任 $k-1$ 个向量线性无关.{:.warning}
+设 $\alpha_1,\ldots ,\alpha_k$ 不同向量的内积两两小于零, 证明任 $k-1$ 个向量线性无关.
+{:.warning}
 
 否则, 设 $\sum_{i=1}^{k-1} a_i \alpha_i = 0$, $a_i$ 不全为 $0$. 用 $\alpha_k$ 内积得存在 $a_i > 0$, 存在 $a_i < 0$. 设 $a_1,\ldots ,a_t > 0$, $a_{t+1},\ldots ,a_{t+m} < 0$, 剩下的等于零,有
 
@@ -193,7 +196,8 @@ $$
 
 记为$\beta$, 则 $(\beta,\beta) = -\sum_{i=1}^{t}\sum_{j=1}^{m} a_ia_{t+j}(\alpha_i,\alpha_{t+j}) < 0$, 矛盾.
 
-设 $A$ 是 $n \times t$ 形矩阵, 设 $B$ 是 $t \times n$ 形矩阵. 证明除取特征值 $0$ 的 Jordan 块, $AB,BA$ 的 Jordan 标准型相同. {:.warning}
+设 $A$ 是 $n \times t$ 形矩阵, 设 $B$ 是 $t \times n$ 形矩阵. 证明除取特征值 $0$ 的 Jordan 块, $AB,BA$ 的 Jordan 标准型相同.
+{:.warning}
 
 由 $\lambda$ 矩阵 $\begin{pmatrix}\lambda I_n-AB & -A\\ & \lambda I_t\end{pmatrix}$ 和 $\begin{pmatrix}\lambda I_n & -A\\ & \lambda I_t - BA\end{pmatrix}$ 相抵,得到 $\begin{pmatrix}AB & A \\ & \end{pmatrix}$ 和 $\begin{pmatrix} & A \\ & BA\end{pmatrix}$ 相似, 于是设 $\lambda_0 \ne 0$, $k \ge 0$, 有
 
