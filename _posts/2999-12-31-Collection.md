@@ -199,7 +199,7 @@ $$
 设 $A$ 是 $n \times t$ 形矩阵, 设 $B$ 是 $t \times n$ 形矩阵. 证明除取特征值 $0$ 的 Jordan 块, $AB,BA$ 的 Jordan 标准型相同.
 {:.warning}
 
-由 $\lambda$ 矩阵 $\begin{pmatrix}\lambda I_n-AB & -A\\ & \lambda I_t\end{pmatrix}$ 和 $\begin{pmatrix}\lambda I_n & -A\\ & \lambda I_t - BA\end{pmatrix}$ 相抵,得到 $\begin{pmatrix}AB & A \\ & \end{pmatrix}$ 和 $\begin{pmatrix} & A \\ & BA\end{pmatrix}$ 相似, 于是设 $\lambda_0 \ne 0$, $k \ge 0$, 有
+由 $\lambda$ 矩阵 $$\begin{pmatrix}\lambda I_n-AB & -A\\ & \lambda I_t\end{pmatrix}$$ 和 $$\begin{pmatrix}\lambda I_n & -A\\ & \lambda I_t - BA\end{pmatrix}$$ 相抵,得到 $$\begin{pmatrix}AB & A \\ & \end{pmatrix}$$ 和 $$\begin{pmatrix} & A \\ & BA\end{pmatrix}$$ 相似, 于是设 $\lambda_0 \ne 0$, $k \ge 0$, 有
 
 $$\begin{aligned}
 \operatorname{rank}\left(\begin{pmatrix}AB & A \\ & \end{pmatrix} - \lambda_0 I\right)^k &= \operatorname{rank} \begin{pmatrix}AB-\lambda_0 & A \\ & -\lambda_0I\end{pmatrix}^k \\
