@@ -219,3 +219,100 @@ $$
 
 与 Jordan 块交换的矩阵可以看看~.
 
+2020-7-2
+
+一些反例.
+
+给定数列$$\{a_n\}$$,$\sum_{n=1}^{+\infty} a_n$收敛.记$$S = \{\sigma \in \mathcal{S}_{\mathbb{N}_+} \mid \sum_{n=1}^{+\infty} a_{\sigma(n)}\,\text{收敛}\}$$.举出例子说明$S$不一定是群.
+{:.warning}
+
+令$a_n = \frac{(-1)^{n+1}}{n}$, 则 $\sum_{n=1}^{\infty} a_n = \ln 2$.
+
+我们找到双射$s\colon \mathbb{N}_+ \to \mathbb{N}_+$, 使得$\sum a_{sn}$ 不收敛, 再找到 $\sigma \in S$,使得 $\sum a_{\sigma s(n)}$收敛, 即$\sigma s \in S$,从而 $s = \sigma^{-1}(\sigma s) \not\in S$得到$S$不是群.
+
+取
+
+$$
+    s\colon k \mapsto \begin{cases}
+        2k-2n-3 & 2^n < k < 2^{n+1}; \\
+        2n+2 & k = 2^n.
+    \end{cases}
+$$
+
+(也就是说$\sum a_{sn}$是:在$2^n$处取按顺序取$$\{a_n\}$$的偶数项,在其他地方按顺序取奇数项.)于是
+
+$$
+    \sum_{n=1}^{N} a_{sn} = \sum_{n=1}^{\left\lfloor \log_2 N \right\rfloor + 1} a_{2n} + \sum_{n=1}^{N - \left\lfloor \log_2 N \right\rfloor - 1} a_{2n-1}.
+$$
+
+只需看到$\sum_{n=1}^{N} a_{2n} = -\frac{1}{2}(\gamma + \log N + o(1))$, $\sum_{n=1}^{N} a_{2n-1} = \frac{1}{2}(\gamma + \log N + o(1))$得$\sum a_{sn}$不收敛.
+
+现取
+
+$$
+    \sigma\colon \begin{cases}
+        3k+1 \mapsto 4k+1, \\
+        3k+2 \mapsto 4k+3, \\
+        3k+3 \mapsto 2k+2.
+    \end{cases}
+$$
+
+(也就是说$\sum a_{\sigma n}$是: 每取两项$a_n$的奇数项后取一个$a_n$的偶数项.)易见$\sum_{n=1}^{3N}a_{\sigma n}$收敛.而$a_{3N+1}$和$a_{3N+2} \to 0$,$N \to \infty$,易见$\sum a_{\sigma n}$收敛.
+
+(注意$\sigma n$把奇偶项打散了.)有
+
+$$\begin{aligned}
+    \sigma(6k+1) = 8k+1;\\
+    \sigma(6k+2) = 8k+3;\\
+    \sigma(6k+3) = 4k+2;\\
+    \sigma(6k+4) = 8k+5;\\
+    \sigma(6k+5) = 8k+7;\\
+    \sigma(6k+6) = 4k+4.
+\end{aligned}$$
+
+易见$\sum a_{\sigma(2n)}$ 和 $\sum a_{\sigma(2n-1)}$ 收敛. 而
+
+$$
+    \sum_{n=1}^{N} a_{\sigma(s(n))} = \sum_{n=1}^{\left\lfloor \log_2 N \right\rfloor}a_{\sigma(2n)} + \sum_{n=1}^{N- \left\lfloor \log_2N  \right\rfloor -1}a_{\sigma(2n-1)}.
+$$
+
+易见$\sum a_{\sigma sn}$收敛.
+
+(实际上$\sigma^{-1} \in S$,从而$S$也不是半群.)
+
+
+设$P,Q,S,T \in M_n(\mathbb{R})$, $$\begin{pmatrix}P & S \\ Q & T\end{pmatrix}$$ 可逆. 说明$$\begin{pmatrix}P + \lambda T & -Q + \lambda S \\ Q - \lambda S & P + \lambda T\end{pmatrix}$$的行列式可能为$0$.
+{:.warning}
+
+取
+
+$$
+P = \begin{pmatrix}1 & \\ & 1\end{pmatrix}, S = \begin{pmatrix}-1 & \\  & 1\end{pmatrix}, Q = \begin{pmatrix}& -1 \\ 1& \end{pmatrix}, T = \begin{pmatrix} & 1 \\ 1 &\end{pmatrix}.
+$$
+
+(是待定$Q$用Wolfram算出来的.)
+
+命题.
+
+设群$G=AB$,其中$A,B$是$G$的Abel子群.证明$G'$交换.
+{:.warning}
+
+**证明.** 不难验证$G'$是由$A',B',(A,B)$生成的正规子群.而$A',B' = 1$,且设$a \in A$,$b\in B$, 设$c \in A$,有
+
+$$
+    (a,b)^c = (a,b^c) = (ac)^{-1}b^{-1}ac b \in (A,B).
+$$
+
+同理$c \in B$时有$(a,b)^c \in (A,B)$.从而$(A,B)$正规,$G ' =(A,B)$.
+
+由$G=AB$知$AB=BA$.于是任意$a,a' \in A$, $b,b' \in B$, 可令 $b^{a'} = a^{\prime\prime}b^{*}$, $a^{b'} = b^{\prime\prime}a^*$, 其中$a^{\prime\prime},a^* \in A$, $b^{\prime\prime},b^{*}\in B$.只需证明$(a,b)^{a'b'} = (a,b)^{b'a'}$,就证明了$(A,B)$交换.而
+
+$$\begin{aligned}
+    (a,b)^{a'b'} = (a,b^{a'})^{b'} = (a,a^{\prime\prime}b^*)^{b'} = (a,b^*)^{b'} = (b^{\prime\prime}a^*,b^*) = (a^*,b^*), \\
+    (a,b)^{b'a'} = (b^{\prime\prime}a^*,b)^{a'} = (a^*,b)^{a'} = (a^*,a^{\prime\prime}b^*) = (a^*,b^*).
+\end{aligned}$$
+
+证完.
+
+(来自徐明曜著《有限群》).
+
