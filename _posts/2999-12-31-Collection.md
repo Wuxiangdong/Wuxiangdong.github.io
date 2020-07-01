@@ -228,7 +228,7 @@ $$
 
 令$a_n = \frac{(-1)^{n+1}}{n}$, 则 $\sum_{n=1}^{\infty} a_n = \ln 2$.
 
-我们找到双射$s\colon \mathbb{N}_+ \to \mathbb{N}_+$, 使得$\sum a_{sn}$ 不收敛, 再找到 $\sigma \in S$,使得 $\sum a_{\sigma s(n)}$收敛, 即$\sigma s \in S$,从而 $s = \sigma^{-1}(\sigma s) \not\in S$得到$S$不是群.
+我们找到双射$$s\colon \mathbb{N}_+ \to \mathbb{N}_+$$, 使得$$\sum a_{sn}$$ 不收敛, 再找到 $$\sigma \in S$$,使得 $$\sum a_{\sigma s(n)}$$收敛, 即$$\sigma s \in S$$,从而 $$s = \sigma^{-1}(\sigma s) \not\in S$$得到$$S$$不是群.
 
 取
 
@@ -305,7 +305,7 @@ $$
 
 同理$c \in B$时有$(a,b)^c \in (A,B)$.从而$(A,B)$正规,$G ' =(A,B)$.
 
-由$G=AB$知$AB=BA$.于是任意$a,a' \in A$, $b,b' \in B$, 可令 $b^{a'} = a^{\prime\prime}b^{*}$, $a^{b'} = b^{\prime\prime}a^*$, 其中$a^{\prime\prime},a^* \in A$, $b^{\prime\prime},b^{*}\in B$.只需证明$(a,b)^{a'b'} = (a,b)^{b'a'}$,就证明了$(A,B)$交换.而
+由$G=AB$知$AB=BA$.于是任意$a,a' \in A$, $b,b' \in B$, 可令 $$b^{a'} = a^{\prime\prime}b^{*}$, $a^{b'} = b^{\prime\prime}a^*$$, 其中$$a^{\prime\prime},a^* \in A$$, $$b^{\prime\prime},b^{*}\in B$$.只需证明$$(a,b)^{a'b'} = (a,b)^{b'a'}$$,就证明了$(A,B)$交换.而
 
 $$\begin{aligned}
     (a,b)^{a'b'} = (a,b^{a'})^{b'} = (a,a^{\prime\prime}b^*)^{b'} = (a,b^*)^{b'} = (b^{\prime\prime}a^*,b^*) = (a^*,b^*), \\
